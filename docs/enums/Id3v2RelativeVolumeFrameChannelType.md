@@ -22,70 +22,70 @@ Type of channel data to get from or set to a RelativeVolumeFrame object
 
 ### BackCenter
 
-• **BackCenter** = ``7``
+• **BackCenter** = `7`
 
 Channel data for back center speaker
 
-___
+---
 
 ### BackLeft
 
-• **BackLeft** = ``5``
+• **BackLeft** = `5`
 
 Channel data for back left speaker
 
-___
+---
 
 ### BackRight
 
-• **BackRight** = ``4``
+• **BackRight** = `4`
 
 Channel data for center right speaker
 
-___
+---
 
 ### FrontCentre
 
-• **FrontCentre** = ``6``
+• **FrontCentre** = `6`
 
 Channel data for front center speaker
 
-___
+---
 
 ### FrontLeft
 
-• **FrontLeft** = ``3``
+• **FrontLeft** = `3`
 
 Channel data for front left speaker
 
-___
+---
 
 ### FrontRight
 
-• **FrontRight** = ``2``
+• **FrontRight** = `2`
 
 Channel data for the front right speaker
 
-___
+---
 
 ### MasterVolume
 
-• **MasterVolume** = ``1``
+• **MasterVolume** = `1`
 
 Channel data for the master volume
 
-___
+---
 
 ### Other
 
-• **Other** = ``0``
+• **Other** = `0`
 
 Channel data for some other speaker
 
-___
+---
 
 ### Subwoofer
 
-• **Subwoofer** = ``8``
+• **Subwoofer** = `8`
 
 Channel data for subwoofer

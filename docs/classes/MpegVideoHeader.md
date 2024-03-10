@@ -35,10 +35,10 @@ specified location in a specified file.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `file` | [`File`](File.md) | File to read the header from |
-| `position` | `number` | Position in `file` at which the header begins |
+| Name       | Type              | Description                                   |
+| :--------- | :---------------- | :-------------------------------------------- |
+| `file`     | [`File`](File.md) | File to read the header from                  |
+| `position` | `number`          | Position in `file` at which the header begins |
 
 ## Accessors
 
@@ -56,7 +56,7 @@ Gets a text description of the media represented by the current instance.
 
 [IVideoCodec](../interfaces/IVideoCodec.md).[description](../interfaces/IVideoCodec.md#description)
 
-___
+---
 
 ### durationMilliseconds
 
@@ -76,7 +76,7 @@ For MPEG, this is always 0
 
 [IVideoCodec](../interfaces/IVideoCodec.md).[durationMilliseconds](../interfaces/IVideoCodec.md#durationmilliseconds)
 
-___
+---
 
 ### mediaTypes
 
@@ -92,7 +92,7 @@ Types of media represented by the current instance, bitwise combined.
 
 [IVideoCodec](../interfaces/IVideoCodec.md).[mediaTypes](../interfaces/IVideoCodec.md#mediatypes)
 
-___
+---
 
 ### videoBitrate
 
@@ -104,7 +104,7 @@ ___
 
 `number`
 
-___
+---
 
 ### videoFrameRate
 
@@ -116,7 +116,7 @@ ___
 
 `number`
 
-___
+---
 
 ### videoHeight
 
@@ -132,7 +132,7 @@ Height of the video in pixels represented by the current instance.
 
 [IVideoCodec](../interfaces/IVideoCodec.md).[videoHeight](../interfaces/IVideoCodec.md#videoheight)
 
-___
+---
 
 ### videoWidth
 

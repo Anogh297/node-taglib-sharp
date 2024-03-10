@@ -8,7 +8,7 @@ Information about a variable bitrate MPEG audio stream
 
 ### Properties
 
-- [FILE\_IDENTIFIER](MpegXingHeader.md#file_identifier)
+- [FILE_IDENTIFIER](MpegXingHeader.md#file_identifier)
 - [UNKNOWN](MpegXingHeader.md#unknown)
 
 ### Accessors
@@ -25,13 +25,13 @@ Information about a variable bitrate MPEG audio stream
 
 ## Properties
 
-### FILE\_IDENTIFIER
+### FILE_IDENTIFIER
 
-▪ `Static` `Readonly` **FILE\_IDENTIFIER**: [`ByteVector`](ByteVector.md)
+▪ `Static` `Readonly` **FILE_IDENTIFIER**: [`ByteVector`](ByteVector.md)
 
 Identifier that appears in a file to indicate the start of a Xing header.
 
-___
+---
 
 ### UNKNOWN
 
@@ -51,7 +51,7 @@ Whether or not a physical VBRI header is present in the file.
 
 `boolean`
 
-___
+---
 
 ### totalFrames
 
@@ -63,7 +63,7 @@ Gets the total number of frames in the file, as indicated by the current instanc
 
 `number`
 
-___
+---
 
 ### totalSize
 
@@ -85,15 +85,15 @@ Constructs a new instance by reading its raw contents.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                          | Description                 |
+| :----- | :---------------------------- | :-------------------------- |
 | `data` | [`ByteVector`](ByteVector.md) | Raw data of the Xing header |
 
 #### Returns
 
 [`MpegXingHeader`](MpegXingHeader.md)
 
-___
+---
 
 ### fromInfo
 
@@ -103,16 +103,16 @@ Constructs a new instance with a specified frame count and size.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type     | Description              |
+| :------- | :------- | :----------------------- |
 | `frames` | `number` | Frame count of the audio |
-| `size` | `number` | Stream size of the audio |
+| `size`   | `number` | Stream size of the audio |
 
 #### Returns
 
 [`MpegXingHeader`](MpegXingHeader.md)
 
-___
+---
 
 ### xingHeaderOffset
 
@@ -123,9 +123,9 @@ version and channel mode.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `version` | [`MpegVersion`](../enums/MpegVersion.md) | Version of the MPEG audio packet |
+| Name           | Type                                                       | Description                           |
+| :------------- | :--------------------------------------------------------- | :------------------------------------ |
+| `version`      | [`MpegVersion`](../enums/MpegVersion.md)                   | Version of the MPEG audio packet      |
 | `channelModel` | [`MpegAudioChannelMode`](../enums/MpegAudioChannelMode.md) | Channel mode of the MPEG audio packet |
 
 #### Returns

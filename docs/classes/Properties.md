@@ -46,10 +46,10 @@ duration.
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `durationMilli` | `number` | `0` | Duration of the media in milliseconds or 0 if the duration is to be read from the codecs. |
-| `codecs` | [`ICodec`](../interfaces/ICodec.md)[] | `[]` | Array of codecs to be used in the new instance. |
+| Name            | Type                                  | Default value | Description                                                                               |
+| :-------------- | :------------------------------------ | :------------ | :---------------------------------------------------------------------------------------- |
+| `durationMilli` | `number`                              | `0`           | Duration of the media in milliseconds or 0 if the duration is to be read from the codecs. |
+| `codecs`        | [`ICodec`](../interfaces/ICodec.md)[] | `[]`          | Array of codecs to be used in the new instance.                                           |
 
 ## Accessors
 
@@ -68,7 +68,7 @@ the first non-zero audio bitrate, or zero if no codecs with audio information we
 
 [ILosslessAudioCodec](../interfaces/ILosslessAudioCodec.md).[audioBitrate](../interfaces/ILosslessAudioCodec.md#audiobitrate)
 
-___
+---
 
 ### audioChannels
 
@@ -84,7 +84,7 @@ Gets the number of channels in the audio represented by the current instance.
 
 [ILosslessAudioCodec](../interfaces/ILosslessAudioCodec.md).[audioChannels](../interfaces/ILosslessAudioCodec.md#audiochannels)
 
-___
+---
 
 ### audioSampleRate
 
@@ -101,7 +101,7 @@ to the first non-zero audio bitrate, or zero if no audio codecs were found.
 
 [ILosslessAudioCodec](../interfaces/ILosslessAudioCodec.md).[audioSampleRate](../interfaces/ILosslessAudioCodec.md#audiosamplerate)
 
-___
+---
 
 ### bitsPerSample
 
@@ -119,7 +119,7 @@ found in the current instance.
 
 [ILosslessAudioCodec](../interfaces/ILosslessAudioCodec.md).[bitsPerSample](../interfaces/ILosslessAudioCodec.md#bitspersample)
 
-___
+---
 
 ### codecs
 
@@ -130,13 +130,13 @@ Gets the codecs contained in the current instance.
 **`Remarks`**
 
 The list of codecs should not be modified. As such, the returned codec list is a
-    copy of codec list stored in this instance.
+copy of codec list stored in this instance.
 
 #### Returns
 
 [`ICodec`](../interfaces/ICodec.md)[]
 
-___
+---
 
 ### description
 
@@ -153,7 +153,7 @@ joined by semicolons.
 
 [IPhotoCodec](../interfaces/IPhotoCodec.md).[description](../interfaces/IPhotoCodec.md#description)
 
-___
+---
 
 ### durationMilliseconds
 
@@ -170,7 +170,7 @@ the constructor, that value is returned, otherwise the longest codec duration is
 
 [IPhotoCodec](../interfaces/IPhotoCodec.md).[durationMilliseconds](../interfaces/IPhotoCodec.md#durationmilliseconds)
 
-___
+---
 
 ### mediaTypes
 
@@ -186,7 +186,7 @@ Gets the types of media represented by the current instance.
 
 [IPhotoCodec](../interfaces/IPhotoCodec.md).[mediaTypes](../interfaces/IPhotoCodec.md#mediatypes)
 
-___
+---
 
 ### photoHeight
 
@@ -202,7 +202,7 @@ Gets the height of the photo in pixels represented by the current instance.
 
 [IPhotoCodec](../interfaces/IPhotoCodec.md).[photoHeight](../interfaces/IPhotoCodec.md#photoheight)
 
-___
+---
 
 ### photoQuality
 
@@ -219,7 +219,7 @@ instance. A value of `0` means that there was no quality indicator for the forma
 
 [IPhotoCodec](../interfaces/IPhotoCodec.md).[photoQuality](../interfaces/IPhotoCodec.md#photoquality)
 
-___
+---
 
 ### photoWidth
 
@@ -235,7 +235,7 @@ Gets the width of the photo in pixels represented by the current instance.
 
 [IPhotoCodec](../interfaces/IPhotoCodec.md).[photoWidth](../interfaces/IPhotoCodec.md#photowidth)
 
-___
+---
 
 ### videoHeight
 
@@ -252,7 +252,7 @@ This value is equal to the first non-zero video height;
 
 [IVideoCodec](../interfaces/IVideoCodec.md).[videoHeight](../interfaces/IVideoCodec.md#videoheight)
 
-___
+---
 
 ### videoWidth
 

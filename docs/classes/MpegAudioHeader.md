@@ -64,7 +64,7 @@ Bitrate of the audio in kilobits per second represented by the current instance.
 
 [IAudioCodec](../interfaces/IAudioCodec.md).[audioBitrate](../interfaces/IAudioCodec.md#audiobitrate)
 
-___
+---
 
 ### audioChannels
 
@@ -80,7 +80,7 @@ Number of channels in the audio represented by the current instance.
 
 [IAudioCodec](../interfaces/IAudioCodec.md).[audioChannels](../interfaces/IAudioCodec.md#audiochannels)
 
-___
+---
 
 ### audioFrameLength
 
@@ -92,7 +92,7 @@ Gets the length of the frames in the audio represented by the current instance.
 
 `number`
 
-___
+---
 
 ### audioLayer
 
@@ -104,7 +104,7 @@ Gets the MPEG audio layer used to encode the audio represented by the current in
 
 `number`
 
-___
+---
 
 ### audioSampleRate
 
@@ -120,7 +120,7 @@ Sample rate of the audio represented by the current instance.
 
 [IAudioCodec](../interfaces/IAudioCodec.md).[audioSampleRate](../interfaces/IAudioCodec.md#audiosamplerate)
 
-___
+---
 
 ### channelMode
 
@@ -132,7 +132,7 @@ Gets the MPEG audio channel mode of the audio represented by the current instanc
 
 [`MpegAudioChannelMode`](../enums/MpegAudioChannelMode.md)
 
-___
+---
 
 ### description
 
@@ -148,7 +148,7 @@ Gets a text description of the media represented by the current instance.
 
 [IAudioCodec](../interfaces/IAudioCodec.md).[description](../interfaces/IAudioCodec.md#description)
 
-___
+---
 
 ### durationMilliseconds
 
@@ -164,7 +164,7 @@ Duration of the media in milliseconds represented by the current instance.
 
 [IAudioCodec](../interfaces/IAudioCodec.md).[durationMilliseconds](../interfaces/IAudioCodec.md#durationmilliseconds)
 
-___
+---
 
 ### isCopyrighted
 
@@ -176,7 +176,7 @@ Whether or not the current audio is copyrighted.
 
 `boolean`
 
-___
+---
 
 ### isOriginal
 
@@ -188,7 +188,7 @@ Whether or not the current audio is original.
 
 `boolean`
 
-___
+---
 
 ### isPadded
 
@@ -200,7 +200,7 @@ Whether or not the audio represented by the current instance is padded.
 
 `boolean`
 
-___
+---
 
 ### isProtected
 
@@ -212,7 +212,7 @@ Gets whether the audio represented by the current instance is protected by CRC.
 
 `boolean`
 
-___
+---
 
 ### mediaTypes
 
@@ -228,7 +228,7 @@ Types of media represented by the current instance, bitwise combined.
 
 [IAudioCodec](../interfaces/IAudioCodec.md).[mediaTypes](../interfaces/IAudioCodec.md#mediatypes)
 
-___
+---
 
 ### vbriHeader
 
@@ -241,7 +241,7 @@ was found.
 
 [`MpegVbriHeader`](MpegVbriHeader.md)
 
-___
+---
 
 ### version
 
@@ -253,7 +253,7 @@ Gets the MPEG version used to encode the audio represented by the current instan
 
 [`MpegVersion`](../enums/MpegVersion.md)
 
-___
+---
 
 ### xingHeader
 
@@ -277,11 +277,11 @@ through a specified number of bytes.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `file` | [`File`](File.md) | File to search |
-| `position` | `number` | Position in `file` at which to start searching |
-| `length?` | `number` | Maximum number of bytes to search before giving up. Defaults to `-1` to have no maximum |
+| Name       | Type              | Description                                                                             |
+| :--------- | :---------------- | :-------------------------------------------------------------------------------------- |
+| `file`     | [`File`](File.md) | File to search                                                                          |
+| `position` | `number`          | Position in `file` at which to start searching                                          |
+| `length?`  | `number`          | Maximum number of bytes to search before giving up. Defaults to `-1` to have no maximum |
 
 #### Returns
 
@@ -289,7 +289,7 @@ through a specified number of bytes.
 
 The header that was found or `undefined` if a header was not found
 
-___
+---
 
 ### fromData
 
@@ -301,17 +301,17 @@ specified file.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `data` | [`ByteVector`](ByteVector.md) | The header data to read |
-| `file` | [`File`](File.md) | File to read the Xing/VBRI header from |
-| `position` | `number` | Position into `file` where the header begins, must be a positive 8-bit integer. |
+| Name       | Type                          | Description                                                                     |
+| :--------- | :---------------------------- | :------------------------------------------------------------------------------ |
+| `data`     | [`ByteVector`](ByteVector.md) | The header data to read                                                         |
+| `file`     | [`File`](File.md)             | File to read the Xing/VBRI header from                                          |
+| `position` | `number`                      | Position into `file` where the header begins, must be a positive 8-bit integer. |
 
 #### Returns
 
 [`MpegAudioHeader`](MpegAudioHeader.md)
 
-___
+---
 
 ### fromInfo
 
@@ -321,12 +321,12 @@ Constructs and initializes a new instance by populating it with specified values
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `flags` | `number` | Flags for the new instance |
-| `streamLength` | `number` | Stream length of the new instance |
-| `xingHeader` | [`MpegXingHeader`](MpegXingHeader.md) | Xing header associated with the new instance |
-| `vbriHeader` | [`MpegVbriHeader`](MpegVbriHeader.md) | VBRI header associated with the new instance |
+| Name           | Type                                  | Description                                  |
+| :------------- | :------------------------------------ | :------------------------------------------- |
+| `flags`        | `number`                              | Flags for the new instance                   |
+| `streamLength` | `number`                              | Stream length of the new instance            |
+| `xingHeader`   | [`MpegXingHeader`](MpegXingHeader.md) | Xing header associated with the new instance |
+| `vbriHeader`   | [`MpegVbriHeader`](MpegVbriHeader.md) | VBRI header associated with the new instance |
 
 #### Returns
 

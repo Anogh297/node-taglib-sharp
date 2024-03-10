@@ -17,30 +17,30 @@ IDs for a AVI stream types.
 
 ### AudioStream
 
-• **AudioStream** = ``1935963489``
+• **AudioStream** = `1935963489`
 
 Audio Stream
 
-___
+---
 
 ### MidiStream
 
-• **MidiStream** = ``1919183213``
+• **MidiStream** = `1919183213`
 
 MIDI Stream
 
-___
+---
 
 ### TextStream
 
-• **TextStream** = ``1937012852``
+• **TextStream** = `1937012852`
 
 Text stream
 
-___
+---
 
 ### VideoStream
 
-• **VideoStream** = ``1935960438``
+• **VideoStream** = `1935960438`
 
 Video stream

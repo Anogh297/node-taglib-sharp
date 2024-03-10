@@ -44,7 +44,7 @@ Gets that child objects of this instance.
 **`Remarks`**
 
 The returned array is a copy of the array of children inside this object. Any
-    changes to this array will not be reflected in the object.
+changes to this array will not be reflected in the object.
 
     Only certain objects are valid inside a header object. Any objects that are not valid or
     not supported are read as UnknownObject.
@@ -53,7 +53,7 @@ The returned array is a copy of the array of children inside this object. Any
 
 [`AsfBaseObject`](AsfBaseObject.md)[]
 
-___
+---
 
 ### extension
 
@@ -66,9 +66,9 @@ Gets the header extension object contained in the current instance.
 [`AsfHeaderExtensionObject`](AsfHeaderExtensionObject.md)
 
 Header extension contained in this instance, if it exists.
-    `undefined` is returned if it doesn't exist
+`undefined` is returned if it doesn't exist
 
-___
+---
 
 ### guid
 
@@ -84,7 +84,7 @@ Gets the GUID that identifies the current instance.
 
 BaseObject.guid
 
-___
+---
 
 ### hasContentDescriptors
 
@@ -97,9 +97,9 @@ Gets whether or not the current instance contains either type of content descrip
 `boolean`
 
 `true` if a content description object or extended content description
-    object exists in this instance. `false` otherwise
+object exists in this instance. `false` otherwise
 
-___
+---
 
 ### objectType
 
@@ -115,7 +115,7 @@ Gets the type of the object for easy comparison.
 
 BaseObject.objectType
 
-___
+---
 
 ### originalSize
 
@@ -131,7 +131,7 @@ Gets the original size of the current instance.
 
 BaseObject.originalSize
 
-___
+---
 
 ### properties
 
@@ -153,15 +153,15 @@ Adds a unique child object to the current instance, replacing an existing child 
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type                                | Description                           |
+| :---- | :---------------------------------- | :------------------------------------ |
 | `obj` | [`AsfBaseObject`](AsfBaseObject.md) | Object to add to the current instance |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### initializeFromFile
 
@@ -172,10 +172,10 @@ file.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `file` | [`File`](File.md) | File which contains the details of the new instance to create |
-| `position` | `number` | Position in `file` where the object begins |
+| Name       | Type              | Description                                                   |
+| :--------- | :---------------- | :------------------------------------------------------------ |
+| `file`     | [`File`](File.md) | File which contains the details of the new instance to create |
+| `position` | `number`          | Position in `file` where the object begins                    |
 
 #### Returns
 
@@ -185,7 +185,7 @@ file.
 
 [AsfBaseObject](AsfBaseObject.md).[initializeFromFile](AsfBaseObject.md#initializefromfile)
 
-___
+---
 
 ### initializeFromGuid
 
@@ -195,8 +195,8 @@ Initializes a new instance with a specified GUID.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                            | Description                       |
+| :----- | :------------------------------ | :-------------------------------- |
 | `guid` | [`UuidWrapper`](UuidWrapper.md) | GUID to use for the new instance. |
 
 #### Returns
@@ -207,7 +207,7 @@ Initializes a new instance with a specified GUID.
 
 [AsfBaseObject](AsfBaseObject.md).[initializeFromGuid](AsfBaseObject.md#initializefromguid)
 
-___
+---
 
 ### removeContentDescriptor
 
@@ -219,7 +219,7 @@ Removes the content description objects from the current instance.
 
 `void`
 
-___
+---
 
 ### render
 
@@ -235,7 +235,7 @@ Renders the current instance as a raw ASF object.
 
 [AsfBaseObject](AsfBaseObject.md).[render](AsfBaseObject.md#render)
 
-___
+---
 
 ### renderInternal
 
@@ -246,12 +246,12 @@ Renders the current instance as a raw ASF object containing the specified data.
 **`Remarks`**
 
 Child classes implementing [()](AsfHeaderObject.md#render) should render their contents and then
-    send the data through this method to produce the final output.
+send the data through this method to produce the final output.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                          | Description                                                    |
+| :----- | :---------------------------- | :------------------------------------------------------------- |
 | `data` | [`ByteVector`](ByteVector.md) | Data to store in the rendered version of the current instance. |
 
 #### Returns
@@ -262,7 +262,7 @@ Child classes implementing [()](AsfHeaderObject.md#render) should render their c
 
 [AsfBaseObject](AsfBaseObject.md).[renderInternal](AsfBaseObject.md#renderinternal)
 
-___
+---
 
 ### fromFile
 
@@ -273,10 +273,10 @@ in the provided file.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `file` | [`File`](File.md) | File containing contents that will be read into the new instance |
-| `position` | `number` | Position in the file where the instance begins |
+| Name       | Type              | Description                                                      |
+| :--------- | :---------------- | :--------------------------------------------------------------- |
+| `file`     | [`File`](File.md) | File containing contents that will be read into the new instance |
+| `position` | `number`          | Position in the file where the instance begins                   |
 
 #### Returns
 

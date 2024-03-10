@@ -40,8 +40,8 @@ Error Thrown if `path` is falsy
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description                                 |
+| :----- | :------- | :------------------------------------------ |
 | `path` | `string` | Path of the file to use in the new instance |
 
 ## Accessors
@@ -60,7 +60,7 @@ Name or identifier used by the implementation
 
 [IFileAbstraction](../interfaces/IFileAbstraction.md).[name](../interfaces/IFileAbstraction.md#name)
 
-___
+---
 
 ### readStream
 
@@ -76,7 +76,7 @@ Readable, seekable stream for the file referenced by the current instance.
 
 [IFileAbstraction](../interfaces/IFileAbstraction.md).[readStream](../interfaces/IFileAbstraction.md#readstream)
 
-___
+---
 
 ### writeStream
 
@@ -102,8 +102,8 @@ Closes a stream created by the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                                  | Description                             |
+| :------- | :------------------------------------ | :-------------------------------------- |
 | `stream` | [`IStream`](../interfaces/IStream.md) | Stream created by the current instance. |
 
 #### Returns

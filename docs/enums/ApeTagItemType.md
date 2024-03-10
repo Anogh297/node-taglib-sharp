@@ -16,22 +16,22 @@ Indicates the type of data stored in a [ApeTagItem](../classes/ApeTagItem.md) ob
 
 ### Binary
 
-• **Binary** = ``1``
+• **Binary** = `1`
 
 Item contains binary data
 
-___
+---
 
 ### Locator
 
-• **Locator** = ``2``
+• **Locator** = `2`
 
 Item contains a locator (file path/URL) for external information
 
-___
+---
 
 ### Text
 
-• **Text** = ``0``
+• **Text** = `0`
 
 Item contains unicode text

@@ -38,16 +38,16 @@ Constructs and initializes a new instance by reading the raw contents.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `data` | [`ByteVector`](ByteVector.md) | Raw extended header structure |
-| `version` | `number` | ID3v2 version. Must be an unsigned 8-bit integer. |
+| Name      | Type                          | Description                                       |
+| :-------- | :---------------------------- | :------------------------------------------------ |
+| `data`    | [`ByteVector`](ByteVector.md) | Raw extended header structure                     |
+| `version` | `number`                      | ID3v2 version. Must be an unsigned 8-bit integer. |
 
 #### Returns
 
 [`Id3v2ExtendedHeader`](Id3v2ExtendedHeader.md)
 
-___
+---
 
 ### fromEmpty
 

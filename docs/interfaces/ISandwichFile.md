@@ -24,7 +24,7 @@ Interface for a sandwich file.
 
 Gets the position at which the media content of this file ends.
 
-___
+---
 
 ### mediaStartPosition
 

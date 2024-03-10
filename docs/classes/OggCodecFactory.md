@@ -7,7 +7,7 @@ Factory for creating codecs from the first packet of the Ogg bitstream.
 **`Remarks`**
 
 By default, only codecs provided by the library will be matched. However, custom codec
-    support can be added by using [addCodecProvider](OggCodecFactory.md#addcodecprovider).
+support can be added by using [addCodecProvider](OggCodecFactory.md#addcodecprovider).
 
 ## Table of contents
 
@@ -39,15 +39,15 @@ formats can be added. They are executed in reverse order in which they are added
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `provider` | [`OggCodecProvider`](../modules.md#oggcodecprovider) | Codec provider function * firstPacket: ByteVector First packet of the bitstream * returns IOggCodec if method was able to match the packet, falsy otherwise |
+| Name       | Type                                                 | Description                                                                                                                                                 |
+| :--------- | :--------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `provider` | [`OggCodecProvider`](../modules.md#oggcodecprovider) | Codec provider function _ firstPacket: ByteVector First packet of the bitstream _ returns IOggCodec if method was able to match the packet, falsy otherwise |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### clearCustomProviders
 
@@ -59,7 +59,7 @@ Clears the custom providers from the factory.
 
 `void`
 
-___
+---
 
 ### getCodec
 
@@ -69,8 +69,8 @@ Determines the correc codec to use for a stream header packet.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                          | Description                               |
+| :------- | :---------------------------- | :---------------------------------------- |
 | `packet` | [`ByteVector`](ByteVector.md) | First packet of an Ogg logical bitstream. |
 
 #### Returns

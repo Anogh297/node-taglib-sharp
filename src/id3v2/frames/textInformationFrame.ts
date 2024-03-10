@@ -1,10 +1,10 @@
 import Genres from "../../genres";
 import Id3v2Settings from "../id3v2Settings";
-import {ByteVector, StringType} from "../../byteVector";
-import {Frame, FrameClassType} from "./frame";
-import {Id3v2FrameHeader} from "./frameHeader";
-import {FrameIdentifier, FrameIdentifiers} from "../frameIdentifiers";
-import {Guards, StringComparison, StringUtils} from "../../utils";
+import { ByteVector, StringType } from "../../byteVector";
+import { Frame, FrameClassType } from "./frame";
+import { Id3v2FrameHeader } from "./frameHeader";
+import { FrameIdentifier, FrameIdentifiers } from "../frameIdentifiers";
+import { Guards, StringComparison, StringUtils } from "../../utils";
 
 /**
  * This class provides support for ID3v2 text information frames (section 4.2) covering `T000` to
@@ -128,620 +128,603 @@ import {Guards, StringComparison, StringUtils} from "../../utils";
  *   (TIT2) for sorting purposes.
  */
 export class TextInformationFrame extends Frame {
-    private static readonly COVER_ABBREV = "CR";
-    private static readonly COVER_STRING = "Cover";
-    private static readonly REMIX_ABBREV = "RX";
-    private static readonly REMIX_STRING = "Remix";
-    private static readonly SPLIT_FRAME_TYPES = [
-        FrameIdentifiers.TCOM,
-        FrameIdentifiers.TEXT,
-        FrameIdentifiers.TMCL,
-        FrameIdentifiers.TOLY,
-        FrameIdentifiers.TOPE,
-        FrameIdentifiers.TSOC,
-        FrameIdentifiers.TSOP,
-        FrameIdentifiers.TSO2,
-        FrameIdentifiers.TPE1,
-        FrameIdentifiers.TPE2,
-        FrameIdentifiers.TPE3,
-        FrameIdentifiers.TPE4
-    ];
+	private static readonly COVER_ABBREV = "CR";
+	private static readonly COVER_STRING = "Cover";
+	private static readonly REMIX_ABBREV = "RX";
+	private static readonly REMIX_STRING = "Remix";
+	private static readonly SPLIT_FRAME_TYPES = [
+		FrameIdentifiers.TCOM,
+		FrameIdentifiers.TEXT,
+		FrameIdentifiers.TMCL,
+		FrameIdentifiers.TOLY,
+		FrameIdentifiers.TOPE,
+		FrameIdentifiers.TSOC,
+		FrameIdentifiers.TSOP,
+		FrameIdentifiers.TSO2,
+		FrameIdentifiers.TPE1,
+		FrameIdentifiers.TPE2,
+		FrameIdentifiers.TPE3,
+		FrameIdentifiers.TPE4,
+	];
 
-    // @TODO: no protected access to members
-    /**
-     * Text encoding to use to store the text contents of the current instance.
-     * @protected
-     */
-    protected _encoding: StringType = Id3v2Settings.defaultEncoding;
-    /**
-     * Raw data contents in the current instance.
-     * @protected
-     */
-    protected _rawData: ByteVector;
-    /**
-     * ID3v2 version of the current instance.
-     * @protected
-     */
-    protected _rawVersion: number;
-    /**
-     * Decoded text contained in the current instance.
-     * @protected
-     */
-    protected _textFields: string[] = [];
+	// @TODO: no protected access to members
+	/**
+	 * Text encoding to use to store the text contents of the current instance.
+	 * @protected
+	 */
+	protected _encoding: StringType = Id3v2Settings.defaultEncoding;
+	/**
+	 * Raw data contents in the current instance.
+	 * @protected
+	 */
+	protected _rawData: ByteVector;
+	/**
+	 * ID3v2 version of the current instance.
+	 * @protected
+	 */
+	protected _rawVersion: number;
+	/**
+	 * Decoded text contained in the current instance.
+	 * @protected
+	 */
+	protected _textFields: string[] = [];
 
-    // #region Constructors
+	// #region Constructors
 
-    protected constructor(header: Id3v2FrameHeader) {
-        super(header);
-    }
+	protected constructor(header: Id3v2FrameHeader) {
+		super(header);
+	}
 
-    /**
-     * Constructs and initializes a new instance with a specified identifier
-     * @param identifier Byte vector containing the identifier for the frame
-     * @param encoding Optionally, the encoding to use for the new instance. If omitted, defaults
-     *     to {@link Id3v2Settings.defaultEncoding}
-     */
-    public static fromIdentifier(
-        identifier: FrameIdentifier,
-        encoding: StringType = Id3v2Settings.defaultEncoding
-    ): TextInformationFrame {
-        const frame = new TextInformationFrame(new Id3v2FrameHeader(identifier));
-        frame._encoding = encoding;
-        return frame;
-    }
+	/**
+	 * Constructs and initializes a new instance with a specified identifier
+	 * @param identifier Byte vector containing the identifier for the frame
+	 * @param encoding Optionally, the encoding to use for the new instance. If omitted, defaults
+	 *     to {@link Id3v2Settings.defaultEncoding}
+	 */
+	public static fromIdentifier(identifier: FrameIdentifier, encoding: StringType = Id3v2Settings.defaultEncoding): TextInformationFrame {
+		const frame = new TextInformationFrame(new Id3v2FrameHeader(identifier));
+		frame._encoding = encoding;
+		return frame;
+	}
 
-    /**
-     * Constructs and initializes a new instance by reading its raw data in a specified ID3v2
-     * version. This method allows for offset reading from the data byte vector.
-     * @param data Raw representation of the new frame
-     * @param offset What offset in `data` the frame actually begins. Must be positive,
-     *     safe integer
-     * @param header Header of the frame found at `data` in the data
-     * @param version ID3v2 version the frame was originally encoded with
-     */
-    public static fromOffsetRawData(
-        data: ByteVector,
-        offset: number,
-        header: Id3v2FrameHeader,
-        version: number
-    ): TextInformationFrame {
-        Guards.truthy(data, "data");
-        Guards.uint(offset, "offset");
-        Guards.truthy(header, "header");
+	/**
+	 * Constructs and initializes a new instance by reading its raw data in a specified ID3v2
+	 * version. This method allows for offset reading from the data byte vector.
+	 * @param data Raw representation of the new frame
+	 * @param offset What offset in `data` the frame actually begins. Must be positive,
+	 *     safe integer
+	 * @param header Header of the frame found at `data` in the data
+	 * @param version ID3v2 version the frame was originally encoded with
+	 */
+	public static fromOffsetRawData(data: ByteVector, offset: number, header: Id3v2FrameHeader, version: number): TextInformationFrame {
+		Guards.truthy(data, "data");
+		Guards.uint(offset, "offset");
+		Guards.truthy(header, "header");
 
-        const frame = new TextInformationFrame(header);
-        frame.setData(data, offset, false, version);
-        return frame;
-    }
+		const frame = new TextInformationFrame(header);
+		frame.setData(data, offset, false, version);
+		return frame;
+	}
 
-    /**
-     * Constructs and initializes a new instance by reading its raw data in a specified
-     * ID3v2 version.
-     * @param data Raw representation of the new frame
-     * @param version ID3v2 version the raw frame is encoded with, must be a positive 8-bit integer
-     */
-    public static fromRawData(data: ByteVector, version: number): TextInformationFrame {
-        Guards.truthy(data, "data");
-        Guards.byte(version, "version");
+	/**
+	 * Constructs and initializes a new instance by reading its raw data in a specified
+	 * ID3v2 version.
+	 * @param data Raw representation of the new frame
+	 * @param version ID3v2 version the raw frame is encoded with, must be a positive 8-bit integer
+	 */
+	public static fromRawData(data: ByteVector, version: number): TextInformationFrame {
+		Guards.truthy(data, "data");
+		Guards.byte(version, "version");
 
-        const frame = new TextInformationFrame(Id3v2FrameHeader.fromData(data, version));
-        frame.setData(data, 0, true, version);
-        return frame;
-    }
+		const frame = new TextInformationFrame(Id3v2FrameHeader.fromData(data, version));
+		frame.setData(data, 0, true, version);
+		return frame;
+	}
 
-    // #endregion
+	// #endregion
 
-    // #region Properties
+	// #region Properties
 
-    /** @inheritDoc */
-    public get frameClassType(): FrameClassType { return FrameClassType.TextInformationFrame; }
+	/** @inheritDoc */
+	public get frameClassType(): FrameClassType {
+		return FrameClassType.TextInformationFrame;
+	}
 
-    /**
-     * Gets the text contained in the current instance.
-     * Note: Modifying the contents of the returned value will not modify the contents of the
-     * current instance. The value must be reassigned for the value to change.
-     */
-    public get text(): string[] {
-        this.parseRawData();
-        return this._textFields.slice();
-    }
-    /**
-     * Sets the text contained in the current instance.
-     */
-    public set text(value: string[]) {
-        this.parseRawData();
-        this._textFields = value ? value.slice() : [];
-    }
+	/**
+	 * Gets the text contained in the current instance.
+	 * Note: Modifying the contents of the returned value will not modify the contents of the
+	 * current instance. The value must be reassigned for the value to change.
+	 */
+	public get text(): string[] {
+		this.parseRawData();
+		return this._textFields.slice();
+	}
+	/**
+	 * Sets the text contained in the current instance.
+	 */
+	public set text(value: string[]) {
+		this.parseRawData();
+		this._textFields = value ? value.slice() : [];
+	}
 
-    /**
-     * Gets the text encoding to use when rendering the current instance.
-     */
-    public get textEncoding(): StringType {
-        this.parseRawData();
-        return this._encoding;
-    }
-    /**
-     * Sets the text encoding to use when rendering the current instance.
-     * This value will be overridden if {@link Id3v2Settings.forceDefaultEncoding} is `true`.
-     */
-    public set textEncoding(value: StringType) {
-        this.parseRawData();
-        this._encoding = value;
-    }
+	/**
+	 * Gets the text encoding to use when rendering the current instance.
+	 */
+	public get textEncoding(): StringType {
+		this.parseRawData();
+		return this._encoding;
+	}
+	/**
+	 * Sets the text encoding to use when rendering the current instance.
+	 * This value will be overridden if {@link Id3v2Settings.forceDefaultEncoding} is `true`.
+	 */
+	public set textEncoding(value: StringType) {
+		this.parseRawData();
+		this._encoding = value;
+	}
 
-    // #endregion
+	// #endregion
 
-    // #region Public Methods
+	// #region Public Methods
 
-    /**
-     * Gets a {@link TextInformationFrame} object of a specified type from a specified type from a
-     * list of text information frames.
-     * @param frames List of frames to search
-     * @param ident Frame identifier to search for
-     * @returns Matching frame if it exists in `tag`, `undefined` if a matching frame was not found
-     */
-    public static findTextInformationFrame(
-        frames: TextInformationFrame[],
-        ident: FrameIdentifier
-    ): TextInformationFrame {
-        Guards.truthy(frames, "frames");
-        Guards.truthy(ident, "ident");
+	/**
+	 * Gets a {@link TextInformationFrame} object of a specified type from a specified type from a
+	 * list of text information frames.
+	 * @param frames List of frames to search
+	 * @param ident Frame identifier to search for
+	 * @returns Matching frame if it exists in `tag`, `undefined` if a matching frame was not found
+	 */
+	public static findTextInformationFrame(frames: TextInformationFrame[], ident: FrameIdentifier): TextInformationFrame {
+		Guards.truthy(frames, "frames");
+		Guards.truthy(ident, "ident");
 
-        return frames.find((f) => f.frameId === ident);
-    }
+		return frames.find((f) => f.frameId === ident);
+	}
 
-    /** @inheritDoc */
-    public clone(): Frame {
-        const frame = TextInformationFrame.fromIdentifier(this.frameId, this._encoding);
-        frame._textFields = this._textFields.slice();
-        if (this._rawData) {
-            frame._rawData = this._rawData.toByteVector();
-        }
-        frame._rawVersion = this._rawVersion;
-        return frame;
-    }
+	/** @inheritDoc */
+	public clone(): Frame {
+		const frame = TextInformationFrame.fromIdentifier(this.frameId, this._encoding);
+		frame._textFields = this._textFields.slice();
+		if (this._rawData) {
+			frame._rawData = this._rawData.toByteVector();
+		}
+		frame._rawVersion = this._rawVersion;
+		return frame;
+	}
 
-    /**
-     * Renders the current instance, encoded in a specified ID3v2 version.
-     * @param version ID3v2 version to use when encoding the current instance. Must be a positive
-     *     8-bit integer.
-     * @returns Rendered version of the current instance.
-     */
-    public render(version: number): ByteVector {
-        Guards.byte(version, "version");
+	/**
+	 * Renders the current instance, encoded in a specified ID3v2 version.
+	 * @param version ID3v2 version to use when encoding the current instance. Must be a positive
+	 *     8-bit integer.
+	 * @returns Rendered version of the current instance.
+	 */
+	public render(version: number): ByteVector {
+		Guards.byte(version, "version");
 
-        if (version !== 3 || this.frameId !== FrameIdentifiers.TDRC) {
-            return super.render(version);
-        }
+		if (version !== 3 || this.frameId !== FrameIdentifiers.TDRC) {
+			return super.render(version);
+		}
 
-        const text = this.toString();
-        if (text.length < 10 || text[4] !== "-" || text[7] !== "-") {
-            return super.render(version);
-        }
+		const text = this.toString();
+		if (text.length < 10 || text[4] !== "-" || text[7] !== "-") {
+			return super.render(version);
+		}
 
-        const output = ByteVector.empty();
-        let frame = new TextInformationFrame(new Id3v2FrameHeader(FrameIdentifiers.TYER));
-        frame.text = [text.substring(0, 4)];
-        output.addByteVector(frame.render(version));
+		const output = ByteVector.empty();
+		let frame = new TextInformationFrame(new Id3v2FrameHeader(FrameIdentifiers.TYER));
+		frame.text = [text.substring(0, 4)];
+		output.addByteVector(frame.render(version));
 
-        frame = new TextInformationFrame(new Id3v2FrameHeader(FrameIdentifiers.TDAT));
-        frame.text = [text.substring(5, 7) + text.substring(8, 10)];
-        output.addByteVector(frame.render(version));
+		frame = new TextInformationFrame(new Id3v2FrameHeader(FrameIdentifiers.TDAT));
+		frame.text = [text.substring(5, 7) + text.substring(8, 10)];
+		output.addByteVector(frame.render(version));
 
-        if (text.length < 16 || text[10] !== "T" || text[13] !== ":") {
-            return output;
-        }
+		if (text.length < 16 || text[10] !== "T" || text[13] !== ":") {
+			return output;
+		}
 
-        frame = new TextInformationFrame(new Id3v2FrameHeader(FrameIdentifiers.TIME));
-        frame.text = [text.substring(11, 13) + text.substring(14, 16)];
-        output.addByteVector(frame.render(version));
+		frame = new TextInformationFrame(new Id3v2FrameHeader(FrameIdentifiers.TIME));
+		frame.text = [text.substring(11, 13) + text.substring(14, 16)];
+		output.addByteVector(frame.render(version));
 
-        return output;
-    }
+		return output;
+	}
 
-    /**
-     * Returns a text representation of the current instance by combining the text with semicolons.
-     */
-    public toString(): string {
-        this.parseRawData();
-        return this.text.join("; ");
-    }
+	/**
+	 * Returns a text representation of the current instance by combining the text with semicolons.
+	 */
+	public toString(): string {
+		this.parseRawData();
+		return this.text.join("; ");
+	}
 
-    // #endregion
+	// #endregion
 
-    // #region Protected Methods
+	// #region Protected Methods
 
-    /** @inheritDoc */
-    protected parseFields(data: ByteVector, version: number): void {
-        this._rawData = data;
-        this._rawVersion = version;
-    }
+	/** @inheritDoc */
+	protected parseFields(data: ByteVector, version: number): void {
+		this._rawData = data;
+		this._rawVersion = version;
+	}
 
-    /**
-     * Performs the actual parsing of the raw data.
-     * Because of the high parsing cost and relatively low usage of the class {@link parseFields}
-     * only stores the field data so it can be parsed on demand. Whenever a property or method is
-     * called which requires the data, this method is called, and only on the first call does it
-     * actually parse the data.
-     */
-    protected parseRawData(): void {
-        if (!this._rawData) {
-            return;
-        }
+	/**
+	 * Performs the actual parsing of the raw data.
+	 * Because of the high parsing cost and relatively low usage of the class {@link parseFields}
+	 * only stores the field data so it can be parsed on demand. Whenever a property or method is
+	 * called which requires the data, this method is called, and only on the first call does it
+	 * actually parse the data.
+	 */
+	protected parseRawData(): void {
+		if (!this._rawData) {
+			return;
+		}
 
-        const data = this._rawData;
-        this._rawData = undefined;
+		const data = this._rawData;
+		this._rawData = undefined;
 
-        // Read the string data type (first byte of the field data)
-        this._encoding = data.get(0);
+		// Read the string data type (first byte of the field data)
+		this._encoding = data.get(0);
 
-        const fieldList = [];
-        const delim = ByteVector.getTextDelimiter(this._encoding);
+		const fieldList = [];
+		const delim = ByteVector.getTextDelimiter(this._encoding);
 
-        if (this._rawVersion > 3 && this.frameId === FrameIdentifiers.TCON) {
-            // TCON on ID3v2.4 is encoded as a separate field for each genre. Fields can either be
-            // the old numeric ID3v1 genres (no parenthesis) or free text. RX/CR can also be used.
-            // This way is **much** better...
-            const genres = data.subarray(1).toStrings(this._encoding);
-            const textGenres = genres.map((g) => {
-                switch (g) {
-                    case TextInformationFrame.COVER_ABBREV:
-                        return TextInformationFrame.COVER_STRING;
-                    case TextInformationFrame.REMIX_ABBREV:
-                        return TextInformationFrame.REMIX_STRING;
-                    default:
-                        const textGenre = Genres.indexToAudio(g, false);
-                        return textGenre || g;
-                }
-            });
-            fieldList.push(...textGenres);
-        } else if (this._rawVersion > 3 || this.frameId === FrameIdentifiers.TXXX) {
-            fieldList.push(...data.subarray(1).toStrings(this._encoding));
-        } else if (data.length > 1 && !data.containsAt(delim, 1)) {
-            let value = data.subarray(1).toString(this._encoding);
+		if (this._rawVersion > 3 && this.frameId === FrameIdentifiers.TCON) {
+			// TCON on ID3v2.4 is encoded as a separate field for each genre. Fields can either be
+			// the old numeric ID3v1 genres (no parenthesis) or free text. RX/CR can also be used.
+			// This way is **much** better...
+			const genres = data.subarray(1).toStrings(this._encoding);
+			const textGenres = genres.map((g) => {
+				switch (g) {
+					case TextInformationFrame.COVER_ABBREV:
+						return TextInformationFrame.COVER_STRING;
+					case TextInformationFrame.REMIX_ABBREV:
+						return TextInformationFrame.REMIX_STRING;
+					default:
+						const textGenre = Genres.indexToAudio(g, false);
+						return textGenre || g;
+				}
+			});
+			fieldList.push(...textGenres);
+		} else if (this._rawVersion > 3 || this.frameId === FrameIdentifiers.TXXX) {
+			fieldList.push(...data.subarray(1).toStrings(this._encoding));
+		} else if (data.length > 1 && !data.containsAt(delim, 1)) {
+			let value = data.subarray(1).toString(this._encoding);
 
-            // Truncate values containing NULL bytes
-            const nullIndex = value.indexOf("\x00");
-            if (nullIndex >= 0) {
-                value = value.substring(0, nullIndex);
-            }
+			// Truncate values containing NULL bytes
+			const nullIndex = value.indexOf("\x00");
+			if (nullIndex >= 0) {
+				value = value.substring(0, nullIndex);
+			}
 
-            if (TextInformationFrame.SPLIT_FRAME_TYPES.some((ft) => ft === this.frameId)) {
-                // Some frames are designed to be split into multiple parts by a /
-                fieldList.push(... value.split("/"));
-            } else if (this.frameId === FrameIdentifiers.TCON) {
-                // @TODO: Can we just make a separate class for TCON?
-                // TCON in ID3v2.2 and ID3v2.3 is specified as
-                // * (xx) - where xx is a number from the ID3v1 genre list
-                // * (xx)yy - where xx is a number from the ID3v1 genre list and yyy is a
-                //   "refinement" of the genre
-                // * (RX) - "Remix"
-                // * (CR) - "Cover"
-                // * (( - used to escape a "(" in a refinement/genre name
+			if (TextInformationFrame.SPLIT_FRAME_TYPES.some((ft) => ft === this.frameId)) {
+				// Some frames are designed to be split into multiple parts by a /
+				fieldList.push(...value.split("/"));
+			} else if (this.frameId === FrameIdentifiers.TCON) {
+				// @TODO: Can we just make a separate class for TCON?
+				// TCON in ID3v2.2 and ID3v2.3 is specified as
+				// * (xx) - where xx is a number from the ID3v1 genre list
+				// * (xx)yy - where xx is a number from the ID3v1 genre list and yyy is a
+				//   "refinement" of the genre
+				// * (RX) - "Remix"
+				// * (CR) - "Cover"
+				// * (( - used to escape a "(" in a refinement/genre name
 
-                // NOTE: This encoding has an inherent flaw around how multiple genres should be
-                //    encoded. Since multiple genres are already an edge case, I'm just going to
-                //    say yolo to this whole block of code copied over from the .NET implementation
-                while (value.length > 1 && value[0] === "(") {
-                    const closing = value.indexOf(")");
-                    if (closing < 0) {
-                        break;
-                    }
+				// NOTE: This encoding has an inherent flaw around how multiple genres should be
+				//    encoded. Since multiple genres are already an edge case, I'm just going to
+				//    say yolo to this whole block of code copied over from the .NET implementation
+				while (value.length > 1 && value[0] === "(") {
+					const closing = value.indexOf(")");
+					if (closing < 0) {
+						break;
+					}
 
-                    const number = value.substring(1, closing);
+					const number = value.substring(1, closing);
 
-                    let text: string;
-                    if (number === TextInformationFrame.COVER_ABBREV) {
-                        text = TextInformationFrame.COVER_STRING;
-                    } else if (number === TextInformationFrame.REMIX_ABBREV) {
-                        text = TextInformationFrame.REMIX_STRING;
-                    } else {
-                        text = Genres.indexToAudio(number, true);
-                    }
+					let text: string;
+					if (number === TextInformationFrame.COVER_ABBREV) {
+						text = TextInformationFrame.COVER_STRING;
+					} else if (number === TextInformationFrame.REMIX_ABBREV) {
+						text = TextInformationFrame.REMIX_STRING;
+					} else {
+						text = Genres.indexToAudio(number, true);
+					}
 
-                    if (!text) {
-                        // Number in parenthesis was not a numeric genre but part of a larger bit
-                        // of text?
-                        break;
-                    }
+					if (!text) {
+						// Number in parenthesis was not a numeric genre but part of a larger bit
+						// of text?
+						break;
+					}
 
-                    // Number in parenthesis was a numeric genre
-                    fieldList.push(text);
-                    value = StringUtils.trimStart(value.substring(closing + 1), "/ ");
+					// Number in parenthesis was a numeric genre
+					fieldList.push(text);
+					value = StringUtils.trimStart(value.substring(closing + 1), "/ ");
 
-                    // Ignore genre if the same genre appears after the numeric genre
-                    if (value.startsWith(text)) {
-                        value = StringUtils.trimStart(value.substring(text.length), "/ ");
-                    }
-                }
+					// Ignore genre if the same genre appears after the numeric genre
+					if (value.startsWith(text)) {
+						value = StringUtils.trimStart(value.substring(text.length), "/ ");
+					}
+				}
 
-                // Process whatever's left
-                if (value.length > 0) {
-                    // Split the remaining genre value by dividers if the setting is turned on
-                    let splitValue = Id3v2Settings.useNonStandardV2V3GenreSeparators
-                        ? value.split(/[\/;]/).map((v) => v.trim()).filter((v) => !!v)
-                        : [value];
+				// Process whatever's left
+				if (value.length > 0) {
+					// Split the remaining genre value by dividers if the setting is turned on
+					let splitValue = Id3v2Settings.useNonStandardV2V3GenreSeparators
+						? value
+								.split(/[\/;]/)
+								.map((v) => v.trim())
+								.filter((v) => !!v)
+						: [value];
 
-                    splitValue = splitValue.map((v) => {
-                        // Unescape escaped opening parenthesis
-                        let v2 = v.replace(/\(\(/, "(");
+					splitValue = splitValue.map((v) => {
+						// Unescape escaped opening parenthesis
+						let v2 = v.replace(/\(\(/, "(");
 
-                        // If non-standard numeric genres is enabled, parse them
-                        if (Id3v2Settings.useNonStandardV2V3NumericGenres) {
-                            const text = Genres.indexToAudio(v2, false);
-                            if (text) {
-                                v2 = text;
-                            }
-                        }
+						// If non-standard numeric genres is enabled, parse them
+						if (Id3v2Settings.useNonStandardV2V3NumericGenres) {
+							const text = Genres.indexToAudio(v2, false);
+							if (text) {
+								v2 = text;
+							}
+						}
 
-                        return v2;
-                    });
+						return v2;
+					});
 
-                    fieldList.push(...splitValue);
-                }
-            } else {
-                fieldList.push(value);
-            }
-        }
+					fieldList.push(...splitValue);
+				}
+			} else {
+				fieldList.push(value);
+			}
+		}
 
-        // Bad tags may have one or more null characters at the end of a string, resulting in
-        // empty strings at the end of the FieldList. Strip them off.
-        while (fieldList.length !== 0
-            && (!fieldList[fieldList.length - 1] || fieldList[fieldList.length - 1].length === 0)) {
-            fieldList.splice(fieldList.length - 1, 1);
-        }
+		// Bad tags may have one or more null characters at the end of a string, resulting in
+		// empty strings at the end of the FieldList. Strip them off.
+		while (fieldList.length !== 0 && (!fieldList[fieldList.length - 1] || fieldList[fieldList.length - 1].length === 0)) {
+			fieldList.splice(fieldList.length - 1, 1);
+		}
 
-        this._textFields = fieldList;
-    }
+		this._textFields = fieldList;
+	}
 
-    /** @inheritDoc */
-    protected renderFields(version: number): ByteVector {
-        if (this._rawData && this._rawVersion === version) {
-            return this._rawData;
-        }
+	/** @inheritDoc */
+	protected renderFields(version: number): ByteVector {
+		if (this._rawData && this._rawVersion === version) {
+			return this._rawData;
+		}
 
-        const encoding = TextInformationFrame.correctEncoding(this.textEncoding, version);
-        const v = ByteVector.empty();
-        let text = this._textFields;
+		const encoding = TextInformationFrame.correctEncoding(this.textEncoding, version);
+		const v = ByteVector.empty();
+		let text = this._textFields;
 
-        v.addByte(encoding);
+		v.addByte(encoding);
 
-        // Pre-process ID3v2.4 TCON frames
-        if (version > 3 && this.frameId === FrameIdentifiers.TCON) {
-            // For ID3v2.4, we should encode any genres that can be numeric as numeric by
-            // themselves. This then gets encoded the same as any other ID3v2.4 text frame (ie,
-            // with delimiters in between values)
-            text = text.map((g) => {
-                switch (g) {
-                    case TextInformationFrame.COVER_STRING:
-                        return TextInformationFrame.COVER_ABBREV;
-                    case TextInformationFrame.REMIX_STRING:
-                        return TextInformationFrame.REMIX_ABBREV;
-                    default:
-                        if (Id3v2Settings.useNumericGenres) {
-                            const numericGenre = Genres.audioToIndex(g);
-                            return numericGenre === 255 ? g : numericGenre.toString();
-                        }
-                        return g;
-                }
-            });
-        }
+		// Pre-process ID3v2.4 TCON frames
+		if (version > 3 && this.frameId === FrameIdentifiers.TCON) {
+			// For ID3v2.4, we should encode any genres that can be numeric as numeric by
+			// themselves. This then gets encoded the same as any other ID3v2.4 text frame (ie,
+			// with delimiters in between values)
+			text = text.map((g) => {
+				switch (g) {
+					case TextInformationFrame.COVER_STRING:
+						return TextInformationFrame.COVER_ABBREV;
+					case TextInformationFrame.REMIX_STRING:
+						return TextInformationFrame.REMIX_ABBREV;
+					default:
+						if (Id3v2Settings.useNumericGenres) {
+							const numericGenre = Genres.audioToIndex(g);
+							return numericGenre === 255 ? g : numericGenre.toString();
+						}
+						return g;
+				}
+			});
+		}
 
-        // Main processing
-        const isTxxx = this.frameId === FrameIdentifiers.TXXX;
-        if (version > 3 || isTxxx) {
-            if (isTxxx) {
-                if (text.length === 0) {
-                    text = [null, null];
-                } else if (text.length === 1) {
-                    text = [text[0], null];
-                }
-            }
+		// Main processing
+		const isTxxx = this.frameId === FrameIdentifiers.TXXX;
+		if (version > 3 || isTxxx) {
+			if (isTxxx) {
+				if (text.length === 0) {
+					text = [null, null];
+				} else if (text.length === 1) {
+					text = [text[0], null];
+				}
+			}
 
-            for (let i = 0; i < text.length; i++) {
-                // Since the field list is null delimited, if this is not the first element in the
-                // list, append the appropriate delimiter for this encoding.
-                if (i !== 0) {
-                    v.addByteVector(ByteVector.getTextDelimiter(encoding));
-                }
+			for (let i = 0; i < text.length; i++) {
+				// Since the field list is null delimited, if this is not the first element in the
+				// list, append the appropriate delimiter for this encoding.
+				if (i !== 0) {
+					v.addByteVector(ByteVector.getTextDelimiter(encoding));
+				}
 
-                if (text[i]) {
-                    v.addByteVector(ByteVector.fromString(text[i], encoding));
-                }
-            }
-        } else if (this.frameId === FrameIdentifiers.TCON) {
-            // ID3v2.2 and ID3v2.3 TCON frames are going to be written with numeric genres first
-            // (if enabled) and multiple text-based genres separated by ;.
-            // NOTE: This doesn't follow the actual conventions for ID3v2.2/3 but nobody does this
-            //    correctly. This implementation will at least work with MinimServer
-            //    https://forum.minimserver.com/showthread.php?tid=2575
-            const numericGenres = [];
-            const textGenres = [];
-            for (const s of text) {
-                switch (s) {
-                    case TextInformationFrame.COVER_STRING:
-                        numericGenres.push(`(${TextInformationFrame.COVER_ABBREV})`);
-                        break;
-                    case TextInformationFrame.REMIX_STRING:
-                        numericGenres.push(`(${TextInformationFrame.REMIX_ABBREV})`);
-                        break;
-                    default:
-                        if (Id3v2Settings.useNumericGenres) {
-                            const numericGenre = Genres.audioToIndex(s);
-                            if (numericGenre !== 255) {
-                                numericGenres.push(`(${numericGenre})`);
-                                break;
-                            }
-                        }
-                        textGenres.push(s.replace(/\(/, "(("));
-                        break;
-                }
-            }
+				if (text[i]) {
+					v.addByteVector(ByteVector.fromString(text[i], encoding));
+				}
+			}
+		} else if (this.frameId === FrameIdentifiers.TCON) {
+			// ID3v2.2 and ID3v2.3 TCON frames are going to be written with numeric genres first
+			// (if enabled) and multiple text-based genres separated by ;.
+			// NOTE: This doesn't follow the actual conventions for ID3v2.2/3 but nobody does this
+			//    correctly. This implementation will at least work with MinimServer
+			//    https://forum.minimserver.com/showthread.php?tid=2575
+			const numericGenres = [];
+			const textGenres = [];
+			for (const s of text) {
+				switch (s) {
+					case TextInformationFrame.COVER_STRING:
+						numericGenres.push(`(${TextInformationFrame.COVER_ABBREV})`);
+						break;
+					case TextInformationFrame.REMIX_STRING:
+						numericGenres.push(`(${TextInformationFrame.REMIX_ABBREV})`);
+						break;
+					default:
+						if (Id3v2Settings.useNumericGenres) {
+							const numericGenre = Genres.audioToIndex(s);
+							if (numericGenre !== 255) {
+								numericGenres.push(`(${numericGenre})`);
+								break;
+							}
+						}
+						textGenres.push(s.replace(/\(/, "(("));
+						break;
+				}
+			}
 
-            // Put the entire string together
-            const genreString = `${numericGenres.join("")}${textGenres.join(";")}`;
-            v.addByteVector(ByteVector.fromString(genreString, encoding));
-        } else {
-            // Fields that have slashes in them and fields that don't
-            v.addByteVector(ByteVector.fromString(text.join("/"), encoding));
-        }
+			// Put the entire string together
+			const genreString = `${numericGenres.join("")}${textGenres.join(";")}`;
+			v.addByteVector(ByteVector.fromString(genreString, encoding));
+		} else {
+			// Fields that have slashes in them and fields that don't
+			v.addByteVector(ByteVector.fromString(text.join("/"), encoding));
+		}
 
-        return v;
-    }
+		return v;
+	}
 
-    // #endregion
+	// #endregion
 }
 
 export class UserTextInformationFrame extends TextInformationFrame {
-    // #region Constructors
+	// #region Constructors
 
-    private constructor(header: Id3v2FrameHeader) {
-        super(header);
-    }
+	private constructor(header: Id3v2FrameHeader) {
+		super(header);
+	}
 
-    /**
-     * Constructs and initializes a new instance with a specified description and text encoding.
-     * @param description Description of the new frame
-     * @param encoding Text encoding to use when rendering the new frame
-     */
-    public static fromDescription(
-        description: string,
-        encoding: StringType = Id3v2Settings.defaultEncoding
-    ): UserTextInformationFrame {
-        const frame = new UserTextInformationFrame(new Id3v2FrameHeader(FrameIdentifiers.TXXX));
-        frame._encoding = encoding;
-        frame.description = description;
-        return frame;
-    }
+	/**
+	 * Constructs and initializes a new instance with a specified description and text encoding.
+	 * @param description Description of the new frame
+	 * @param encoding Text encoding to use when rendering the new frame
+	 */
+	public static fromDescription(description: string, encoding: StringType = Id3v2Settings.defaultEncoding): UserTextInformationFrame {
+		const frame = new UserTextInformationFrame(new Id3v2FrameHeader(FrameIdentifiers.TXXX));
+		frame._encoding = encoding;
+		frame.description = description;
+		return frame;
+	}
 
-    /**
-     * Constructs and initializes a new instance by reading its raw data in a specified ID3v2
-     * version. This method allows for offset reading from the data byte vector.
-     * @param data Raw representation of the new frame
-     * @param offset What offset in `data` the frame actually begins. Must be positive,
-     *     safe integer
-     * @param header Header of the frame found at `data` in the data
-     * @param version ID3v2 version the frame was originally encoded with
-     */
-    public static fromOffsetRawData(
-        data: ByteVector,
-        offset: number,
-        header: Id3v2FrameHeader,
-        version: number
-    ): UserTextInformationFrame {
-        Guards.truthy(data, "data");
-        Guards.uint(offset, "offset");
-        Guards.truthy(header, "header");
-        Guards.byte(version, "version");
+	/**
+	 * Constructs and initializes a new instance by reading its raw data in a specified ID3v2
+	 * version. This method allows for offset reading from the data byte vector.
+	 * @param data Raw representation of the new frame
+	 * @param offset What offset in `data` the frame actually begins. Must be positive,
+	 *     safe integer
+	 * @param header Header of the frame found at `data` in the data
+	 * @param version ID3v2 version the frame was originally encoded with
+	 */
+	public static fromOffsetRawData(data: ByteVector, offset: number, header: Id3v2FrameHeader, version: number): UserTextInformationFrame {
+		Guards.truthy(data, "data");
+		Guards.uint(offset, "offset");
+		Guards.truthy(header, "header");
+		Guards.byte(version, "version");
 
-        const frame = new UserTextInformationFrame(header);
-        frame.setData(data, offset, false, version);
-        return frame;
-    }
+		const frame = new UserTextInformationFrame(header);
+		frame.setData(data, offset, false, version);
+		return frame;
+	}
 
-    /**
-     * Constructs and initializes a new instance by reading its raw data in a specified
-     * ID3v2 version.
-     * @param data Raw representation of the new frame
-     * @param version ID3v2 version the raw frame is encoded with, must be a positive 8-bit integer
-     */
-    public static fromRawData(data: ByteVector, version: number): UserTextInformationFrame {
-        Guards.truthy(data, "data");
-        Guards.byte(version, "version");
+	/**
+	 * Constructs and initializes a new instance by reading its raw data in a specified
+	 * ID3v2 version.
+	 * @param data Raw representation of the new frame
+	 * @param version ID3v2 version the raw frame is encoded with, must be a positive 8-bit integer
+	 */
+	public static fromRawData(data: ByteVector, version: number): UserTextInformationFrame {
+		Guards.truthy(data, "data");
+		Guards.byte(version, "version");
 
-        const frame = new UserTextInformationFrame(Id3v2FrameHeader.fromData(data, version));
-        frame.setData(data, 0, true, version);
-        return frame;
-    }
+		const frame = new UserTextInformationFrame(Id3v2FrameHeader.fromData(data, version));
+		frame.setData(data, 0, true, version);
+		return frame;
+	}
 
-    // #endregion
+	// #endregion
 
-    // #region Properties
+	// #region Properties
 
-    public get frameClassType(): FrameClassType { return FrameClassType.UserTextInformationFrame; }
+	public get frameClassType(): FrameClassType {
+		return FrameClassType.UserTextInformationFrame;
+	}
 
-    /**
-     * Gets the description stored in the current instance.
-     */
-    public get description(): string {
-        const text = super.text;
-        return text.length > 0 ? text[0] : undefined;
-    }
-    /**
-     * Sets the description stored in the current instance.
-     * There should only be one frame with the specified description per tag.
-     * @param value Description to store in the current instance.
-     */
-    public set description(value: string) {
-        let text = super.text;
-        if (text.length > 0) {
-            text[0] = value;
-        } else {
-            text = [ value ];
-        }
-        super.text = text;
-    }
+	/**
+	 * Gets the description stored in the current instance.
+	 */
+	public get description(): string {
+		const text = super.text;
+		return text.length > 0 ? text[0] : undefined;
+	}
+	/**
+	 * Sets the description stored in the current instance.
+	 * There should only be one frame with the specified description per tag.
+	 * @param value Description to store in the current instance.
+	 */
+	public set description(value: string) {
+		let text = super.text;
+		if (text.length > 0) {
+			text[0] = value;
+		} else {
+			text = [value];
+		}
+		super.text = text;
+	}
 
-    /**
-     * Gets the text contained in the current instance.
-     * NOTE: Modifying the contents of the returned value will not modify the contents of the
-     * current instance. The value must be reassigned for the value to change.
-     */
-    public get text(): string[] {
-        const text = super.text;
-        if (text.length < 2) {
-            return [];
-        }
+	/**
+	 * Gets the text contained in the current instance.
+	 * NOTE: Modifying the contents of the returned value will not modify the contents of the
+	 * current instance. The value must be reassigned for the value to change.
+	 */
+	public get text(): string[] {
+		const text = super.text;
+		if (text.length < 2) {
+			return [];
+		}
 
-        return text.slice(1);
-    }
-    /**
-     * Sets the text contained in the current instance.
-     * @param value Array of text values to store in the current instance
-     */
-    public set text(value: string[]) {
-        const newValue = [this.description];
-        newValue.push(... value);
-        super.text = newValue;
-    }
+		return text.slice(1);
+	}
+	/**
+	 * Sets the text contained in the current instance.
+	 * @param value Array of text values to store in the current instance
+	 */
+	public set text(value: string[]) {
+		const newValue = [this.description];
+		newValue.push(...value);
+		super.text = newValue;
+	}
 
-    // #endregion
+	// #endregion
 
-    // #region Public Methods
+	// #region Public Methods
 
-    /**
-     * Gets a user text information frame from a specified tag
-     * @param frames Object to search in
-     * @param description Description to use to match the frame in the `tag`
-     * @param caseSensitive Whether or not to search for the frame case-sensitively.
-     * @returns Frame containing the matching user, `undefined` if a match was not found
-     */
-    public static findUserTextInformationFrame(
-        frames: UserTextInformationFrame[],
-        description: string,
-        caseSensitive: boolean = true
-    ): UserTextInformationFrame {
-        Guards.truthy(frames, "frames");
+	/**
+	 * Gets a user text information frame from a specified tag
+	 * @param frames Object to search in
+	 * @param description Description to use to match the frame in the `tag`
+	 * @param caseSensitive Whether or not to search for the frame case-sensitively.
+	 * @returns Frame containing the matching user, `undefined` if a match was not found
+	 */
+	public static findUserTextInformationFrame(frames: UserTextInformationFrame[], description: string, caseSensitive: boolean = true): UserTextInformationFrame {
+		Guards.truthy(frames, "frames");
 
-        const comparison = caseSensitive ? StringComparison.caseSensitive : StringComparison.caseInsensitive;
-        return frames.find((f) => comparison(f.description, description));
-    }
+		const comparison = caseSensitive ? StringComparison.caseSensitive : StringComparison.caseInsensitive;
+		return frames.find((f) => comparison(f.description, description));
+	}
 
-    /** @inheritDoc */
-    public clone(): Frame {
-        const frame = UserTextInformationFrame.fromDescription(undefined, this._encoding);
-        frame._textFields = this._textFields.slice();
-        if (this._rawData) {
-            frame._rawData = this._rawData.toByteVector();
-        }
-        frame._rawVersion = this._rawVersion;
-        return frame;
-    }
+	/** @inheritDoc */
+	public clone(): Frame {
+		const frame = UserTextInformationFrame.fromDescription(undefined, this._encoding);
+		frame._textFields = this._textFields.slice();
+		if (this._rawData) {
+			frame._rawData = this._rawData.toByteVector();
+		}
+		frame._rawVersion = this._rawVersion;
+		return frame;
+	}
 
-    /** @inheritDoc */
-    public toString(): string {
-        return `[${this.description}] ${super.toString()}`;
-    }
+	/** @inheritDoc */
+	public toString(): string {
+		return `[${this.description}] ${super.toString()}`;
+	}
 
-    // #endregion
+	// #endregion
 }

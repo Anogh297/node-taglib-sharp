@@ -13,7 +13,7 @@ Interface for chunks that appear in a RIFF file.
 
 ### Properties
 
-- [IDENTIFIER\_FOURCC](RiffList.md#identifier_fourcc)
+- [IDENTIFIER_FOURCC](RiffList.md#identifier_fourcc)
 
 ### Accessors
 
@@ -41,9 +41,9 @@ Interface for chunks that appear in a RIFF file.
 
 ## Properties
 
-### IDENTIFIER\_FOURCC
+### IDENTIFIER_FOURCC
 
-▪ `Static` `Readonly` **IDENTIFIER\_FOURCC**: ``"LIST"``
+▪ `Static` `Readonly` **IDENTIFIER_FOURCC**: `"LIST"`
 
 FOURCC code for a list chunk
 
@@ -71,8 +71,8 @@ constructed directly from data.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `value` | `number` |
 
 #### Returns
@@ -83,7 +83,7 @@ constructed directly from data.
 
 [IRiffChunk](../interfaces/IRiffChunk.md).[chunkStart](../interfaces/IRiffChunk.md#chunkstart)
 
-___
+---
 
 ### fourcc
 
@@ -99,7 +99,7 @@ FOURCC code for the chunk.
 
 [IRiffChunk](../interfaces/IRiffChunk.md).[fourcc](../interfaces/IRiffChunk.md#fourcc)
 
-___
+---
 
 ### isLoaded
 
@@ -115,7 +115,7 @@ Gets whether the object has been loaded.
 
 [ILazy](../interfaces/ILazy.md).[isLoaded](../interfaces/ILazy.md#isloaded)
 
-___
+---
 
 ### listCount
 
@@ -127,7 +127,7 @@ Total number of nested lists contained in this instance.
 
 `number`
 
-___
+---
 
 ### originalDataSize
 
@@ -144,7 +144,7 @@ padding byte. This value does not update if contents of the chunk changes.
 
 [IRiffChunk](../interfaces/IRiffChunk.md).[originalDataSize](../interfaces/IRiffChunk.md#originaldatasize)
 
-___
+---
 
 ### originalTotalSize
 
@@ -161,7 +161,7 @@ the contents of the chunk changes.
 
 [IRiffChunk](../interfaces/IRiffChunk.md).[originalTotalSize](../interfaces/IRiffChunk.md#originaltotalsize)
 
-___
+---
 
 ### type
 
@@ -173,7 +173,7 @@ ID that identifies the type of this list.
 
 `string`
 
-___
+---
 
 ### valueCount
 
@@ -197,7 +197,7 @@ Removes all values and nested lists from the current instance.
 
 `void`
 
-___
+---
 
 ### getLists
 
@@ -207,8 +207,8 @@ Retrieves a collection of lists by the lists' key.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type     | Description                          |
+| :--- | :------- | :----------------------------------- |
 | `id` | `string` | Key for looking up the desired lists |
 
 #### Returns
@@ -216,9 +216,9 @@ Retrieves a collection of lists by the lists' key.
 [`RiffList`](RiffList.md)[]
 
 Array of the nested lists with the provided key, or an empty array if
-    the key does not exist in this instance.
+the key does not exist in this instance.
 
-___
+---
 
 ### getValues
 
@@ -228,8 +228,8 @@ Retrieves a collection of values by the values' key.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type     | Description                           |
+| :--- | :------- | :------------------------------------ |
 | `id` | `string` | Key for looking up the desired values |
 
 #### Returns
@@ -237,9 +237,9 @@ Retrieves a collection of values by the values' key.
 [`ByteVector`](ByteVector.md)[]
 
 Array of the values with the provided key, or an empty array if the
-    key does not exist in the instance.
+key does not exist in the instance.
 
-___
+---
 
 ### load
 
@@ -255,7 +255,7 @@ Loads the object.
 
 [ILazy](../interfaces/ILazy.md).[load](../interfaces/ILazy.md#load)
 
-___
+---
 
 ### render
 
@@ -271,7 +271,7 @@ Renders the chunk, including the header and padding byte.
 
 [IRiffChunk](../interfaces/IRiffChunk.md).[render](../interfaces/IRiffChunk.md#render)
 
-___
+---
 
 ### setLists
 
@@ -281,16 +281,16 @@ Stores a collection of lists in the current instance, overwriting any that curre
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `id` | `string` | Key for the lists to store |
+| Name    | Type                        | Description                                          |
+| :------ | :-------------------------- | :--------------------------------------------------- |
+| `id`    | `string`                    | Key for the lists to store                           |
 | `lists` | [`RiffList`](RiffList.md)[] | Collection of lists to store in the current instance |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### setValues
 
@@ -300,16 +300,16 @@ Stores a collection of values in the current instance, overwriting any that curr
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `id` | `string` | Key for the values to store |
+| Name     | Type                            | Description                                           |
+| :------- | :------------------------------ | :---------------------------------------------------- |
+| `id`     | `string`                        | Key for the values to store                           |
 | `values` | [`ByteVector`](ByteVector.md)[] | Collection of values to store in the current instance |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### fromEmpty
 
@@ -319,15 +319,15 @@ Constructs and initializes a new instance with no contents.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description         |
+| :----- | :------- | :------------------ |
 | `type` | `string` | Type ID of the list |
 
 #### Returns
 
 [`RiffList`](RiffList.md)
 
-___
+---
 
 ### fromFile
 
@@ -337,16 +337,16 @@ Constructs and initializes a new instance, lazily, from a position in a file.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `file` | [`File`](File.md) | File from which to read the current instance |
-| `position` | `number` | Position in the file where the list begins |
+| Name       | Type              | Description                                  |
+| :--------- | :---------------- | :------------------------------------------- |
+| `file`     | [`File`](File.md) | File from which to read the current instance |
+| `position` | `number`          | Position in the file where the list begins   |
 
 #### Returns
 
 [`RiffList`](RiffList.md)
 
-___
+---
 
 ### isChunkList
 
@@ -356,9 +356,9 @@ Determines if a given chunk is a list.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `c` | [`IRiffChunk`](../interfaces/IRiffChunk.md) | Chunk to check is a list. |
+| Name | Type                                        | Description               |
+| :--- | :------------------------------------------ | :------------------------ |
+| `c`  | [`IRiffChunk`](../interfaces/IRiffChunk.md) | Chunk to check is a list. |
 
 #### Returns
 

@@ -55,15 +55,15 @@ Sets the author of the media described by the current instance.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `value` | `string` |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### copyright
 
@@ -83,15 +83,15 @@ Sets the copyright information of the media described by the current instance.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `value` | `string` |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### description
 
@@ -111,15 +111,15 @@ Sets the description of the media described by the current instance.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `value` | `string` |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### guid
 
@@ -135,7 +135,7 @@ Gets the GUID that identifies the current instance.
 
 BaseObject.guid
 
-___
+---
 
 ### isEmpty
 
@@ -149,7 +149,7 @@ Gets whether or not the current instance is empty.
 
 `true` if all the values are cleared. Otherwise `false` is returned.
 
-___
+---
 
 ### objectType
 
@@ -165,7 +165,7 @@ Gets the type of the object for easy comparison.
 
 BaseObject.objectType
 
-___
+---
 
 ### originalSize
 
@@ -181,7 +181,7 @@ Gets the original size of the current instance.
 
 BaseObject.originalSize
 
-___
+---
 
 ### rating
 
@@ -201,15 +201,15 @@ Sets the rating of the media described by the current instance.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `value` | `string` |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### title
 
@@ -229,8 +229,8 @@ Sets the title of the media described by the current instance.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `value` | `string` |
 
 #### Returns
@@ -248,10 +248,10 @@ file.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `file` | [`File`](File.md) | File which contains the details of the new instance to create |
-| `position` | `number` | Position in `file` where the object begins |
+| Name       | Type              | Description                                                   |
+| :--------- | :---------------- | :------------------------------------------------------------ |
+| `file`     | [`File`](File.md) | File which contains the details of the new instance to create |
+| `position` | `number`          | Position in `file` where the object begins                    |
 
 #### Returns
 
@@ -261,7 +261,7 @@ file.
 
 [AsfBaseObject](AsfBaseObject.md).[initializeFromFile](AsfBaseObject.md#initializefromfile)
 
-___
+---
 
 ### initializeFromGuid
 
@@ -271,8 +271,8 @@ Initializes a new instance with a specified GUID.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                            | Description                       |
+| :----- | :------------------------------ | :-------------------------------- |
 | `guid` | [`UuidWrapper`](UuidWrapper.md) | GUID to use for the new instance. |
 
 #### Returns
@@ -283,7 +283,7 @@ Initializes a new instance with a specified GUID.
 
 [AsfBaseObject](AsfBaseObject.md).[initializeFromGuid](AsfBaseObject.md#initializefromguid)
 
-___
+---
 
 ### render
 
@@ -299,7 +299,7 @@ Renders the current instance as a raw ASF object.
 
 [AsfBaseObject](AsfBaseObject.md).[render](AsfBaseObject.md#render)
 
-___
+---
 
 ### renderInternal
 
@@ -310,12 +310,12 @@ Renders the current instance as a raw ASF object containing the specified data.
 **`Remarks`**
 
 Child classes implementing [()](AsfContentDescriptionObject.md#render) should render their contents and then
-    send the data through this method to produce the final output.
+send the data through this method to produce the final output.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                          | Description                                                    |
+| :----- | :---------------------------- | :------------------------------------------------------------- |
 | `data` | [`ByteVector`](ByteVector.md) | Data to store in the rendered version of the current instance. |
 
 #### Returns
@@ -326,7 +326,7 @@ Child classes implementing [()](AsfContentDescriptionObject.md#render) should re
 
 [AsfBaseObject](AsfBaseObject.md).[renderInternal](AsfBaseObject.md#renderinternal)
 
-___
+---
 
 ### fromEmpty
 
@@ -338,7 +338,7 @@ Constructs a blank content description object.
 
 [`AsfContentDescriptionObject`](AsfContentDescriptionObject.md)
 
-___
+---
 
 ### fromFile
 
@@ -348,10 +348,10 @@ Constructs a new instance by reading from a file.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `file` | [`File`](File.md) | File to read the content description object from |
-| `position` | `number` | Offset into the file where the object begins |
+| Name       | Type              | Description                                      |
+| :--------- | :---------------- | :----------------------------------------------- |
+| `file`     | [`File`](File.md) | File to read the content description object from |
+| `position` | `number`          | Offset into the file where the object begins     |
 
 #### Returns
 

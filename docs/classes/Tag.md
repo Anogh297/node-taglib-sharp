@@ -130,8 +130,8 @@ containing the tag types contained in the current instance.
 **`Remarks`**
 
 For a standard tag, the value should be intuitive. For example, Id3v2Tag objects have
-    a value of [Id3v2](../enums/TagTypes.md#id3v2). However, for CombinedTag type objects, they may
-    contain multiple or no types.
+a value of [Id3v2](../enums/TagTypes.md#id3v2). However, for CombinedTag type objects, they may
+contain multiple or no types.
 
 ## Accessors
 
@@ -155,7 +155,7 @@ For example, "Kintsugi" (an album by Death Cab for Cutie), "The Complete Red Gre
 `string`
 
 Album of the media represented by the current instance or `undefined` if no value
-    is present
+is present
 
 • `set` **album**(`value`): `void`
 
@@ -172,15 +172,15 @@ For example, "Kintsugi" (an album by Death Cab for Cutie), "The Complete Red Gre
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                            |
+| :------ | :------- | :------------------------------------------------------------------------------------- |
 | `value` | `string` | of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### albumArtists
 
@@ -202,8 +202,8 @@ best to stick to a single name. Eg, "Super8 & Tab"
 `string`[]
 
 Band or artist credited with the creation of the entire album or collection
-    containing the media described by the current instance or an empty array if no value is
-    present
+containing the media described by the current instance or an empty array if no value is
+present
 
 • `set` **albumArtists**(`value`): `void`
 
@@ -220,15 +220,15 @@ best to stick to a single name. Eg, "Super8 & Tab"
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                                                                                                 |
+| :------ | :--------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `string`[] | Band or artist credited with the creation of the entire album or collection containing the media described by the current instance or an empty array if no value is present |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### albumArtistsSort
 
@@ -250,8 +250,8 @@ best to stick to a single album artist. Eg, "Van Buuren, Armin"
 `string`[]
 
 Sortable names for the bands/artists are credited with the creation of the entire
-    album or collection containing the media described by the current instance, or an empty
-    array if no value is present.
+album or collection containing the media described by the current instance, or an empty
+array if no value is present.
 
 • `set` **albumArtistsSort**(`value`): `void`
 
@@ -268,15 +268,15 @@ best to stick to a single album artist. Eg, "Van Buuren, Armin"
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                                                                                                                             |
+| :------ | :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `value` | `string`[] | Sortable names for the bands/artists are credited with the creation of the entire album or collection containing the media described by the current instance, or an empty array if no value is present. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### albumSort
 
@@ -293,7 +293,7 @@ similar titles.
 `string`
 
 Sortable name for the album title of the media or `undefined` if the value is not
-    present
+present
 
 • `set` **albumSort**(`value`): `void`
 
@@ -305,15 +305,15 @@ similar titles.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                               |
+| :------ | :------- | :---------------------------------------------------------------------------------------- |
 | `value` | `string` | Sortable name for the album title of the media or `undefined` if the value is not present |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### amazonId
 
@@ -329,7 +329,7 @@ identify the particular track or album in the Amazon catalog.
 `string`
 
 Amazon ID of the media represented by the current instance or `undefined` if no
-    value is present
+value is present
 
 • `set` **amazonId**(`value`): `void`
 
@@ -340,15 +340,15 @@ identify the particular track or album in the Amazon catalog.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                      |
+| :------ | :------- | :----------------------------------------------------------------------------------------------- |
 | `value` | `string` | Amazon ID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### beatsPerMinute
 
@@ -365,7 +365,7 @@ calculated from the audio or pulled from a database.
 `number`
 
 Beats per minute of the audio in the media represented by the current instance, or
-    `0` if not specified
+`0` if not specified
 
 • `set` **beatsPerMinute**(`value`): `void`
 
@@ -377,15 +377,15 @@ calculated from the audio or pulled from a database.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                             |
+| :------ | :------- | :------------------------------------------------------------------------------------------------------ |
 | `value` | `number` | Beats per minute of the audio in the media represented by the current instance, or `0` if not specified |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### comment
 
@@ -404,7 +404,7 @@ including it in the main interface.
 `string`
 
 User comments on the media represented by the current instance or `undefined` if
-    the value is not present
+the value is not present
 
 • `set` **comment**(`value`): `void`
 
@@ -418,15 +418,15 @@ including it in the main interface.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                               |
+| :------ | :------- | :-------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | User comments on the media represented by the current instance or `undefined` if the value is not present |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### composers
 
@@ -442,7 +442,7 @@ claim authorship of the media.
 `string`[]
 
 Composers of the media represented by the current instance of an empty array if no
-    value is present.
+value is present.
 
 • `set` **composers**(`value`): `void`
 
@@ -453,15 +453,15 @@ claim authorship of the media.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                          |
+| :------ | :--------- | :--------------------------------------------------------------------------------------------------- |
 | `value` | `string`[] | Composers of the media represented by the current instance of an empty array if no value is present. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### composersSort
 
@@ -478,7 +478,7 @@ with multiple composers.
 `string`[]
 
 Sortable names for the composers of the media represented by the current instance
-    or an empty array if no value is present.
+or an empty array if no value is present.
 
 • `set` **composersSort**(`value`): `void`
 
@@ -490,15 +490,15 @@ with multiple composers.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                                                 |
+| :------ | :--------- | :-------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `string`[] | Sortable names for the composers of the media represented by the current instance or an empty array if no value is present. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### conductor
 
@@ -513,7 +513,7 @@ This field is most useful for organizing classical music and movies.
 `string`
 
 Conductor or director of the media represented by the current instance or
-    `undefined` if no value present.
+`undefined` if no value present.
 
 • `set` **conductor**(`value`): `void`
 
@@ -523,15 +523,15 @@ This field is most useful for organizing classical music and movies.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                |
+| :------ | :------- | :--------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | Conductor or director of the media represented by the current instance or `undefined` if no value present. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### copyright
 
@@ -549,7 +549,7 @@ definitely allow modification.
 `string`
 
 Copyright information for the media represented by the current instance or
-    `undefined` if no value is present.
+`undefined` if no value is present.
 
 • `set` **copyright**(`value`): `void`
 
@@ -562,15 +562,15 @@ definitely allow modification.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                    |
+| :------ | :------- | :------------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | Copyright information for the media represented by the current instance or `undefined` if no value is present. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### dateTagged
 
@@ -590,15 +590,15 @@ Sets the date and time at which the tag has been written.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type   | Description                                                                        |
+| :------ | :----- | :--------------------------------------------------------------------------------- |
 | `value` | `Date` | Date/time at which the tag has been written, or `undefined` if no value is present |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### description
 
@@ -617,7 +617,7 @@ Vegas for a series of psychedelic escapades."
 `string`
 
 Description of the media represented by the current instance or `undefined` if no
-    value is present
+value is present
 
 • `set` **description**(`value`): `void`
 
@@ -631,15 +631,15 @@ Vegas for a series of psychedelic escapades."
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                        |
+| :------ | :------- | :------------------------------------------------------------------------------------------------- |
 | `value` | `string` | Description of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### disc
 
@@ -657,7 +657,7 @@ the disc is the first of three, the value should be `1`. It should be no more th
 `number`
 
 Number of the disc or season of the media represented by the current instance in a
-    boxed set.
+boxed set.
 
 • `set` **disc**(`value`): `void`
 
@@ -670,15 +670,15 @@ the disc is the first of three, the value should be `1`. It should be no more th
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                   |
+| :------ | :------- | :-------------------------------------------------------------------------------------------- |
 | `value` | `number` | Number of the disc or season of the media represented by the current instance in a boxed set. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### discCount
 
@@ -695,7 +695,7 @@ this value should also be zero.
 `number`
 
 Number of discs or seasons in the boxed set containing the media represented by the
-    current instance or `0` if not specified.
+current instance or `0` if not specified.
 
 • `set` **discCount**(`value`): `void`
 
@@ -707,15 +707,15 @@ this value should also be zero.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                                   |
+| :------ | :------- | :---------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `number` | Number of discs or seasons in the boxed set containing the media represented by the current instance or `0` if not specified. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### firstAlbumArtist
 
@@ -727,7 +727,7 @@ Gets the first value contained in [albumArtists](Tag.md#albumartists).
 
 `string`
 
-___
+---
 
 ### firstAlbumArtistSort
 
@@ -739,7 +739,7 @@ Gets the first value contained in [albumArtistsSort](Tag.md#albumartistssort)
 
 `string`
 
-___
+---
 
 ### firstComposer
 
@@ -751,7 +751,7 @@ Gets the first value contained in [composers](Tag.md#composers)
 
 `string`
 
-___
+---
 
 ### firstComposerSort
 
@@ -763,7 +763,7 @@ Gets the first value contained in [composersSort](Tag.md#composerssort)
 
 `string`
 
-___
+---
 
 ### firstGenre
 
@@ -775,7 +775,7 @@ Gets the first value contained in [genres](Tag.md#genres)
 
 `string`
 
-___
+---
 
 ### firstPerformer
 
@@ -787,7 +787,7 @@ Gets the first value contained in [performers](Tag.md#performers)
 
 `string`
 
-___
+---
 
 ### firstPerformerSort
 
@@ -799,7 +799,7 @@ Gets the first value contained in [performersSort](Tag.md#performerssort)
 
 `string`
 
-___
+---
 
 ### genres
 
@@ -817,7 +817,7 @@ Additionally, `genres.ts` contains video genres as used by DivX.
 `string`[]
 
 Genres of the media represented by the current instance or an empty array if no
-    value is present.
+value is present.
 
 • `set` **genres**(`value`): `void`
 
@@ -830,15 +830,15 @@ Additionally, `genres.ts` contains video genres as used by DivX.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                       |
+| :------ | :--------- | :------------------------------------------------------------------------------------------------ |
 | `value` | `string`[] | Genres of the media represented by the current instance or an empty array if no value is present. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### grouping
 
@@ -855,7 +855,7 @@ music this could be a movement. It could also be parts of a series like "Introdu
 `string`
 
 Grouping on the album which the media in the current instance belongs to or
-    `undefined` if no value is present.
+`undefined` if no value is present.
 
 • `set` **grouping**(`value`): `void`
 
@@ -867,15 +867,15 @@ music this could be a movement. It could also be parts of a series like "Introdu
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                     |
+| :------ | :------- | :-------------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | Grouping on the album which the media in the current instance belongs to or `undefined` if no value is present. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### initialKey
 
@@ -895,15 +895,15 @@ Sets the initial key of the track.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                |
+| :------ | :------- | :--------------------------------------------------------- |
 | `value` | `string` | Initial key of the track or `undefined` if no value is set |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### isCompilation
 
@@ -921,15 +921,15 @@ Gets whether or not the album described by the current instance is a compilation
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type      | Description                                                                 |
+| :------ | :-------- | :-------------------------------------------------------------------------- |
 | `value` | `boolean` | Whether or not the album described by the current instance is a compilation |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### isEmpty
 
@@ -940,7 +940,7 @@ Gets whether or not the current instance is empty.
 **`Remarks`**
 
 In the default implementation, this checks the values supported by [Tag](Tag.md), but it
-    may be extended by child classes to support other values.
+may be extended by child classes to support other values.
 
 #### Returns
 
@@ -948,7 +948,7 @@ In the default implementation, this checks the values supported by [Tag](Tag.md)
 
 `true` if the current instance does not contain any values. `false` otherwise
 
-___
+---
 
 ### isrc
 
@@ -968,15 +968,15 @@ Sets the ISRC (International Standard Recording Code) of the track.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                         |
+| :------ | :------- | :-------------------------------------------------- |
 | `value` | `string` | ISRC of the track or `undefined` if no value is set |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### joinedAlbumArtists
 
@@ -988,7 +988,7 @@ Gets a semicolon and space separated string containing the values in [albumArtis
 
 `string`
 
-___
+---
 
 ### joinedComposers
 
@@ -1000,7 +1000,7 @@ Gets a semicolon and space separated string containing the values in [composers]
 
 `string`
 
-___
+---
 
 ### joinedGenres
 
@@ -1012,7 +1012,7 @@ Gets a semicolon and space separated string containing the values in [genres](Ta
 
 `string`
 
-___
+---
 
 ### joinedPerformers
 
@@ -1024,7 +1024,7 @@ Gets a semicolon and space separated string containing the values in [performers
 
 `string`
 
-___
+---
 
 ### joinedPerformersSort
 
@@ -1036,7 +1036,7 @@ Gets a semicolon and space separated string containing the values in [performers
 
 `string`
 
-___
+---
 
 ### lyrics
 
@@ -1054,7 +1054,7 @@ accessed using format-specific implementations.
 `string`
 
 Lyrics or script of the media represented by the current instance or `undefined` if
-    no value is present
+no value is present
 
 • `set` **lyrics**(`value`): `void`
 
@@ -1067,15 +1067,15 @@ accessed using format-specific implementations.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                             |
+| :------ | :------- | :------------------------------------------------------------------------------------------------------ |
 | `value` | `string` | Lyrics or script of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### musicBrainzArtistId
 
@@ -1091,7 +1091,7 @@ particular artist of the track.
 `string`
 
 MusicBrainz ArtistID of the media represented by the current instance or
-    `undefined` if no value is present
+`undefined` if no value is present
 
 • `set` **musicBrainzArtistId**(`value`): `void`
 
@@ -1102,15 +1102,15 @@ particular artist of the track.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                 |
+| :------ | :------- | :---------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz ArtistID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### musicBrainzDiscId
 
@@ -1126,7 +1126,7 @@ particular released media associated with this track.
 `string`
 
 MusicBrainz DiscID of the media represented by the current instance or `undefined`
-    if no value is present
+if no value is present
 
 • `set` **musicBrainzDiscId**(`value`): `void`
 
@@ -1137,15 +1137,15 @@ particular released media associated with this track.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                               |
+| :------ | :------- | :-------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz DiscID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### musicBrainzReleaseArtistId
 
@@ -1161,7 +1161,7 @@ identify a particular album artist credited with the album.
 `string`
 
 MusicBrainz ReleaseArtistID of the media represented by the current instance or
-    `undefined` if no value is present
+`undefined` if no value is present
 
 • `set` **musicBrainzReleaseArtistId**(`value`): `void`
 
@@ -1172,15 +1172,15 @@ identify a particular album artist credited with the album.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                        |
+| :------ | :------- | :----------------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz ReleaseArtistID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### musicBrainzReleaseCountry
 
@@ -1199,7 +1199,7 @@ it will likely be a UK release.
 `string`
 
 MusicBrainz ReleaseCountry of the media represented by the current instance or
-    `undefined` if no value is present
+`undefined` if no value is present
 
 • `set` **musicBrainzReleaseCountry**(`value`): `void`
 
@@ -1213,15 +1213,15 @@ it will likely be a UK release.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                       |
+| :------ | :------- | :---------------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz ReleaseCountry of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### musicBrainzReleaseGroupId
 
@@ -1237,7 +1237,7 @@ a particular release group to which this track belongs.
 `string`
 
 MusicBrainz ReleaseGroupID of the media represented by the current instance or
-    `undefined` if no value is present
+`undefined` if no value is present
 
 • `set` **musicBrainzReleaseGroupId**(`value`): `void`
 
@@ -1248,15 +1248,15 @@ a particular release group to which this track belongs.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                       |
+| :------ | :------- | :---------------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz ReleaseGroupID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### musicBrainzReleaseId
 
@@ -1272,7 +1272,7 @@ particular release to which this track belongs.
 `string`
 
 MusicBrainz ReleaseID of the media represented by the current instance or
-    `undefined` if no value is present
+`undefined` if no value is present
 
 • `set` **musicBrainzReleaseId**(`value`): `void`
 
@@ -1283,15 +1283,15 @@ particular release to which this track belongs.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                  |
+| :------ | :------- | :----------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz ReleaseID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### musicBrainzReleaseStatus
 
@@ -1307,7 +1307,7 @@ release is. Common statuses are: `Official`, `Promotion`, `Bootleg`, `Pseudo-rel
 `string`
 
 MusicBrainz ReleaseStatus of the media represented by the current instance or
-    `undefined` if no value is present
+`undefined` if no value is present
 
 • `set` **musicBrainzReleaseStatus**(`value`): `void`
 
@@ -1318,15 +1318,15 @@ release is. Common statuses are: `Official`, `Promotion`, `Bootleg`, `Pseudo-rel
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                      |
+| :------ | :------- | :--------------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz ReleaseStatus of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### musicBrainzReleaseType
 
@@ -1340,8 +1340,8 @@ a release is. Common types are: `Single`, `Album`, `EP`, `Compilation`, `Soundtr
 must be given when using this field to decide if a particular track "is a compilation".
 
 @returns
-    MusicBrainz ReleaseType of the media represented by the current instance or
-    `undefined` if no value is present
+MusicBrainz ReleaseType of the media represented by the current instance or
+`undefined` if no value is present
 
 #### Returns
 
@@ -1357,19 +1357,19 @@ a release is. Common types are: `Single`, `Album`, `EP`, `Compilation`, `Soundtr
 must be given when using this field to decide if a particular track "is a compilation".
 
 @param value MusicBrainz ReleaseType of the media represented by the current instance or
-    `undefined` if no value is present
+`undefined` if no value is present
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `value` | `string` |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### musicBrainzTrackId
 
@@ -1386,7 +1386,7 @@ particular track.
 `string`
 
 MusicBrainz TrackID of the media represented by the current instance or `undefined`
-    if no value is present
+if no value is present
 
 • `set` **musicBrainzTrackId**(`value`): `void`
 
@@ -1398,15 +1398,15 @@ particular track.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                |
+| :------ | :------- | :--------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz TrackID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### musicIpId
 
@@ -1422,7 +1422,7 @@ identifies wht this track "sounds like".
 `string`
 
 MusicIP PUID of the media represented by the current instance or `undefined` if no
-    value is present
+value is present
 
 • `set` **musicIpId**(`value`): `void`
 
@@ -1433,15 +1433,15 @@ identifies wht this track "sounds like".
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                         |
+| :------ | :------- | :-------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicIP PUID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### performers
 
@@ -1462,7 +1462,7 @@ what constitutes the performers field - especially in regard to number of perfor
 `string`[]
 
 Performers who performed in the media described by the current instance or an empty
-    array if no value is present.
+array if no value is present.
 
 • `set` **performers**(`value`): `void`
 
@@ -1478,15 +1478,15 @@ what constitutes the performers field - especially with regards to number of per
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                                       |
+| :------ | :--------- | :---------------------------------------------------------------------------------------------------------------- |
 | `value` | `string`[] | Performers who performed in the media described by the current instance or an empty array if no value is present. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### performersRole
 
@@ -1506,7 +1506,7 @@ in the [performersRole](Tag.md#performersrole) array is `undefined` to maintain 
 `string`[]
 
 Array containing the roles played by the performers in the media described by the
-    current instance, or an empty array if no value is present.
+current instance, or an empty array if no value is present.
 
 • `set` **performersRole**(`value`): `void`
 
@@ -1521,15 +1521,15 @@ in the [performersRole](Tag.md#performersrole) array is `undefined` to maintain 
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                                                                   |
+| :------ | :--------- | :-------------------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `string`[] | Array containing the roles played by the performers in the media described by the current instance, or an empty array if no value is present. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### performersSort
 
@@ -1547,7 +1547,7 @@ skip articles or sort by last name. For example, "The Pillows" might be sorted a
 `string`[]
 
 Sortable names for the performers who performed in the media described by the
-    current instance, or an empty array if no value is present.
+current instance, or an empty array if no value is present.
 
 • `set` **performersSort**(`value`): `void`
 
@@ -1560,15 +1560,15 @@ skip articles or sort by last name. For example, "The Pillows" might be sorted a
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                                                               |
+| :------ | :--------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `string`[] | Sortable names for the performers who performed in the media described by the current instance, or an empty array if no value is present. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### pictures
 
@@ -1585,7 +1585,7 @@ recording studio, the concert, etc.
 [`IPicture`](../interfaces/IPicture.md)[]
 
 Array containing a collection of pictures associated with the media represented by
-    the current instance or an empty array if no pictures are present.
+the current instance or an empty array if no pictures are present.
 
 • `set` **pictures**(`value`): `void`
 
@@ -1597,15 +1597,15 @@ recording studio, the concert, etc.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                                      | Description                                                                                                                                           |
+| :------ | :---------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | [`IPicture`](../interfaces/IPicture.md)[] | Array containing a collection of pictures associated with the media represented by the current instance or an empty array if no pictures are present. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### publisher
 
@@ -1625,15 +1625,15 @@ Sets the publisher of the track.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                              |
+| :------ | :------- | :------------------------------------------------------- |
 | `value` | `string` | Publisher of the track or `undefined` if no value is set |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### remixedBy
 
@@ -1653,15 +1653,15 @@ Sets the remixer of the track.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                            |
+| :------ | :------- | :----------------------------------------------------- |
 | `value` | `string` | Remixer of the track or `undefined` if no value is set |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### replayGainAlbumGain
 
@@ -1681,15 +1681,15 @@ Sets the ReplayGain album gain in dB.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                         |
+| :------ | :------- | :---------------------------------------------------------------------------------- |
 | `value` | `number` | Album gain as per the ReplayGain specifications, in dB, or `NaN` if no value is set |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### replayGainAlbumPeak
 
@@ -1709,15 +1709,15 @@ Sets the ReplayGain album peak sample.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                  |
+| :------ | :------- | :--------------------------------------------------------------------------- |
 | `value` | `number` | Album peak as per the ReplayGain specifications, or `NaN` if no value is set |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### replayGainTrackGain
 
@@ -1737,15 +1737,15 @@ Sets the ReplayGain track gain in dB.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                     |
+| :------ | :------- | :------------------------------------------------------------------------------ |
 | `value` | `number` | Track gain as per ReplayGain specifications, in dB, or `NaN` if no value is set |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### replayGainTrackPeak
 
@@ -1765,15 +1765,15 @@ Sets the ReplayGain track peak sample.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                  |
+| :------ | :------- | :--------------------------------------------------------------------------- |
 | `value` | `number` | Track peak as per the ReplayGain specifications, or `NaN` if no value is set |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### sizeOnDisk
 
@@ -1785,7 +1785,7 @@ Gets the size of the tag in bytes on disk as it was read from disk.
 
 `number`
 
-___
+---
 
 ### subtitle
 
@@ -1802,7 +1802,7 @@ title on the front cover of the media. For example for "Ocean's 13", this would 
 `string`
 
 Subtitle of the media represented by the current instance or `undefined` if no
-    value is present
+value is present
 
 • `set` **subtitle**(`value`): `void`
 
@@ -1814,15 +1814,15 @@ title on the front cover of the media. For example for "Ocean's 13", this would 
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                     |
+| :------ | :------- | :---------------------------------------------------------------------------------------------- |
 | `value` | `string` | Subtitle of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### title
 
@@ -1833,15 +1833,15 @@ Gets the title for the media described by the current instance.
 **`Remarks`**
 
 The title is most commonly the name of the song, episode or a movie title. For example
-    "Time Won't Me Go" (a song by The Bravery), "Three Stories" (an episode of House MD), or
-    "Fear and Loathing In Las Vegas" (a movie).
+"Time Won't Me Go" (a song by The Bravery), "Three Stories" (an episode of House MD), or
+"Fear and Loathing In Las Vegas" (a movie).
 
 #### Returns
 
 `string`
 
 Title of the media described by the current instance or `undefined` if no value is
-    present.
+present.
 
 • `set` **title**(`value`): `void`
 
@@ -1853,15 +1853,15 @@ The title is most commonly the name of the song, episode or a movie title. For e
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                 |
+| :------ | :------- | :------------------------------------------------------------------------------------------ |
 | `value` | `string` | Title of the media described by the current instance or `undefined` if no value is present. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### titleSort
 
@@ -1876,7 +1876,7 @@ Possibly used to sort compilations or episodic content.
 `string`
 
 Sortable name of the media described by the current instance or `undefined` if no
-    value is present
+value is present
 
 • `set` **titleSort**(`value`): `void`
 
@@ -1886,15 +1886,15 @@ Possibly used to sort compilations or episodic content.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                        |
+| :------ | :------- | :------------------------------------------------------------------------------------------------- |
 | `value` | `string` | Sortable name of the media described by the current instance or `undefined` if no value is present |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### track
 
@@ -1914,7 +1914,7 @@ For a series, this property represents the episodes in a season of the series.
 `number`
 
 Position of the media represented by the current instance in its containing album
-    or `0` if not specified.
+or `0` if not specified.
 
 • `set` **track**(`value`): `void`
 
@@ -1929,15 +1929,15 @@ For a series, this property represents the episodes in a season of the series.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                |
+| :------ | :------- | :--------------------------------------------------------------------------------------------------------- |
 | `value` | `number` | Position of the media represented by the current instance in its containing album or `0` if not specified. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### trackCount
 
@@ -1954,7 +1954,7 @@ If non-zero, this value should be equal to or greater than [track](Tag.md#track)
 `number`
 
 Number of tracks on the album or number of episodes in a series of the media
-    represented by the current instance or `0` if not specified.
+represented by the current instance or `0` if not specified.
 
 • `set` **trackCount**(`value`): `void`
 
@@ -1966,15 +1966,15 @@ If non-zero, this value should be equal to or greater than [track](Tag.md#track)
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                                               |
+| :------ | :------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `number` | Number of tracks on the album or number of episodes in a series of the media represented by the current instance or `0` if not specified. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### year
 
@@ -1992,7 +1992,7 @@ access the higher precision values.
 `number`
 
 Year that the media represented by the current instance was created or `0` if no
-    value is present.
+value is present.
 
 • `set` **year**(`value`): `void`
 
@@ -2005,8 +2005,8 @@ access the higher precision values.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                        |
+| :------ | :------- | :------------------------------------------------------------------------------------------------- |
 | `value` | `number` | Year that the media represented by the current instance was created or `0` if no value is present. |
 
 #### Returns
@@ -2029,7 +2029,7 @@ The clearing procedure is format specific and should clear all values.
 
 `void`
 
-___
+---
 
 ### copyTo
 
@@ -2045,16 +2045,16 @@ more advanced copying may be done. For example if both `this` and `target` are
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `target` | [`Tag`](Tag.md) | Target tag to copy values to |
-| `overwrite` | `boolean` | Whether or not to copy values over existing ones |
+| Name        | Type            | Description                                      |
+| :---------- | :-------------- | :----------------------------------------------- |
+| `target`    | [`Tag`](Tag.md) | Target tag to copy values to                     |
+| `overwrite` | `boolean`       | Whether or not to copy values over existing ones |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### firstInGroup
 
@@ -2064,8 +2064,8 @@ Gets the first string in an array.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                    |
+| :------ | :--------- | :--------------------------------------------- |
 | `group` | `string`[] | Array of strings to get the first string from. |
 
 #### Returns
@@ -2073,9 +2073,9 @@ Gets the first string in an array.
 `string`
 
 First string contained in `group` or `undefined` if the array is
-    `undefined` or empty
+`undefined` or empty
 
-___
+---
 
 ### isFalsyOrLikeEmpty
 
@@ -2085,8 +2085,8 @@ Checks if a value is falsy or empty.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                   | Description     |
+| :------ | :--------------------- | :-------------- |
 | `value` | `string` \| `string`[] | Object to check |
 
 #### Returns
@@ -2094,10 +2094,10 @@ Checks if a value is falsy or empty.
 `boolean`
 
 If `value` is a string, `true` is returned if the value is falsy or all
-    whitespace, `false` is returned otherwise. If `value` is an array of strings,
-    the array must be falsy or all elements must be falsy or whitespace to return `true`.
+whitespace, `false` is returned otherwise. If `value` is an array of strings,
+the array must be falsy or all elements must be falsy or whitespace to return `true`.
 
-___
+---
 
 ### joinGroup
 
@@ -2107,8 +2107,8 @@ Joins an array of string into a single, semicolon and space separated string.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description             |
+| :------ | :--------- | :---------------------- |
 | `group` | `string`[] | Array of string to join |
 
 #### Returns
@@ -2116,9 +2116,9 @@ Joins an array of string into a single, semicolon and space separated string.
 `string`
 
 A semicolon and space separated string containing the values from `group`
-    or undefined if the array is `undefined` or empty.
+or undefined if the array is `undefined` or empty.
 
-___
+---
 
 ### tagTypeFlagsToArray
 
@@ -2128,8 +2128,8 @@ Generates an array of tag types that are set in the provided flags value.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                               | Description                             |
+| :--------- | :--------------------------------- | :-------------------------------------- |
 | `tagTypes` | [`TagTypes`](../enums/TagTypes.md) | Tag types that have been OR'd together. |
 
 #### Returns

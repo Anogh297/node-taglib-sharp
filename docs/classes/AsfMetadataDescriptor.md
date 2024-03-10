@@ -8,8 +8,8 @@ MetadataLibraryObject.
 **`Remarks`**
 
 This class can store various types of information. Although [toString](AsfMetadataDescriptor.md#tostring) provides
-    a representation of all types of values, it is recommended to determine which of the `get*`
-    methods to use by accessing [type](AsfMetadataDescriptor.md#type)
+a representation of all types of values, it is recommended to determine which of the `get*`
+methods to use by accessing [type](AsfMetadataDescriptor.md#type)
 
 ## Hierarchy
 
@@ -52,13 +52,13 @@ Constructs and initializes a new instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `languageListIndex` | `number` | Index of the language |
-| `streamNumber` | `number` | Index of the stream |
-| `name` | `string` | Name of the metadata library object |
-| `type` | [`AsfObjectDataType`](../enums/AsfObjectDataType.md) | Datatype of the object |
-| `value` | [`AsfDescriptorValue`](../modules.md#asfdescriptorvalue) | Value to store in the instance |
+| Name                | Type                                                     | Description                         |
+| :------------------ | :------------------------------------------------------- | :---------------------------------- |
+| `languageListIndex` | `number`                                                 | Index of the language               |
+| `streamNumber`      | `number`                                                 | Index of the stream                 |
+| `name`              | `string`                                                 | Name of the metadata library object |
+| `type`              | [`AsfObjectDataType`](../enums/AsfObjectDataType.md)     | Datatype of the object              |
+| `value`             | [`AsfDescriptorValue`](../modules.md#asfdescriptorvalue) | Value to store in the instance      |
 
 #### Overrides
 
@@ -77,13 +77,13 @@ Gets the boolean value of the current instance.
 `boolean`
 
 Boolean value of the current instance is returned if [type](AsfMetadataDescriptor.md#type) is
-    DataType.Bool. `undefined` is returned otherwise.
+DataType.Bool. `undefined` is returned otherwise.
 
 #### Inherited from
 
 DescriptorBase.boolValue
 
-___
+---
 
 ### byteValue
 
@@ -96,13 +96,13 @@ Gets the binary contents of the current instance.
 [`ByteVector`](ByteVector.md)
 
 Byte contents of the current instance, if [type](AsfMetadataDescriptor.md#type) is
-    DataType.Bytes. `undefined` is returned otherwise.
+DataType.Bytes. `undefined` is returned otherwise.
 
 #### Inherited from
 
 DescriptorBase.byteValue
 
-___
+---
 
 ### guidValue
 
@@ -115,13 +115,13 @@ Gets the guid contents of the current instance.
 [`UuidWrapper`](UuidWrapper.md)
 
 GUID contents of the current instance, if [type](AsfMetadataDescriptor.md#type) is
-    DataType.Guid. `undefined` is returned otherwise.
+DataType.Guid. `undefined` is returned otherwise.
 
 #### Inherited from
 
 DescriptorBase.guidValue
 
-___
+---
 
 ### languageListIndex
 
@@ -133,7 +133,7 @@ Gets the index of the language associated with the current instance.
 
 `number`
 
-___
+---
 
 ### name
 
@@ -149,7 +149,7 @@ Gets the name of the current instance.
 
 DescriptorBase.name
 
-___
+---
 
 ### streamNumber
 
@@ -161,7 +161,7 @@ Gets the index of the stream associated with the current instance.
 
 `number`
 
-___
+---
 
 ### stringValue
 
@@ -174,13 +174,13 @@ Gets the string contents of the current instance.
 `string`
 
 String contents of the current instance if [type](AsfMetadataDescriptor.md#type) is
-    DataType.Unicode. `undefined` is returned otherwise.
+DataType.Unicode. `undefined` is returned otherwise.
 
 #### Inherited from
 
 DescriptorBase.stringValue
 
-___
+---
 
 ### type
 
@@ -196,7 +196,7 @@ Gets the type of data contained in the current instance.
 
 DescriptorBase.type
 
-___
+---
 
 ### uintValue
 
@@ -209,13 +209,13 @@ Gets the 32-bit double word contents of the current instance.
 `number`
 
 Double word contents of the current instance, if [type](AsfMetadataDescriptor.md#type) is
-    DataType.DWord. `undefined` is returned otherwise.
+DataType.DWord. `undefined` is returned otherwise.
 
 #### Inherited from
 
 DescriptorBase.uintValue
 
-___
+---
 
 ### ulongValue
 
@@ -228,13 +228,13 @@ Gets the 64-bit quad word contents of the current instance.
 `bigint`
 
 Quad word contents of the current instance, if [type](AsfMetadataDescriptor.md#type) is
-    DataType.QWord. `undefined` is returned otherwise.
+DataType.QWord. `undefined` is returned otherwise.
 
 #### Inherited from
 
 DescriptorBase.ulongValue
 
-___
+---
 
 ### ushortValue
 
@@ -247,7 +247,7 @@ Gets the 16-bit word contents of the current instance.
 `number`
 
 Word contents of the current instance, if [type](AsfMetadataDescriptor.md#type) is
-    DataType.Word. `undefined` is returned otherwise.
+DataType.Word. `undefined` is returned otherwise.
 
 #### Inherited from
 
@@ -269,7 +269,7 @@ DescriptorBase.ushortValue
 
 DescriptorBase.render
 
-___
+---
 
 ### toString
 

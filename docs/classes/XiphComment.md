@@ -7,8 +7,8 @@ Provides support for reading and writing Xiph comment-style tags.
 **`Remarks`**
 
 Xiph comment tag properties are stored in "fields" of the form `KEY=value`, where `KEY`
-    is the "field name". The field name can be defined multiple times in the tag which means
-    each field can have multiple values.
+is the "field name". The field name can be defined multiple times in the tag which means
+each field can have multiple values.
 
 ## Hierarchy
 
@@ -151,8 +151,8 @@ Stored in the `ALBUM` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                            |
+| :------ | :------- | :------------------------------------------------------------------------------------- |
 | `value` | `string` | of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -163,7 +163,7 @@ Stored in the `ALBUM` field
 
 Tag.album
 
-___
+---
 
 ### albumArtists
 
@@ -183,7 +183,7 @@ best to stick to a single name. Eg, "Super8 & Tab"
 **`Remarks`**
 
 Stored in the `ALBUMARTIST` as per standard, though `ALBUM ARTIST` and `ENSEMBLE` will be
-    checked if `ALBUMARTIST` is not set.
+checked if `ALBUMARTIST` is not set.
 
 #### Returns
 
@@ -212,8 +212,8 @@ Stored in the `ALBUMARTIST`, as per the standard
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                                                                                                 |
+| :------ | :--------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `string`[] | Band or artist credited with the creation of the entire album or collection containing the media described by the current instance or an empty array if no value is present |
 
 #### Returns
@@ -224,7 +224,7 @@ Stored in the `ALBUMARTIST`, as per the standard
 
 Tag.albumArtists
 
-___
+---
 
 ### albumArtistsSort
 
@@ -272,8 +272,8 @@ Stored in the `ALBUMARTISTSORT` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                                                                                                                             |
+| :------ | :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `value` | `string`[] | Sortable names for the bands/artists are credited with the creation of the entire album or collection containing the media described by the current instance, or an empty array if no value is present. |
 
 #### Returns
@@ -284,7 +284,7 @@ Stored in the `ALBUMARTISTSORT` field
 
 Tag.albumArtistsSort
 
-___
+---
 
 ### albumSort
 
@@ -322,8 +322,8 @@ Stored in the `ALBUMSORT` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                               |
+| :------ | :------- | :---------------------------------------------------------------------------------------- |
 | `value` | `string` | Sortable name for the album title of the media or `undefined` if the value is not present |
 
 #### Returns
@@ -334,7 +334,7 @@ Stored in the `ALBUMSORT` field
 
 Tag.albumSort
 
-___
+---
 
 ### amazonId
 
@@ -370,8 +370,8 @@ Stored in the `ASIN` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                      |
+| :------ | :------- | :----------------------------------------------------------------------------------------------- |
 | `value` | `string` | Amazon ID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -382,7 +382,7 @@ Stored in the `ASIN` field
 
 Tag.amazonId
 
-___
+---
 
 ### beatsPerMinute
 
@@ -397,8 +397,8 @@ calculated from the audio or pulled from a database.
 **`Remarks`**
 
 Stored in the `TEMPO` field preferentially, BPM field is used as a fallback.
-    The field that stores the value will be used when setting a BPM in the future. This
-    behavior can be controlled Stored in the XiphSettings.useTempoToStoreBpm.
+The field that stores the value will be used when setting a BPM in the future. This
+behavior can be controlled Stored in the XiphSettings.useTempoToStoreBpm.
 
 #### Returns
 
@@ -419,13 +419,13 @@ calculated from the audio or pulled from a database.
 **`Remarks`**
 
 Value is stored in the `TEMPO` field if XiphSettings.useTempoToStoreBpm is
-    `true`. Value is stored in the `BPM` if XiphSettings.useTempoToStoreBpm is `false`.
-    The other field is removed when stored.
+`true`. Value is stored in the `BPM` if XiphSettings.useTempoToStoreBpm is `false`.
+The other field is removed when stored.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                             |
+| :------ | :------- | :------------------------------------------------------------------------------------------------------ |
 | `value` | `number` | Beats per minute of the audio in the media represented by the current instance, or `0` if not specified |
 
 #### Returns
@@ -436,7 +436,7 @@ Value is stored in the `TEMPO` field if XiphSettings.useTempoToStoreBpm is
 
 Tag.beatsPerMinute
 
-___
+---
 
 ### comment
 
@@ -478,8 +478,8 @@ Stored in the `COMMENT` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                               |
+| :------ | :------- | :-------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | User comments on the media represented by the current instance or `undefined` if the value is not present |
 
 #### Returns
@@ -490,7 +490,7 @@ Stored in the `COMMENT` field
 
 Tag.comment
 
-___
+---
 
 ### composers
 
@@ -526,8 +526,8 @@ Stored in the `COMPOSER` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                          |
+| :------ | :--------- | :--------------------------------------------------------------------------------------------------- |
 | `value` | `string`[] | Composers of the media represented by the current instance of an empty array if no value is present. |
 
 #### Returns
@@ -538,7 +538,7 @@ Stored in the `COMPOSER` field
 
 Tag.composers
 
-___
+---
 
 ### composersSort
 
@@ -576,8 +576,8 @@ Stored in the `COMPOSERSORT` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                                                 |
+| :------ | :--------- | :-------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `string`[] | Sortable names for the composers of the media represented by the current instance or an empty array if no value is present. |
 
 #### Returns
@@ -588,7 +588,7 @@ Stored in the `COMPOSERSORT` field
 
 Tag.composersSort
 
-___
+---
 
 ### conductor
 
@@ -622,8 +622,8 @@ Stored in the `CONDUCTOR` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                |
+| :------ | :------- | :--------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | Conductor or director of the media represented by the current instance or `undefined` if no value present. |
 
 #### Returns
@@ -634,7 +634,7 @@ Stored in the `CONDUCTOR` field
 
 Tag.conductor
 
-___
+---
 
 ### copyright
 
@@ -674,8 +674,8 @@ Stored in the `GROUPING` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                    |
+| :------ | :------- | :------------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | Copyright information for the media represented by the current instance or `undefined` if no value is present. |
 
 #### Returns
@@ -686,7 +686,7 @@ Stored in the `GROUPING` field
 
 Tag.copyright
 
-___
+---
 
 ### dateTagged
 
@@ -716,8 +716,8 @@ Stored in the `DATETAGGED` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type   | Description                                                                        |
+| :------ | :----- | :--------------------------------------------------------------------------------- |
 | `value` | `Date` | Date/time at which the tag has been written, or `undefined` if no value is present |
 
 #### Returns
@@ -728,7 +728,7 @@ Stored in the `DATETAGGED` field
 
 Tag.dateTagged
 
-___
+---
 
 ### description
 
@@ -770,8 +770,8 @@ Stored in the `DESCRIPTION` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                        |
+| :------ | :------- | :------------------------------------------------------------------------------------------------- |
 | `value` | `string` | Description of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -782,7 +782,7 @@ Stored in the `DESCRIPTION` field
 
 Tag.description
 
-___
+---
 
 ### disc
 
@@ -822,8 +822,8 @@ Stored in the `DISCNUMBER` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                   |
+| :------ | :------- | :-------------------------------------------------------------------------------------------- |
 | `value` | `number` | Number of the disc or season of the media represented by the current instance in a boxed set. |
 
 #### Returns
@@ -834,7 +834,7 @@ Stored in the `DISCNUMBER` field
 
 Tag.disc
 
-___
+---
 
 ### discCount
 
@@ -849,7 +849,7 @@ this value should also be zero.
 **`Remarks`**
 
 Stored in the `DISCTOTAL` as per standard, but the denominator of `DISCNUMBER` is also
-    used if `DISCTOTAL` is not available.
+used if `DISCTOTAL` is not available.
 
 #### Returns
 
@@ -873,8 +873,8 @@ Stored in the `DISCTOTAL` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                                   |
+| :------ | :------- | :---------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `number` | Number of discs or seasons in the boxed set containing the media represented by the current instance or `0` if not specified. |
 
 #### Returns
@@ -885,7 +885,7 @@ Stored in the `DISCTOTAL` field
 
 Tag.discCount
 
-___
+---
 
 ### fieldNames
 
@@ -896,13 +896,13 @@ Gets the names of the fields currently stored in the list of fields, excluding t
 **`Remarks`**
 
 This getter is useful for iterating over fields defined in this object in
-    conjunction with [getField](XiphComment.md#getfield).
+conjunction with [getField](XiphComment.md#getfield).
 
 #### Returns
 
 `string`[]
 
-___
+---
 
 ### fieldValueCount
 
@@ -914,7 +914,7 @@ Gets the total number of values contained in the current instance, including the
 
 `number`
 
-___
+---
 
 ### firstAlbumArtist
 
@@ -930,7 +930,7 @@ Gets the first value contained in [albumArtists](XiphComment.md#albumartists).
 
 Tag.firstAlbumArtist
 
-___
+---
 
 ### firstAlbumArtistSort
 
@@ -946,7 +946,7 @@ Gets the first value contained in [albumArtistsSort](XiphComment.md#albumartists
 
 Tag.firstAlbumArtistSort
 
-___
+---
 
 ### firstComposer
 
@@ -962,7 +962,7 @@ Gets the first value contained in [composers](XiphComment.md#composers)
 
 Tag.firstComposer
 
-___
+---
 
 ### firstComposerSort
 
@@ -978,7 +978,7 @@ Gets the first value contained in [composersSort](XiphComment.md#composerssort)
 
 Tag.firstComposerSort
 
-___
+---
 
 ### firstGenre
 
@@ -994,7 +994,7 @@ Gets the first value contained in [genres](XiphComment.md#genres)
 
 Tag.firstGenre
 
-___
+---
 
 ### firstPerformer
 
@@ -1010,7 +1010,7 @@ Gets the first value contained in [performers](XiphComment.md#performers)
 
 Tag.firstPerformer
 
-___
+---
 
 ### firstPerformerSort
 
@@ -1026,7 +1026,7 @@ Gets the first value contained in [performersSort](XiphComment.md#performerssort
 
 Tag.firstPerformerSort
 
-___
+---
 
 ### genres
 
@@ -1066,8 +1066,8 @@ Stored in the `GENRE` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                       |
+| :------ | :--------- | :------------------------------------------------------------------------------------------------ |
 | `value` | `string`[] | Genres of the media represented by the current instance or an empty array if no value is present. |
 
 #### Returns
@@ -1078,7 +1078,7 @@ Stored in the `GENRE` field
 
 Tag.genres
 
-___
+---
 
 ### grouping
 
@@ -1116,8 +1116,8 @@ Stored in the `GROUPING` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                     |
+| :------ | :------- | :-------------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | Grouping on the album which the media in the current instance belongs to or `undefined` if no value is present. |
 
 #### Returns
@@ -1128,7 +1128,7 @@ Stored in the `GROUPING` field
 
 Tag.grouping
 
-___
+---
 
 ### initialKey
 
@@ -1158,8 +1158,8 @@ Stored in the `INITIALKEY` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                |
+| :------ | :------- | :--------------------------------------------------------- |
 | `value` | `string` | Initial key of the track or `undefined` if no value is set |
 
 #### Returns
@@ -1170,7 +1170,7 @@ Stored in the `INITIALKEY` field
 
 Tag.initialKey
 
-___
+---
 
 ### isCompilation
 
@@ -1200,8 +1200,8 @@ Stored in the `COMPILATION` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type      | Description                                                                 |
+| :------ | :-------- | :-------------------------------------------------------------------------- |
 | `value` | `boolean` | Whether or not the album described by the current instance is a compilation |
 
 #### Returns
@@ -1212,7 +1212,7 @@ Stored in the `COMPILATION` field
 
 Tag.isCompilation
 
-___
+---
 
 ### isEmpty
 
@@ -1228,7 +1228,7 @@ Gets whether or not the current instance is empty.
 
 Tag.isEmpty
 
-___
+---
 
 ### isrc
 
@@ -1258,8 +1258,8 @@ Stored in the `ISRC` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                         |
+| :------ | :------- | :-------------------------------------------------- |
 | `value` | `string` | ISRC of the track or `undefined` if no value is set |
 
 #### Returns
@@ -1270,7 +1270,7 @@ Stored in the `ISRC` field
 
 Tag.isrc
 
-___
+---
 
 ### joinedAlbumArtists
 
@@ -1286,7 +1286,7 @@ Gets a semicolon and space separated string containing the values in [albumArtis
 
 Tag.joinedAlbumArtists
 
-___
+---
 
 ### joinedComposers
 
@@ -1302,7 +1302,7 @@ Gets a semicolon and space separated string containing the values in [composers]
 
 Tag.joinedComposers
 
-___
+---
 
 ### joinedGenres
 
@@ -1318,7 +1318,7 @@ Gets a semicolon and space separated string containing the values in [genres](Xi
 
 Tag.joinedGenres
 
-___
+---
 
 ### joinedPerformers
 
@@ -1334,7 +1334,7 @@ Gets a semicolon and space separated string containing the values in [performers
 
 Tag.joinedPerformers
 
-___
+---
 
 ### joinedPerformersSort
 
@@ -1350,7 +1350,7 @@ Gets a semicolon and space separated string containing the values in [performers
 
 Tag.joinedPerformersSort
 
-___
+---
 
 ### lyrics
 
@@ -1390,8 +1390,8 @@ Stored in the `LYRICS` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                             |
+| :------ | :------- | :------------------------------------------------------------------------------------------------------ |
 | `value` | `string` | Lyrics or script of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1402,7 +1402,7 @@ Stored in the `LYRICS` field
 
 Tag.lyrics
 
-___
+---
 
 ### musicBrainzArtistId
 
@@ -1438,8 +1438,8 @@ Stored in the `MUSICBRAINZ_ARTISTID` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                 |
+| :------ | :------- | :---------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz ArtistID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1450,7 +1450,7 @@ Stored in the `MUSICBRAINZ_ARTISTID` field
 
 Tag.musicBrainzArtistId
 
-___
+---
 
 ### musicBrainzDiscId
 
@@ -1486,8 +1486,8 @@ Stored in the `MUSICBRAINZ_DISCID` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                               |
+| :------ | :------- | :-------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz DiscID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1498,7 +1498,7 @@ Stored in the `MUSICBRAINZ_DISCID` field
 
 Tag.musicBrainzDiscId
 
-___
+---
 
 ### musicBrainzReleaseArtistId
 
@@ -1534,8 +1534,8 @@ Stored in the `MUSICBRAINZ_ALBUMARTISTID` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                        |
+| :------ | :------- | :----------------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz ReleaseArtistID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1546,7 +1546,7 @@ Stored in the `MUSICBRAINZ_ALBUMARTISTID` field
 
 Tag.musicBrainzReleaseArtistId
 
-___
+---
 
 ### musicBrainzReleaseCountry
 
@@ -1588,8 +1588,8 @@ Stored in the `RELEASECOUNTRY` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                       |
+| :------ | :------- | :---------------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz ReleaseCountry of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1600,7 +1600,7 @@ Stored in the `RELEASECOUNTRY` field
 
 Tag.musicBrainzReleaseCountry
 
-___
+---
 
 ### musicBrainzReleaseGroupId
 
@@ -1636,8 +1636,8 @@ Stored in the `MUSICBRAINZ_RELEASEGROUPID` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                       |
+| :------ | :------- | :---------------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz ReleaseGroupID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1648,7 +1648,7 @@ Stored in the `MUSICBRAINZ_RELEASEGROUPID` field
 
 Tag.musicBrainzReleaseGroupId
 
-___
+---
 
 ### musicBrainzReleaseId
 
@@ -1684,8 +1684,8 @@ Stored in the `MUSICBRAINZ_ALBUMID` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                  |
+| :------ | :------- | :----------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz ReleaseID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1696,7 +1696,7 @@ Stored in the `MUSICBRAINZ_ALBUMID` field
 
 Tag.musicBrainzReleaseId
 
-___
+---
 
 ### musicBrainzReleaseStatus
 
@@ -1732,8 +1732,8 @@ Stored in the `MUSICBRAINZ_ALBUMSTATUS` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                      |
+| :------ | :------- | :--------------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz ReleaseStatus of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1744,7 +1744,7 @@ Stored in the `MUSICBRAINZ_ALBUMSTATUS` field
 
 Tag.musicBrainzReleaseStatus
 
-___
+---
 
 ### musicBrainzReleaseType
 
@@ -1758,8 +1758,8 @@ a release is. Common types are: `Single`, `Album`, `EP`, `Compilation`, `Soundtr
 must be given when using this field to decide if a particular track "is a compilation".
 
 @returns
-    MusicBrainz ReleaseType of the media represented by the current instance or
-    `undefined` if no value is present
+MusicBrainz ReleaseType of the media represented by the current instance or
+`undefined` if no value is present
 
 **`Remarks`**
 
@@ -1783,7 +1783,7 @@ a release is. Common types are: `Single`, `Album`, `EP`, `Compilation`, `Soundtr
 must be given when using this field to decide if a particular track "is a compilation".
 
 @param value MusicBrainz ReleaseType of the media represented by the current instance or
-    `undefined` if no value is present
+`undefined` if no value is present
 
 **`Remarks`**
 
@@ -1791,8 +1791,8 @@ Stored in the `MUSICBRAINZ_ALBUMTYPE` field
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `value` | `string` |
 
 #### Returns
@@ -1803,7 +1803,7 @@ Stored in the `MUSICBRAINZ_ALBUMTYPE` field
 
 Tag.musicBrainzReleaseType
 
-___
+---
 
 ### musicBrainzTrackId
 
@@ -1841,8 +1841,8 @@ Stored in the `MUSICBRAINZ_TRACKID` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                |
+| :------ | :------- | :--------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz TrackID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1853,7 +1853,7 @@ Stored in the `MUSICBRAINZ_TRACKID` field
 
 Tag.musicBrainzTrackId
 
-___
+---
 
 ### musicIpId
 
@@ -1889,8 +1889,8 @@ Stored in the `MUSICID_PUID` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                         |
+| :------ | :------- | :-------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicIP PUID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1901,7 +1901,7 @@ Stored in the `MUSICID_PUID` field
 
 Tag.musicIpId
 
-___
+---
 
 ### performers
 
@@ -1947,8 +1947,8 @@ Stored in the `ARTIST` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                                       |
+| :------ | :--------- | :---------------------------------------------------------------------------------------------------------------- |
 | `value` | `string`[] | Performers who performed in the media described by the current instance or an empty array if no value is present. |
 
 #### Returns
@@ -1959,7 +1959,7 @@ Stored in the `ARTIST` field
 
 Tag.performers
 
-___
+---
 
 ### performersRole
 
@@ -2003,8 +2003,8 @@ Stored in the `ARTISTROLE` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                                                                   |
+| :------ | :--------- | :-------------------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `string`[] | Array containing the roles played by the performers in the media described by the current instance, or an empty array if no value is present. |
 
 #### Returns
@@ -2015,7 +2015,7 @@ Stored in the `ARTISTROLE` field
 
 Tag.performersRole
 
-___
+---
 
 ### performersSort
 
@@ -2055,8 +2055,8 @@ Stored in the `ARTIST` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                                                               |
+| :------ | :--------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `string`[] | Sortable names for the performers who performed in the media described by the current instance, or an empty array if no value is present. |
 
 #### Returns
@@ -2067,7 +2067,7 @@ Stored in the `ARTIST` field
 
 Tag.performersSort
 
-___
+---
 
 ### pictures
 
@@ -2097,8 +2097,8 @@ recording studio, the concert, etc.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                                      | Description                                                                                                                                           |
+| :------ | :---------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | [`IPicture`](../interfaces/IPicture.md)[] | Array containing a collection of pictures associated with the media represented by the current instance or an empty array if no pictures are present. |
 
 #### Returns
@@ -2109,7 +2109,7 @@ recording studio, the concert, etc.
 
 Tag.pictures
 
-___
+---
 
 ### publisher
 
@@ -2139,8 +2139,8 @@ Stored in the `ORGANIZATION` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                              |
+| :------ | :------- | :------------------------------------------------------- |
 | `value` | `string` | Publisher of the track or `undefined` if no value is set |
 
 #### Returns
@@ -2151,7 +2151,7 @@ Stored in the `ORGANIZATION` field
 
 Tag.publisher
 
-___
+---
 
 ### remixedBy
 
@@ -2181,8 +2181,8 @@ Stored in the `REMIXEDBY` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                            |
+| :------ | :------- | :----------------------------------------------------- |
 | `value` | `string` | Remixer of the track or `undefined` if no value is set |
 
 #### Returns
@@ -2193,7 +2193,7 @@ Stored in the `REMIXEDBY` field
 
 Tag.remixedBy
 
-___
+---
 
 ### replayGainAlbumGain
 
@@ -2223,8 +2223,8 @@ Stored in the `REPLAYGAIN_ALBUM_GAIN` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                         |
+| :------ | :------- | :---------------------------------------------------------------------------------- |
 | `value` | `number` | Album gain as per the ReplayGain specifications, in dB, or `NaN` if no value is set |
 
 #### Returns
@@ -2235,7 +2235,7 @@ Stored in the `REPLAYGAIN_ALBUM_GAIN` field
 
 Tag.replayGainAlbumGain
 
-___
+---
 
 ### replayGainAlbumPeak
 
@@ -2265,8 +2265,8 @@ Stored in the `REPLAYGAIN_TRACK_PEAK` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                  |
+| :------ | :------- | :--------------------------------------------------------------------------- |
 | `value` | `number` | Album peak as per the ReplayGain specifications, or `NaN` if no value is set |
 
 #### Returns
@@ -2277,7 +2277,7 @@ Stored in the `REPLAYGAIN_TRACK_PEAK` field
 
 Tag.replayGainAlbumPeak
 
-___
+---
 
 ### replayGainTrackGain
 
@@ -2307,8 +2307,8 @@ Stored in the `REPLAYGAIN_TRACK_GAIN` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                     |
+| :------ | :------- | :------------------------------------------------------------------------------ |
 | `value` | `number` | Track gain as per ReplayGain specifications, in dB, or `NaN` if no value is set |
 
 #### Returns
@@ -2319,7 +2319,7 @@ Stored in the `REPLAYGAIN_TRACK_GAIN` field
 
 Tag.replayGainTrackGain
 
-___
+---
 
 ### replayGainTrackPeak
 
@@ -2349,8 +2349,8 @@ Stored in the `REPLAYGAIN_TRACK_PEAK` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                  |
+| :------ | :------- | :--------------------------------------------------------------------------- |
 | `value` | `number` | Track peak as per the ReplayGain specifications, or `NaN` if no value is set |
 
 #### Returns
@@ -2361,7 +2361,7 @@ Stored in the `REPLAYGAIN_TRACK_PEAK` field
 
 Tag.replayGainTrackPeak
 
-___
+---
 
 ### sizeOnDisk
 
@@ -2377,7 +2377,7 @@ Gets the size of the tag in bytes on disk as it was read from disk.
 
 Tag.sizeOnDisk
 
-___
+---
 
 ### subtitle
 
@@ -2415,8 +2415,8 @@ Stored in the `SUBTITLE` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                     |
+| :------ | :------- | :---------------------------------------------------------------------------------------------- |
 | `value` | `string` | Subtitle of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -2427,7 +2427,7 @@ Stored in the `SUBTITLE` field
 
 Tag.subtitle
 
-___
+---
 
 ### tagTypes
 
@@ -2444,7 +2444,7 @@ containing the tag types contained in the current instance.
 
 Tag.tagTypes
 
-___
+---
 
 ### title
 
@@ -2478,8 +2478,8 @@ Stored in the `TITLE` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                 |
+| :------ | :------- | :------------------------------------------------------------------------------------------ |
 | `value` | `string` | Title of the media described by the current instance or `undefined` if no value is present. |
 
 #### Returns
@@ -2490,7 +2490,7 @@ Stored in the `TITLE` field
 
 Tag.title
 
-___
+---
 
 ### titleSort
 
@@ -2524,8 +2524,8 @@ Stored in the `TITLESORT` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                        |
+| :------ | :------- | :------------------------------------------------------------------------------------------------- |
 | `value` | `string` | Sortable name of the media described by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -2536,7 +2536,7 @@ Stored in the `TITLESORT` field
 
 Tag.titleSort
 
-___
+---
 
 ### track
 
@@ -2580,8 +2580,8 @@ Stored in the `TRACKNUMBER` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                |
+| :------ | :------- | :--------------------------------------------------------------------------------------------------------- |
 | `value` | `number` | Position of the media represented by the current instance in its containing album or `0` if not specified. |
 
 #### Returns
@@ -2592,7 +2592,7 @@ Stored in the `TRACKNUMBER` field
 
 Tag.track
 
-___
+---
 
 ### trackCount
 
@@ -2607,7 +2607,7 @@ If non-zero, this value should be equal to or greater than [track](XiphComment.m
 **`Remarks`**
 
 Stored in the `TRACKTOTAL` as per standard, but the denominator of `TRACKNUMBER` is also
-    used if `TRACKTOTAL` is not available.
+used if `TRACKTOTAL` is not available.
 
 #### Returns
 
@@ -2631,8 +2631,8 @@ Stored in the `TRACKNUMBER` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                                               |
+| :------ | :------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `number` | Number of tracks on the album or number of episodes in a series of the media represented by the current instance or `0` if not specified. |
 
 #### Returns
@@ -2643,7 +2643,7 @@ Stored in the `TRACKNUMBER` field
 
 Tag.trackCount
 
-___
+---
 
 ### vendorId
 
@@ -2655,7 +2655,7 @@ Gets the vendor ID for the current instance.
 
 `string`
 
-___
+---
 
 ### year
 
@@ -2695,8 +2695,8 @@ Stored in the `DATE` field
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                        |
+| :------ | :------- | :------------------------------------------------------------------------------------------------- |
 | `value` | `number` | Year that the media represented by the current instance was created or `0` if no value is present. |
 
 #### Returns
@@ -2723,7 +2723,7 @@ Clears all values stored in the current instance.
 
 [Tag](Tag.md).[clear](Tag.md#clear)
 
-___
+---
 
 ### copyTo
 
@@ -2739,10 +2739,10 @@ more advanced copying may be done. For example if both `this` and `target` are
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `target` | [`Tag`](Tag.md) | Target tag to copy values to |
-| `overwrite` | `boolean` | Whether or not to copy values over existing ones |
+| Name        | Type            | Description                                      |
+| :---------- | :-------------- | :----------------------------------------------- |
+| `target`    | [`Tag`](Tag.md) | Target tag to copy values to                     |
+| `overwrite` | `boolean`       | Whether or not to copy values over existing ones |
 
 #### Returns
 
@@ -2752,7 +2752,7 @@ more advanced copying may be done. For example if both `this` and `target` are
 
 [Tag](Tag.md).[copyTo](Tag.md#copyto)
 
-___
+---
 
 ### getField
 
@@ -2762,8 +2762,8 @@ Gets the field data for a given field identifier.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                 |
+| :---- | :------- | :-------------------------- |
 | `key` | `string` | Field identifier to look up |
 
 #### Returns
@@ -2772,7 +2772,7 @@ Gets the field data for a given field identifier.
 
 Field data or undefined if the field cannot be found
 
-___
+---
 
 ### getFieldFirstValue
 
@@ -2782,8 +2782,8 @@ Gets the first value in a field for a given field identifier.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                 |
+| :---- | :------- | :-------------------------- |
 | `key` | `string` | Field identifier to look up |
 
 #### Returns
@@ -2792,7 +2792,7 @@ Gets the first value in a field for a given field identifier.
 
 Field data or `undefined` if the field was notfound
 
-___
+---
 
 ### removeField
 
@@ -2802,15 +2802,15 @@ Removes a field and all its values from the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                |
+| :---- | :------- | :------------------------- |
 | `key` | `string` | Field identifier to remove |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### render
 
@@ -2820,15 +2820,15 @@ Renders the current instance as a raw Xiph comment, optionally adding a framing 
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name            | Type      | Description                                                    |
+| :-------------- | :-------- | :------------------------------------------------------------- |
 | `addFramingBit` | `boolean` | Whether or not to add a framing bit to the end of the content. |
 
 #### Returns
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### setFieldAsStrings
 
@@ -2839,16 +2839,16 @@ empty/undefined values are excluded.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `key` | `string` | Field identifier to set |
+| Name        | Type       | Description                             |
+| :---------- | :--------- | :-------------------------------------- |
+| `key`       | `string`   | Field identifier to set                 |
 | `...values` | `string`[] | Values to store in the current instance |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### setFieldAsUint
 
@@ -2858,17 +2858,17 @@ Sets the contents of a specified field to the provided number.
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `key` | `string` | `undefined` | Field identifier to set |
-| `value` | `number` | `undefined` | Value to store, must be a positive, 32-bit integer |
-| `minPlaces` | `number` | `1` | Number of places to include at a minimum, if the number has fewer places than this, the value will be padded with zeroes. |
+| Name        | Type     | Default value | Description                                                                                                               |
+| :---------- | :------- | :------------ | :------------------------------------------------------------------------------------------------------------------------ |
+| `key`       | `string` | `undefined`   | Field identifier to set                                                                                                   |
+| `value`     | `number` | `undefined`   | Value to store, must be a positive, 32-bit integer                                                                        |
+| `minPlaces` | `number` | `1`           | Number of places to include at a minimum, if the number has fewer places than this, the value will be padded with zeroes. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### firstInGroup
 
@@ -2878,8 +2878,8 @@ Gets the first string in an array.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                    |
+| :------ | :--------- | :--------------------------------------------- |
 | `group` | `string`[] | Array of strings to get the first string from. |
 
 #### Returns
@@ -2887,13 +2887,13 @@ Gets the first string in an array.
 `string`
 
 First string contained in `group` or `undefined` if the array is
-    `undefined` or empty
+`undefined` or empty
 
 #### Inherited from
 
 [Tag](Tag.md).[firstInGroup](Tag.md#firstingroup)
 
-___
+---
 
 ### fromData
 
@@ -2904,16 +2904,16 @@ a [ByteVector](ByteVector.md) object.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `data` | [`ByteVector`](ByteVector.md) | Object containing a raw Xiph comment, cannot be falsey |
-| `lazyLoadPictures` | `boolean` | Whether or not to load pictures lazily |
+| Name               | Type                          | Description                                            |
+| :----------------- | :---------------------------- | :----------------------------------------------------- |
+| `data`             | [`ByteVector`](ByteVector.md) | Object containing a raw Xiph comment, cannot be falsey |
+| `lazyLoadPictures` | `boolean`                     | Whether or not to load pictures lazily                 |
 
 #### Returns
 
 [`XiphComment`](XiphComment.md)
 
-___
+---
 
 ### fromEmpty
 
@@ -2925,7 +2925,7 @@ Constructs and initializes a new instance with no contents.
 
 [`XiphComment`](XiphComment.md)
 
-___
+---
 
 ### isFalsyOrLikeEmpty
 
@@ -2935,8 +2935,8 @@ Checks if a value is falsy or empty.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                   | Description     |
+| :------ | :--------------------- | :-------------- |
 | `value` | `string` \| `string`[] | Object to check |
 
 #### Returns
@@ -2944,14 +2944,14 @@ Checks if a value is falsy or empty.
 `boolean`
 
 If `value` is a string, `true` is returned if the value is falsy or all
-    whitespace, `false` is returned otherwise. If `value` is an array of strings,
-    the array must be falsy or all elements must be falsy or whitespace to return `true`.
+whitespace, `false` is returned otherwise. If `value` is an array of strings,
+the array must be falsy or all elements must be falsy or whitespace to return `true`.
 
 #### Inherited from
 
 [Tag](Tag.md).[isFalsyOrLikeEmpty](Tag.md#isfalsyorlikeempty)
 
-___
+---
 
 ### joinGroup
 
@@ -2961,8 +2961,8 @@ Joins an array of string into a single, semicolon and space separated string.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description             |
+| :------ | :--------- | :---------------------- |
 | `group` | `string`[] | Array of string to join |
 
 #### Returns
@@ -2970,13 +2970,13 @@ Joins an array of string into a single, semicolon and space separated string.
 `string`
 
 A semicolon and space separated string containing the values from `group`
-    or undefined if the array is `undefined` or empty.
+or undefined if the array is `undefined` or empty.
 
 #### Inherited from
 
 [Tag](Tag.md).[joinGroup](Tag.md#joingroup)
 
-___
+---
 
 ### tagTypeFlagsToArray
 
@@ -2986,8 +2986,8 @@ Generates an array of tag types that are set in the provided flags value.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                               | Description                             |
+| :--------- | :--------------------------------- | :-------------------------------------- |
 | `tagTypes` | [`TagTypes`](../enums/TagTypes.md) | Tag types that have been OR'd together. |
 
 #### Returns

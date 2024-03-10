@@ -40,7 +40,7 @@ Gets a text description of the media represented by the current instance.
 
 [ICodec](ICodec.md).[description](ICodec.md#description)
 
-___
+---
 
 ### durationMilliseconds
 
@@ -56,7 +56,7 @@ Ensure milliseconds is the right way to interpret this field
 
 [ICodec](ICodec.md).[durationMilliseconds](ICodec.md#durationmilliseconds)
 
-___
+---
 
 ### mediaTypes
 
@@ -68,7 +68,7 @@ Types of media represented by the current instance, bitwise combined.
 
 [ICodec](ICodec.md).[mediaTypes](ICodec.md#mediatypes)
 
-___
+---
 
 ### photoHeight
 
@@ -76,7 +76,7 @@ ___
 
 Height of the photo in pixels represented by the current instance.
 
-___
+---
 
 ### photoQuality
 
@@ -85,7 +85,7 @@ ___
 Format-specific quality indicator of the photo represented by the current instance.
 A value of `0` means there was no quality indicator for the format or file.
 
-___
+---
 
 ### photoWidth
 

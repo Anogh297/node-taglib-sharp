@@ -113,8 +113,8 @@ Constructs and initializes a new instance of AppleTag for a specified ISO user d
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type                                            | Description                                        |
+| :---- | :---------------------------------------------- | :------------------------------------------------- |
 | `box` | [`Mpeg4IsoUserDataBox`](Mpeg4IsoUserDataBox.md) | A IsoUserDataBox from which the tag is to be read. |
 
 #### Overrides
@@ -161,9 +161,9 @@ For example, "Kintsugi" (an album by Death Cab for Cutie), "The Complete Red Gre
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string` | of the media represented by the current instance or `undefined` if no value is present |
+| Name | Type     | Description                                                                            |
+| :--- | :------- | :------------------------------------------------------------------------------------- |
+| `v`  | `string` | of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
 
@@ -173,7 +173,7 @@ For example, "Kintsugi" (an album by Death Cab for Cutie), "The Complete Red Gre
 
 Tag.album
 
-___
+---
 
 ### albumArtists
 
@@ -213,9 +213,9 @@ best to stick to a single name. Eg, "Super8 & Tab"
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string`[] | Band or artist credited with the creation of the entire album or collection containing the media described by the current instance or an empty array if no value is present |
+| Name | Type       | Description                                                                                                                                                                 |
+| :--- | :--------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `v`  | `string`[] | Band or artist credited with the creation of the entire album or collection containing the media described by the current instance or an empty array if no value is present |
 
 #### Returns
 
@@ -225,7 +225,7 @@ best to stick to a single name. Eg, "Super8 & Tab"
 
 Tag.albumArtists
 
-___
+---
 
 ### albumArtistsSort
 
@@ -265,9 +265,9 @@ best to stick to a single album artist. Eg, "Van Buuren, Armin"
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string`[] | Sortable names for the bands/artists are credited with the creation of the entire album or collection containing the media described by the current instance, or an empty array if no value is present. |
+| Name | Type       | Description                                                                                                                                                                                             |
+| :--- | :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `v`  | `string`[] | Sortable names for the bands/artists are credited with the creation of the entire album or collection containing the media described by the current instance, or an empty array if no value is present. |
 
 #### Returns
 
@@ -277,7 +277,7 @@ best to stick to a single album artist. Eg, "Van Buuren, Armin"
 
 Tag.albumArtistsSort
 
-___
+---
 
 ### albumSort
 
@@ -307,9 +307,9 @@ similar titles.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string` | Sortable name for the album title of the media or `undefined` if the value is not present |
+| Name | Type     | Description                                                                               |
+| :--- | :------- | :---------------------------------------------------------------------------------------- |
+| `v`  | `string` | Sortable name for the album title of the media or `undefined` if the value is not present |
 
 #### Returns
 
@@ -319,7 +319,7 @@ similar titles.
 
 Tag.albumSort
 
-___
+---
 
 ### amazonId
 
@@ -347,9 +347,9 @@ identify the particular track or album in the Amazon catalog.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string` | Amazon ID of the media represented by the current instance or `undefined` if no value is present |
+| Name | Type     | Description                                                                                      |
+| :--- | :------- | :----------------------------------------------------------------------------------------------- |
+| `v`  | `string` | Amazon ID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
 
@@ -359,7 +359,7 @@ identify the particular track or album in the Amazon catalog.
 
 Tag.amazonId
 
-___
+---
 
 ### beatsPerMinute
 
@@ -389,9 +389,9 @@ calculated from the audio or pulled from a database.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `number` | Beats per minute of the audio in the media represented by the current instance, or `0` if not specified |
+| Name | Type     | Description                                                                                             |
+| :--- | :------- | :------------------------------------------------------------------------------------------------------ |
+| `v`  | `number` | Beats per minute of the audio in the media represented by the current instance, or `0` if not specified |
 
 #### Returns
 
@@ -401,7 +401,7 @@ calculated from the audio or pulled from a database.
 
 Tag.beatsPerMinute
 
-___
+---
 
 ### comment
 
@@ -435,9 +435,9 @@ including it in the main interface.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string` | User comments on the media represented by the current instance or `undefined` if the value is not present |
+| Name | Type     | Description                                                                                               |
+| :--- | :------- | :-------------------------------------------------------------------------------------------------------- |
+| `v`  | `string` | User comments on the media represented by the current instance or `undefined` if the value is not present |
 
 #### Returns
 
@@ -447,7 +447,7 @@ including it in the main interface.
 
 Tag.comment
 
-___
+---
 
 ### composers
 
@@ -475,9 +475,9 @@ claim authorship of the media.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string`[] | Composers of the media represented by the current instance of an empty array if no value is present. |
+| Name | Type       | Description                                                                                          |
+| :--- | :--------- | :--------------------------------------------------------------------------------------------------- |
+| `v`  | `string`[] | Composers of the media represented by the current instance of an empty array if no value is present. |
 
 #### Returns
 
@@ -487,7 +487,7 @@ claim authorship of the media.
 
 Tag.composers
 
-___
+---
 
 ### composersSort
 
@@ -517,9 +517,9 @@ with multiple composers.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string`[] | Sortable names for the composers of the media represented by the current instance or an empty array if no value is present. |
+| Name | Type       | Description                                                                                                                 |
+| :--- | :--------- | :-------------------------------------------------------------------------------------------------------------------------- |
+| `v`  | `string`[] | Sortable names for the composers of the media represented by the current instance or an empty array if no value is present. |
 
 #### Returns
 
@@ -529,7 +529,7 @@ with multiple composers.
 
 Tag.composersSort
 
-___
+---
 
 ### conductor
 
@@ -555,9 +555,9 @@ This field is most useful for organizing classical music and movies.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string` | Conductor or director of the media represented by the current instance or `undefined` if no value present. |
+| Name | Type     | Description                                                                                                |
+| :--- | :------- | :--------------------------------------------------------------------------------------------------------- |
+| `v`  | `string` | Conductor or director of the media represented by the current instance or `undefined` if no value present. |
 
 #### Returns
 
@@ -567,7 +567,7 @@ This field is most useful for organizing classical music and movies.
 
 Tag.conductor
 
-___
+---
 
 ### copyright
 
@@ -599,9 +599,9 @@ definitely allow modification.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string` | Copyright information for the media represented by the current instance or `undefined` if no value is present. |
+| Name | Type     | Description                                                                                                    |
+| :--- | :------- | :------------------------------------------------------------------------------------------------------------- |
+| `v`  | `string` | Copyright information for the media represented by the current instance or `undefined` if no value is present. |
 
 #### Returns
 
@@ -611,7 +611,7 @@ definitely allow modification.
 
 Tag.copyright
 
-___
+---
 
 ### dateTagged
 
@@ -633,9 +633,9 @@ Sets the date and time at which the tag has been written.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `Date` | Date/time at which the tag has been written, or `undefined` if no value is present |
+| Name | Type   | Description                                                                        |
+| :--- | :----- | :--------------------------------------------------------------------------------- |
+| `v`  | `Date` | Date/time at which the tag has been written, or `undefined` if no value is present |
 
 #### Returns
 
@@ -645,7 +645,7 @@ Sets the date and time at which the tag has been written.
 
 Tag.dateTagged
 
-___
+---
 
 ### description
 
@@ -679,9 +679,9 @@ Vegas for a series of psychedelic escapades."
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string` | Description of the media represented by the current instance or `undefined` if no value is present |
+| Name | Type     | Description                                                                                        |
+| :--- | :------- | :------------------------------------------------------------------------------------------------- |
+| `v`  | `string` | Description of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
 
@@ -691,7 +691,7 @@ Vegas for a series of psychedelic escapades."
 
 Tag.description
 
-___
+---
 
 ### disc
 
@@ -723,9 +723,9 @@ the disc is the first of three, the value should be `1`. It should be no more th
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `number` | Number of the disc or season of the media represented by the current instance in a boxed set. |
+| Name | Type     | Description                                                                                   |
+| :--- | :------- | :-------------------------------------------------------------------------------------------- |
+| `v`  | `number` | Number of the disc or season of the media represented by the current instance in a boxed set. |
 
 #### Returns
 
@@ -735,7 +735,7 @@ the disc is the first of three, the value should be `1`. It should be no more th
 
 Tag.disc
 
-___
+---
 
 ### discCount
 
@@ -765,9 +765,9 @@ this value should also be zero.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `number` | Number of discs or seasons in the boxed set containing the media represented by the current instance or `0` if not specified. |
+| Name | Type     | Description                                                                                                                   |
+| :--- | :------- | :---------------------------------------------------------------------------------------------------------------------------- |
+| `v`  | `number` | Number of discs or seasons in the boxed set containing the media represented by the current instance or `0` if not specified. |
 
 #### Returns
 
@@ -777,7 +777,7 @@ this value should also be zero.
 
 Tag.discCount
 
-___
+---
 
 ### firstAlbumArtist
 
@@ -793,7 +793,7 @@ Gets the first value contained in [albumArtists](Mpeg4AppleTag.md#albumartists).
 
 Tag.firstAlbumArtist
 
-___
+---
 
 ### firstAlbumArtistSort
 
@@ -809,7 +809,7 @@ Gets the first value contained in [albumArtistsSort](Mpeg4AppleTag.md#albumartis
 
 Tag.firstAlbumArtistSort
 
-___
+---
 
 ### firstComposer
 
@@ -825,7 +825,7 @@ Gets the first value contained in [composers](Mpeg4AppleTag.md#composers)
 
 Tag.firstComposer
 
-___
+---
 
 ### firstComposerSort
 
@@ -841,7 +841,7 @@ Gets the first value contained in [composersSort](Mpeg4AppleTag.md#composerssort
 
 Tag.firstComposerSort
 
-___
+---
 
 ### firstGenre
 
@@ -857,7 +857,7 @@ Gets the first value contained in [genres](Mpeg4AppleTag.md#genres)
 
 Tag.firstGenre
 
-___
+---
 
 ### firstPerformer
 
@@ -873,7 +873,7 @@ Gets the first value contained in [performers](Mpeg4AppleTag.md#performers)
 
 Tag.firstPerformer
 
-___
+---
 
 ### firstPerformerSort
 
@@ -889,7 +889,7 @@ Gets the first value contained in [performersSort](Mpeg4AppleTag.md#performersso
 
 Tag.firstPerformerSort
 
-___
+---
 
 ### genres
 
@@ -921,9 +921,9 @@ Additionally, `genres.ts` contains video genres as used by DivX.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string`[] | Genres of the media represented by the current instance or an empty array if no value is present. |
+| Name | Type       | Description                                                                                       |
+| :--- | :--------- | :------------------------------------------------------------------------------------------------ |
+| `v`  | `string`[] | Genres of the media represented by the current instance or an empty array if no value is present. |
 
 #### Returns
 
@@ -933,7 +933,7 @@ Additionally, `genres.ts` contains video genres as used by DivX.
 
 Tag.genres
 
-___
+---
 
 ### grouping
 
@@ -963,9 +963,9 @@ music this could be a movement. It could also be parts of a series like "Introdu
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string` | Grouping on the album which the media in the current instance belongs to or `undefined` if no value is present. |
+| Name | Type     | Description                                                                                                     |
+| :--- | :------- | :-------------------------------------------------------------------------------------------------------------- |
+| `v`  | `string` | Grouping on the album which the media in the current instance belongs to or `undefined` if no value is present. |
 
 #### Returns
 
@@ -975,7 +975,7 @@ music this could be a movement. It could also be parts of a series like "Introdu
 
 Tag.grouping
 
-___
+---
 
 ### initialKey
 
@@ -997,9 +997,9 @@ Sets the initial key of the track.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string` | Initial key of the track or `undefined` if no value is set |
+| Name | Type     | Description                                                |
+| :--- | :------- | :--------------------------------------------------------- |
+| `v`  | `string` | Initial key of the track or `undefined` if no value is set |
 
 #### Returns
 
@@ -1009,7 +1009,7 @@ Sets the initial key of the track.
 
 Tag.initialKey
 
-___
+---
 
 ### isCompilation
 
@@ -1031,9 +1031,9 @@ Gets whether or not the album described by the current instance is a compilation
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `boolean` | Whether or not the album described by the current instance is a compilation |
+| Name | Type      | Description                                                                 |
+| :--- | :-------- | :-------------------------------------------------------------------------- |
+| `v`  | `boolean` | Whether or not the album described by the current instance is a compilation |
 
 #### Returns
 
@@ -1043,7 +1043,7 @@ Gets whether or not the album described by the current instance is a compilation
 
 Tag.isCompilation
 
-___
+---
 
 ### isEmpty
 
@@ -1059,7 +1059,7 @@ Gets whether or not the current instance is empty.
 
 Tag.isEmpty
 
-___
+---
 
 ### isrc
 
@@ -1081,9 +1081,9 @@ Sets the ISRC (International Standard Recording Code) of the track.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string` | ISRC of the track or `undefined` if no value is set |
+| Name | Type     | Description                                         |
+| :--- | :------- | :-------------------------------------------------- |
+| `v`  | `string` | ISRC of the track or `undefined` if no value is set |
 
 #### Returns
 
@@ -1093,7 +1093,7 @@ Sets the ISRC (International Standard Recording Code) of the track.
 
 Tag.isrc
 
-___
+---
 
 ### joinedAlbumArtists
 
@@ -1109,7 +1109,7 @@ Gets a semicolon and space separated string containing the values in [albumArtis
 
 Tag.joinedAlbumArtists
 
-___
+---
 
 ### joinedComposers
 
@@ -1125,7 +1125,7 @@ Gets a semicolon and space separated string containing the values in [composers]
 
 Tag.joinedComposers
 
-___
+---
 
 ### joinedGenres
 
@@ -1141,7 +1141,7 @@ Gets a semicolon and space separated string containing the values in [genres](Mp
 
 Tag.joinedGenres
 
-___
+---
 
 ### joinedPerformers
 
@@ -1157,7 +1157,7 @@ Gets a semicolon and space separated string containing the values in [performers
 
 Tag.joinedPerformers
 
-___
+---
 
 ### joinedPerformersSort
 
@@ -1173,7 +1173,7 @@ Gets a semicolon and space separated string containing the values in [performers
 
 Tag.joinedPerformersSort
 
-___
+---
 
 ### lyrics
 
@@ -1205,9 +1205,9 @@ accessed using format-specific implementations.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string` | Lyrics or script of the media represented by the current instance or `undefined` if no value is present |
+| Name | Type     | Description                                                                                             |
+| :--- | :------- | :------------------------------------------------------------------------------------------------------ |
+| `v`  | `string` | Lyrics or script of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
 
@@ -1217,7 +1217,7 @@ accessed using format-specific implementations.
 
 Tag.lyrics
 
-___
+---
 
 ### musicBrainzArtistId
 
@@ -1245,9 +1245,9 @@ particular artist of the track.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string` | MusicBrainz ArtistID of the media represented by the current instance or `undefined` if no value is present |
+| Name | Type     | Description                                                                                                 |
+| :--- | :------- | :---------------------------------------------------------------------------------------------------------- |
+| `v`  | `string` | MusicBrainz ArtistID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
 
@@ -1257,7 +1257,7 @@ particular artist of the track.
 
 Tag.musicBrainzArtistId
 
-___
+---
 
 ### musicBrainzDiscId
 
@@ -1285,9 +1285,9 @@ particular released media associated with this track.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string` | MusicBrainz DiscID of the media represented by the current instance or `undefined` if no value is present |
+| Name | Type     | Description                                                                                               |
+| :--- | :------- | :-------------------------------------------------------------------------------------------------------- |
+| `v`  | `string` | MusicBrainz DiscID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
 
@@ -1297,7 +1297,7 @@ particular released media associated with this track.
 
 Tag.musicBrainzDiscId
 
-___
+---
 
 ### musicBrainzReleaseArtistId
 
@@ -1325,9 +1325,9 @@ identify a particular album artist credited with the album.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string` | MusicBrainz ReleaseArtistID of the media represented by the current instance or `undefined` if no value is present |
+| Name | Type     | Description                                                                                                        |
+| :--- | :------- | :----------------------------------------------------------------------------------------------------------------- |
+| `v`  | `string` | MusicBrainz ReleaseArtistID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
 
@@ -1337,7 +1337,7 @@ identify a particular album artist credited with the album.
 
 Tag.musicBrainzReleaseArtistId
 
-___
+---
 
 ### musicBrainzReleaseCountry
 
@@ -1371,9 +1371,9 @@ it will likely be a UK release.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string` | MusicBrainz ReleaseCountry of the media represented by the current instance or `undefined` if no value is present |
+| Name | Type     | Description                                                                                                       |
+| :--- | :------- | :---------------------------------------------------------------------------------------------------------------- |
+| `v`  | `string` | MusicBrainz ReleaseCountry of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
 
@@ -1383,7 +1383,7 @@ it will likely be a UK release.
 
 Tag.musicBrainzReleaseCountry
 
-___
+---
 
 ### musicBrainzReleaseGroupId
 
@@ -1411,9 +1411,9 @@ a particular release group to which this track belongs.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string` | MusicBrainz ReleaseGroupID of the media represented by the current instance or `undefined` if no value is present |
+| Name | Type     | Description                                                                                                       |
+| :--- | :------- | :---------------------------------------------------------------------------------------------------------------- |
+| `v`  | `string` | MusicBrainz ReleaseGroupID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
 
@@ -1423,7 +1423,7 @@ a particular release group to which this track belongs.
 
 Tag.musicBrainzReleaseGroupId
 
-___
+---
 
 ### musicBrainzReleaseId
 
@@ -1451,9 +1451,9 @@ particular release to which this track belongs.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string` | MusicBrainz ReleaseID of the media represented by the current instance or `undefined` if no value is present |
+| Name | Type     | Description                                                                                                  |
+| :--- | :------- | :----------------------------------------------------------------------------------------------------------- |
+| `v`  | `string` | MusicBrainz ReleaseID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
 
@@ -1463,7 +1463,7 @@ particular release to which this track belongs.
 
 Tag.musicBrainzReleaseId
 
-___
+---
 
 ### musicBrainzReleaseStatus
 
@@ -1491,9 +1491,9 @@ release is. Common statuses are: `Official`, `Promotion`, `Bootleg`, `Pseudo-rel
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string` | MusicBrainz ReleaseStatus of the media represented by the current instance or `undefined` if no value is present |
+| Name | Type     | Description                                                                                                      |
+| :--- | :------- | :--------------------------------------------------------------------------------------------------------------- |
+| `v`  | `string` | MusicBrainz ReleaseStatus of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
 
@@ -1503,7 +1503,7 @@ release is. Common statuses are: `Official`, `Promotion`, `Bootleg`, `Pseudo-rel
 
 Tag.musicBrainzReleaseStatus
 
-___
+---
 
 ### musicBrainzReleaseType
 
@@ -1517,8 +1517,8 @@ a release is. Common types are: `Single`, `Album`, `EP`, `Compilation`, `Soundtr
 must be given when using this field to decide if a particular track "is a compilation".
 
 @returns
-    MusicBrainz ReleaseType of the media represented by the current instance or
-    `undefined` if no value is present
+MusicBrainz ReleaseType of the media represented by the current instance or
+`undefined` if no value is present
 
 #### Returns
 
@@ -1538,13 +1538,13 @@ a release is. Common types are: `Single`, `Album`, `EP`, `Compilation`, `Soundtr
 must be given when using this field to decide if a particular track "is a compilation".
 
 @param value MusicBrainz ReleaseType of the media represented by the current instance or
-    `undefined` if no value is present
+`undefined` if no value is present
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `v` | `string` |
+| Name | Type     |
+| :--- | :------- |
+| `v`  | `string` |
 
 #### Returns
 
@@ -1554,7 +1554,7 @@ must be given when using this field to decide if a particular track "is a compil
 
 Tag.musicBrainzReleaseType
 
-___
+---
 
 ### musicBrainzTrackId
 
@@ -1584,9 +1584,9 @@ particular track.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string` | MusicBrainz TrackID of the media represented by the current instance or `undefined` if no value is present |
+| Name | Type     | Description                                                                                                |
+| :--- | :------- | :--------------------------------------------------------------------------------------------------------- |
+| `v`  | `string` | MusicBrainz TrackID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
 
@@ -1596,7 +1596,7 @@ particular track.
 
 Tag.musicBrainzTrackId
 
-___
+---
 
 ### musicIpId
 
@@ -1624,9 +1624,9 @@ identifies wht this track "sounds like".
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string` | MusicIP PUID of the media represented by the current instance or `undefined` if no value is present |
+| Name | Type     | Description                                                                                         |
+| :--- | :------- | :-------------------------------------------------------------------------------------------------- |
+| `v`  | `string` | MusicIP PUID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
 
@@ -1636,7 +1636,7 @@ identifies wht this track "sounds like".
 
 Tag.musicIpId
 
-___
+---
 
 ### performers
 
@@ -1674,9 +1674,9 @@ what constitutes the performers field - especially with regards to number of per
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string`[] | Performers who performed in the media described by the current instance or an empty array if no value is present. |
+| Name | Type       | Description                                                                                                       |
+| :--- | :--------- | :---------------------------------------------------------------------------------------------------------------- |
+| `v`  | `string`[] | Performers who performed in the media described by the current instance or an empty array if no value is present. |
 
 #### Returns
 
@@ -1686,7 +1686,7 @@ what constitutes the performers field - especially with regards to number of per
 
 Tag.performers
 
-___
+---
 
 ### performersRole
 
@@ -1722,9 +1722,9 @@ in the [performersRole](Mpeg4AppleTag.md#performersrole) array is `undefined` to
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string`[] | Array containing the roles played by the performers in the media described by the current instance, or an empty array if no value is present. |
+| Name | Type       | Description                                                                                                                                   |
+| :--- | :--------- | :-------------------------------------------------------------------------------------------------------------------------------------------- |
+| `v`  | `string`[] | Array containing the roles played by the performers in the media described by the current instance, or an empty array if no value is present. |
 
 #### Returns
 
@@ -1734,7 +1734,7 @@ in the [performersRole](Mpeg4AppleTag.md#performersrole) array is `undefined` to
 
 Tag.performersRole
 
-___
+---
 
 ### performersSort
 
@@ -1766,9 +1766,9 @@ skip articles or sort by last name. For example, "The Pillows" might be sorted a
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string`[] | Sortable names for the performers who performed in the media described by the current instance, or an empty array if no value is present. |
+| Name | Type       | Description                                                                                                                               |
+| :--- | :--------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
+| `v`  | `string`[] | Sortable names for the performers who performed in the media described by the current instance, or an empty array if no value is present. |
 
 #### Returns
 
@@ -1778,7 +1778,7 @@ skip articles or sort by last name. For example, "The Pillows" might be sorted a
 
 Tag.performersSort
 
-___
+---
 
 ### pictures
 
@@ -1808,9 +1808,9 @@ recording studio, the concert, etc.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | [`IPicture`](../interfaces/IPicture.md)[] | Array containing a collection of pictures associated with the media represented by the current instance or an empty array if no pictures are present. |
+| Name | Type                                      | Description                                                                                                                                           |
+| :--- | :---------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `v`  | [`IPicture`](../interfaces/IPicture.md)[] | Array containing a collection of pictures associated with the media represented by the current instance or an empty array if no pictures are present. |
 
 #### Returns
 
@@ -1820,7 +1820,7 @@ recording studio, the concert, etc.
 
 Tag.pictures
 
-___
+---
 
 ### publisher
 
@@ -1842,9 +1842,9 @@ Sets the publisher of the track.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string` | Publisher of the track or `undefined` if no value is set |
+| Name | Type     | Description                                              |
+| :--- | :------- | :------------------------------------------------------- |
+| `v`  | `string` | Publisher of the track or `undefined` if no value is set |
 
 #### Returns
 
@@ -1854,7 +1854,7 @@ Sets the publisher of the track.
 
 Tag.publisher
 
-___
+---
 
 ### remixedBy
 
@@ -1876,9 +1876,9 @@ Sets the remixer of the track.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string` | Remixer of the track or `undefined` if no value is set |
+| Name | Type     | Description                                            |
+| :--- | :------- | :----------------------------------------------------- |
+| `v`  | `string` | Remixer of the track or `undefined` if no value is set |
 
 #### Returns
 
@@ -1888,7 +1888,7 @@ Sets the remixer of the track.
 
 Tag.remixedBy
 
-___
+---
 
 ### replayGainAlbumGain
 
@@ -1910,9 +1910,9 @@ Sets the ReplayGain album gain in dB.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `number` | Album gain as per the ReplayGain specifications, in dB, or `NaN` if no value is set |
+| Name | Type     | Description                                                                         |
+| :--- | :------- | :---------------------------------------------------------------------------------- |
+| `v`  | `number` | Album gain as per the ReplayGain specifications, in dB, or `NaN` if no value is set |
 
 #### Returns
 
@@ -1922,7 +1922,7 @@ Sets the ReplayGain album gain in dB.
 
 Tag.replayGainAlbumGain
 
-___
+---
 
 ### replayGainAlbumPeak
 
@@ -1944,9 +1944,9 @@ Sets the ReplayGain album peak sample.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `number` | Album peak as per the ReplayGain specifications, or `NaN` if no value is set |
+| Name | Type     | Description                                                                  |
+| :--- | :------- | :--------------------------------------------------------------------------- |
+| `v`  | `number` | Album peak as per the ReplayGain specifications, or `NaN` if no value is set |
 
 #### Returns
 
@@ -1956,7 +1956,7 @@ Sets the ReplayGain album peak sample.
 
 Tag.replayGainAlbumPeak
 
-___
+---
 
 ### replayGainTrackGain
 
@@ -1978,9 +1978,9 @@ Sets the ReplayGain track gain in dB.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `number` | Track gain as per ReplayGain specifications, in dB, or `NaN` if no value is set |
+| Name | Type     | Description                                                                     |
+| :--- | :------- | :------------------------------------------------------------------------------ |
+| `v`  | `number` | Track gain as per ReplayGain specifications, in dB, or `NaN` if no value is set |
 
 #### Returns
 
@@ -1990,7 +1990,7 @@ Sets the ReplayGain track gain in dB.
 
 Tag.replayGainTrackGain
 
-___
+---
 
 ### replayGainTrackPeak
 
@@ -2012,9 +2012,9 @@ Sets the ReplayGain track peak sample.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `number` | Track peak as per the ReplayGain specifications, or `NaN` if no value is set |
+| Name | Type     | Description                                                                  |
+| :--- | :------- | :--------------------------------------------------------------------------- |
+| `v`  | `number` | Track peak as per the ReplayGain specifications, or `NaN` if no value is set |
 
 #### Returns
 
@@ -2024,7 +2024,7 @@ Sets the ReplayGain track peak sample.
 
 Tag.replayGainTrackPeak
 
-___
+---
 
 ### sizeOnDisk
 
@@ -2040,7 +2040,7 @@ Gets the size of the tag in bytes on disk as it was read from disk.
 
 Tag.sizeOnDisk
 
-___
+---
 
 ### subtitle
 
@@ -2070,9 +2070,9 @@ title on the front cover of the media. For example for "Ocean's 13", this would 
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string` | Subtitle of the media represented by the current instance or `undefined` if no value is present |
+| Name | Type     | Description                                                                                     |
+| :--- | :------- | :---------------------------------------------------------------------------------------------- |
+| `v`  | `string` | Subtitle of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
 
@@ -2082,7 +2082,7 @@ title on the front cover of the media. For example for "Ocean's 13", this would 
 
 Tag.subtitle
 
-___
+---
 
 ### tagTypes
 
@@ -2099,7 +2099,7 @@ containing the tag types contained in the current instance.
 
 Tag.tagTypes
 
-___
+---
 
 ### title
 
@@ -2125,9 +2125,9 @@ The title is most commonly the name of the song, episode or a movie title. For e
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string` | Title of the media described by the current instance or `undefined` if no value is present. |
+| Name | Type     | Description                                                                                 |
+| :--- | :------- | :------------------------------------------------------------------------------------------ |
+| `v`  | `string` | Title of the media described by the current instance or `undefined` if no value is present. |
 
 #### Returns
 
@@ -2137,7 +2137,7 @@ The title is most commonly the name of the song, episode or a movie title. For e
 
 Tag.title
 
-___
+---
 
 ### titleSort
 
@@ -2163,9 +2163,9 @@ Possibly used to sort compilations or episodic content.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string` | Sortable name of the media described by the current instance or `undefined` if no value is present |
+| Name | Type     | Description                                                                                        |
+| :--- | :------- | :------------------------------------------------------------------------------------------------- |
+| `v`  | `string` | Sortable name of the media described by the current instance or `undefined` if no value is present |
 
 #### Returns
 
@@ -2175,7 +2175,7 @@ Possibly used to sort compilations or episodic content.
 
 Tag.titleSort
 
-___
+---
 
 ### track
 
@@ -2211,9 +2211,9 @@ For a series, this property represents the episodes in a season of the series.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `number` | Position of the media represented by the current instance in its containing album or `0` if not specified. |
+| Name | Type     | Description                                                                                                |
+| :--- | :------- | :--------------------------------------------------------------------------------------------------------- |
+| `v`  | `number` | Position of the media represented by the current instance in its containing album or `0` if not specified. |
 
 #### Returns
 
@@ -2223,7 +2223,7 @@ For a series, this property represents the episodes in a season of the series.
 
 Tag.track
 
-___
+---
 
 ### trackCount
 
@@ -2253,9 +2253,9 @@ If non-zero, this value should be equal to or greater than [track](Mpeg4AppleTag
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `number` | Number of tracks on the album or number of episodes in a series of the media represented by the current instance or `0` if not specified. |
+| Name | Type     | Description                                                                                                                               |
+| :--- | :------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
+| `v`  | `number` | Number of tracks on the album or number of episodes in a series of the media represented by the current instance or `0` if not specified. |
 
 #### Returns
 
@@ -2265,7 +2265,7 @@ If non-zero, this value should be equal to or greater than [track](Mpeg4AppleTag
 
 Tag.trackCount
 
-___
+---
 
 ### year
 
@@ -2297,9 +2297,9 @@ access the higher precision values.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `number` | Year that the media represented by the current instance was created or `0` if no value is present. |
+| Name | Type     | Description                                                                                        |
+| :--- | :------- | :------------------------------------------------------------------------------------------------- |
+| `v`  | `number` | Year that the media represented by the current instance was created or `0` if no value is present. |
 
 #### Returns
 
@@ -2325,7 +2325,7 @@ Clears all values stored in the current instance.
 
 [Tag](Tag.md).[clear](Tag.md#clear)
 
-___
+---
 
 ### copyTo
 
@@ -2341,10 +2341,10 @@ more advanced copying may be done. For example if both `this` and `target` are
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `target` | [`Tag`](Tag.md) | Target tag to copy values to |
-| `overwrite` | `boolean` | Whether or not to copy values over existing ones |
+| Name        | Type            | Description                                      |
+| :---------- | :-------------- | :----------------------------------------------- |
+| `target`    | [`Tag`](Tag.md) | Target tag to copy values to                     |
+| `overwrite` | `boolean`       | Whether or not to copy values over existing ones |
 
 #### Returns
 
@@ -2354,7 +2354,7 @@ more advanced copying may be done. For example if both `this` and `target` are
 
 [Tag](Tag.md).[copyTo](Tag.md#copyto)
 
-___
+---
 
 ### getFirstItunesString
 
@@ -2364,8 +2364,8 @@ Gets the first string from the iTunes boxes with the given MEAN/NAME combination
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name         | Type     | Description                     |
+| :----------- | :------- | :------------------------------ |
 | `meanString` | `string` | MEAN box contents to search for |
 | `nameString` | `string` | NAME box contents to search for |
 
@@ -2374,9 +2374,9 @@ Gets the first string from the iTunes boxes with the given MEAN/NAME combination
 `string`
 
 string Text contents of the first iTunes box found with the given MEAN/NAME
-    combination or `undefined` if no matches found.
+combination or `undefined` if no matches found.
 
-___
+---
 
 ### getFirstQuickTimeData
 
@@ -2387,20 +2387,20 @@ provided `boxType`, optionally matching `flags` and a predicate.
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `boxType` | [`ByteVector`](ByteVector.md) | `undefined` | Type of box to search for |
-| `flags` | [`Mpeg4AppleDataBoxFlagType`](../enums/Mpeg4AppleDataBoxFlagType.md) | `AppleDataBoxFlagType.ContainsData` | Optional flags to match, defaults to AppleDataBoxFlagType.ContainsData |
-| `predicate?` | (`d`: [`ByteVector`](ByteVector.md)) => `boolean` | `undefined` | Optional additional criteria the box must match |
+| Name         | Type                                                                 | Default value                       | Description                                                            |
+| :----------- | :------------------------------------------------------------------- | :---------------------------------- | :--------------------------------------------------------------------- |
+| `boxType`    | [`ByteVector`](ByteVector.md)                                        | `undefined`                         | Type of box to search for                                              |
+| `flags`      | [`Mpeg4AppleDataBoxFlagType`](../enums/Mpeg4AppleDataBoxFlagType.md) | `AppleDataBoxFlagType.ContainsData` | Optional flags to match, defaults to AppleDataBoxFlagType.ContainsData |
+| `predicate?` | (`d`: [`ByteVector`](ByteVector.md)) => `boolean`                    | `undefined`                         | Optional additional criteria the box must match                        |
 
 #### Returns
 
 [`ByteVector`](ByteVector.md)
 
 ByteVector Raw data contents of the first matching box. `undefined` if no matches
-    are found
+are found
 
-___
+---
 
 ### getFirstQuickTimeString
 
@@ -2411,8 +2411,8 @@ Gets the text contents of the first box within this tag's ILST box that matches 
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type                          | Description                    |
+| :-------- | :---------------------------- | :----------------------------- |
 | `boxType` | [`ByteVector`](ByteVector.md) | Type of the box to search for. |
 
 #### Returns
@@ -2421,7 +2421,7 @@ Gets the text contents of the first box within this tag's ILST box that matches 
 
 string Text contents of the first matching box. `undefined` if no matches are found
 
-___
+---
 
 ### getItunesStrings
 
@@ -2431,8 +2431,8 @@ Gets all strings from the iTunes boxes with the given MEAN/NAME combination.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name         | Type     | Description                   |
+| :----------- | :------- | :---------------------------- |
 | `meanString` | `string` | MEAN box contents to look for |
 | `nameString` | `string` | NAME box contents to look for |
 
@@ -2441,9 +2441,9 @@ Gets all strings from the iTunes boxes with the given MEAN/NAME combination.
 `string`[]
 
 string[] Text contents of the iTunes boxes with the given NAME/MEAN combination or
-    `[]` if there are no matches.
+`[]` if there are no matches.
 
-___
+---
 
 ### getQuickTimeData
 
@@ -2458,16 +2458,16 @@ matching the provided `flags
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `boxType` | [`ByteVector`](ByteVector.md) | `undefined` |
-| `flags` | [`Mpeg4AppleDataBoxFlagType`](../enums/Mpeg4AppleDataBoxFlagType.md) | `AppleDataBoxFlagType.ContainsData` |
+| Name      | Type                                                                 | Default value                       |
+| :-------- | :------------------------------------------------------------------- | :---------------------------------- |
+| `boxType` | [`ByteVector`](ByteVector.md)                                        | `undefined`                         |
+| `flags`   | [`Mpeg4AppleDataBoxFlagType`](../enums/Mpeg4AppleDataBoxFlagType.md) | `AppleDataBoxFlagType.ContainsData` |
 
 #### Returns
 
 [`ByteVector`](ByteVector.md)[]
 
-___
+---
 
 ### getQuickTimeStrings
 
@@ -2477,8 +2477,8 @@ Gets the text contents of all boxes with the given `boxType` inside the tag's IL
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type                          | Description               |
+| :-------- | :---------------------------- | :------------------------ |
 | `boxType` | [`ByteVector`](ByteVector.md) | Type of box to search for |
 
 #### Returns
@@ -2486,9 +2486,9 @@ Gets the text contents of all boxes with the given `boxType` inside the tag's IL
 `string`[]
 
 string[] Text contents of all boxes with the given `boxType` or `undefined` if no
-    matches were found.
+matches were found.
 
-___
+---
 
 ### setItunesStrings
 
@@ -2499,17 +2499,17 @@ This replaces any existing boxes.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `meanString` | `string` | MEAN box contents to set |
-| `nameString` | `string` | NAME box contents to set |
+| Name             | Type       | Description                                                                                                  |
+| :--------------- | :--------- | :----------------------------------------------------------------------------------------------------------- |
+| `meanString`     | `string`   | MEAN box contents to set                                                                                     |
+| `nameString`     | `string`   | NAME box contents to set                                                                                     |
 | `...dataStrings` | `string`[] | Contents of the iTunes box to store. Use `[]` or `undefined` to clear the existing contents and leave empty. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### setQuickTimeData
 
@@ -2521,17 +2521,17 @@ existing boxes of the given type.
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `boxType` | [`ByteVector`](ByteVector.md) | `undefined` | Type of the box to set |
-| `data` | [`ByteVector`](ByteVector.md)[] | `undefined` | Data to store in the boxes |
-| `flags` | [`Mpeg4AppleDataBoxFlagType`](../enums/Mpeg4AppleDataBoxFlagType.md) | `AppleDataBoxFlagType.ContainsData` | Optional, flags to set on the DATA boxes |
+| Name      | Type                                                                 | Default value                       | Description                              |
+| :-------- | :------------------------------------------------------------------- | :---------------------------------- | :--------------------------------------- |
+| `boxType` | [`ByteVector`](ByteVector.md)                                        | `undefined`                         | Type of the box to set                   |
+| `data`    | [`ByteVector`](ByteVector.md)[]                                      | `undefined`                         | Data to store in the boxes               |
+| `flags`   | [`Mpeg4AppleDataBoxFlagType`](../enums/Mpeg4AppleDataBoxFlagType.md) | `AppleDataBoxFlagType.ContainsData` | Optional, flags to set on the DATA boxes |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### setQuickTimeString
 
@@ -2542,16 +2542,16 @@ the given type with a single box containing the provided data.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `boxType` | [`ByteVector`](ByteVector.md) | Type of box to set |
-| `dataString` | `string` | Contents to store in the box |
+| Name         | Type                          | Description                  |
+| :----------- | :---------------------------- | :--------------------------- |
+| `boxType`    | [`ByteVector`](ByteVector.md) | Type of box to set           |
+| `dataString` | `string`                      | Contents to store in the box |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### setQuickTimeStrings
 
@@ -2563,16 +2563,16 @@ provided `dataStrings`.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `boxType` | [`ByteVector`](ByteVector.md) | Type of box to set |
-| `dataStrings` | `string`[] | Contents to store in the box |
+| Name          | Type                          | Description                  |
+| :------------ | :---------------------------- | :--------------------------- |
+| `boxType`     | [`ByteVector`](ByteVector.md) | Type of box to set           |
+| `dataStrings` | `string`[]                    | Contents to store in the box |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### firstInGroup
 
@@ -2582,8 +2582,8 @@ Gets the first string in an array.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                    |
+| :------ | :--------- | :--------------------------------------------- |
 | `group` | `string`[] | Array of strings to get the first string from. |
 
 #### Returns
@@ -2591,13 +2591,13 @@ Gets the first string in an array.
 `string`
 
 First string contained in `group` or `undefined` if the array is
-    `undefined` or empty
+`undefined` or empty
 
 #### Inherited from
 
 [Tag](Tag.md).[firstInGroup](Tag.md#firstingroup)
 
-___
+---
 
 ### isFalsyOrLikeEmpty
 
@@ -2607,8 +2607,8 @@ Checks if a value is falsy or empty.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                   | Description     |
+| :------ | :--------------------- | :-------------- |
 | `value` | `string` \| `string`[] | Object to check |
 
 #### Returns
@@ -2616,14 +2616,14 @@ Checks if a value is falsy or empty.
 `boolean`
 
 If `value` is a string, `true` is returned if the value is falsy or all
-    whitespace, `false` is returned otherwise. If `value` is an array of strings,
-    the array must be falsy or all elements must be falsy or whitespace to return `true`.
+whitespace, `false` is returned otherwise. If `value` is an array of strings,
+the array must be falsy or all elements must be falsy or whitespace to return `true`.
 
 #### Inherited from
 
 [Tag](Tag.md).[isFalsyOrLikeEmpty](Tag.md#isfalsyorlikeempty)
 
-___
+---
 
 ### joinGroup
 
@@ -2633,8 +2633,8 @@ Joins an array of string into a single, semicolon and space separated string.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description             |
+| :------ | :--------- | :---------------------- |
 | `group` | `string`[] | Array of string to join |
 
 #### Returns
@@ -2642,13 +2642,13 @@ Joins an array of string into a single, semicolon and space separated string.
 `string`
 
 A semicolon and space separated string containing the values from `group`
-    or undefined if the array is `undefined` or empty.
+or undefined if the array is `undefined` or empty.
 
 #### Inherited from
 
 [Tag](Tag.md).[joinGroup](Tag.md#joingroup)
 
-___
+---
 
 ### tagTypeFlagsToArray
 
@@ -2658,8 +2658,8 @@ Generates an array of tag types that are set in the provided flags value.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                               | Description                             |
+| :--------- | :--------------------------------- | :-------------------------------------- |
 | `tagTypes` | [`TagTypes`](../enums/TagTypes.md) | Tag types that have been OR'd together. |
 
 #### Returns

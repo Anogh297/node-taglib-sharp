@@ -3,23 +3,29 @@
  * order for changes to take effect.
  */
 export default class XiphSettings {
-    private static _useTempoToStoreBpm: boolean = true;
+	private static _useTempoToStoreBpm: boolean = true;
 
-    // noinspection JSUnusedLocalSymbols
-    /**
-     * Private constructor to prevent inadvertent construction
-     */
-    private constructor() { /* private to prevent constructing instances */ }
+	// noinspection JSUnusedLocalSymbols
+	/**
+	 * Private constructor to prevent inadvertent construction
+	 */
+	private constructor() {
+		/* private to prevent constructing instances */
+	}
 
-    /**
-     * Gets whether to use "TEMPO" field to store {@link XiphComment.beatsPerMinute} property. If `true`
-     * "TEMPO" will be used, if `false` "BPM" will be used.
-     * @default `true`
-     */
-    public static get useTempoToStoreBpm(): boolean { return this._useTempoToStoreBpm; }
-    /**
-     * Sets whether to use "TEMPO" field to store {@link XiphComment.beatsPerMinute} property. If `true`
-     * "TEMPO" will be used, if `false` "BPM" will be used.
-     */
-    public static set useTempoToStoreBpm(value: boolean) { this._useTempoToStoreBpm = value; }
+	/**
+	 * Gets whether to use "TEMPO" field to store {@link XiphComment.beatsPerMinute} property. If `true`
+	 * "TEMPO" will be used, if `false` "BPM" will be used.
+	 * @default `true`
+	 */
+	public static get useTempoToStoreBpm(): boolean {
+		return this._useTempoToStoreBpm;
+	}
+	/**
+	 * Sets whether to use "TEMPO" field to store {@link XiphComment.beatsPerMinute} property. If `true`
+	 * "TEMPO" will be used, if `false` "BPM" will be used.
+	 */
+	public static set useTempoToStoreBpm(value: boolean) {
+		this._useTempoToStoreBpm = value;
+	}
 }

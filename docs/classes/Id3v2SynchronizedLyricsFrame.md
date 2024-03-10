@@ -33,10 +33,10 @@ Constructs and initializes a new instance with a specified time and text.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description                                                                                                                  |
+| :----- | :------- | :--------------------------------------------------------------------------------------------------------------------------- |
 | `time` | `number` | Offset into the media that owns this element when this element should be displayed. See TimestampFormat for possible values. |
-| `text` | `string` | Text for the point in time |
+| `text` | `string` | Text for the point in time                                                                                                   |
 
 ## Properties
 
@@ -66,8 +66,8 @@ in SynchronizedLyricsFrame.format of the frame that owns this element.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                    |
+| :------ | :------- | :--------------------------------------------- |
 | `value` | `number` | Offset of the current instance, must be a safe |
 
 #### Returns
@@ -86,7 +86,7 @@ Creates a copy of this instance.
 
 [`Id3v2SynchronizedLyricsFrame`](Id3v2SynchronizedLyricsFrame.md)
 
-___
+---
 
 ### render
 
@@ -96,8 +96,8 @@ Generates a raw byte representation of the frame for writing to a file.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                                   | Description                                         |
+| :--------- | :------------------------------------- | :-------------------------------------------------- |
 | `encoding` | [`StringType`](../enums/StringType.md) | Encoding to use for encoding the text of the frame. |
 
 #### Returns

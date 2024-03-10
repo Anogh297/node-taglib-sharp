@@ -42,7 +42,7 @@ Bitrate of the audio in kilobits per second represented by the current instance.
 
 [IAudioCodec](IAudioCodec.md).[audioBitrate](IAudioCodec.md#audiobitrate)
 
-___
+---
 
 ### audioChannels
 
@@ -54,7 +54,7 @@ Number of channels in the audio represented by the current instance.
 
 [IAudioCodec](IAudioCodec.md).[audioChannels](IAudioCodec.md#audiochannels)
 
-___
+---
 
 ### audioSampleRate
 
@@ -66,7 +66,7 @@ Sample rate of the audio represented by the current instance.
 
 [IAudioCodec](IAudioCodec.md).[audioSampleRate](IAudioCodec.md#audiosamplerate)
 
-___
+---
 
 ### bitsPerSample
 
@@ -74,7 +74,7 @@ ___
 
 Number of bits per sample in the audio represented by the current instance.
 
-___
+---
 
 ### description
 
@@ -86,7 +86,7 @@ Gets a text description of the media represented by the current instance.
 
 [IAudioCodec](IAudioCodec.md).[description](IAudioCodec.md#description)
 
-___
+---
 
 ### durationMilliseconds
 
@@ -102,7 +102,7 @@ Ensure milliseconds is the right way to interpret this field
 
 [IAudioCodec](IAudioCodec.md).[durationMilliseconds](IAudioCodec.md#durationmilliseconds)
 
-___
+---
 
 ### mediaTypes
 

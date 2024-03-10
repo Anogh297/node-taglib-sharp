@@ -47,7 +47,7 @@ Gets the codec information contained in the current instance.
 
 [`ICodec`](../interfaces/ICodec.md)
 
-___
+---
 
 ### errorCorrectionData
 
@@ -59,7 +59,7 @@ Gets the error correction data contained in the current instance.
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### errorCorrectionType
 
@@ -71,7 +71,7 @@ Gets the error correction type GUID of the current instance.
 
 [`UuidWrapper`](UuidWrapper.md)
 
-___
+---
 
 ### flags
 
@@ -82,16 +82,16 @@ Gets the flags that apply to the current instance.
 **`Remarks`**
 
 The `flags` field a 16-bit, double word, defined as follows:
-    * LSB
-      * Stream number - 7 bits
-      * Reserved - 8 bits
-      * Encrypted content flag - 1 bit
+_ LSB
+_ Stream number - 7 bits
+_ Reserved - 8 bits
+_ Encrypted content flag - 1 bit
 
 #### Returns
 
 `number`
 
-___
+---
 
 ### guid
 
@@ -107,7 +107,7 @@ Gets the GUID that identifies the current instance.
 
 BaseObject.guid
 
-___
+---
 
 ### objectType
 
@@ -123,7 +123,7 @@ Gets the type of the object for easy comparison.
 
 BaseObject.objectType
 
-___
+---
 
 ### originalSize
 
@@ -139,7 +139,7 @@ Gets the original size of the current instance.
 
 BaseObject.originalSize
 
-___
+---
 
 ### streamNumber
 
@@ -151,7 +151,7 @@ Gets the stream number for the current instance. Zero is invalid.
 
 `number`
 
-___
+---
 
 ### streamType
 
@@ -163,7 +163,7 @@ Gets the stream type GUID of the current instance.
 
 [`UuidWrapper`](UuidWrapper.md)
 
-___
+---
 
 ### timeOffsetMilliseconds
 
@@ -175,7 +175,7 @@ Gets the time offset at which the stream described by the current instance begin
 
 `number`
 
-___
+---
 
 ### typeSpecificData
 
@@ -202,10 +202,10 @@ file.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `file` | [`File`](File.md) | File which contains the details of the new instance to create |
-| `position` | `number` | Position in `file` where the object begins |
+| Name       | Type              | Description                                                   |
+| :--------- | :---------------- | :------------------------------------------------------------ |
+| `file`     | [`File`](File.md) | File which contains the details of the new instance to create |
+| `position` | `number`          | Position in `file` where the object begins                    |
 
 #### Returns
 
@@ -215,7 +215,7 @@ file.
 
 [AsfBaseObject](AsfBaseObject.md).[initializeFromFile](AsfBaseObject.md#initializefromfile)
 
-___
+---
 
 ### initializeFromGuid
 
@@ -225,8 +225,8 @@ Initializes a new instance with a specified GUID.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                            | Description                       |
+| :----- | :------------------------------ | :-------------------------------- |
 | `guid` | [`UuidWrapper`](UuidWrapper.md) | GUID to use for the new instance. |
 
 #### Returns
@@ -237,7 +237,7 @@ Initializes a new instance with a specified GUID.
 
 [AsfBaseObject](AsfBaseObject.md).[initializeFromGuid](AsfBaseObject.md#initializefromguid)
 
-___
+---
 
 ### render
 
@@ -253,7 +253,7 @@ Renders the current instance as a raw ASF object.
 
 [AsfBaseObject](AsfBaseObject.md).[render](AsfBaseObject.md#render)
 
-___
+---
 
 ### renderInternal
 
@@ -264,12 +264,12 @@ Renders the current instance as a raw ASF object containing the specified data.
 **`Remarks`**
 
 Child classes implementing [()](AsfStreamPropertiesObject.md#render) should render their contents and then
-    send the data through this method to produce the final output.
+send the data through this method to produce the final output.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                          | Description                                                    |
+| :----- | :---------------------------- | :------------------------------------------------------------- |
 | `data` | [`ByteVector`](ByteVector.md) | Data to store in the rendered version of the current instance. |
 
 #### Returns
@@ -280,7 +280,7 @@ Child classes implementing [()](AsfStreamPropertiesObject.md#render) should rend
 
 [AsfBaseObject](AsfBaseObject.md).[renderInternal](AsfBaseObject.md#renderinternal)
 
-___
+---
 
 ### fromFile
 
@@ -291,10 +291,10 @@ the provided file.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `file` | [`File`](File.md) | File from which the contents of the new instance will be read |
-| `position` | `number` | Index into the file where the stream properties object begins |
+| Name       | Type              | Description                                                   |
+| :--------- | :---------------- | :------------------------------------------------------------ |
+| `file`     | [`File`](File.md) | File from which the contents of the new instance will be read |
+| `position` | `number`          | Index into the file where the stream properties object begins |
 
 #### Returns
 

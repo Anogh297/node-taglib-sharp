@@ -52,8 +52,8 @@ Gets and sets the picture data stored in the current instance.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type                          |
+| :------ | :---------------------------- |
 | `value` | [`ByteVector`](ByteVector.md) |
 
 #### Returns
@@ -64,7 +64,7 @@ Gets and sets the picture data stored in the current instance.
 
 [IPicture](../interfaces/IPicture.md).[data](../interfaces/IPicture.md#data)
 
-___
+---
 
 ### description
 
@@ -86,8 +86,8 @@ Gets and sets a description of the picture stored in the current instance. Optio
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `value` | `string` |
 
 #### Returns
@@ -98,7 +98,7 @@ Gets and sets a description of the picture stored in the current instance. Optio
 
 [IPicture](../interfaces/IPicture.md).[description](../interfaces/IPicture.md#description)
 
-___
+---
 
 ### filename
 
@@ -120,8 +120,8 @@ Gets and sets a filename of the picture stored in the current instance. Optional
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `value` | `string` |
 
 #### Returns
@@ -132,7 +132,7 @@ Gets and sets a filename of the picture stored in the current instance. Optional
 
 [IPicture](../interfaces/IPicture.md).[filename](../interfaces/IPicture.md#filename)
 
-___
+---
 
 ### isLoaded
 
@@ -148,7 +148,7 @@ Gets whether the object has been loaded.
 
 [ILazy](../interfaces/ILazy.md).[isLoaded](../interfaces/ILazy.md#isloaded)
 
-___
+---
 
 ### mimeType
 
@@ -170,8 +170,8 @@ Gets and sets the mime-type of the picture data stored in the current instance.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `value` | `string` |
 
 #### Returns
@@ -182,7 +182,7 @@ Gets and sets the mime-type of the picture data stored in the current instance.
 
 [IPicture](../interfaces/IPicture.md).[mimeType](../interfaces/IPicture.md#mimetype)
 
-___
+---
 
 ### type
 
@@ -204,8 +204,8 @@ Gets and sets the type of the content visible in the picture stored in the curre
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type                                     |
+| :------ | :--------------------------------------- |
 | `value` | [`PictureType`](../enums/PictureType.md) |
 
 #### Returns
@@ -232,7 +232,7 @@ Loads the object.
 
 [ILazy](../interfaces/ILazy.md).[load](../interfaces/ILazy.md#load)
 
-___
+---
 
 ### fromData
 
@@ -243,15 +243,15 @@ will not be lazily loaded.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                          | Description                               |
+| :----- | :---------------------------- | :---------------------------------------- |
 | `data` | [`ByteVector`](ByteVector.md) | ByteVector Object containing picture data |
 
 #### Returns
 
 [`PictureLazy`](PictureLazy.md)
 
-___
+---
 
 ### fromFile
 
@@ -261,17 +261,17 @@ Constructs a new instance from a file abstraction. The content will be lazily lo
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `file` | [`IFileAbstraction`](../interfaces/IFileAbstraction.md) | File abstraction containing the file to read |
-| `offset` | `number` | Index into the file where the picture is located, must be a 32-bit integer |
-| `size?` | `number` | Optionally, size of the picture in bytes. If omitted, all bytes of file will be read when lazily loaded. Must be a 32-bit integer or `undefined` |
+| Name     | Type                                                    | Description                                                                                                                                      |
+| :------- | :------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------- |
+| `file`   | [`IFileAbstraction`](../interfaces/IFileAbstraction.md) | File abstraction containing the file to read                                                                                                     |
+| `offset` | `number`                                                | Index into the file where the picture is located, must be a 32-bit integer                                                                       |
+| `size?`  | `number`                                                | Optionally, size of the picture in bytes. If omitted, all bytes of file will be read when lazily loaded. Must be a 32-bit integer or `undefined` |
 
 #### Returns
 
 [`PictureLazy`](PictureLazy.md)
 
-___
+---
 
 ### fromPath
 
@@ -281,8 +281,8 @@ Constructs a new instance that will be lazily loaded from the filePath provided.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type     | Description              |
+| :--------- | :------- | :----------------------- |
 | `filePath` | `string` | Path to the file to read |
 
 #### Returns

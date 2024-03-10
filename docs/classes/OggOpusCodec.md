@@ -44,8 +44,8 @@ codec's header information.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name           | Type                          | Description                                |
+| :------------- | :---------------------------- | :----------------------------------------- |
 | `headerPacket` | [`ByteVector`](ByteVector.md) | Packet containing the header of the stream |
 
 ## Accessors
@@ -59,7 +59,7 @@ Bitrate of the audio in kilobits per second represented by the current instance.
 **`Remarks`**
 
 Always returns zero since bitrate is variable and no information is stored in the
-    Ogg header (unlike Vorbis).
+Ogg header (unlike Vorbis).
 
 #### Returns
 
@@ -69,7 +69,7 @@ Always returns zero since bitrate is variable and no information is stored in th
 
 [IAudioCodec](../interfaces/IAudioCodec.md).[audioBitrate](../interfaces/IAudioCodec.md#audiobitrate)
 
-___
+---
 
 ### audioChannels
 
@@ -85,7 +85,7 @@ Number of channels in the audio represented by the current instance.
 
 [IAudioCodec](../interfaces/IAudioCodec.md).[audioChannels](../interfaces/IAudioCodec.md#audiochannels)
 
-___
+---
 
 ### audioSampleRate
 
@@ -95,9 +95,9 @@ Sample rate of the audio represented by the current instance.
 
 **`Remarks`**
 
-This is the *input* sample rate used when the file was created. Opus uses a variety
-    of sample rates internally, and as such the output sample rate is dependent on the
-    decoder used. In most modern hardware cases, this will be 48kHz.
+This is the _input_ sample rate used when the file was created. Opus uses a variety
+of sample rates internally, and as such the output sample rate is dependent on the
+decoder used. In most modern hardware cases, this will be 48kHz.
 
 #### Returns
 
@@ -107,7 +107,7 @@ This is the *input* sample rate used when the file was created. Opus uses a vari
 
 [IAudioCodec](../interfaces/IAudioCodec.md).[audioSampleRate](../interfaces/IAudioCodec.md#audiosamplerate)
 
-___
+---
 
 ### commentData
 
@@ -123,7 +123,7 @@ Gets the raw Xiph comment data contained in the codec.
 
 IOggCodec.commentData
 
-___
+---
 
 ### description
 
@@ -139,7 +139,7 @@ Gets a text description of the media represented by the current instance.
 
 [IAudioCodec](../interfaces/IAudioCodec.md).[description](../interfaces/IAudioCodec.md#description)
 
-___
+---
 
 ### durationMilliseconds
 
@@ -155,7 +155,7 @@ Duration of the media in milliseconds represented by the current instance.
 
 [IAudioCodec](../interfaces/IAudioCodec.md).[durationMilliseconds](../interfaces/IAudioCodec.md#durationmilliseconds)
 
-___
+---
 
 ### mediaTypes
 
@@ -171,7 +171,7 @@ Types of media represented by the current instance, bitwise combined.
 
 [IAudioCodec](../interfaces/IAudioCodec.md).[mediaTypes](../interfaces/IAudioCodec.md#mediatypes)
 
-___
+---
 
 ### streamCount
 
@@ -193,8 +193,8 @@ Reads an Ogg packet that has been encountered in the stream, looking for the com
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                          | Description    |
+| :------- | :---------------------------- | :------------- |
 | `packet` | [`ByteVector`](ByteVector.md) | Packet to read |
 
 #### Returns
@@ -205,7 +205,7 @@ Reads an Ogg packet that has been encountered in the stream, looking for the com
 
 [IOggCodec](../interfaces/IOggCodec.md).[readPacket](../interfaces/IOggCodec.md#readpacket)
 
-___
+---
 
 ### setDuration
 
@@ -216,10 +216,10 @@ called, the duration can be accessed by calling [durationMilliseconds](../interf
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name                    | Type                          | Description                           |
+| :---------------------- | :---------------------------- | :------------------------------------ |
 | `firstGranularPosition` | [`ByteVector`](ByteVector.md) | First granular position of the stream |
-| `lastGranularPosition` | [`ByteVector`](ByteVector.md) | Last granular position of the stream |
+| `lastGranularPosition`  | [`ByteVector`](ByteVector.md) | Last granular position of the stream  |
 
 #### Returns
 
@@ -229,7 +229,7 @@ called, the duration can be accessed by calling [durationMilliseconds](../interf
 
 [IOggCodec](../interfaces/IOggCodec.md).[setDuration](../interfaces/IOggCodec.md#setduration)
 
-___
+---
 
 ### writeCommentPacket
 
@@ -239,10 +239,10 @@ Renders and write the provided comment into the provided list of packets.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type                            | Description                                                |
+| :-------- | :------------------------------ | :--------------------------------------------------------- |
 | `packets` | [`ByteVector`](ByteVector.md)[] | List of packets the comment packet should be written into. |
-| `comment` | [`XiphComment`](XiphComment.md) | Xiph comment to write into the list of packets. |
+| `comment` | [`XiphComment`](XiphComment.md) | Xiph comment to write into the list of packets.            |
 
 #### Returns
 
@@ -252,7 +252,7 @@ Renders and write the provided comment into the provided list of packets.
 
 [IOggCodec](../interfaces/IOggCodec.md).[writeCommentPacket](../interfaces/IOggCodec.md#writecommentpacket)
 
-___
+---
 
 ### isHeaderPacket
 
@@ -263,8 +263,8 @@ packet magic signature.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name           | Type                          | Description     |
+| :------------- | :---------------------------- | :-------------- |
 | `headerPacket` | [`ByteVector`](ByteVector.md) | Packet to check |
 
 #### Returns

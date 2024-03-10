@@ -46,7 +46,7 @@ Gets a text description of the media represented by the current instance.
 
 [ICodec](ICodec.md).[description](ICodec.md#description)
 
-___
+---
 
 ### durationMilliseconds
 
@@ -62,7 +62,7 @@ Ensure milliseconds is the right way to interpret this field
 
 [ICodec](ICodec.md).[durationMilliseconds](ICodec.md#durationmilliseconds)
 
-___
+---
 
 ### mediaTypes
 
@@ -96,8 +96,8 @@ Reads an Ogg packet that has been encountered in the stream, looking for the com
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                                     | Description    |
+| :------- | :--------------------------------------- | :------------- |
 | `packet` | [`ByteVector`](../classes/ByteVector.md) | Packet to read |
 
 #### Returns
@@ -105,9 +105,9 @@ Reads an Ogg packet that has been encountered in the stream, looking for the com
 `boolean`
 
 `true` if the codec has read all the necessary packets for the stream and
-    does not need to be called again,
+does not need to be called again,
 
-___
+---
 
 ### setDuration
 
@@ -118,16 +118,16 @@ called, the duration can be accessed by calling [durationMilliseconds](ICodec.md
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name                    | Type                                     | Description                           |
+| :---------------------- | :--------------------------------------- | :------------------------------------ |
 | `firstGranularPosition` | [`ByteVector`](../classes/ByteVector.md) | First granular position of the stream |
-| `lastGranularPosition` | [`ByteVector`](../classes/ByteVector.md) | Last granular position of the stream |
+| `lastGranularPosition`  | [`ByteVector`](../classes/ByteVector.md) | Last granular position of the stream  |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### writeCommentPacket
 
@@ -137,10 +137,10 @@ Renders and write the provided comment into the provided list of packets.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type                                       | Description                                                |
+| :-------- | :----------------------------------------- | :--------------------------------------------------------- |
 | `packets` | [`ByteVector`](../classes/ByteVector.md)[] | List of packets the comment packet should be written into. |
-| `comment` | [`XiphComment`](../classes/XiphComment.md) | Xiph comment to write into the list of packets. |
+| `comment` | [`XiphComment`](../classes/XiphComment.md) | Xiph comment to write into the list of packets.            |
 
 #### Returns
 

@@ -51,7 +51,7 @@ Gets the creation date of the file described by the current instance.
 
 `Date`
 
-___
+---
 
 ### dataPacketsCount
 
@@ -64,7 +64,7 @@ instance.
 
 `bigint`
 
-___
+---
 
 ### fileId
 
@@ -76,7 +76,7 @@ Gets the GUID for the file described by the current instance.
 
 [`UuidWrapper`](UuidWrapper.md)
 
-___
+---
 
 ### fileSize
 
@@ -88,7 +88,7 @@ Gets the total size of the file described by the current instance in bytes.
 
 `bigint`
 
-___
+---
 
 ### flags
 
@@ -99,26 +99,26 @@ Gets whether the file described by the current instance is broadcast or seekable
 **`Remarks`**
 
 This attribute applies to presentation descriptors for ASF content. The value is a
-    bitwise OR of the flags in FilePropertiesFlags.
-    * If FilePropertiesFlags.Broadcast is set, the following properties are not
-      valid
-      * [fileId](AsfFilePropertiesObject.md#fileid)
-      * [creationDate](AsfFilePropertiesObject.md#creationdate)
-      * [dataPacketsCount](AsfFilePropertiesObject.md#datapacketscount)
-      * [playDurationMilliseconds](AsfFilePropertiesObject.md#playdurationmilliseconds)
-      * [sendDurationMilliseconds](AsfFilePropertiesObject.md#senddurationmilliseconds)
-      * [maximumDataPacketSize](AsfFilePropertiesObject.md#maximumdatapacketsize) and [minimumDataPacketSize](AsfFilePropertiesObject.md#minimumdatapacketsize) are set to the
-        actual packet size
-    * If FilePropertiesFlags.Seekable is set, an audio stream is present and the
-      [maximumDataPacketSize](AsfFilePropertiesObject.md#maximumdatapacketsize) and [minimumDataPacketSize](AsfFilePropertiesObject.md#minimumdatapacketsize) are set to the same
-      size. It can also be seekable if the file has an audio stream and a video stream with
-      a matching simple index object.
+bitwise OR of the flags in FilePropertiesFlags.
+_ If FilePropertiesFlags.Broadcast is set, the following properties are not
+valid
+_ [fileId](AsfFilePropertiesObject.md#fileid)
+_ [creationDate](AsfFilePropertiesObject.md#creationdate)
+_ [dataPacketsCount](AsfFilePropertiesObject.md#datapacketscount)
+_ [playDurationMilliseconds](AsfFilePropertiesObject.md#playdurationmilliseconds)
+_ [sendDurationMilliseconds](AsfFilePropertiesObject.md#senddurationmilliseconds)
+_ [maximumDataPacketSize](AsfFilePropertiesObject.md#maximumdatapacketsize) and [minimumDataPacketSize](AsfFilePropertiesObject.md#minimumdatapacketsize) are set to the
+actual packet size
+_ If FilePropertiesFlags.Seekable is set, an audio stream is present and the
+[maximumDataPacketSize](AsfFilePropertiesObject.md#maximumdatapacketsize) and [minimumDataPacketSize](AsfFilePropertiesObject.md#minimumdatapacketsize) are set to the same
+size. It can also be seekable if the file has an audio stream and a video stream with
+a matching simple index object.
 
 #### Returns
 
 `number`
 
-___
+---
 
 ### guid
 
@@ -134,7 +134,7 @@ Gets the GUID that identifies the current instance.
 
 BaseObject.guid
 
-___
+---
 
 ### maximumBitrate
 
@@ -147,7 +147,7 @@ current instance.
 
 `number`
 
-___
+---
 
 ### maximumDataPacketSize
 
@@ -159,7 +159,7 @@ Gets the maximum packet size, in bytes, for the file described by the current in
 
 `number`
 
-___
+---
 
 ### minimumDataPacketSize
 
@@ -171,7 +171,7 @@ Gets the minimum packet size, in bytes, for the file described by the current in
 
 `number`
 
-___
+---
 
 ### objectType
 
@@ -187,7 +187,7 @@ Gets the type of the object for easy comparison.
 
 BaseObject.objectType
 
-___
+---
 
 ### originalSize
 
@@ -203,7 +203,7 @@ Gets the original size of the current instance.
 
 BaseObject.originalSize
 
-___
+---
 
 ### playDurationMilliseconds
 
@@ -215,7 +215,7 @@ Get the time needed to play the file described by the current instance in millis
 
 `number`
 
-___
+---
 
 ### prerollMilliseconds
 
@@ -228,7 +228,7 @@ by the current instance.
 
 `number`
 
-___
+---
 
 ### sendDurationMilliseconds
 
@@ -253,10 +253,10 @@ file.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `file` | [`File`](File.md) | File which contains the details of the new instance to create |
-| `position` | `number` | Position in `file` where the object begins |
+| Name       | Type              | Description                                                   |
+| :--------- | :---------------- | :------------------------------------------------------------ |
+| `file`     | [`File`](File.md) | File which contains the details of the new instance to create |
+| `position` | `number`          | Position in `file` where the object begins                    |
 
 #### Returns
 
@@ -266,7 +266,7 @@ file.
 
 [AsfBaseObject](AsfBaseObject.md).[initializeFromFile](AsfBaseObject.md#initializefromfile)
 
-___
+---
 
 ### initializeFromGuid
 
@@ -276,8 +276,8 @@ Initializes a new instance with a specified GUID.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                            | Description                       |
+| :----- | :------------------------------ | :-------------------------------- |
 | `guid` | [`UuidWrapper`](UuidWrapper.md) | GUID to use for the new instance. |
 
 #### Returns
@@ -288,7 +288,7 @@ Initializes a new instance with a specified GUID.
 
 [AsfBaseObject](AsfBaseObject.md).[initializeFromGuid](AsfBaseObject.md#initializefromguid)
 
-___
+---
 
 ### render
 
@@ -304,7 +304,7 @@ Renders the current instance as a raw ASF object.
 
 [AsfBaseObject](AsfBaseObject.md).[render](AsfBaseObject.md#render)
 
-___
+---
 
 ### renderInternal
 
@@ -315,12 +315,12 @@ Renders the current instance as a raw ASF object containing the specified data.
 **`Remarks`**
 
 Child classes implementing [()](AsfFilePropertiesObject.md#render) should render their contents and then
-    send the data through this method to produce the final output.
+send the data through this method to produce the final output.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                          | Description                                                    |
+| :----- | :---------------------------- | :------------------------------------------------------------- |
 | `data` | [`ByteVector`](ByteVector.md) | Data to store in the rendered version of the current instance. |
 
 #### Returns
@@ -331,7 +331,7 @@ Child classes implementing [()](AsfFilePropertiesObject.md#render) should render
 
 [AsfBaseObject](AsfBaseObject.md).[renderInternal](AsfBaseObject.md#renderinternal)
 
-___
+---
 
 ### fromFile
 
@@ -341,10 +341,10 @@ Constructs a new instance by reading from a file.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `file` | [`File`](File.md) | File to read the file properties object from |
-| `position` | `number` | Offset into the file where the object begins |
+| Name       | Type              | Description                                  |
+| :--------- | :---------------- | :------------------------------------------- |
+| `file`     | [`File`](File.md) | File to read the file properties object from |
+| `position` | `number`          | Offset into the file where the object begins |
 
 #### Returns
 

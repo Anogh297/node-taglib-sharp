@@ -8,9 +8,9 @@ Information about a variable bitrate MPEG audio stream encoded by the Fraunhofer
 
 ### Properties
 
-- [FILE\_IDENTIFIER](MpegVbriHeader.md#file_identifier)
+- [FILE_IDENTIFIER](MpegVbriHeader.md#file_identifier)
 - [UNKNOWN](MpegVbriHeader.md#unknown)
-- [VBRI\_HEADER\_OFFSET](MpegVbriHeader.md#vbri_header_offset)
+- [VBRI_HEADER_OFFSET](MpegVbriHeader.md#vbri_header_offset)
 
 ### Accessors
 
@@ -25,13 +25,13 @@ Information about a variable bitrate MPEG audio stream encoded by the Fraunhofer
 
 ## Properties
 
-### FILE\_IDENTIFIER
+### FILE_IDENTIFIER
 
-▪ `Static` `Readonly` **FILE\_IDENTIFIER**: [`ByteVector`](ByteVector.md)
+▪ `Static` `Readonly` **FILE_IDENTIFIER**: [`ByteVector`](ByteVector.md)
 
 Identifier that appears in the file to indicate the start of the VBRI header.
 
-___
+---
 
 ### UNKNOWN
 
@@ -39,11 +39,11 @@ ___
 
 An empty and unset VBRI header.
 
-___
+---
 
-### VBRI\_HEADER\_OFFSET
+### VBRI_HEADER_OFFSET
 
-▪ `Static` `Readonly` **VBRI\_HEADER\_OFFSET**: ``36``
+▪ `Static` `Readonly` **VBRI_HEADER_OFFSET**: `36`
 
 Offset at which a VBRI header would appear in an MPEG audio packet. Always 32 bytes after
 the end of the first MPEG header.
@@ -60,7 +60,7 @@ Whether or not a physical VBRI header is present in the file.
 
 `boolean`
 
-___
+---
 
 ### totalFrames
 
@@ -72,7 +72,7 @@ Gets the total number of frames in the file, as indicated by the current instanc
 
 `number`
 
-___
+---
 
 ### totalSize
 
@@ -94,15 +94,15 @@ Constructs a new instance from the raw data of the header.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                          | Description                       |
+| :----- | :---------------------------- | :-------------------------------- |
 | `data` | [`ByteVector`](ByteVector.md) | Data to read the VBRI header from |
 
 #### Returns
 
 [`MpegVbriHeader`](MpegVbriHeader.md)
 
-___
+---
 
 ### fromInfo
 
@@ -112,10 +112,10 @@ Constructs a new instance with a specified frame count and size.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type     | Description              |
+| :------- | :------- | :----------------------- |
 | `frames` | `number` | Frame count of the audio |
-| `size` | `number` | Stream size of the audio |
+| `size`   | `number` | Stream size of the audio |
 
 #### Returns
 

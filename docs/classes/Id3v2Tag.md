@@ -152,8 +152,8 @@ Stored in the `TALB` frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                            |
+| :------ | :------- | :------------------------------------------------------------------------------------- |
 | `value` | `string` | of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -164,7 +164,7 @@ Stored in the `TALB` frame
 
 Tag.album
 
-___
+---
 
 ### albumArtists
 
@@ -212,8 +212,8 @@ Stored in the `TSO2` frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                                                                                                 |
+| :------ | :--------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `string`[] | Band or artist credited with the creation of the entire album or collection containing the media described by the current instance or an empty array if no value is present |
 
 #### Returns
@@ -224,7 +224,7 @@ Stored in the `TSO2` frame
 
 Tag.albumArtists
 
-___
+---
 
 ### albumArtistsSort
 
@@ -272,8 +272,8 @@ Stored in the `TPE2` frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                                                                                                                             |
+| :------ | :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `value` | `string`[] | Sortable names for the bands/artists are credited with the creation of the entire album or collection containing the media described by the current instance, or an empty array if no value is present. |
 
 #### Returns
@@ -284,7 +284,7 @@ Stored in the `TPE2` frame
 
 Tag.albumArtistsSort
 
-___
+---
 
 ### albumSort
 
@@ -322,8 +322,8 @@ Stored in the `TSOA` frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                               |
+| :------ | :------- | :---------------------------------------------------------------------------------------- |
 | `value` | `string` | Sortable name for the album title of the media or `undefined` if the value is not present |
 
 #### Returns
@@ -334,7 +334,7 @@ Stored in the `TSOA` frame
 
 Tag.albumSort
 
-___
+---
 
 ### amazonId
 
@@ -370,8 +370,8 @@ via TXXX:ASIN
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                      |
+| :------ | :------- | :----------------------------------------------------------------------------------------------- |
 | `value` | `string` | Amazon ID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -382,7 +382,7 @@ via TXXX:ASIN
 
 Tag.amazonId
 
-___
+---
 
 ### beatsPerMinute
 
@@ -420,8 +420,8 @@ Stored in the `TBPM` frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                             |
+| :------ | :------- | :------------------------------------------------------------------------------------------------------ |
 | `value` | `number` | Beats per minute of the audio in the media represented by the current instance, or `0` if not specified |
 
 #### Returns
@@ -432,7 +432,7 @@ Stored in the `TBPM` frame
 
 Tag.beatsPerMinute
 
-___
+---
 
 ### comment
 
@@ -474,8 +474,8 @@ Stored in the `COMM` frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                               |
+| :------ | :------- | :-------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | User comments on the media represented by the current instance or `undefined` if the value is not present |
 
 #### Returns
@@ -486,7 +486,7 @@ Stored in the `COMM` frame
 
 Tag.comment
 
-___
+---
 
 ### composers
 
@@ -522,8 +522,8 @@ Stored in the `TCOM` frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                          |
+| :------ | :--------- | :--------------------------------------------------------------------------------------------------- |
 | `value` | `string`[] | Composers of the media represented by the current instance of an empty array if no value is present. |
 
 #### Returns
@@ -534,7 +534,7 @@ Stored in the `TCOM` frame
 
 Tag.composers
 
-___
+---
 
 ### composersSort
 
@@ -572,8 +572,8 @@ Stored in the `TSOC` frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                                                 |
+| :------ | :--------- | :-------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `string`[] | Sortable names for the composers of the media represented by the current instance or an empty array if no value is present. |
 
 #### Returns
@@ -584,7 +584,7 @@ Stored in the `TSOC` frame
 
 Tag.composersSort
 
-___
+---
 
 ### conductor
 
@@ -618,8 +618,8 @@ Stored in the `TPE3` frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                |
+| :------ | :------- | :--------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | Conductor or director of the media represented by the current instance or `undefined` if no value present. |
 
 #### Returns
@@ -630,7 +630,7 @@ Stored in the `TPE3` frame
 
 Tag.conductor
 
-___
+---
 
 ### copyright
 
@@ -670,8 +670,8 @@ Stored in the `TCOP` frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                    |
+| :------ | :------- | :------------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | Copyright information for the media represented by the current instance or `undefined` if no value is present. |
 
 #### Returns
@@ -682,7 +682,7 @@ Stored in the `TCOP` frame
 
 Tag.copyright
 
-___
+---
 
 ### dateTagged
 
@@ -712,8 +712,8 @@ Stored in the `TDTG` frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type   | Description                                                                        |
+| :------ | :----- | :--------------------------------------------------------------------------------- |
 | `value` | `Date` | Date/time at which the tag has been written, or `undefined` if no value is present |
 
 #### Returns
@@ -724,7 +724,7 @@ Stored in the `TDTG` frame
 
 Tag.dateTagged
 
-___
+---
 
 ### description
 
@@ -766,8 +766,8 @@ via user text frame "description"
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                        |
+| :------ | :------- | :------------------------------------------------------------------------------------------------- |
 | `value` | `string` | Description of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -778,7 +778,7 @@ via user text frame "description"
 
 Tag.description
 
-___
+---
 
 ### disc
 
@@ -818,8 +818,8 @@ Stored in the `TPOS` frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                   |
+| :------ | :------- | :-------------------------------------------------------------------------------------------- |
 | `value` | `number` | Number of the disc or season of the media represented by the current instance in a boxed set. |
 
 #### Returns
@@ -830,7 +830,7 @@ Stored in the `TPOS` frame
 
 Tag.disc
 
-___
+---
 
 ### discCount
 
@@ -868,8 +868,8 @@ Stored in the `TPOS` frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                                   |
+| :------ | :------- | :---------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `number` | Number of discs or seasons in the boxed set containing the media represented by the current instance or `0` if not specified. |
 
 #### Returns
@@ -880,7 +880,7 @@ Stored in the `TPOS` frame
 
 Tag.discCount
 
-___
+---
 
 ### firstAlbumArtist
 
@@ -896,7 +896,7 @@ Gets the first value contained in [albumArtists](Id3v2Tag.md#albumartists).
 
 Tag.firstAlbumArtist
 
-___
+---
 
 ### firstAlbumArtistSort
 
@@ -912,7 +912,7 @@ Gets the first value contained in [albumArtistsSort](Id3v2Tag.md#albumartistssor
 
 Tag.firstAlbumArtistSort
 
-___
+---
 
 ### firstComposer
 
@@ -928,7 +928,7 @@ Gets the first value contained in [composers](Id3v2Tag.md#composers)
 
 Tag.firstComposer
 
-___
+---
 
 ### firstComposerSort
 
@@ -944,7 +944,7 @@ Gets the first value contained in [composersSort](Id3v2Tag.md#composerssort)
 
 Tag.firstComposerSort
 
-___
+---
 
 ### firstGenre
 
@@ -960,7 +960,7 @@ Gets the first value contained in [genres](Id3v2Tag.md#genres)
 
 Tag.firstGenre
 
-___
+---
 
 ### firstPerformer
 
@@ -976,7 +976,7 @@ Gets the first value contained in [performers](Id3v2Tag.md#performers)
 
 Tag.firstPerformer
 
-___
+---
 
 ### firstPerformerSort
 
@@ -992,7 +992,7 @@ Gets the first value contained in [performersSort](Id3v2Tag.md#performerssort)
 
 Tag.firstPerformerSort
 
-___
+---
 
 ### flags
 
@@ -1010,15 +1010,15 @@ Sets the header flags applied to the current instance
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                                                     | Description                                                                                                                     |
+| :------ | :------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------ |
 | `value` | [`Id3v2TagHeaderFlags`](../enums/Id3v2TagHeaderFlags.md) | Bitwise combined [Id3v2TagHeaderFlags](../enums/Id3v2TagHeaderFlags.md) value containing flags applied to the current instance. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### frames
 
@@ -1030,7 +1030,7 @@ Gets all frames contained in the current instance.
 
 [`Id3v2Frame`](Id3v2Frame.md)[]
 
-___
+---
 
 ### genres
 
@@ -1070,8 +1070,8 @@ Stored in the `TCON` frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                       |
+| :------ | :--------- | :------------------------------------------------------------------------------------------------ |
 | `value` | `string`[] | Genres of the media represented by the current instance or an empty array if no value is present. |
 
 #### Returns
@@ -1082,7 +1082,7 @@ Stored in the `TCON` frame
 
 Tag.genres
 
-___
+---
 
 ### grouping
 
@@ -1120,8 +1120,8 @@ Stored in the `TIT1` frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                     |
+| :------ | :------- | :-------------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | Grouping on the album which the media in the current instance belongs to or `undefined` if no value is present. |
 
 #### Returns
@@ -1132,7 +1132,7 @@ Stored in the `TIT1` frame
 
 Tag.grouping
 
-___
+---
 
 ### initialKey
 
@@ -1162,8 +1162,8 @@ Stored in the `TKEY` frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                |
+| :------ | :------- | :--------------------------------------------------------- |
 | `value` | `string` | Initial key of the track or `undefined` if no value is set |
 
 #### Returns
@@ -1174,7 +1174,7 @@ Stored in the `TKEY` frame
 
 Tag.initialKey
 
-___
+---
 
 ### isCompilation
 
@@ -1185,8 +1185,8 @@ Gets whether or not the album described by the current instance is a compilation
 **`Remarks`**
 
 This property is implemented using the TCMP Text Information Frame to provide
-    support for a feature of the Apple iPod and iTunes products (ie, this is a non-standard
-    field).
+support for a feature of the Apple iPod and iTunes products (ie, this is a non-standard
+field).
 
 #### Returns
 
@@ -1203,13 +1203,13 @@ Gets whether or not the album described by the current instance is a compilation
 **`Remarks`**
 
 This property is implemented using the TCMP Text Information Frame to provide
-    support for a feature of the Apple iPod and iTunes products (ie, this is a non-standard
-    field).
+support for a feature of the Apple iPod and iTunes products (ie, this is a non-standard
+field).
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type      | Description                                                                 |
+| :------ | :-------- | :-------------------------------------------------------------------------- |
 | `value` | `boolean` | Whether or not the album described by the current instance is a compilation |
 
 #### Returns
@@ -1220,7 +1220,7 @@ This property is implemented using the TCMP Text Information Frame to provide
 
 Tag.isCompilation
 
-___
+---
 
 ### isEmpty
 
@@ -1236,7 +1236,7 @@ Gets whether or not the current instance is empty.
 
 Tag.isEmpty
 
-___
+---
 
 ### isrc
 
@@ -1266,8 +1266,8 @@ Stored in the `TSRC` frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                         |
+| :------ | :------- | :-------------------------------------------------- |
 | `value` | `string` | ISRC of the track or `undefined` if no value is set |
 
 #### Returns
@@ -1278,7 +1278,7 @@ Stored in the `TSRC` frame
 
 Tag.isrc
 
-___
+---
 
 ### joinedAlbumArtists
 
@@ -1294,7 +1294,7 @@ Gets a semicolon and space separated string containing the values in [albumArtis
 
 Tag.joinedAlbumArtists
 
-___
+---
 
 ### joinedComposers
 
@@ -1310,7 +1310,7 @@ Gets a semicolon and space separated string containing the values in [composers]
 
 Tag.joinedComposers
 
-___
+---
 
 ### joinedGenres
 
@@ -1326,7 +1326,7 @@ Gets a semicolon and space separated string containing the values in [genres](Id
 
 Tag.joinedGenres
 
-___
+---
 
 ### joinedPerformers
 
@@ -1342,7 +1342,7 @@ Gets a semicolon and space separated string containing the values in [performers
 
 Tag.joinedPerformers
 
-___
+---
 
 ### joinedPerformersSort
 
@@ -1358,7 +1358,7 @@ Gets a semicolon and space separated string containing the values in [performers
 
 Tag.joinedPerformersSort
 
-___
+---
 
 ### lyrics
 
@@ -1398,8 +1398,8 @@ Stored in the `USLT` frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                             |
+| :------ | :------- | :------------------------------------------------------------------------------------------------------ |
 | `value` | `string` | Lyrics or script of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1410,7 +1410,7 @@ Stored in the `USLT` frame
 
 Tag.lyrics
 
-___
+---
 
 ### musicBrainzArtistId
 
@@ -1446,8 +1446,8 @@ via TXXX:MusicBrainz Artist Id frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                 |
+| :------ | :------- | :---------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz ArtistID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1458,7 +1458,7 @@ via TXXX:MusicBrainz Artist Id frame
 
 Tag.musicBrainzArtistId
 
-___
+---
 
 ### musicBrainzDiscId
 
@@ -1494,8 +1494,8 @@ via TXXX:MusicBrainz Disc Id frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                               |
+| :------ | :------- | :-------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz DiscID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1506,7 +1506,7 @@ via TXXX:MusicBrainz Disc Id frame
 
 Tag.musicBrainzDiscId
 
-___
+---
 
 ### musicBrainzReleaseArtistId
 
@@ -1542,8 +1542,8 @@ via TXXX:MusicBrainz Album Artist Id frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                        |
+| :------ | :------- | :----------------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz ReleaseArtistID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1554,7 +1554,7 @@ via TXXX:MusicBrainz Album Artist Id frame
 
 Tag.musicBrainzReleaseArtistId
 
-___
+---
 
 ### musicBrainzReleaseCountry
 
@@ -1596,8 +1596,8 @@ via TXXX:MusicBrainz Album Release Country frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                       |
+| :------ | :------- | :---------------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz ReleaseCountry of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1608,7 +1608,7 @@ via TXXX:MusicBrainz Album Release Country frame
 
 Tag.musicBrainzReleaseCountry
 
-___
+---
 
 ### musicBrainzReleaseGroupId
 
@@ -1644,8 +1644,8 @@ via TXXX:MusicBrainz Release Group Id frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                       |
+| :------ | :------- | :---------------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz ReleaseGroupID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1656,7 +1656,7 @@ via TXXX:MusicBrainz Release Group Id frame
 
 Tag.musicBrainzReleaseGroupId
 
-___
+---
 
 ### musicBrainzReleaseId
 
@@ -1692,8 +1692,8 @@ via TXXX:MusicBrainz Album Id frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                  |
+| :------ | :------- | :----------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz ReleaseID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1704,7 +1704,7 @@ via TXXX:MusicBrainz Album Id frame
 
 Tag.musicBrainzReleaseId
 
-___
+---
 
 ### musicBrainzReleaseStatus
 
@@ -1740,8 +1740,8 @@ via TXXX:MusicBrainz Album Status frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                      |
+| :------ | :------- | :--------------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz ReleaseStatus of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1752,7 +1752,7 @@ via TXXX:MusicBrainz Album Status frame
 
 Tag.musicBrainzReleaseStatus
 
-___
+---
 
 ### musicBrainzReleaseType
 
@@ -1766,8 +1766,8 @@ a release is. Common types are: `Single`, `Album`, `EP`, `Compilation`, `Soundtr
 must be given when using this field to decide if a particular track "is a compilation".
 
 @returns
-    MusicBrainz ReleaseType of the media represented by the current instance or
-    `undefined` if no value is present
+MusicBrainz ReleaseType of the media represented by the current instance or
+`undefined` if no value is present
 
 **`Remarks`**
 
@@ -1791,7 +1791,7 @@ a release is. Common types are: `Single`, `Album`, `EP`, `Compilation`, `Soundtr
 must be given when using this field to decide if a particular track "is a compilation".
 
 @param value MusicBrainz ReleaseType of the media represented by the current instance or
-    `undefined` if no value is present
+`undefined` if no value is present
 
 **`Remarks`**
 
@@ -1799,8 +1799,8 @@ via TXXX:MusicBrainz Album Type frame
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `value` | `string` |
 
 #### Returns
@@ -1811,7 +1811,7 @@ via TXXX:MusicBrainz Album Type frame
 
 Tag.musicBrainzReleaseType
 
-___
+---
 
 ### musicBrainzTrackId
 
@@ -1849,8 +1849,8 @@ via UFID:http://musicbrainz.org frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                |
+| :------ | :------- | :--------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz TrackID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1861,7 +1861,7 @@ via UFID:http://musicbrainz.org frame
 
 Tag.musicBrainzTrackId
 
-___
+---
 
 ### musicIpId
 
@@ -1897,8 +1897,8 @@ via TXXX:MusicIP PUID frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                         |
+| :------ | :------- | :-------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicIP PUID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1909,7 +1909,7 @@ via TXXX:MusicIP PUID frame
 
 Tag.musicIpId
 
-___
+---
 
 ### performers
 
@@ -1955,8 +1955,8 @@ Stored in the `TPE1` frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                                       |
+| :------ | :--------- | :---------------------------------------------------------------------------------------------------------------- |
 | `value` | `string`[] | Performers who performed in the media described by the current instance or an empty array if no value is present. |
 
 #### Returns
@@ -1967,7 +1967,7 @@ Stored in the `TPE1` frame
 
 Tag.performers
 
-___
+---
 
 ### performersRole
 
@@ -2011,8 +2011,8 @@ Stored in the `TMCL` frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                                                                   |
+| :------ | :--------- | :-------------------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `string`[] | Array containing the roles played by the performers in the media described by the current instance, or an empty array if no value is present. |
 
 #### Returns
@@ -2023,7 +2023,7 @@ Stored in the `TMCL` frame
 
 Tag.performersRole
 
-___
+---
 
 ### performersSort
 
@@ -2063,8 +2063,8 @@ Stored in the `TSOP` frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                                                               |
+| :------ | :--------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `string`[] | Sortable names for the performers who performed in the media described by the current instance, or an empty array if no value is present. |
 
 #### Returns
@@ -2075,7 +2075,7 @@ Stored in the `TSOP` frame
 
 Tag.performersSort
 
-___
+---
 
 ### pictures
 
@@ -2113,8 +2113,8 @@ Stored in the `APIC` frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                                      | Description                                                                                                                                           |
+| :------ | :---------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | [`IPicture`](../interfaces/IPicture.md)[] | Array containing a collection of pictures associated with the media represented by the current instance or an empty array if no pictures are present. |
 
 #### Returns
@@ -2125,7 +2125,7 @@ Stored in the `APIC` frame
 
 Tag.pictures
 
-___
+---
 
 ### publisher
 
@@ -2155,8 +2155,8 @@ Stored in the `TPUB` frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                              |
+| :------ | :------- | :------------------------------------------------------- |
 | `value` | `string` | Publisher of the track or `undefined` if no value is set |
 
 #### Returns
@@ -2167,7 +2167,7 @@ Stored in the `TPUB` frame
 
 Tag.publisher
 
-___
+---
 
 ### remixedBy
 
@@ -2197,8 +2197,8 @@ Stored in the `TPE4` frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                            |
+| :------ | :------- | :----------------------------------------------------- |
 | `value` | `string` | Remixer of the track or `undefined` if no value is set |
 
 #### Returns
@@ -2209,7 +2209,7 @@ Stored in the `TPE4` frame
 
 Tag.remixedBy
 
-___
+---
 
 ### replayGainAlbumGain
 
@@ -2239,8 +2239,8 @@ via TXXX:REPLAYGAIN_ALBUM_GAIN frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                         |
+| :------ | :------- | :---------------------------------------------------------------------------------- |
 | `value` | `number` | Album gain as per the ReplayGain specifications, in dB, or `NaN` if no value is set |
 
 #### Returns
@@ -2251,7 +2251,7 @@ via TXXX:REPLAYGAIN_ALBUM_GAIN frame
 
 Tag.replayGainAlbumGain
 
-___
+---
 
 ### replayGainAlbumPeak
 
@@ -2281,8 +2281,8 @@ via TXXX:REPLAYGAIN_ALBUM_PEAK frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                  |
+| :------ | :------- | :--------------------------------------------------------------------------- |
 | `value` | `number` | Album peak as per the ReplayGain specifications, or `NaN` if no value is set |
 
 #### Returns
@@ -2293,7 +2293,7 @@ via TXXX:REPLAYGAIN_ALBUM_PEAK frame
 
 Tag.replayGainAlbumPeak
 
-___
+---
 
 ### replayGainTrackGain
 
@@ -2323,8 +2323,8 @@ via TXXX:REPLAY_GAIN_TRACK_GAIN frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                     |
+| :------ | :------- | :------------------------------------------------------------------------------ |
 | `value` | `number` | Track gain as per ReplayGain specifications, in dB, or `NaN` if no value is set |
 
 #### Returns
@@ -2335,7 +2335,7 @@ via TXXX:REPLAY_GAIN_TRACK_GAIN frame
 
 Tag.replayGainTrackGain
 
-___
+---
 
 ### replayGainTrackPeak
 
@@ -2365,8 +2365,8 @@ via TXXX:REPLAYGAIN_TRACK_PEAK frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                  |
+| :------ | :------- | :--------------------------------------------------------------------------- |
 | `value` | `number` | Track peak as per the ReplayGain specifications, or `NaN` if no value is set |
 
 #### Returns
@@ -2377,7 +2377,7 @@ via TXXX:REPLAYGAIN_TRACK_PEAK frame
 
 Tag.replayGainTrackPeak
 
-___
+---
 
 ### sizeOnDisk
 
@@ -2393,7 +2393,7 @@ Gets the size of the tag in bytes on disk as it was read from disk.
 
 Tag.sizeOnDisk
 
-___
+---
 
 ### subtitle
 
@@ -2431,8 +2431,8 @@ Stored in the `TIT3` frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                     |
+| :------ | :------- | :---------------------------------------------------------------------------------------------- |
 | `value` | `string` | Subtitle of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -2443,7 +2443,7 @@ Stored in the `TIT3` frame
 
 Tag.subtitle
 
-___
+---
 
 ### tagTypes
 
@@ -2460,7 +2460,7 @@ containing the tag types contained in the current instance.
 
 Tag.tagTypes
 
-___
+---
 
 ### title
 
@@ -2494,8 +2494,8 @@ Stored in the `TIT2` frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                 |
+| :------ | :------- | :------------------------------------------------------------------------------------------ |
 | `value` | `string` | Title of the media described by the current instance or `undefined` if no value is present. |
 
 #### Returns
@@ -2506,7 +2506,7 @@ Stored in the `TIT2` frame
 
 Tag.title
 
-___
+---
 
 ### titleSort
 
@@ -2540,8 +2540,8 @@ Stored in the `TSOT` frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                        |
+| :------ | :------- | :------------------------------------------------------------------------------------------------- |
 | `value` | `string` | Sortable name of the media described by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -2552,7 +2552,7 @@ Stored in the `TSOT` frame
 
 Tag.titleSort
 
-___
+---
 
 ### track
 
@@ -2596,8 +2596,8 @@ Stored in the `TRCK` frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                |
+| :------ | :------- | :--------------------------------------------------------------------------------------------------------- |
 | `value` | `number` | Position of the media represented by the current instance in its containing album or `0` if not specified. |
 
 #### Returns
@@ -2608,7 +2608,7 @@ Stored in the `TRCK` frame
 
 Tag.track
 
-___
+---
 
 ### trackCount
 
@@ -2646,8 +2646,8 @@ Stored in the `TRCK` frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                                               |
+| :------ | :------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `number` | Number of tracks on the album or number of episodes in a series of the media represented by the current instance or `0` if not specified. |
 
 #### Returns
@@ -2658,7 +2658,7 @@ Stored in the `TRCK` frame
 
 Tag.trackCount
 
-___
+---
 
 ### version
 
@@ -2676,15 +2676,15 @@ Sets the ID3v2 version for the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                 |
+| :------ | :------- | :---------------------------------------------------------- |
 | `value` | `number` | ID3v2 version for the current instance. Must be 2, 3, or 4. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### year
 
@@ -2700,8 +2700,8 @@ access the higher precision values.
 **`Remarks`**
 
 If a TDRC frame exists, the year will be read from that. If a TDRC frame doesn't exist and a
-    TYER or TYE frame exists, the year will be read from that. Failing both cases, 0 will be
-    returned.
+TYER or TYE frame exists, the year will be read from that. Failing both cases, 0 will be
+returned.
 
 #### Returns
 
@@ -2726,8 +2726,8 @@ NOTE: values >9999 will remove the frame
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                        |
+| :------ | :------- | :------------------------------------------------------------------------------------------------- |
 | `value` | `number` | Year that the media represented by the current instance was created or `0` if no value is present. |
 
 #### Returns
@@ -2738,7 +2738,7 @@ NOTE: values >9999 will remove the frame
 
 Tag.year
 
-___
+---
 
 ### language
 
@@ -2758,8 +2758,8 @@ values.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                |
+| :------ | :------- | :----------------------------------------------------------------------------------------- |
 | `value` | `string` | ISO-639-2 language code to use. If the language is unknown `" "` is the appropriate filler |
 
 #### Returns
@@ -2776,15 +2776,15 @@ Adds a frame to the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                          | Description                          |
+| :------ | :---------------------------- | :----------------------------------- |
 | `frame` | [`Id3v2Frame`](Id3v2Frame.md) | Frame to add to the current instance |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### clear
 
@@ -2800,7 +2800,7 @@ Clears all values stored in the current instance.
 
 [Tag](Tag.md).[clear](Tag.md#clear)
 
-___
+---
 
 ### copyTo
 
@@ -2816,10 +2816,10 @@ more advanced copying may be done. For example if both `this` and `target` are
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `target` | [`Tag`](Tag.md) | Target tag to copy values to |
-| `overwrite` | `boolean` | Whether or not to copy values over existing ones |
+| Name        | Type            | Description                                      |
+| :---------- | :-------------- | :----------------------------------------------- |
+| `target`    | [`Tag`](Tag.md) | Target tag to copy values to                     |
+| `overwrite` | `boolean`       | Whether or not to copy values over existing ones |
 
 #### Returns
 
@@ -2829,7 +2829,7 @@ more advanced copying may be done. For example if both `this` and `target` are
 
 [Tag](Tag.md).[copyTo](Tag.md#copyto)
 
-___
+---
 
 ### getFramesByClassType
 
@@ -2842,14 +2842,14 @@ the same functionality.
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type                                             |
+| :------- | :----------------------------------------------- |
 | `TFrame` | extends [`Id3v2Frame`](Id3v2Frame.md)<`TFrame`\> |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                                                     | Description                     |
+| :----- | :------------------------------------------------------- | :------------------------------ |
 | `type` | [`Id3v2FrameClassType`](../enums/Id3v2FrameClassType.md) | Class type of the frame to find |
 
 #### Returns
@@ -2858,7 +2858,7 @@ the same functionality.
 
 TFrame[] Array of frames with the specified class type
 
-___
+---
 
 ### getFramesByIdentifier
 
@@ -2872,16 +2872,16 @@ use [frames](Id3v2Tag.md#frames).
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type                                             |
+| :------- | :----------------------------------------------- |
 | `TFrame` | extends [`Id3v2Frame`](Id3v2Frame.md)<`TFrame`\> |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `type` | [`Id3v2FrameClassType`](../enums/Id3v2FrameClassType.md) | Type of frame to return |
-| `ident` | [`Id3v2FrameIdentifier`](Id3v2FrameIdentifier.md) | Identifier of the frame |
+| Name    | Type                                                     | Description             |
+| :------ | :------------------------------------------------------- | :---------------------- |
+| `type`  | [`Id3v2FrameClassType`](../enums/Id3v2FrameClassType.md) | Type of frame to return |
+| `ident` | [`Id3v2FrameIdentifier`](Id3v2FrameIdentifier.md)        | Identifier of the frame |
 
 #### Returns
 
@@ -2889,7 +2889,7 @@ use [frames](Id3v2Tag.md#frames).
 
 TFrame[] Array of frames with the desired frame identifier
 
-___
+---
 
 ### getTextAsString
 
@@ -2900,8 +2900,8 @@ specified).
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                                              | Description                                                          |
+| :------ | :------------------------------------------------ | :------------------------------------------------------------------- |
 | `ident` | [`Id3v2FrameIdentifier`](Id3v2FrameIdentifier.md) | Frame identifier of the text information frame to get the value from |
 
 #### Returns
@@ -2910,7 +2910,7 @@ specified).
 
 Text of the specified frame, or `undefined` if no value was found
 
-___
+---
 
 ### removeFrame
 
@@ -2920,15 +2920,15 @@ Removes a specified frame from the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                          | Description                                |
+| :------ | :---------------------------- | :----------------------------------------- |
 | `frame` | [`Id3v2Frame`](Id3v2Frame.md) | Object to remove from the current instance |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### removeFrames
 
@@ -2938,15 +2938,15 @@ Removes all frames with a specified identifier from the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                                              | Description                        |
+| :------ | :------------------------------------------------ | :--------------------------------- |
 | `ident` | [`Id3v2FrameIdentifier`](Id3v2FrameIdentifier.md) | Identifier of the frames to remove |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### render
 
@@ -2964,7 +2964,7 @@ version 4.
 
 The rendered tag.
 
-___
+---
 
 ### replaceFrame
 
@@ -2975,16 +2975,16 @@ adds a new one if the existing one is not contained.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `oldFrame` | [`Id3v2Frame`](Id3v2Frame.md) | Object to be replaced |
+| Name       | Type                          | Description                       |
+| :--------- | :---------------------------- | :-------------------------------- |
+| `oldFrame` | [`Id3v2Frame`](Id3v2Frame.md) | Object to be replaced             |
 | `newFrame` | [`Id3v2Frame`](Id3v2Frame.md) | Object to replace `oldFrame` with |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### setNumberFrame
 
@@ -2997,18 +2997,18 @@ itself. Otherwise the values will be stored as `{numerator}/{denominator}`.
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `ident` | [`Id3v2FrameIdentifier`](Id3v2FrameIdentifier.md) | `undefined` | Identity of the frame to set |
-| `numerator` | `number` | `undefined` | Value containing the top half of the fraction, or the number if `denominator` is zero |
-| `denominator` | `number` | `undefined` | Value containing the bottom half of the fraction |
-| `minPlaces` | `number` | `1` | Minimum number of digits to use to display the `numerator`, if the numerator has less than this number of digits, it will be filled with leading zeroes. |
+| Name          | Type                                              | Default value | Description                                                                                                                                              |
+| :------------ | :------------------------------------------------ | :------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `ident`       | [`Id3v2FrameIdentifier`](Id3v2FrameIdentifier.md) | `undefined`   | Identity of the frame to set                                                                                                                             |
+| `numerator`   | `number`                                          | `undefined`   | Value containing the top half of the fraction, or the number if `denominator` is zero                                                                    |
+| `denominator` | `number`                                          | `undefined`   | Value containing the bottom half of the fraction                                                                                                         |
+| `minPlaces`   | `number`                                          | `1`           | Minimum number of digits to use to display the `numerator`, if the numerator has less than this number of digits, it will be filled with leading zeroes. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### setTextFrame
 
@@ -3018,16 +3018,16 @@ Sets the text for a specified text information frame.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `ident` | [`Id3v2FrameIdentifier`](Id3v2FrameIdentifier.md) | Identifier of the frame to set the data for |
-| `...text` | `string`[] | Text to set for the specified frame or `undefined`/`null`/`""` to remove all frames with that identifier. |
+| Name      | Type                                              | Description                                                                                               |
+| :-------- | :------------------------------------------------ | :-------------------------------------------------------------------------------------------------------- |
+| `ident`   | [`Id3v2FrameIdentifier`](Id3v2FrameIdentifier.md) | Identifier of the frame to set the data for                                                               |
+| `...text` | `string`[]                                        | Text to set for the specified frame or `undefined`/`null`/`""` to remove all frames with that identifier. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### firstInGroup
 
@@ -3037,8 +3037,8 @@ Gets the first string in an array.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                    |
+| :------ | :--------- | :--------------------------------------------- |
 | `group` | `string`[] | Array of strings to get the first string from. |
 
 #### Returns
@@ -3046,13 +3046,13 @@ Gets the first string in an array.
 `string`
 
 First string contained in `group` or `undefined` if the array is
-    `undefined` or empty
+`undefined` or empty
 
 #### Inherited from
 
 [Tag](Tag.md).[firstInGroup](Tag.md#firstingroup)
 
-___
+---
 
 ### fromData
 
@@ -3063,8 +3063,8 @@ Constructs and initializes a new Tag by reading the contents from a specified
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                          | Description                        |
+| :----- | :---------------------------- | :--------------------------------- |
 | `data` | [`ByteVector`](ByteVector.md) | Tag data to read into a tag object |
 
 #### Returns
@@ -3073,7 +3073,7 @@ Constructs and initializes a new Tag by reading the contents from a specified
 
 Tag with the data from the byte vector read into it
 
-___
+---
 
 ### fromEmpty
 
@@ -3085,7 +3085,7 @@ Constructs and initializes an empty ID3v2 tag.
 
 [`Id3v2Tag`](Id3v2Tag.md)
 
-___
+---
 
 ### fromFileEnd
 
@@ -3096,21 +3096,21 @@ Constructs and initializes a new Tag by reading the end of the tag first.
 **`Remarks`**
 
 This method should only be used if reading tags at the end of a file. Only ID3v2.4
-    tags support a footer, which is required to use this method.
+tags support a footer, which is required to use this method.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `file` | [`File`](File.md) | File from which the contents of the new instance is to be read |
-| `position` | `number` | Offset into the file where the tag ends |
-| `style` | [`ReadStyle`](../enums/ReadStyle.md) | How the data is to be read into the current instance |
+| Name       | Type                                 | Description                                                    |
+| :--------- | :----------------------------------- | :------------------------------------------------------------- |
+| `file`     | [`File`](File.md)                    | File from which the contents of the new instance is to be read |
+| `position` | `number`                             | Offset into the file where the tag ends                        |
+| `style`    | [`ReadStyle`](../enums/ReadStyle.md) | How the data is to be read into the current instance           |
 
 #### Returns
 
 [`Id3v2Tag`](Id3v2Tag.md)
 
-___
+---
 
 ### fromFileStart
 
@@ -3124,11 +3124,11 @@ This method is the most flexible way of reading ID3v2 tags.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `file` | [`File`](File.md) | File from which the contents of the new instance is to be read |
-| `position` | `number` | Offset into the file where the tag begins |
-| `style` | [`ReadStyle`](../enums/ReadStyle.md) | How the data is to be read into the current instance |
+| Name       | Type                                 | Description                                                    |
+| :--------- | :----------------------------------- | :------------------------------------------------------------- |
+| `file`     | [`File`](File.md)                    | File from which the contents of the new instance is to be read |
+| `position` | `number`                             | Offset into the file where the tag begins                      |
+| `style`    | [`ReadStyle`](../enums/ReadStyle.md) | How the data is to be read into the current instance           |
 
 #### Returns
 
@@ -3136,7 +3136,7 @@ This method is the most flexible way of reading ID3v2 tags.
 
 Tag with the data from the file read into it
 
-___
+---
 
 ### isFalsyOrLikeEmpty
 
@@ -3146,8 +3146,8 @@ Checks if a value is falsy or empty.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                   | Description     |
+| :------ | :--------------------- | :-------------- |
 | `value` | `string` \| `string`[] | Object to check |
 
 #### Returns
@@ -3155,14 +3155,14 @@ Checks if a value is falsy or empty.
 `boolean`
 
 If `value` is a string, `true` is returned if the value is falsy or all
-    whitespace, `false` is returned otherwise. If `value` is an array of strings,
-    the array must be falsy or all elements must be falsy or whitespace to return `true`.
+whitespace, `false` is returned otherwise. If `value` is an array of strings,
+the array must be falsy or all elements must be falsy or whitespace to return `true`.
 
 #### Inherited from
 
 [Tag](Tag.md).[isFalsyOrLikeEmpty](Tag.md#isfalsyorlikeempty)
 
-___
+---
 
 ### joinGroup
 
@@ -3172,8 +3172,8 @@ Joins an array of string into a single, semicolon and space separated string.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description             |
+| :------ | :--------- | :---------------------- |
 | `group` | `string`[] | Array of string to join |
 
 #### Returns
@@ -3181,13 +3181,13 @@ Joins an array of string into a single, semicolon and space separated string.
 `string`
 
 A semicolon and space separated string containing the values from `group`
-    or undefined if the array is `undefined` or empty.
+or undefined if the array is `undefined` or empty.
 
 #### Inherited from
 
 [Tag](Tag.md).[joinGroup](Tag.md#joingroup)
 
-___
+---
 
 ### tagTypeFlagsToArray
 
@@ -3197,8 +3197,8 @@ Generates an array of tag types that are set in the provided flags value.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                               | Description                             |
+| :--------- | :--------------------------------- | :-------------------------------------- |
 | `tagTypes` | [`TagTypes`](../enums/TagTypes.md) | Tag types that have been OR'd together. |
 
 #### Returns

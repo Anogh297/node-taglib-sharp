@@ -14,7 +14,7 @@ Provides support for reading and writing standard INFO tags.
 
 ### Properties
 
-- [LIST\_TYPE](InfoTag.md#list_type)
+- [LIST_TYPE](InfoTag.md#list_type)
 
 ### Accessors
 
@@ -105,9 +105,9 @@ Provides support for reading and writing standard INFO tags.
 
 ## Properties
 
-### LIST\_TYPE
+### LIST_TYPE
 
-▪ `Static` `Readonly` **LIST\_TYPE**: ``"INFO"``
+▪ `Static` `Readonly` **LIST_TYPE**: `"INFO"`
 
 Type of the list that contains an info tag.
 
@@ -159,8 +159,8 @@ Implemented via the `DIRC` item.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                            |
+| :------ | :------- | :------------------------------------------------------------------------------------- |
 | `value` | `string` | of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -171,7 +171,7 @@ Implemented via the `DIRC` item.
 
 RiffListTag.album
 
-___
+---
 
 ### albumArtists
 
@@ -219,8 +219,8 @@ Implemented via the `IART` item.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                                                                                                 |
+| :------ | :--------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `string`[] | Band or artist credited with the creation of the entire album or collection containing the media described by the current instance or an empty array if no value is present |
 
 #### Returns
@@ -231,7 +231,7 @@ Implemented via the `IART` item.
 
 RiffListTag.albumArtists
 
-___
+---
 
 ### albumArtistsSort
 
@@ -253,8 +253,8 @@ best to stick to a single album artist. Eg, "Van Buuren, Armin"
 `string`[]
 
 Sortable names for the bands/artists are credited with the creation of the entire
-    album or collection containing the media described by the current instance, or an empty
-    array if no value is present.
+album or collection containing the media described by the current instance, or an empty
+array if no value is present.
 
 #### Inherited from
 
@@ -275,8 +275,8 @@ best to stick to a single album artist. Eg, "Van Buuren, Armin"
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                                                                                                                             |
+| :------ | :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `value` | `string`[] | Sortable names for the bands/artists are credited with the creation of the entire album or collection containing the media described by the current instance, or an empty array if no value is present. |
 
 #### Returns
@@ -287,7 +287,7 @@ best to stick to a single album artist. Eg, "Van Buuren, Armin"
 
 RiffListTag.albumArtistsSort
 
-___
+---
 
 ### albumSort
 
@@ -304,7 +304,7 @@ similar titles.
 `string`
 
 Sortable name for the album title of the media or `undefined` if the value is not
-    present
+present
 
 #### Inherited from
 
@@ -320,8 +320,8 @@ similar titles.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                               |
+| :------ | :------- | :---------------------------------------------------------------------------------------- |
 | `value` | `string` | Sortable name for the album title of the media or `undefined` if the value is not present |
 
 #### Returns
@@ -332,7 +332,7 @@ similar titles.
 
 RiffListTag.albumSort
 
-___
+---
 
 ### amazonId
 
@@ -348,7 +348,7 @@ identify the particular track or album in the Amazon catalog.
 `string`
 
 Amazon ID of the media represented by the current instance or `undefined` if no
-    value is present
+value is present
 
 #### Inherited from
 
@@ -363,8 +363,8 @@ identify the particular track or album in the Amazon catalog.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                      |
+| :------ | :------- | :----------------------------------------------------------------------------------------------- |
 | `value` | `string` | Amazon ID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -375,7 +375,7 @@ identify the particular track or album in the Amazon catalog.
 
 RiffListTag.amazonId
 
-___
+---
 
 ### beatsPerMinute
 
@@ -392,7 +392,7 @@ calculated from the audio or pulled from a database.
 `number`
 
 Beats per minute of the audio in the media represented by the current instance, or
-    `0` if not specified
+`0` if not specified
 
 #### Inherited from
 
@@ -408,8 +408,8 @@ calculated from the audio or pulled from a database.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                             |
+| :------ | :------- | :------------------------------------------------------------------------------------------------------ |
 | `value` | `number` | Beats per minute of the audio in the media represented by the current instance, or `0` if not specified |
 
 #### Returns
@@ -420,7 +420,7 @@ calculated from the audio or pulled from a database.
 
 RiffListTag.beatsPerMinute
 
-___
+---
 
 ### comment
 
@@ -462,8 +462,8 @@ Implemented via the `ICMT` item.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                               |
+| :------ | :------- | :-------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | User comments on the media represented by the current instance or `undefined` if the value is not present |
 
 #### Returns
@@ -474,7 +474,7 @@ Implemented via the `ICMT` item.
 
 RiffListTag.comment
 
-___
+---
 
 ### composers
 
@@ -510,8 +510,8 @@ Implemented via the `IWRI` item.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                          |
+| :------ | :--------- | :--------------------------------------------------------------------------------------------------- |
 | `value` | `string`[] | Composers of the media represented by the current instance of an empty array if no value is present. |
 
 #### Returns
@@ -522,7 +522,7 @@ Implemented via the `IWRI` item.
 
 RiffListTag.composers
 
-___
+---
 
 ### composersSort
 
@@ -539,7 +539,7 @@ with multiple composers.
 `string`[]
 
 Sortable names for the composers of the media represented by the current instance
-    or an empty array if no value is present.
+or an empty array if no value is present.
 
 #### Inherited from
 
@@ -555,8 +555,8 @@ with multiple composers.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                                                 |
+| :------ | :--------- | :-------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `string`[] | Sortable names for the composers of the media represented by the current instance or an empty array if no value is present. |
 
 #### Returns
@@ -567,7 +567,7 @@ with multiple composers.
 
 RiffListTag.composersSort
 
-___
+---
 
 ### conductor
 
@@ -601,8 +601,8 @@ Implemented via the `ISBJ` item.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                |
+| :------ | :------- | :--------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | Conductor or director of the media represented by the current instance or `undefined` if no value present. |
 
 #### Returns
@@ -613,7 +613,7 @@ Implemented via the `ISBJ` item.
 
 RiffListTag.conductor
 
-___
+---
 
 ### copyright
 
@@ -653,8 +653,8 @@ Implemented via the `ICOP` item.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                    |
+| :------ | :------- | :------------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | Copyright information for the media represented by the current instance or `undefined` if no value is present. |
 
 #### Returns
@@ -665,7 +665,7 @@ Implemented via the `ICOP` item.
 
 RiffListTag.copyright
 
-___
+---
 
 ### dateTagged
 
@@ -689,8 +689,8 @@ Sets the date and time at which the tag has been written.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type   | Description                                                                        |
+| :------ | :----- | :--------------------------------------------------------------------------------- |
 | `value` | `Date` | Date/time at which the tag has been written, or `undefined` if no value is present |
 
 #### Returns
@@ -701,7 +701,7 @@ Sets the date and time at which the tag has been written.
 
 RiffListTag.dateTagged
 
-___
+---
 
 ### description
 
@@ -743,8 +743,8 @@ Implemented via the `ISBJ` item.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                        |
+| :------ | :------- | :------------------------------------------------------------------------------------------------- |
 | `value` | `string` | Description of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -755,7 +755,7 @@ Implemented via the `ISBJ` item.
 
 RiffListTag.description
 
-___
+---
 
 ### disc
 
@@ -773,7 +773,7 @@ the disc is the first of three, the value should be `1`. It should be no more th
 `number`
 
 Number of the disc or season of the media represented by the current instance in a
-    boxed set.
+boxed set.
 
 #### Inherited from
 
@@ -790,8 +790,8 @@ the disc is the first of three, the value should be `1`. It should be no more th
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                   |
+| :------ | :------- | :-------------------------------------------------------------------------------------------- |
 | `value` | `number` | Number of the disc or season of the media represented by the current instance in a boxed set. |
 
 #### Returns
@@ -802,7 +802,7 @@ the disc is the first of three, the value should be `1`. It should be no more th
 
 RiffListTag.disc
 
-___
+---
 
 ### discCount
 
@@ -819,7 +819,7 @@ this value should also be zero.
 `number`
 
 Number of discs or seasons in the boxed set containing the media represented by the
-    current instance or `0` if not specified.
+current instance or `0` if not specified.
 
 #### Inherited from
 
@@ -835,8 +835,8 @@ this value should also be zero.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                                   |
+| :------ | :------- | :---------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `number` | Number of discs or seasons in the boxed set containing the media represented by the current instance or `0` if not specified. |
 
 #### Returns
@@ -847,7 +847,7 @@ this value should also be zero.
 
 RiffListTag.discCount
 
-___
+---
 
 ### firstAlbumArtist
 
@@ -863,7 +863,7 @@ Gets the first value contained in [albumArtists](InfoTag.md#albumartists).
 
 RiffListTag.firstAlbumArtist
 
-___
+---
 
 ### firstAlbumArtistSort
 
@@ -879,7 +879,7 @@ Gets the first value contained in [albumArtistsSort](InfoTag.md#albumartistssort
 
 RiffListTag.firstAlbumArtistSort
 
-___
+---
 
 ### firstComposer
 
@@ -895,7 +895,7 @@ Gets the first value contained in [composers](InfoTag.md#composers)
 
 RiffListTag.firstComposer
 
-___
+---
 
 ### firstComposerSort
 
@@ -911,7 +911,7 @@ Gets the first value contained in [composersSort](InfoTag.md#composerssort)
 
 RiffListTag.firstComposerSort
 
-___
+---
 
 ### firstGenre
 
@@ -927,7 +927,7 @@ Gets the first value contained in [genres](InfoTag.md#genres)
 
 RiffListTag.firstGenre
 
-___
+---
 
 ### firstPerformer
 
@@ -943,7 +943,7 @@ Gets the first value contained in [performers](InfoTag.md#performers)
 
 RiffListTag.firstPerformer
 
-___
+---
 
 ### firstPerformerSort
 
@@ -959,7 +959,7 @@ Gets the first value contained in [performersSort](InfoTag.md#performerssort)
 
 RiffListTag.firstPerformerSort
 
-___
+---
 
 ### genres
 
@@ -999,8 +999,8 @@ Implemented via the `IGNR` item.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                       |
+| :------ | :--------- | :------------------------------------------------------------------------------------------------ |
 | `value` | `string`[] | Genres of the media represented by the current instance or an empty array if no value is present. |
 
 #### Returns
@@ -1011,7 +1011,7 @@ Implemented via the `IGNR` item.
 
 RiffListTag.genres
 
-___
+---
 
 ### grouping
 
@@ -1028,7 +1028,7 @@ music this could be a movement. It could also be parts of a series like "Introdu
 `string`
 
 Grouping on the album which the media in the current instance belongs to or
-    `undefined` if no value is present.
+`undefined` if no value is present.
 
 #### Inherited from
 
@@ -1044,8 +1044,8 @@ music this could be a movement. It could also be parts of a series like "Introdu
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                     |
+| :------ | :------- | :-------------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | Grouping on the album which the media in the current instance belongs to or `undefined` if no value is present. |
 
 #### Returns
@@ -1056,7 +1056,7 @@ music this could be a movement. It could also be parts of a series like "Introdu
 
 RiffListTag.grouping
 
-___
+---
 
 ### initialKey
 
@@ -1080,8 +1080,8 @@ Sets the initial key of the track.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                |
+| :------ | :------- | :--------------------------------------------------------- |
 | `value` | `string` | Initial key of the track or `undefined` if no value is set |
 
 #### Returns
@@ -1092,7 +1092,7 @@ Sets the initial key of the track.
 
 RiffListTag.initialKey
 
-___
+---
 
 ### isCompilation
 
@@ -1114,8 +1114,8 @@ Gets whether or not the album described by the current instance is a compilation
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type      | Description                                                                 |
+| :------ | :-------- | :-------------------------------------------------------------------------- |
 | `value` | `boolean` | Whether or not the album described by the current instance is a compilation |
 
 #### Returns
@@ -1126,7 +1126,7 @@ Gets whether or not the album described by the current instance is a compilation
 
 RiffListTag.isCompilation
 
-___
+---
 
 ### isEmpty
 
@@ -1142,7 +1142,7 @@ Gets whether or not the current instance is empty.
 
 RiffListTag.isEmpty
 
-___
+---
 
 ### isrc
 
@@ -1166,8 +1166,8 @@ Sets the ISRC (International Standard Recording Code) of the track.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                         |
+| :------ | :------- | :-------------------------------------------------- |
 | `value` | `string` | ISRC of the track or `undefined` if no value is set |
 
 #### Returns
@@ -1178,7 +1178,7 @@ Sets the ISRC (International Standard Recording Code) of the track.
 
 RiffListTag.isrc
 
-___
+---
 
 ### joinedAlbumArtists
 
@@ -1194,7 +1194,7 @@ Gets a semicolon and space separated string containing the values in [albumArtis
 
 RiffListTag.joinedAlbumArtists
 
-___
+---
 
 ### joinedComposers
 
@@ -1210,7 +1210,7 @@ Gets a semicolon and space separated string containing the values in [composers]
 
 RiffListTag.joinedComposers
 
-___
+---
 
 ### joinedGenres
 
@@ -1226,7 +1226,7 @@ Gets a semicolon and space separated string containing the values in [genres](In
 
 RiffListTag.joinedGenres
 
-___
+---
 
 ### joinedPerformers
 
@@ -1242,7 +1242,7 @@ Gets a semicolon and space separated string containing the values in [performers
 
 RiffListTag.joinedPerformers
 
-___
+---
 
 ### joinedPerformersSort
 
@@ -1258,7 +1258,7 @@ Gets a semicolon and space separated string containing the values in [performers
 
 RiffListTag.joinedPerformersSort
 
-___
+---
 
 ### list
 
@@ -1269,7 +1269,7 @@ Gets the [RiffList](RiffList.md) that backs the data for this tag.
 **`Remarks`**
 
 Tags based on RiffLists are only supposed to support certain fields. Modify at your
-    own risk.
+own risk.
 
 #### Returns
 
@@ -1279,7 +1279,7 @@ Tags based on RiffLists are only supposed to support certain fields. Modify at y
 
 RiffListTag.list
 
-___
+---
 
 ### lyrics
 
@@ -1297,7 +1297,7 @@ accessed using format-specific implementations.
 `string`
 
 Lyrics or script of the media represented by the current instance or `undefined` if
-    no value is present
+no value is present
 
 #### Inherited from
 
@@ -1314,8 +1314,8 @@ accessed using format-specific implementations.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                             |
+| :------ | :------- | :------------------------------------------------------------------------------------------------------ |
 | `value` | `string` | Lyrics or script of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1326,7 +1326,7 @@ accessed using format-specific implementations.
 
 RiffListTag.lyrics
 
-___
+---
 
 ### musicBrainzArtistId
 
@@ -1342,7 +1342,7 @@ particular artist of the track.
 `string`
 
 MusicBrainz ArtistID of the media represented by the current instance or
-    `undefined` if no value is present
+`undefined` if no value is present
 
 #### Inherited from
 
@@ -1357,8 +1357,8 @@ particular artist of the track.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                 |
+| :------ | :------- | :---------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz ArtistID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1369,7 +1369,7 @@ particular artist of the track.
 
 RiffListTag.musicBrainzArtistId
 
-___
+---
 
 ### musicBrainzDiscId
 
@@ -1385,7 +1385,7 @@ particular released media associated with this track.
 `string`
 
 MusicBrainz DiscID of the media represented by the current instance or `undefined`
-    if no value is present
+if no value is present
 
 #### Inherited from
 
@@ -1400,8 +1400,8 @@ particular released media associated with this track.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                               |
+| :------ | :------- | :-------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz DiscID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1412,7 +1412,7 @@ particular released media associated with this track.
 
 RiffListTag.musicBrainzDiscId
 
-___
+---
 
 ### musicBrainzReleaseArtistId
 
@@ -1428,7 +1428,7 @@ identify a particular album artist credited with the album.
 `string`
 
 MusicBrainz ReleaseArtistID of the media represented by the current instance or
-    `undefined` if no value is present
+`undefined` if no value is present
 
 #### Inherited from
 
@@ -1443,8 +1443,8 @@ identify a particular album artist credited with the album.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                        |
+| :------ | :------- | :----------------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz ReleaseArtistID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1455,7 +1455,7 @@ identify a particular album artist credited with the album.
 
 RiffListTag.musicBrainzReleaseArtistId
 
-___
+---
 
 ### musicBrainzReleaseCountry
 
@@ -1474,7 +1474,7 @@ it will likely be a UK release.
 `string`
 
 MusicBrainz ReleaseCountry of the media represented by the current instance or
-    `undefined` if no value is present
+`undefined` if no value is present
 
 #### Inherited from
 
@@ -1492,8 +1492,8 @@ it will likely be a UK release.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                       |
+| :------ | :------- | :---------------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz ReleaseCountry of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1504,7 +1504,7 @@ it will likely be a UK release.
 
 RiffListTag.musicBrainzReleaseCountry
 
-___
+---
 
 ### musicBrainzReleaseGroupId
 
@@ -1520,7 +1520,7 @@ a particular release group to which this track belongs.
 `string`
 
 MusicBrainz ReleaseGroupID of the media represented by the current instance or
-    `undefined` if no value is present
+`undefined` if no value is present
 
 #### Inherited from
 
@@ -1535,8 +1535,8 @@ a particular release group to which this track belongs.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                       |
+| :------ | :------- | :---------------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz ReleaseGroupID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1547,7 +1547,7 @@ a particular release group to which this track belongs.
 
 RiffListTag.musicBrainzReleaseGroupId
 
-___
+---
 
 ### musicBrainzReleaseId
 
@@ -1563,7 +1563,7 @@ particular release to which this track belongs.
 `string`
 
 MusicBrainz ReleaseID of the media represented by the current instance or
-    `undefined` if no value is present
+`undefined` if no value is present
 
 #### Inherited from
 
@@ -1578,8 +1578,8 @@ particular release to which this track belongs.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                  |
+| :------ | :------- | :----------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz ReleaseID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1590,7 +1590,7 @@ particular release to which this track belongs.
 
 RiffListTag.musicBrainzReleaseId
 
-___
+---
 
 ### musicBrainzReleaseStatus
 
@@ -1606,7 +1606,7 @@ release is. Common statuses are: `Official`, `Promotion`, `Bootleg`, `Pseudo-rel
 `string`
 
 MusicBrainz ReleaseStatus of the media represented by the current instance or
-    `undefined` if no value is present
+`undefined` if no value is present
 
 #### Inherited from
 
@@ -1621,8 +1621,8 @@ release is. Common statuses are: `Official`, `Promotion`, `Bootleg`, `Pseudo-rel
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                      |
+| :------ | :------- | :--------------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz ReleaseStatus of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1633,7 +1633,7 @@ release is. Common statuses are: `Official`, `Promotion`, `Bootleg`, `Pseudo-rel
 
 RiffListTag.musicBrainzReleaseStatus
 
-___
+---
 
 ### musicBrainzReleaseType
 
@@ -1647,8 +1647,8 @@ a release is. Common types are: `Single`, `Album`, `EP`, `Compilation`, `Soundtr
 must be given when using this field to decide if a particular track "is a compilation".
 
 @returns
-    MusicBrainz ReleaseType of the media represented by the current instance or
-    `undefined` if no value is present
+MusicBrainz ReleaseType of the media represented by the current instance or
+`undefined` if no value is present
 
 #### Returns
 
@@ -1668,12 +1668,12 @@ a release is. Common types are: `Single`, `Album`, `EP`, `Compilation`, `Soundtr
 must be given when using this field to decide if a particular track "is a compilation".
 
 @param value MusicBrainz ReleaseType of the media represented by the current instance or
-    `undefined` if no value is present
+`undefined` if no value is present
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `value` | `string` |
 
 #### Returns
@@ -1684,7 +1684,7 @@ must be given when using this field to decide if a particular track "is a compil
 
 RiffListTag.musicBrainzReleaseType
 
-___
+---
 
 ### musicBrainzTrackId
 
@@ -1701,7 +1701,7 @@ particular track.
 `string`
 
 MusicBrainz TrackID of the media represented by the current instance or `undefined`
-    if no value is present
+if no value is present
 
 #### Inherited from
 
@@ -1717,8 +1717,8 @@ particular track.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                |
+| :------ | :------- | :--------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz TrackID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1729,7 +1729,7 @@ particular track.
 
 RiffListTag.musicBrainzTrackId
 
-___
+---
 
 ### musicIpId
 
@@ -1745,7 +1745,7 @@ identifies wht this track "sounds like".
 `string`
 
 MusicIP PUID of the media represented by the current instance or `undefined` if no
-    value is present
+value is present
 
 #### Inherited from
 
@@ -1760,8 +1760,8 @@ identifies wht this track "sounds like".
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                         |
+| :------ | :------- | :-------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicIP PUID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1772,7 +1772,7 @@ identifies wht this track "sounds like".
 
 RiffListTag.musicIpId
 
-___
+---
 
 ### performers
 
@@ -1818,8 +1818,8 @@ Implemented via the `ISTR` item.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                                       |
+| :------ | :--------- | :---------------------------------------------------------------------------------------------------------------- |
 | `value` | `string`[] | Performers who performed in the media described by the current instance or an empty array if no value is present. |
 
 #### Returns
@@ -1830,7 +1830,7 @@ Implemented via the `ISTR` item.
 
 RiffListTag.performers
 
-___
+---
 
 ### performersRole
 
@@ -1850,7 +1850,7 @@ in the [performersRole](InfoTag.md#performersrole) array is `undefined` to maint
 `string`[]
 
 Array containing the roles played by the performers in the media described by the
-    current instance, or an empty array if no value is present.
+current instance, or an empty array if no value is present.
 
 #### Inherited from
 
@@ -1869,8 +1869,8 @@ in the [performersRole](InfoTag.md#performersrole) array is `undefined` to maint
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                                                                   |
+| :------ | :--------- | :-------------------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `string`[] | Array containing the roles played by the performers in the media described by the current instance, or an empty array if no value is present. |
 
 #### Returns
@@ -1881,7 +1881,7 @@ in the [performersRole](InfoTag.md#performersrole) array is `undefined` to maint
 
 RiffListTag.performersRole
 
-___
+---
 
 ### performersSort
 
@@ -1899,7 +1899,7 @@ skip articles or sort by last name. For example, "The Pillows" might be sorted a
 `string`[]
 
 Sortable names for the performers who performed in the media described by the
-    current instance, or an empty array if no value is present.
+current instance, or an empty array if no value is present.
 
 #### Inherited from
 
@@ -1916,8 +1916,8 @@ skip articles or sort by last name. For example, "The Pillows" might be sorted a
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                                                               |
+| :------ | :--------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `string`[] | Sortable names for the performers who performed in the media described by the current instance, or an empty array if no value is present. |
 
 #### Returns
@@ -1928,7 +1928,7 @@ skip articles or sort by last name. For example, "The Pillows" might be sorted a
 
 RiffListTag.performersSort
 
-___
+---
 
 ### pictures
 
@@ -1945,7 +1945,7 @@ recording studio, the concert, etc.
 [`IPicture`](../interfaces/IPicture.md)[]
 
 Array containing a collection of pictures associated with the media represented by
-    the current instance or an empty array if no pictures are present.
+the current instance or an empty array if no pictures are present.
 
 #### Inherited from
 
@@ -1961,8 +1961,8 @@ recording studio, the concert, etc.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                                      | Description                                                                                                                                           |
+| :------ | :---------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | [`IPicture`](../interfaces/IPicture.md)[] | Array containing a collection of pictures associated with the media represented by the current instance or an empty array if no pictures are present. |
 
 #### Returns
@@ -1973,7 +1973,7 @@ recording studio, the concert, etc.
 
 RiffListTag.pictures
 
-___
+---
 
 ### publisher
 
@@ -1997,8 +1997,8 @@ Sets the publisher of the track.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                              |
+| :------ | :------- | :------------------------------------------------------- |
 | `value` | `string` | Publisher of the track or `undefined` if no value is set |
 
 #### Returns
@@ -2009,7 +2009,7 @@ Sets the publisher of the track.
 
 RiffListTag.publisher
 
-___
+---
 
 ### remixedBy
 
@@ -2033,8 +2033,8 @@ Sets the remixer of the track.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                            |
+| :------ | :------- | :----------------------------------------------------- |
 | `value` | `string` | Remixer of the track or `undefined` if no value is set |
 
 #### Returns
@@ -2045,7 +2045,7 @@ Sets the remixer of the track.
 
 RiffListTag.remixedBy
 
-___
+---
 
 ### replayGainAlbumGain
 
@@ -2069,8 +2069,8 @@ Sets the ReplayGain album gain in dB.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                         |
+| :------ | :------- | :---------------------------------------------------------------------------------- |
 | `value` | `number` | Album gain as per the ReplayGain specifications, in dB, or `NaN` if no value is set |
 
 #### Returns
@@ -2081,7 +2081,7 @@ Sets the ReplayGain album gain in dB.
 
 RiffListTag.replayGainAlbumGain
 
-___
+---
 
 ### replayGainAlbumPeak
 
@@ -2105,8 +2105,8 @@ Sets the ReplayGain album peak sample.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                  |
+| :------ | :------- | :--------------------------------------------------------------------------- |
 | `value` | `number` | Album peak as per the ReplayGain specifications, or `NaN` if no value is set |
 
 #### Returns
@@ -2117,7 +2117,7 @@ Sets the ReplayGain album peak sample.
 
 RiffListTag.replayGainAlbumPeak
 
-___
+---
 
 ### replayGainTrackGain
 
@@ -2141,8 +2141,8 @@ Sets the ReplayGain track gain in dB.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                     |
+| :------ | :------- | :------------------------------------------------------------------------------ |
 | `value` | `number` | Track gain as per ReplayGain specifications, in dB, or `NaN` if no value is set |
 
 #### Returns
@@ -2153,7 +2153,7 @@ Sets the ReplayGain track gain in dB.
 
 RiffListTag.replayGainTrackGain
 
-___
+---
 
 ### replayGainTrackPeak
 
@@ -2177,8 +2177,8 @@ Sets the ReplayGain track peak sample.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                  |
+| :------ | :------- | :--------------------------------------------------------------------------- |
 | `value` | `number` | Track peak as per the ReplayGain specifications, or `NaN` if no value is set |
 
 #### Returns
@@ -2189,7 +2189,7 @@ Sets the ReplayGain track peak sample.
 
 RiffListTag.replayGainTrackPeak
 
-___
+---
 
 ### sizeOnDisk
 
@@ -2205,7 +2205,7 @@ Gets the size of the tag in bytes on disk as it was read from disk.
 
 RiffListTag.sizeOnDisk
 
-___
+---
 
 ### stringType
 
@@ -2231,8 +2231,8 @@ The value must be `StringType.Latin1` or `StringType.UTF8`.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type                                   |
+| :------ | :------------------------------------- |
 | `value` | [`StringType`](../enums/StringType.md) |
 
 #### Returns
@@ -2243,7 +2243,7 @@ The value must be `StringType.Latin1` or `StringType.UTF8`.
 
 RiffListTag.stringType
 
-___
+---
 
 ### subtitle
 
@@ -2260,7 +2260,7 @@ title on the front cover of the media. For example for "Ocean's 13", this would 
 `string`
 
 Subtitle of the media represented by the current instance or `undefined` if no
-    value is present
+value is present
 
 #### Inherited from
 
@@ -2276,8 +2276,8 @@ title on the front cover of the media. For example for "Ocean's 13", this would 
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                     |
+| :------ | :------- | :---------------------------------------------------------------------------------------------- |
 | `value` | `string` | Subtitle of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -2288,7 +2288,7 @@ title on the front cover of the media. For example for "Ocean's 13", this would 
 
 RiffListTag.subtitle
 
-___
+---
 
 ### tagTypes
 
@@ -2305,7 +2305,7 @@ containing the tag types contained in the current instance.
 
 RiffListTag.tagTypes
 
-___
+---
 
 ### title
 
@@ -2339,8 +2339,8 @@ Implemented via the `INAM` item.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                 |
+| :------ | :------- | :------------------------------------------------------------------------------------------ |
 | `value` | `string` | Title of the media described by the current instance or `undefined` if no value is present. |
 
 #### Returns
@@ -2351,7 +2351,7 @@ Implemented via the `INAM` item.
 
 RiffListTag.title
 
-___
+---
 
 ### titleSort
 
@@ -2366,7 +2366,7 @@ Possibly used to sort compilations or episodic content.
 `string`
 
 Sortable name of the media described by the current instance or `undefined` if no
-    value is present
+value is present
 
 #### Inherited from
 
@@ -2380,8 +2380,8 @@ Possibly used to sort compilations or episodic content.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                        |
+| :------ | :------- | :------------------------------------------------------------------------------------------------- |
 | `value` | `string` | Sortable name of the media described by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -2392,7 +2392,7 @@ Possibly used to sort compilations or episodic content.
 
 RiffListTag.titleSort
 
-___
+---
 
 ### track
 
@@ -2436,8 +2436,8 @@ Implemented via the `IPRT` item.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                |
+| :------ | :------- | :--------------------------------------------------------------------------------------------------------- |
 | `value` | `number` | Position of the media represented by the current instance in its containing album or `0` if not specified. |
 
 #### Returns
@@ -2448,7 +2448,7 @@ Implemented via the `IPRT` item.
 
 RiffListTag.track
 
-___
+---
 
 ### trackCount
 
@@ -2486,8 +2486,8 @@ Implemented via the `IFRM` item.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                                               |
+| :------ | :------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `number` | Number of tracks on the album or number of episodes in a series of the media represented by the current instance or `0` if not specified. |
 
 #### Returns
@@ -2498,7 +2498,7 @@ Implemented via the `IFRM` item.
 
 RiffListTag.trackCount
 
-___
+---
 
 ### year
 
@@ -2538,8 +2538,8 @@ Implemented via the `ICRD` item.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                        |
+| :------ | :------- | :------------------------------------------------------------------------------------------------- |
 | `value` | `number` | Year that the media represented by the current instance was created or `0` if no value is present. |
 
 #### Returns
@@ -2566,7 +2566,7 @@ Clears all values stored in the current instance.
 
 [RiffListTag](RiffListTag.md).[clear](RiffListTag.md#clear)
 
-___
+---
 
 ### copyTo
 
@@ -2582,10 +2582,10 @@ more advanced copying may be done. For example if both `this` and `target` are
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `target` | [`Tag`](Tag.md) | Target tag to copy values to |
-| `overwrite` | `boolean` | Whether or not to copy values over existing ones |
+| Name        | Type            | Description                                      |
+| :---------- | :-------------- | :----------------------------------------------- |
+| `target`    | [`Tag`](Tag.md) | Target tag to copy values to                     |
+| `overwrite` | `boolean`       | Whether or not to copy values over existing ones |
 
 #### Returns
 
@@ -2595,7 +2595,7 @@ more advanced copying may be done. For example if both `this` and `target` are
 
 [RiffListTag](RiffListTag.md).[copyTo](RiffListTag.md#copyto)
 
-___
+---
 
 ### getFirstValueAsString
 
@@ -2606,8 +2606,8 @@ is returned.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type     | Description                           |
+| :--- | :------- | :------------------------------------ |
 | `id` | `string` | ID of the item to lookup in the list. |
 
 #### Returns
@@ -2618,7 +2618,7 @@ is returned.
 
 [RiffListTag](RiffListTag.md).[getFirstValueAsString](RiffListTag.md#getfirstvalueasstring)
 
-___
+---
 
 ### getValueAsUint
 
@@ -2628,8 +2628,8 @@ Gets the value for a specified item in the current instance as an unsigned integ
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type     | Description                               |
+| :--- | :------- | :---------------------------------------- |
 | `id` | `string` | ID of the item for which to get the value |
 
 #### Returns
@@ -2640,7 +2640,7 @@ Gets the value for a specified item in the current instance as an unsigned integ
 
 [RiffListTag](RiffListTag.md).[getValueAsUint](RiffListTag.md#getvalueasuint)
 
-___
+---
 
 ### getValues
 
@@ -2650,8 +2650,8 @@ Gets the values for a specified item in the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type     | Description                               |
+| :--- | :------- | :---------------------------------------- |
 | `id` | `string` | ID of the item of which to get the values |
 
 #### Returns
@@ -2662,7 +2662,7 @@ Gets the values for a specified item in the current instance.
 
 [RiffListTag](RiffListTag.md).[getValues](RiffListTag.md#getvalues)
 
-___
+---
 
 ### getValuesAsStrings
 
@@ -2672,8 +2672,8 @@ Gets the values for a specified item in the current instance as strings.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type     | Description                               |
+| :--- | :------- | :---------------------------------------- |
 | `id` | `string` | ID of the item of which to get the values |
 
 #### Returns
@@ -2684,7 +2684,7 @@ Gets the values for a specified item in the current instance as strings.
 
 [RiffListTag](RiffListTag.md).[getValuesAsStrings](RiffListTag.md#getvaluesasstrings)
 
-___
+---
 
 ### removeValue
 
@@ -2694,8 +2694,8 @@ Removes the item with the specified ID from the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type     | Description              |
+| :--- | :------- | :----------------------- |
 | `id` | `string` | ID of the item to remove |
 
 #### Returns
@@ -2706,7 +2706,7 @@ Removes the item with the specified ID from the current instance.
 
 [RiffListTag](RiffListTag.md).[removeValue](RiffListTag.md#removevalue)
 
-___
+---
 
 ### render
 
@@ -2723,7 +2723,7 @@ to a file.
 
 [RiffListTag](RiffListTag.md).[render](RiffListTag.md#render)
 
-___
+---
 
 ### setValueFromUint
 
@@ -2733,9 +2733,9 @@ Sets the value for a specified item in the current instance using an unsigned in
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `id` | `string` | ID of the item to set |
+| Name    | Type     | Description                                                              |
+| :------ | :------- | :----------------------------------------------------------------------- |
+| `id`    | `string` | ID of the item to set                                                    |
 | `value` | `number` | Value to store in the specified item, must be an unsigned 32-bit integer |
 
 #### Returns
@@ -2746,7 +2746,7 @@ Sets the value for a specified item in the current instance using an unsigned in
 
 [RiffListTag](RiffListTag.md).[setValueFromUint](RiffListTag.md#setvaluefromuint)
 
-___
+---
 
 ### setValues
 
@@ -2756,9 +2756,9 @@ Sets the value for a specified item in the current instance
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `id` | `string` | ID of the item to set |
+| Name     | Type                            | Description                           |
+| :------- | :------------------------------ | :------------------------------------ |
+| `id`     | `string`                        | ID of the item to set                 |
 | `values` | [`ByteVector`](ByteVector.md)[] | Values to store in the specified item |
 
 #### Returns
@@ -2769,7 +2769,7 @@ Sets the value for a specified item in the current instance
 
 [RiffListTag](RiffListTag.md).[setValues](RiffListTag.md#setvalues)
 
-___
+---
 
 ### setValuesFromStrings
 
@@ -2779,9 +2779,9 @@ Sets the value for a specified item in the current instance using a list of stri
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `id` | `string` | ID of the item to set |
+| Name     | Type       | Description                           |
+| :------- | :--------- | :------------------------------------ |
+| `id`     | `string`   | ID of the item to set                 |
 | `values` | `string`[] | Values to store in the specified item |
 
 #### Returns
@@ -2792,7 +2792,7 @@ Sets the value for a specified item in the current instance using a list of stri
 
 [RiffListTag](RiffListTag.md).[setValuesFromStrings](RiffListTag.md#setvaluesfromstrings)
 
-___
+---
 
 ### firstInGroup
 
@@ -2802,8 +2802,8 @@ Gets the first string in an array.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                    |
+| :------ | :--------- | :--------------------------------------------- |
 | `group` | `string`[] | Array of strings to get the first string from. |
 
 #### Returns
@@ -2811,13 +2811,13 @@ Gets the first string in an array.
 `string`
 
 First string contained in `group` or `undefined` if the array is
-    `undefined` or empty
+`undefined` or empty
 
 #### Inherited from
 
 [RiffListTag](RiffListTag.md).[firstInGroup](RiffListTag.md#firstingroup)
 
-___
+---
 
 ### fromEmpty
 
@@ -2829,7 +2829,7 @@ Constructs and initializes a new, empty instance.
 
 [`InfoTag`](InfoTag.md)
 
-___
+---
 
 ### fromList
 
@@ -2840,15 +2840,15 @@ a file.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                      | Description                                |
+| :----- | :------------------------ | :----------------------------------------- |
 | `list` | [`RiffList`](RiffList.md) | List that contains the contents of the tag |
 
 #### Returns
 
 [`InfoTag`](InfoTag.md)
 
-___
+---
 
 ### isFalsyOrLikeEmpty
 
@@ -2858,8 +2858,8 @@ Checks if a value is falsy or empty.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                   | Description     |
+| :------ | :--------------------- | :-------------- |
 | `value` | `string` \| `string`[] | Object to check |
 
 #### Returns
@@ -2867,14 +2867,14 @@ Checks if a value is falsy or empty.
 `boolean`
 
 If `value` is a string, `true` is returned if the value is falsy or all
-    whitespace, `false` is returned otherwise. If `value` is an array of strings,
-    the array must be falsy or all elements must be falsy or whitespace to return `true`.
+whitespace, `false` is returned otherwise. If `value` is an array of strings,
+the array must be falsy or all elements must be falsy or whitespace to return `true`.
 
 #### Inherited from
 
 [RiffListTag](RiffListTag.md).[isFalsyOrLikeEmpty](RiffListTag.md#isfalsyorlikeempty)
 
-___
+---
 
 ### joinGroup
 
@@ -2884,8 +2884,8 @@ Joins an array of string into a single, semicolon and space separated string.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description             |
+| :------ | :--------- | :---------------------- |
 | `group` | `string`[] | Array of string to join |
 
 #### Returns
@@ -2893,13 +2893,13 @@ Joins an array of string into a single, semicolon and space separated string.
 `string`
 
 A semicolon and space separated string containing the values from `group`
-    or undefined if the array is `undefined` or empty.
+or undefined if the array is `undefined` or empty.
 
 #### Inherited from
 
 [RiffListTag](RiffListTag.md).[joinGroup](RiffListTag.md#joingroup)
 
-___
+---
 
 ### tagTypeFlagsToArray
 
@@ -2909,8 +2909,8 @@ Generates an array of tag types that are set in the provided flags value.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                               | Description                             |
+| :--------- | :--------------------------------- | :-------------------------------------- |
 | `tagTypes` | [`TagTypes`](../enums/TagTypes.md) | Tag types that have been OR'd together. |
 
 #### Returns

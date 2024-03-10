@@ -8,11 +8,11 @@ accessing basic tagging and media properties.
 **`Remarks`**
 
 This class is agnostic to all specific media types. Its child classes, on the other
-    hand, support the intricacies of different media and tagging formats. For example
-    [Mpeg4File](Mpeg4File.md) supports the MPEG-4 specification and Apple's tagging format. Each file
-    type can be created using its format specific constructors, but the preferred method is to
-    use [createFromPath](File.md#createfrompath) or [createFromAbstraction](File.md#createfromabstraction) as it automatically
-    detects the appropriate class from the file extension or provided MimeType.
+hand, support the intricacies of different media and tagging formats. For example
+[Mpeg4File](Mpeg4File.md) supports the MPEG-4 specification and Apple's tagging format. Each file
+type can be created using its format specific constructors, but the preferred method is to
+use [createFromPath](File.md#createfrompath) or [createFromAbstraction](File.md#createfromabstraction) as it automatically
+detects the appropriate class from the file extension or provided MimeType.
 
 ## Hierarchy
 
@@ -93,8 +93,8 @@ This class is agnostic to all specific media types. Its child classes, on the ot
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type                                                                |
+| :----- | :------------------------------------------------------------------ |
 | `file` | `string` \| [`IFileAbstraction`](../interfaces/IFileAbstraction.md) |
 
 ## Accessors
@@ -109,7 +109,7 @@ Reasons for which this file is marked as corrupt.
 
 `string`[]
 
-___
+---
 
 ### fileAbstraction
 
@@ -121,7 +121,7 @@ Gets the [IFileAbstraction](../interfaces/IFileAbstraction.md) representing the 
 
 [`IFileAbstraction`](../interfaces/IFileAbstraction.md)
 
-___
+---
 
 ### hasTags
 
@@ -134,7 +134,7 @@ NOTE: Just because `tag !== undefined` does not mean there are tags in memory.
 
 `boolean`
 
-___
+---
 
 ### isPossiblyCorrupt
 
@@ -147,7 +147,7 @@ be written.
 
 `boolean`
 
-___
+---
 
 ### isWritable
 
@@ -159,7 +159,7 @@ Indicates whether or not tags can be written back to the current file.
 
 `boolean`
 
-___
+---
 
 ### length
 
@@ -172,7 +172,7 @@ is not open for reading;
 
 `number`
 
-___
+---
 
 ### mimeType
 
@@ -184,7 +184,7 @@ Gets the MimeType of the file as determined during creation of the instance.
 
 `string`
 
-___
+---
 
 ### mode
 
@@ -204,15 +204,15 @@ stream currently in use to be closed, except when a change is made from
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type                                           | Description                   |
+| :---- | :--------------------------------------------- | :---------------------------- |
 | `val` | [`FileAccessMode`](../enums/FileAccessMode.md) | File access mode to change to |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### name
 
@@ -224,7 +224,7 @@ Gets the name of the file as stored in its file abstraction.
 
 `string`
 
-___
+---
 
 ### position
 
@@ -237,7 +237,7 @@ if the file is not open for reading
 
 `number`
 
-___
+---
 
 ### properties
 
@@ -249,7 +249,7 @@ Gets the media properties of the file represented by the current instance.
 
 [`Properties`](Properties.md)
 
-___
+---
 
 ### tag
 
@@ -260,14 +260,14 @@ Gets an abstract representation of all tags stored in the current instance.
 **`Remarks`**
 
 This property provides generic and general access to the most common tagging
-    features of a file. To access or add a specific type of tag in the file, use
-    [getTag](File.md#gettag).
+features of a file. To access or add a specific type of tag in the file, use
+[getTag](File.md#gettag).
 
 #### Returns
 
 [`Tag`](Tag.md)
 
-___
+---
 
 ### tagTypes
 
@@ -279,7 +279,7 @@ Gets the tag types contained in the current instance.
 
 [`TagTypes`](../enums/TagTypes.md)
 
-___
+---
 
 ### tagTypesOnDisk
 
@@ -297,15 +297,15 @@ Sets the tag types contained in the physical file represented by the current ins
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type                               |
+| :------ | :--------------------------------- |
 | `value` | [`TagTypes`](../enums/TagTypes.md) |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### bufferSize
 
@@ -333,7 +333,7 @@ Dispose the current instance. Equivalent to setting the mode to closed.
 
 [IDisposable](../interfaces/IDisposable.md).[dispose](../interfaces/IDisposable.md#dispose)
 
-___
+---
 
 ### find
 
@@ -344,15 +344,15 @@ Searches forward through a file for a specified pattern, starting at a specified
 **`Throws`**
 
 Error Thrown if `pattern` is not provided or `startPosition` is not a
-    positive, safe integer.
+positive, safe integer.
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `pattern` | [`ByteVector`](ByteVector.md) | `undefined` | Pattern to search for in the current instance. Must be smaller than the |
-| `startPosition` | `number` | `0` | Seek position to start searching. Must be positive, safe integer. |
-| `before?` | [`ByteVector`](ByteVector.md) | `undefined` | Optional pattern that the searched for pattern must appear before. If this pattern is found first, `-1` is returned. |
+| Name            | Type                          | Default value | Description                                                                                                          |
+| :-------------- | :---------------------------- | :------------ | :------------------------------------------------------------------------------------------------------------------- |
+| `pattern`       | [`ByteVector`](ByteVector.md) | `undefined`   | Pattern to search for in the current instance. Must be smaller than the                                              |
+| `startPosition` | `number`                      | `0`           | Seek position to start searching. Must be positive, safe integer.                                                    |
+| `before?`       | [`ByteVector`](ByteVector.md) | `undefined`   | Optional pattern that the searched for pattern must appear before. If this pattern is found first, `-1` is returned. |
 
 #### Returns
 
@@ -360,7 +360,7 @@ Error Thrown if `pattern` is not provided or `startPosition` is not a
 
 Index at which the value was found. If not found, `-1` is returned.
 
-___
+---
 
 ### getTag
 
@@ -384,21 +384,21 @@ possible.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `types` | [`TagTypes`](../enums/TagTypes.md) | Type of tag to read. |
-| `create` | `boolean` | Whether or not to try and create the tag if one is not found. `true` does not guarantee the tag will be created. For example, trying to create an ID3v2 tag on an OGG Vorbis file will always fail. |
+| Name     | Type                               | Description                                                                                                                                                                                         |
+| :------- | :--------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `types`  | [`TagTypes`](../enums/TagTypes.md) | Type of tag to read.                                                                                                                                                                                |
+| `create` | `boolean`                          | Whether or not to try and create the tag if one is not found. `true` does not guarantee the tag will be created. For example, trying to create an ID3v2 tag on an OGG Vorbis file will always fail. |
 
 #### Returns
 
 [`Tag`](Tag.md)
 
 Tag object containing the tag that was found in or added to the current instance.
-    If no matching tag was found and none was created, `undefined` is returned. It is safe
-    to assume that if `undefined` is not returned, the returned tag can be cast to the
-    appropriate type.
+If no matching tag was found and none was created, `undefined` is returned. It is safe
+to assume that if `undefined` is not returned, the returned tag can be cast to the
+appropriate type.
 
-___
+---
 
 ### insert
 
@@ -410,21 +410,21 @@ specified location, replacing a specified number of bytes.
 **`Throws`**
 
 Error Thrown when: 1) data is falsey, 2) start is not a safe, positive number, or 3)
-    replace is not a safe, positive number
+replace is not a safe, positive number
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `data` | [`ByteVector`](ByteVector.md) | `undefined` | Data to insert into the file. |
-| `start` | `number` | `undefined` | Index into the file at which to insert the data. Must be safe positive integer. |
-| `replace` | `number` | `0` | Number of bytes to replace. Typically this is the original size of the data block so that a new block will replace the old one. |
+| Name      | Type                          | Default value | Description                                                                                                                     |
+| :-------- | :---------------------------- | :------------ | :------------------------------------------------------------------------------------------------------------------------------ |
+| `data`    | [`ByteVector`](ByteVector.md) | `undefined`   | Data to insert into the file.                                                                                                   |
+| `start`   | `number`                      | `undefined`   | Index into the file at which to insert the data. Must be safe positive integer.                                                 |
+| `replace` | `number`                      | `0`           | Number of bytes to replace. Typically this is the original size of the data block so that a new block will replace the old one. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### markAsCorrupt
 
@@ -434,15 +434,15 @@ Mark the current instance as corrupt. NOTE: Not intended to be used outside of t
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type     | Description                                      |
+| :------- | :------- | :----------------------------------------------- |
 | `reason` | `string` | Reason why this file is considered to be corrupt |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### preSave
 
@@ -454,7 +454,7 @@ Prepares to save the file. This must be called at the beginning of every File.sa
 
 `void`
 
-___
+---
 
 ### rFind
 
@@ -465,14 +465,14 @@ Searches backwards through a file for a specified pattern, starting at a specifi
 **`Throws`**
 
 Error Thrown if `pattern` was not provided or if `startPosition` is
-    not a safe, positive integer.
+not a safe, positive integer.
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `pattern` | [`ByteVector`](ByteVector.md) | `undefined` | Pattern to search for in the current instance. Must be shorter than the [bufferSize](File.md#buffersize) |
-| `startPosition` | `number` | `0` | Number of bytes from end of the file to begin searching. |
+| Name            | Type                          | Default value | Description                                                                                              |
+| :-------------- | :---------------------------- | :------------ | :------------------------------------------------------------------------------------------------------- |
+| `pattern`       | [`ByteVector`](ByteVector.md) | `undefined`   | Pattern to search for in the current instance. Must be shorter than the [bufferSize](File.md#buffersize) |
+| `startPosition` | `number`                      | `0`           | Number of bytes from end of the file to begin searching.                                                 |
 
 #### Returns
 
@@ -480,7 +480,7 @@ Error Thrown if `pattern` was not provided or if `startPosition` is
 
 Index at which the value wa found. If not found, `-1` is returned.
 
-___
+---
 
 ### readBlock
 
@@ -496,8 +496,8 @@ Error Thrown when `length` is not a positive, safe integer.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type     | Description              |
+| :------- | :------- | :----------------------- |
 | `length` | `number` | Number of bytes to read. |
 
 #### Returns
@@ -506,7 +506,7 @@ Error Thrown when `length` is not a positive, safe integer.
 
 Object containing the data read from the current instance.
 
-___
+---
 
 ### removeBlock
 
@@ -517,20 +517,20 @@ Removes a specified block of data from the file represented by the current insta
 **`Throws`**
 
 Error thrown if 1) start is not a safe, positive integer or 2) length must be a safe
-    integer.
+integer.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `start` | `number` | Index into the file at which to remove data. Must be safe, positive integer. |
-| `length` | `number` | Number of bytes to remove. Must be a safe integer. |
+| Name     | Type     | Description                                                                  |
+| :------- | :------- | :--------------------------------------------------------------------------- |
+| `start`  | `number` | Index into the file at which to remove data. Must be safe, positive integer. |
+| `length` | `number` | Number of bytes to remove. Must be a safe integer.                           |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### removeTags
 
@@ -541,15 +541,15 @@ file, pass [AllTags](../enums/TagTypes.md#alltags) as `types`
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                               | Description                                                                                                  |
+| :------ | :--------------------------------- | :----------------------------------------------------------------------------------------------------------- |
 | `types` | [`TagTypes`](../enums/TagTypes.md) | Bitwise combined [TagTypes](../enums/TagTypes.md) value containing the tag types to be removed from the file |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### save
 
@@ -561,7 +561,7 @@ Saves the changes made in the current instance to the file it represents.
 
 `void`
 
-___
+---
 
 ### seek
 
@@ -572,16 +572,16 @@ specified origin.
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `offset` | `number` | `undefined` | Byte offset to seek to. Must be a safe, positive integer. |
-| `origin` | [`SeekOrigin`](../enums/SeekOrigin.md) | `SeekOrigin.Begin` | Origin from which to seek |
+| Name     | Type                                   | Default value      | Description                                               |
+| :------- | :------------------------------------- | :----------------- | :-------------------------------------------------------- |
+| `offset` | `number`                               | `undefined`        | Byte offset to seek to. Must be a safe, positive integer. |
+| `origin` | [`SeekOrigin`](../enums/SeekOrigin.md) | `SeekOrigin.Begin` | Origin from which to seek                                 |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### truncate
 
@@ -591,15 +591,15 @@ Resizes the current instance to a specific number of bytes.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type     | Description                                                              |
+| :------- | :------- | :----------------------------------------------------------------------- |
 | `length` | `number` | Number of bytes to resize the file to, must be a safe, positive integer. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### writeBlock
 
@@ -615,15 +615,15 @@ Error Thrown when `data` is not provided.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                          | Description                                         |
+| :----- | :---------------------------- | :-------------------------------------------------- |
 | `data` | [`ByteVector`](ByteVector.md) | ByteVector containing data to the current instance. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### addFileType
 
@@ -634,17 +634,17 @@ with. Optionally, the MimeType can be forcefully overridden if it was already re
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `mimeType` | `string` | `undefined` | MimeType to register this subclass constructor to. |
-| `constructor` | [`FileTypeConstructor`](../modules.md#filetypeconstructor) | `undefined` | Constructor for a subclass of [File](File.md) that will be called if a file with a MimeType of `mimeType` is created. |
-| `override` | `boolean` | `false` | If `true` and a subclass of [File](File.md) was already registered to `mimeType`, it will be forcefully overridden. If `false`, an `Error` will be thrown if a subclass already registered to the MimeType. |
+| Name          | Type                                                       | Default value | Description                                                                                                                                                                                                 |
+| :------------ | :--------------------------------------------------------- | :------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `mimeType`    | `string`                                                   | `undefined`   | MimeType to register this subclass constructor to.                                                                                                                                                          |
+| `constructor` | [`FileTypeConstructor`](../modules.md#filetypeconstructor) | `undefined`   | Constructor for a subclass of [File](File.md) that will be called if a file with a MimeType of `mimeType` is created.                                                                                       |
+| `override`    | `boolean`                                                  | `false`       | If `true` and a subclass of [File](File.md) was already registered to `mimeType`, it will be forcefully overridden. If `false`, an `Error` will be thrown if a subclass already registered to the MimeType. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### addFileTypeResolver
 
@@ -654,15 +654,15 @@ Registers a [FileTypeResolver](../modules.md#filetyperesolver) to the front of t
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                                                 | Description                                                                                                              |
+| :--------- | :--------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------- |
 | `resolver` | [`FileTypeResolver`](../modules.md#filetyperesolver) | Function to handle resolving a subclass of [File](File.md) from an [IFileAbstraction](../interfaces/IFileAbstraction.md) |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### createFromAbstraction
 
@@ -673,11 +673,11 @@ and property read style.
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `abstraction` | [`IFileAbstraction`](../interfaces/IFileAbstraction.md) | `undefined` | Object to use when reading/writing from the current instance. |
-| `mimeType?` | `string` | `undefined` | Optional, MimeType to use for determining the subclass of [File](File.md) to return. If omitted, the MimeType will be guessed based on the file's extension. |
-| `propertiesStyle` | [`ReadStyle`](../enums/ReadStyle.md) | `ReadStyle.Average` | Optional, level of detail to use when reading the media information from the new instance. If omitted, [Average](../enums/ReadStyle.md#average) is used. |
+| Name              | Type                                                    | Default value       | Description                                                                                                                                                  |
+| :---------------- | :------------------------------------------------------ | :------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `abstraction`     | [`IFileAbstraction`](../interfaces/IFileAbstraction.md) | `undefined`         | Object to use when reading/writing from the current instance.                                                                                                |
+| `mimeType?`       | `string`                                                | `undefined`         | Optional, MimeType to use for determining the subclass of [File](File.md) to return. If omitted, the MimeType will be guessed based on the file's extension. |
+| `propertiesStyle` | [`ReadStyle`](../enums/ReadStyle.md)                    | `ReadStyle.Average` | Optional, level of detail to use when reading the media information from the new instance. If omitted, [Average](../enums/ReadStyle.md#average) is used.     |
 
 #### Returns
 
@@ -685,7 +685,7 @@ and property read style.
 
 New instance of [File](File.md) as read from the specified abstraction.
 
-___
+---
 
 ### createFromPath
 
@@ -696,11 +696,11 @@ property read style.
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `filePath` | `string` | `undefined` | Path to the file to read/write. |
-| `mimeType?` | `string` | `undefined` | Optional, MimeType to use for determining the subclass of [File](File.md) to return. If omitted, the MimeType will be guessed based on the file's extension. |
-| `propertiesStyle` | [`ReadStyle`](../enums/ReadStyle.md) | `ReadStyle.Average` | Optional, level of detail to use when reading the media information from the new instance. If omitted [Average](../enums/ReadStyle.md#average) is used. |
+| Name              | Type                                 | Default value       | Description                                                                                                                                                  |
+| :---------------- | :----------------------------------- | :------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `filePath`        | `string`                             | `undefined`         | Path to the file to read/write.                                                                                                                              |
+| `mimeType?`       | `string`                             | `undefined`         | Optional, MimeType to use for determining the subclass of [File](File.md) to return. If omitted, the MimeType will be guessed based on the file's extension. |
+| `propertiesStyle` | [`ReadStyle`](../enums/ReadStyle.md) | `ReadStyle.Average` | Optional, level of detail to use when reading the media information from the new instance. If omitted [Average](../enums/ReadStyle.md#average) is used.      |
 
 #### Returns
 
@@ -708,7 +708,7 @@ property read style.
 
 New instance of [File](File.md) as read from the specified path.
 
-___
+---
 
 ### removeFileType
 
@@ -718,15 +718,15 @@ Used for removing a file type constructor during unit testing
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type     |
+| :--------- | :------- |
 | `mimeType` | `string` |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### removeFileTypeResolver
 
@@ -736,8 +736,8 @@ Used for removing a file type resolver during unit testing
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                 |
+| :--------- | :--------------------------------------------------- |
 | `resolver` | [`FileTypeResolver`](../modules.md#filetyperesolver) |
 
 #### Returns

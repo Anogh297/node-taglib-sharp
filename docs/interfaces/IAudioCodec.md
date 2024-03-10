@@ -41,7 +41,7 @@ and can be recast without issue.
 
 Bitrate of the audio in kilobits per second represented by the current instance.
 
-___
+---
 
 ### audioChannels
 
@@ -49,7 +49,7 @@ ___
 
 Number of channels in the audio represented by the current instance.
 
-___
+---
 
 ### audioSampleRate
 
@@ -57,7 +57,7 @@ ___
 
 Sample rate of the audio represented by the current instance.
 
-___
+---
 
 ### description
 
@@ -69,7 +69,7 @@ Gets a text description of the media represented by the current instance.
 
 [ICodec](ICodec.md).[description](ICodec.md#description)
 
-___
+---
 
 ### durationMilliseconds
 
@@ -85,7 +85,7 @@ Ensure milliseconds is the right way to interpret this field
 
 [ICodec](ICodec.md).[durationMilliseconds](ICodec.md#durationmilliseconds)
 
-___
+---
 
 ### mediaTypes
 

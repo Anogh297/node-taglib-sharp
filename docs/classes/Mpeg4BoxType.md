@@ -35,7 +35,7 @@ of times these types are created in AppleTag, greatly improving the speed at whi
 - [GRP](Mpeg4BoxType.md#grp)
 - [HDLR](Mpeg4BoxType.md#hdlr)
 - [ILST](Mpeg4BoxType.md#ilst)
-- [ITUNES\_TAG\_BOX](Mpeg4BoxType.md#itunes_tag_box)
+- [ITUNES_TAG_BOX](Mpeg4BoxType.md#itunes_tag_box)
 - [LYR](Mpeg4BoxType.md#lyr)
 - [MDAT](Mpeg4BoxType.md#mdat)
 - [MDIA](Mpeg4BoxType.md#mdia)
@@ -80,7 +80,7 @@ of times these types are created in AppleTag, greatly improving the speed at whi
 
 QuickTime album artist box
 
-___
+---
 
 ### ALB
 
@@ -88,7 +88,7 @@ ___
 
 QuickTime album box
 
-___
+---
 
 ### ART
 
@@ -96,7 +96,7 @@ ___
 
 QuickTime artist box
 
-___
+---
 
 ### CMT
 
@@ -104,7 +104,7 @@ ___
 
 QuickTime comment box
 
-___
+---
 
 ### CO64
 
@@ -112,7 +112,7 @@ ___
 
 ISO 64-bit chunk offset box
 
-___
+---
 
 ### COND
 
@@ -120,7 +120,7 @@ ___
 
 QuickTime conductor box? @TODO: Verify this works should not be ©con
 
-___
+---
 
 ### COVR
 
@@ -128,7 +128,7 @@ ___
 
 QuickTime cover art box
 
-___
+---
 
 ### CPIL
 
@@ -136,7 +136,7 @@ ___
 
 QuickTime compilation flag box
 
-___
+---
 
 ### CPRT
 
@@ -144,7 +144,7 @@ ___
 
 QuickTime copyright box
 
-___
+---
 
 ### DATA
 
@@ -152,7 +152,7 @@ ___
 
 iTunesInfo tag data box
 
-___
+---
 
 ### DAY
 
@@ -160,7 +160,7 @@ ___
 
 QuickTime content create date
 
-___
+---
 
 ### DESC
 
@@ -168,7 +168,7 @@ ___
 
 QuickTime description box @TODO: What about DSCP used in 3gp videos?
 
-___
+---
 
 ### DISK
 
@@ -176,7 +176,7 @@ ___
 
 QuickTime disk number box
 
-___
+---
 
 ### DTAG
 
@@ -184,7 +184,7 @@ ___
 
 Date tagged box? @TODO: There's no record of this one
 
-___
+---
 
 ### ESDS
 
@@ -192,7 +192,7 @@ ___
 
 ISO Elementary stream descriptor box
 
-___
+---
 
 ### FREE
 
@@ -200,7 +200,7 @@ ___
 
 ISO Free space box
 
-___
+---
 
 ### FTYP
 
@@ -208,7 +208,7 @@ ___
 
 ISO File type box
 
-___
+---
 
 ### GEN
 
@@ -216,7 +216,7 @@ ___
 
 QuickTime genre box
 
-___
+---
 
 ### GNRE
 
@@ -224,7 +224,7 @@ ___
 
 3GPP genre box?
 
-___
+---
 
 ### GRP
 
@@ -232,7 +232,7 @@ ___
 
 QuickTime gouping box
 
-___
+---
 
 ### HDLR
 
@@ -240,7 +240,7 @@ ___
 
 ISO handler box
 
-___
+---
 
 ### ILST
 
@@ -248,15 +248,15 @@ ___
 
 Quicktime item list box
 
-___
+---
 
-### ITUNES\_TAG\_BOX
+### ITUNES_TAG_BOX
 
-▪ `Static` `Readonly` **ITUNES\_TAG\_BOX**: [`ByteVector`](ByteVector.md)
+▪ `Static` `Readonly` **ITUNES_TAG_BOX**: [`ByteVector`](ByteVector.md)
 
 iTunesInfo tag box
 
-___
+---
 
 ### LYR
 
@@ -264,7 +264,7 @@ ___
 
 QuickTIme lyrics box
 
-___
+---
 
 ### MDAT
 
@@ -272,7 +272,7 @@ ___
 
 ISO media data container box
 
-___
+---
 
 ### MDIA
 
@@ -280,7 +280,7 @@ ___
 
 ISO media information container box
 
-___
+---
 
 ### MEAN
 
@@ -288,7 +288,7 @@ ___
 
 iTunesInfo tag meaning box
 
-___
+---
 
 ### META
 
@@ -296,7 +296,7 @@ ___
 
 ISO metadata container box
 
-___
+---
 
 ### MINF
 
@@ -304,7 +304,7 @@ ___
 
 ISO media information container box
 
-___
+---
 
 ### MOOV
 
@@ -312,7 +312,7 @@ ___
 
 ISO box containing all metadata
 
-___
+---
 
 ### MVHD
 
@@ -320,7 +320,7 @@ ___
 
 ISO movie header and overall declarations box
 
-___
+---
 
 ### NAM
 
@@ -328,7 +328,7 @@ ___
 
 QuickTime title box
 
-___
+---
 
 ### NAME
 
@@ -336,7 +336,7 @@ ___
 
 iTunesInfo tag name box
 
-___
+---
 
 ### ROLE
 
@@ -344,7 +344,7 @@ ___
 
 Performers role box? @TODO: There's no record of this one
 
-___
+---
 
 ### SKIP
 
@@ -352,7 +352,7 @@ ___
 
 ISO free space box
 
-___
+---
 
 ### SOAA
 
@@ -360,7 +360,7 @@ ___
 
 QuickTime sortable album artist box
 
-___
+---
 
 ### SOAL
 
@@ -368,7 +368,7 @@ ___
 
 QuickTime sortable album title box
 
-___
+---
 
 ### SOAR
 
@@ -376,7 +376,7 @@ ___
 
 QuickTime sortable artist box
 
-___
+---
 
 ### SOCO
 
@@ -384,7 +384,7 @@ ___
 
 QuickTime sortable composer box
 
-___
+---
 
 ### SONM
 
@@ -392,7 +392,7 @@ ___
 
 QuickTime sortable title box
 
-___
+---
 
 ### STBL
 
@@ -400,7 +400,7 @@ ___
 
 ISO sample table box
 
-___
+---
 
 ### STCO
 
@@ -408,7 +408,7 @@ ___
 
 ISO chunk offset box
 
-___
+---
 
 ### STSD
 
@@ -416,7 +416,7 @@ ___
 
 ISO sample description box
 
-___
+---
 
 ### SUBT
 
@@ -424,7 +424,7 @@ ___
 
 Subtitle box? @TODO: There's no record of this one
 
-___
+---
 
 ### TEXT
 
@@ -432,7 +432,7 @@ ___
 
 Alias text box? @TODO: There's no record of this one
 
-___
+---
 
 ### TMPO
 
@@ -440,7 +440,7 @@ ___
 
 QuickTime BPM box
 
-___
+---
 
 ### TRAK
 
@@ -448,7 +448,7 @@ ___
 
 ISO track container box
 
-___
+---
 
 ### TRKN
 
@@ -456,7 +456,7 @@ ___
 
 QuickTime track number box
 
-___
+---
 
 ### UDTA
 
@@ -464,7 +464,7 @@ ___
 
 ISO User data box
 
-___
+---
 
 ### URL
 
@@ -472,7 +472,7 @@ ___
 
 Alias URL box? @TODO: There's no record of this one
 
-___
+---
 
 ### UUID
 
@@ -480,7 +480,7 @@ ___
 
 ISO user extension box
 
-___
+---
 
 ### WRT
 

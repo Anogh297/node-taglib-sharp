@@ -31,10 +31,10 @@ Constructs and initializes a new instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name        | Type                                           | Description                           |
+| :---------- | :--------------------------------------------- | :------------------------------------ |
 | `eventType` | [`Id3v2EventType`](../enums/Id3v2EventType.md) | Type of event the instance represents |
-| `time` | `number` | Timestamp when the event occurs |
+| `time`      | `number`                                       | Timestamp when the event occurs       |
 
 ## Accessors
 
@@ -54,15 +54,15 @@ Sets the type of the event the current instance represents.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                                           | Description       |
+| :------ | :--------------------------------------------- | :---------------- |
 | `value` | [`Id3v2EventType`](../enums/Id3v2EventType.md) | Type of the event |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### time
 
@@ -82,8 +82,8 @@ frame that contains the timecode event.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                      |
+| :------ | :------- | :------------------------------- |
 | `value` | `number` | Timestamp when the event occurs. |
 
 #### Returns
@@ -102,7 +102,7 @@ Creates a copy of this instance
 
 [`Id3v2EventTimeCode`](Id3v2EventTimeCode.md)
 
-___
+---
 
 ### render
 
@@ -114,7 +114,7 @@ Generates the byte representation of the event time code.
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### fromEmpty
 

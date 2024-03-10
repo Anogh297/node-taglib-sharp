@@ -33,7 +33,7 @@ first Xiph comment in the file.
 **`Remarks`**
 
 Ogg files are required to have one Xiph comment per stream. In files with multiple
-    streams, this means there are multiple Xiph comments per file.
+streams, this means there are multiple Xiph comments per file.
 
 #### Returns
 
@@ -47,12 +47,12 @@ first Xiph comment in the file.
 **`Remarks`**
 
 Ogg files are required to have one Xiph comment per stream. In files with multiple
-    streams, this means there are multiple Xiph comments per file.
+streams, this means there are multiple Xiph comments per file.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type      |
+| :------ | :-------- |
 | `value` | `boolean` |
 
 #### Returns

@@ -13,8 +13,8 @@ string representation of them.
 
 ### Properties
 
-- [AUDIO\_GENRES](Genres.md#audio_genres)
-- [VIDEO\_GENRES](Genres.md#video_genres)
+- [AUDIO_GENRES](Genres.md#audio_genres)
+- [VIDEO_GENRES](Genres.md#video_genres)
 
 ### Methods
 
@@ -31,17 +31,17 @@ string representation of them.
 
 ## Properties
 
-### AUDIO\_GENRES
+### AUDIO_GENRES
 
-▪ `Static` `Readonly` **AUDIO\_GENRES**: `string`[]
+▪ `Static` `Readonly` **AUDIO_GENRES**: `string`[]
 
 ID3v1 audio genres. Index corresponds to the numeric value of the genre.
 
-___
+---
 
-### VIDEO\_GENRES
+### VIDEO_GENRES
 
-▪ `Static` `Readonly` **VIDEO\_GENRES**: `string`[]
+▪ `Static` `Readonly` **VIDEO_GENRES**: `string`[]
 
 DivX video genres. Index corresponds to the numeric value of the genre.
 
@@ -55,8 +55,8 @@ Gets the genre index for a specified audio genre.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description                 |
+| :----- | :------- | :-------------------------- |
 | `name` | `string` | Name of the genre to lookup |
 
 #### Returns
@@ -65,7 +65,7 @@ Gets the genre index for a specified audio genre.
 
 Index of the genre in the audio array or 255 if it could not be found.
 
-___
+---
 
 ### indexToAudio
 
@@ -75,19 +75,19 @@ Gets the audio genre name for a specified index.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `string` \| `number` | Index of the genre in the audio genre array. Can be a `number`, `string` or `string` wrapped in `( )`, if `allowParenthesis` is set to `true` |
-| `allowParenthesis` | `boolean` | Whether or not a number wrapped in parentheses is allowed |
+| Name               | Type                 | Description                                                                                                                                   |
+| :----------------- | :------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------- |
+| `index`            | `string` \| `number` | Index of the genre in the audio genre array. Can be a `number`, `string` or `string` wrapped in `( )`, if `allowParenthesis` is set to `true` |
+| `allowParenthesis` | `boolean`            | Whether or not a number wrapped in parentheses is allowed                                                                                     |
 
 #### Returns
 
 `string`
 
 Genre name if found, or `undefined` if `index` is outside the
-    bounds of the audio genre array or if `index` is not valid.
+bounds of the audio genre array or if `index` is not valid.
 
-___
+---
 
 ### indexToVideo
 
@@ -97,19 +97,19 @@ Gets the video genre name for a specified index.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `string` \| `number` | Index of the genre in the video genre array. Can be a `number`, `string` or `string` wrapped in `( )` if `allowParenthesis` is set to `true` |
-| `allowParenthesis` | `boolean` | Whether or not a number wrapped in parentheses is allowed |
+| Name               | Type                 | Description                                                                                                                                  |
+| :----------------- | :------------------- | :------------------------------------------------------------------------------------------------------------------------------------------- |
+| `index`            | `string` \| `number` | Index of the genre in the video genre array. Can be a `number`, `string` or `string` wrapped in `( )` if `allowParenthesis` is set to `true` |
+| `allowParenthesis` | `boolean`            | Whether or not a number wrapped in parentheses is allowed                                                                                    |
 
 #### Returns
 
 `string`
 
 Genre name if found, or `undefined` if `index` is outside the
-    bounds of the video genre array or if `index` is not valid.
+bounds of the video genre array or if `index` is not valid.
 
-___
+---
 
 ### videoToIndex
 
@@ -119,8 +119,8 @@ Gets the genre index for a specified video genre.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description                 |
+| :----- | :------- | :-------------------------- |
 | `name` | `string` | Name of the genre to lookup |
 
 #### Returns

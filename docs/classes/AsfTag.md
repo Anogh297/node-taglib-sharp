@@ -122,7 +122,7 @@ For example, "Kintsugi" (an album by Death Cab for Cutie), "The Complete Red Gre
 **`Remarks`**
 
 Stored in the `WM/AlbumTitle` or `Album` descriptors
-    https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-albumtitle
+https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-albumtitle
 
 #### Returns
 
@@ -148,12 +148,12 @@ For example, "Kintsugi" (an album by Death Cab for Cutie), "The Complete Red Gre
 **`Remarks`**
 
 Stored in the `WM/AlbumTitle` or `Album` descriptors
-    https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-albumtitle
+https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-albumtitle
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                            |
+| :------ | :------- | :------------------------------------------------------------------------------------- |
 | `value` | `string` | of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -164,7 +164,7 @@ Stored in the `WM/AlbumTitle` or `Album` descriptors
 
 Tag.album
 
-___
+---
 
 ### albumArtists
 
@@ -212,8 +212,8 @@ Stored in the `WM/AlbumArtist` or `AlbumArtist` descriptors
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                                                                                                 |
+| :------ | :--------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `string`[] | Band or artist credited with the creation of the entire album or collection containing the media described by the current instance or an empty array if no value is present |
 
 #### Returns
@@ -224,7 +224,7 @@ Stored in the `WM/AlbumArtist` or `AlbumArtist` descriptors
 
 Tag.albumArtists
 
-___
+---
 
 ### albumArtistsSort
 
@@ -244,7 +244,7 @@ best to stick to a single album artist. Eg, "Van Buuren, Armin"
 **`Remarks`**
 
 Stored in the `WM/AlbumArtistSortOrder` descriptor
-    http://msdn.microsoft.com/en-us/library/aa386866(VS.85).aspx
+http://msdn.microsoft.com/en-us/library/aa386866(VS.85).aspx
 
 #### Returns
 
@@ -270,12 +270,12 @@ best to stick to a single album artist. Eg, "Van Buuren, Armin"
 **`Remarks`**
 
 Stored in the `WM/AlbumArtistSortOrder` descriptor
-    http://msdn.microsoft.com/en-us/library/aa386866(VS.85).aspx
+http://msdn.microsoft.com/en-us/library/aa386866(VS.85).aspx
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                                                                                                                             |
+| :------ | :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `value` | `string`[] | Sortable names for the bands/artists are credited with the creation of the entire album or collection containing the media described by the current instance, or an empty array if no value is present. |
 
 #### Returns
@@ -286,7 +286,7 @@ Stored in the `WM/AlbumArtistSortOrder` descriptor
 
 Tag.albumArtistsSort
 
-___
+---
 
 ### albumSort
 
@@ -324,8 +324,8 @@ Stored in the `WM/AlbumSortOrder` descriptors
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                               |
+| :------ | :------- | :---------------------------------------------------------------------------------------- |
 | `value` | `string` | Sortable name for the album title of the media or `undefined` if the value is not present |
 
 #### Returns
@@ -336,7 +336,7 @@ Stored in the `WM/AlbumSortOrder` descriptors
 
 Tag.albumSort
 
-___
+---
 
 ### amazonId
 
@@ -352,7 +352,7 @@ identify the particular track or album in the Amazon catalog.
 `string`
 
 Amazon ID of the media represented by the current instance or `undefined` if no
-    value is present
+value is present
 
 #### Inherited from
 
@@ -367,8 +367,8 @@ identify the particular track or album in the Amazon catalog.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                      |
+| :------ | :------- | :----------------------------------------------------------------------------------------------- |
 | `value` | `string` | Amazon ID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -379,7 +379,7 @@ identify the particular track or album in the Amazon catalog.
 
 Tag.amazonId
 
-___
+---
 
 ### beatsPerMinute
 
@@ -394,7 +394,7 @@ calculated from the audio or pulled from a database.
 **`Remarks`**
 
 Stored in the `WM/BeatsPerMinute` descriptor
-    https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-beatsperminute
+https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-beatsperminute
 
 #### Returns
 
@@ -415,12 +415,12 @@ calculated from the audio or pulled from a database.
 **`Remarks`**
 
 Stored in the `WM/BeatsPerMinute` descriptor
-    https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-beatsperminute
+https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-beatsperminute
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                             |
+| :------ | :------- | :------------------------------------------------------------------------------------------------------ |
 | `value` | `number` | Beats per minute of the audio in the media represented by the current instance, or `0` if not specified |
 
 #### Returns
@@ -431,7 +431,7 @@ Stored in the `WM/BeatsPerMinute` descriptor
 
 Tag.beatsPerMinute
 
-___
+---
 
 ### comment
 
@@ -448,9 +448,9 @@ including it in the main interface.
 **`Remarks`**
 
 Stored in the `WM/Text` descriptor
-    https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-text
-    It should be noted that many applications store comments in the field read by
-    [description](AsfTag.md#description).
+https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-text
+It should be noted that many applications store comments in the field read by
+[description](AsfTag.md#description).
 
 #### Returns
 
@@ -473,14 +473,14 @@ including it in the main interface.
 **`Remarks`**
 
 Stored in the `WM/Text` descriptor
-    https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-text
-    It should be noted that many applications store comments in the field read by
-    [description](AsfTag.md#description).
+https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-text
+It should be noted that many applications store comments in the field read by
+[description](AsfTag.md#description).
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                               |
+| :------ | :------- | :-------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | User comments on the media represented by the current instance or `undefined` if the value is not present |
 
 #### Returns
@@ -491,7 +491,7 @@ Stored in the `WM/Text` descriptor
 
 Tag.comment
 
-___
+---
 
 ### composers
 
@@ -505,7 +505,7 @@ claim authorship of the media.
 **`Remarks`**
 
 Stored in the `WM/Composer` or `Composer` descriptors
-    https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-composer
+https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-composer
 
 #### Returns
 
@@ -525,12 +525,12 @@ claim authorship of the media.
 **`Remarks`**
 
 Stored in the `WM/Composer` or `Composer` descriptors
-    https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-composer
+https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-composer
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                          |
+| :------ | :--------- | :--------------------------------------------------------------------------------------------------- |
 | `value` | `string`[] | Composers of the media represented by the current instance of an empty array if no value is present. |
 
 #### Returns
@@ -541,7 +541,7 @@ Stored in the `WM/Composer` or `Composer` descriptors
 
 Tag.composers
 
-___
+---
 
 ### composersSort
 
@@ -558,7 +558,7 @@ with multiple composers.
 `string`[]
 
 Sortable names for the composers of the media represented by the current instance
-    or an empty array if no value is present.
+or an empty array if no value is present.
 
 #### Inherited from
 
@@ -574,8 +574,8 @@ with multiple composers.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                                                 |
+| :------ | :--------- | :-------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `string`[] | Sortable names for the composers of the media represented by the current instance or an empty array if no value is present. |
 
 #### Returns
@@ -586,7 +586,7 @@ with multiple composers.
 
 Tag.composersSort
 
-___
+---
 
 ### conductor
 
@@ -599,7 +599,7 @@ This field is most useful for organizing classical music and movies.
 **`Remarks`**
 
 Stored in the `WM/Conductor` descriptor
-    https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-conductor
+https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-conductor
 
 #### Returns
 
@@ -618,12 +618,12 @@ This field is most useful for organizing classical music and movies.
 **`Remarks`**
 
 Stored in the `WM/Conductor` descriptor
-    https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-conductor
+https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-conductor
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                |
+| :------ | :------- | :--------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | Conductor or director of the media represented by the current instance or `undefined` if no value present. |
 
 #### Returns
@@ -634,7 +634,7 @@ Stored in the `WM/Conductor` descriptor
 
 Tag.conductor
 
-___
+---
 
 ### contentDescriptionObject
 
@@ -646,7 +646,7 @@ Gets the ASF content description object used by the current instance.
 
 [`AsfContentDescriptionObject`](AsfContentDescriptionObject.md)
 
-___
+---
 
 ### copyright
 
@@ -686,8 +686,8 @@ Stored in the ContentDescriptionObject.copyright
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                    |
+| :------ | :------- | :------------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | Copyright information for the media represented by the current instance or `undefined` if no value is present. |
 
 #### Returns
@@ -698,7 +698,7 @@ Stored in the ContentDescriptionObject.copyright
 
 Tag.copyright
 
-___
+---
 
 ### dateTagged
 
@@ -722,8 +722,8 @@ Sets the date and time at which the tag has been written.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type   | Description                                                                        |
+| :------ | :----- | :--------------------------------------------------------------------------------- |
 | `value` | `Date` | Date/time at which the tag has been written, or `undefined` if no value is present |
 
 #### Returns
@@ -734,7 +734,7 @@ Sets the date and time at which the tag has been written.
 
 Tag.dateTagged
 
-___
+---
 
 ### description
 
@@ -751,7 +751,7 @@ Vegas for a series of psychedelic escapades."
 **`Remarks`**
 
 Stored in the ContentDescriptionObject.description
-    Some applications will use this field for storing comments.
+Some applications will use this field for storing comments.
 
 #### Returns
 
@@ -774,12 +774,12 @@ Vegas for a series of psychedelic escapades."
 **`Remarks`**
 
 Stored in the ContentDescriptionObject.description
-    Some applications will use this field for storing comments.
+Some applications will use this field for storing comments.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                        |
+| :------ | :------- | :------------------------------------------------------------------------------------------------- |
 | `value` | `string` | Description of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -790,7 +790,7 @@ Stored in the ContentDescriptionObject.description
 
 Tag.description
 
-___
+---
 
 ### disc
 
@@ -806,7 +806,7 @@ the disc is the first of three, the value should be `1`. It should be no more th
 **`Remarks`**
 
 Stored in the `WM/PartOfSet` descriptor
-    https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-partofset
+https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-partofset
 
 #### Returns
 
@@ -828,12 +828,12 @@ the disc is the first of three, the value should be `1`. It should be no more th
 **`Remarks`**
 
 Stored in the `WM/PartOfSet` descriptor
-    https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-partofset
+https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-partofset
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                   |
+| :------ | :------- | :-------------------------------------------------------------------------------------------- |
 | `value` | `number` | Number of the disc or season of the media represented by the current instance in a boxed set. |
 
 #### Returns
@@ -844,7 +844,7 @@ Stored in the `WM/PartOfSet` descriptor
 
 Tag.disc
 
-___
+---
 
 ### discCount
 
@@ -859,7 +859,7 @@ this value should also be zero.
 **`Remarks`**
 
 Stored in the `WM/PartOfSet` descriptor
-    https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-partofset
+https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-partofset
 
 #### Returns
 
@@ -880,12 +880,12 @@ this value should also be zero.
 **`Remarks`**
 
 Stored in the `WM/PartOfSet` descriptor
-    https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-partofset
+https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-partofset
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                                   |
+| :------ | :------- | :---------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `number` | Number of discs or seasons in the boxed set containing the media represented by the current instance or `0` if not specified. |
 
 #### Returns
@@ -896,7 +896,7 @@ Stored in the `WM/PartOfSet` descriptor
 
 Tag.discCount
 
-___
+---
 
 ### extendedContentDescriptionObject
 
@@ -908,7 +908,7 @@ Gets the ASF extended content description used by the current instance.
 
 [`AsfExtendedContentDescriptionObject`](AsfExtendedContentDescriptionObject.md)
 
-___
+---
 
 ### firstAlbumArtist
 
@@ -924,7 +924,7 @@ Gets the first value contained in [albumArtists](AsfTag.md#albumartists).
 
 Tag.firstAlbumArtist
 
-___
+---
 
 ### firstAlbumArtistSort
 
@@ -940,7 +940,7 @@ Gets the first value contained in [albumArtistsSort](AsfTag.md#albumartistssort)
 
 Tag.firstAlbumArtistSort
 
-___
+---
 
 ### firstComposer
 
@@ -956,7 +956,7 @@ Gets the first value contained in [composers](AsfTag.md#composers)
 
 Tag.firstComposer
 
-___
+---
 
 ### firstComposerSort
 
@@ -972,7 +972,7 @@ Gets the first value contained in [composersSort](AsfTag.md#composerssort)
 
 Tag.firstComposerSort
 
-___
+---
 
 ### firstGenre
 
@@ -988,7 +988,7 @@ Gets the first value contained in [genres](AsfTag.md#genres)
 
 Tag.firstGenre
 
-___
+---
 
 ### firstPerformer
 
@@ -1004,7 +1004,7 @@ Gets the first value contained in [performers](AsfTag.md#performers)
 
 Tag.firstPerformer
 
-___
+---
 
 ### firstPerformerSort
 
@@ -1020,7 +1020,7 @@ Gets the first value contained in [performersSort](AsfTag.md#performerssort)
 
 Tag.firstPerformerSort
 
-___
+---
 
 ### genres
 
@@ -1036,8 +1036,8 @@ Additionally, `genres.ts` contains video genres as used by DivX.
 **`Remarks`**
 
 Stored in the `WM/Genre`, `WM/GenreID`, or `Genre` descriptors
-    https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-genre
-    https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-genreid
+https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-genre
+https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-genreid
 
 #### Returns
 
@@ -1059,13 +1059,13 @@ Additionally, `genres.ts` contains video genres as used by DivX.
 **`Remarks`**
 
 Stored in the `WM/Genre`, `WM/GenreID`, or `Genre` descriptors
-    https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-genre
-    https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-genreid
+https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-genre
+https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-genreid
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                       |
+| :------ | :--------- | :------------------------------------------------------------------------------------------------ |
 | `value` | `string`[] | Genres of the media represented by the current instance or an empty array if no value is present. |
 
 #### Returns
@@ -1076,7 +1076,7 @@ Stored in the `WM/Genre`, `WM/GenreID`, or `Genre` descriptors
 
 Tag.genres
 
-___
+---
 
 ### grouping
 
@@ -1091,7 +1091,7 @@ music this could be a movement. It could also be parts of a series like "Introdu
 **`Remarks`**
 
 Stored in the `WM/ContentGroupDescription` descriptor
-    https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-contentgroupdescription
+https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-contentgroupdescription
 
 #### Returns
 
@@ -1112,12 +1112,12 @@ music this could be a movement. It could also be parts of a series like "Introdu
 **`Remarks`**
 
 Stored in the `WM/ContentGroupDescription` descriptor
-    https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-contentgroupdescription
+https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-contentgroupdescription
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                     |
+| :------ | :------- | :-------------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | Grouping on the album which the media in the current instance belongs to or `undefined` if no value is present. |
 
 #### Returns
@@ -1128,7 +1128,7 @@ Stored in the `WM/ContentGroupDescription` descriptor
 
 Tag.grouping
 
-___
+---
 
 ### initialKey
 
@@ -1152,8 +1152,8 @@ Sets the initial key of the track.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                |
+| :------ | :------- | :--------------------------------------------------------- |
 | `value` | `string` | Initial key of the track or `undefined` if no value is set |
 
 #### Returns
@@ -1164,7 +1164,7 @@ Sets the initial key of the track.
 
 Tag.initialKey
 
-___
+---
 
 ### isCompilation
 
@@ -1186,8 +1186,8 @@ Gets whether or not the album described by the current instance is a compilation
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type      | Description                                                                 |
+| :------ | :-------- | :-------------------------------------------------------------------------- |
 | `value` | `boolean` | Whether or not the album described by the current instance is a compilation |
 
 #### Returns
@@ -1198,7 +1198,7 @@ Gets whether or not the album described by the current instance is a compilation
 
 Tag.isCompilation
 
-___
+---
 
 ### isEmpty
 
@@ -1214,7 +1214,7 @@ Gets whether or not the current instance is empty.
 
 Tag.isEmpty
 
-___
+---
 
 ### isrc
 
@@ -1238,8 +1238,8 @@ Sets the ISRC (International Standard Recording Code) of the track.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                         |
+| :------ | :------- | :-------------------------------------------------- |
 | `value` | `string` | ISRC of the track or `undefined` if no value is set |
 
 #### Returns
@@ -1250,7 +1250,7 @@ Sets the ISRC (International Standard Recording Code) of the track.
 
 Tag.isrc
 
-___
+---
 
 ### joinedAlbumArtists
 
@@ -1266,7 +1266,7 @@ Gets a semicolon and space separated string containing the values in [albumArtis
 
 Tag.joinedAlbumArtists
 
-___
+---
 
 ### joinedComposers
 
@@ -1282,7 +1282,7 @@ Gets a semicolon and space separated string containing the values in [composers]
 
 Tag.joinedComposers
 
-___
+---
 
 ### joinedGenres
 
@@ -1298,7 +1298,7 @@ Gets a semicolon and space separated string containing the values in [genres](As
 
 Tag.joinedGenres
 
-___
+---
 
 ### joinedPerformers
 
@@ -1314,7 +1314,7 @@ Gets a semicolon and space separated string containing the values in [performers
 
 Tag.joinedPerformers
 
-___
+---
 
 ### joinedPerformersSort
 
@@ -1330,7 +1330,7 @@ Gets a semicolon and space separated string containing the values in [performers
 
 Tag.joinedPerformersSort
 
-___
+---
 
 ### lyrics
 
@@ -1346,7 +1346,7 @@ accessed using format-specific implementations.
 **`Remarks`**
 
 Stored in the `WM/Lyrics` descriptor
-    https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-lyrics
+https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-lyrics
 
 #### Returns
 
@@ -1368,12 +1368,12 @@ accessed using format-specific implementations.
 **`Remarks`**
 
 Stored in the `WM/Lyrics` descriptor
-    https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-lyrics
+https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-lyrics
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                             |
+| :------ | :------- | :------------------------------------------------------------------------------------------------------ |
 | `value` | `string` | Lyrics or script of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1384,7 +1384,7 @@ Stored in the `WM/Lyrics` descriptor
 
 Tag.lyrics
 
-___
+---
 
 ### metadataLibraryObject
 
@@ -1396,7 +1396,7 @@ Gets the ASF metadata library object used by the current instance.
 
 [`AsfMetadataLibraryObject`](AsfMetadataLibraryObject.md)
 
-___
+---
 
 ### musicBrainzAlbumArtistId
 
@@ -1422,15 +1422,15 @@ Stored in the `MusicBrainz/Artist Id` descriptor
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `value` | `string` |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### musicBrainzArtistId
 
@@ -1466,8 +1466,8 @@ Stored in the `MusicBrainz/Artist Id` descriptor
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                 |
+| :------ | :------- | :---------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz ArtistID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1478,7 +1478,7 @@ Stored in the `MusicBrainz/Artist Id` descriptor
 
 Tag.musicBrainzArtistId
 
-___
+---
 
 ### musicBrainzDiscId
 
@@ -1514,8 +1514,8 @@ Stored in the `MusicBrainz/Disc Id` descriptor
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                               |
+| :------ | :------- | :-------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz DiscID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1526,7 +1526,7 @@ Stored in the `MusicBrainz/Disc Id` descriptor
 
 Tag.musicBrainzDiscId
 
-___
+---
 
 ### musicBrainzReleaseArtistId
 
@@ -1542,7 +1542,7 @@ identify a particular album artist credited with the album.
 `string`
 
 MusicBrainz ReleaseArtistID of the media represented by the current instance or
-    `undefined` if no value is present
+`undefined` if no value is present
 
 #### Inherited from
 
@@ -1557,8 +1557,8 @@ identify a particular album artist credited with the album.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                        |
+| :------ | :------- | :----------------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz ReleaseArtistID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1569,7 +1569,7 @@ identify a particular album artist credited with the album.
 
 Tag.musicBrainzReleaseArtistId
 
-___
+---
 
 ### musicBrainzReleaseCountry
 
@@ -1611,8 +1611,8 @@ Stored in the `MusicBrainz/Album Release Country` descriptor
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                       |
+| :------ | :------- | :---------------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz ReleaseCountry of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1623,7 +1623,7 @@ Stored in the `MusicBrainz/Album Release Country` descriptor
 
 Tag.musicBrainzReleaseCountry
 
-___
+---
 
 ### musicBrainzReleaseGroupId
 
@@ -1659,8 +1659,8 @@ Stored in the `MusicBrainz/Release Group Id` descriptor
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                       |
+| :------ | :------- | :---------------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz ReleaseGroupID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1671,7 +1671,7 @@ Stored in the `MusicBrainz/Release Group Id` descriptor
 
 Tag.musicBrainzReleaseGroupId
 
-___
+---
 
 ### musicBrainzReleaseId
 
@@ -1707,8 +1707,8 @@ Stored in the `MusicBrainz/Album Id` descriptor
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                  |
+| :------ | :------- | :----------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz ReleaseID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1719,7 +1719,7 @@ Stored in the `MusicBrainz/Album Id` descriptor
 
 Tag.musicBrainzReleaseId
 
-___
+---
 
 ### musicBrainzReleaseStatus
 
@@ -1755,8 +1755,8 @@ Stored in the `MusicBrainz/Album Status` descriptor
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                      |
+| :------ | :------- | :--------------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz ReleaseStatus of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1767,7 +1767,7 @@ Stored in the `MusicBrainz/Album Status` descriptor
 
 Tag.musicBrainzReleaseStatus
 
-___
+---
 
 ### musicBrainzReleaseType
 
@@ -1781,8 +1781,8 @@ a release is. Common types are: `Single`, `Album`, `EP`, `Compilation`, `Soundtr
 must be given when using this field to decide if a particular track "is a compilation".
 
 @returns
-    MusicBrainz ReleaseType of the media represented by the current instance or
-    `undefined` if no value is present
+MusicBrainz ReleaseType of the media represented by the current instance or
+`undefined` if no value is present
 
 **`Remarks`**
 
@@ -1806,7 +1806,7 @@ a release is. Common types are: `Single`, `Album`, `EP`, `Compilation`, `Soundtr
 must be given when using this field to decide if a particular track "is a compilation".
 
 @param value MusicBrainz ReleaseType of the media represented by the current instance or
-    `undefined` if no value is present
+`undefined` if no value is present
 
 **`Remarks`**
 
@@ -1814,8 +1814,8 @@ Stored in the `MusicBrainz/Album Type` descriptor
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `value` | `string` |
 
 #### Returns
@@ -1826,7 +1826,7 @@ Stored in the `MusicBrainz/Album Type` descriptor
 
 Tag.musicBrainzReleaseType
 
-___
+---
 
 ### musicBrainzTrackId
 
@@ -1864,8 +1864,8 @@ Stored in the `MusicBrainz/Track Id` descriptor
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                |
+| :------ | :------- | :--------------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicBrainz TrackID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1876,7 +1876,7 @@ Stored in the `MusicBrainz/Track Id` descriptor
 
 Tag.musicBrainzTrackId
 
-___
+---
 
 ### musicIpId
 
@@ -1912,8 +1912,8 @@ Stored in the `MusicIP/PUID` descriptor
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                         |
+| :------ | :------- | :-------------------------------------------------------------------------------------------------- |
 | `value` | `string` | MusicIP PUID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1924,7 +1924,7 @@ Stored in the `MusicIP/PUID` descriptor
 
 Tag.musicIpId
 
-___
+---
 
 ### performers
 
@@ -1970,8 +1970,8 @@ Stored in the ContentDescriptionObject.author
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                                       |
+| :------ | :--------- | :---------------------------------------------------------------------------------------------------------------- |
 | `value` | `string`[] | Performers who performed in the media described by the current instance or an empty array if no value is present. |
 
 #### Returns
@@ -1982,7 +1982,7 @@ Stored in the ContentDescriptionObject.author
 
 Tag.performers
 
-___
+---
 
 ### performersRole
 
@@ -2002,7 +2002,7 @@ in the [performersRole](AsfTag.md#performersrole) array is `undefined` to mainta
 `string`[]
 
 Array containing the roles played by the performers in the media described by the
-    current instance, or an empty array if no value is present.
+current instance, or an empty array if no value is present.
 
 #### Inherited from
 
@@ -2021,8 +2021,8 @@ in the [performersRole](AsfTag.md#performersrole) array is `undefined` to mainta
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                                                                   |
+| :------ | :--------- | :-------------------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `string`[] | Array containing the roles played by the performers in the media described by the current instance, or an empty array if no value is present. |
 
 #### Returns
@@ -2033,7 +2033,7 @@ in the [performersRole](AsfTag.md#performersrole) array is `undefined` to mainta
 
 Tag.performersRole
 
-___
+---
 
 ### performersSort
 
@@ -2049,7 +2049,7 @@ skip articles or sort by last name. For example, "The Pillows" might be sorted a
 **`Remarks`**
 
 Stored in the `WM/ArtistSortOrder` descriptor
-    http://msdn.microsoft.com/en-us/library/aa386866(VS.85).aspx
+http://msdn.microsoft.com/en-us/library/aa386866(VS.85).aspx
 
 #### Returns
 
@@ -2071,12 +2071,12 @@ skip articles or sort by last name. For example, "The Pillows" might be sorted a
 **`Remarks`**
 
 Stored in the `WM/ArtistSortOrder` descriptor
-    http://msdn.microsoft.com/en-us/library/aa386866(VS.85).aspx
+http://msdn.microsoft.com/en-us/library/aa386866(VS.85).aspx
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                                                                                                               |
+| :------ | :--------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `string`[] | Sortable names for the performers who performed in the media described by the current instance, or an empty array if no value is present. |
 
 #### Returns
@@ -2087,7 +2087,7 @@ Stored in the `WM/ArtistSortOrder` descriptor
 
 Tag.performersSort
 
-___
+---
 
 ### pictures
 
@@ -2102,8 +2102,8 @@ recording studio, the concert, etc.
 **`Remarks`**
 
 Stored in the the `WM/Picture` content descriptor and description record.
-    https://docs.microsoft.com/en-us/windows/win32/wmformat/wmpicture
-    Modifications to the returned array will not be stored.
+https://docs.microsoft.com/en-us/windows/win32/wmformat/wmpicture
+Modifications to the returned array will not be stored.
 
 #### Returns
 
@@ -2124,12 +2124,12 @@ recording studio, the concert, etc.
 **`Remarks`**
 
 Stored in the `WM/Picture` content descriptor and description record.
-    https://docs.microsoft.com/en-us/windows/win32/wmformat/wmpicture
+https://docs.microsoft.com/en-us/windows/win32/wmformat/wmpicture
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                                      | Description                                                                                                                                           |
+| :------ | :---------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | [`IPicture`](../interfaces/IPicture.md)[] | Array containing a collection of pictures associated with the media represented by the current instance or an empty array if no pictures are present. |
 
 #### Returns
@@ -2140,7 +2140,7 @@ Stored in the `WM/Picture` content descriptor and description record.
 
 Tag.pictures
 
-___
+---
 
 ### publisher
 
@@ -2164,8 +2164,8 @@ Sets the publisher of the track.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                              |
+| :------ | :------- | :------------------------------------------------------- |
 | `value` | `string` | Publisher of the track or `undefined` if no value is set |
 
 #### Returns
@@ -2176,7 +2176,7 @@ Sets the publisher of the track.
 
 Tag.publisher
 
-___
+---
 
 ### remixedBy
 
@@ -2200,8 +2200,8 @@ Sets the remixer of the track.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                            |
+| :------ | :------- | :----------------------------------------------------- |
 | `value` | `string` | Remixer of the track or `undefined` if no value is set |
 
 #### Returns
@@ -2212,7 +2212,7 @@ Sets the remixer of the track.
 
 Tag.remixedBy
 
-___
+---
 
 ### replayGainAlbumGain
 
@@ -2242,8 +2242,8 @@ Stored in the `ReplayGain/Album` descriptor
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                         |
+| :------ | :------- | :---------------------------------------------------------------------------------- |
 | `value` | `number` | Album gain as per the ReplayGain specifications, in dB, or `NaN` if no value is set |
 
 #### Returns
@@ -2254,7 +2254,7 @@ Stored in the `ReplayGain/Album` descriptor
 
 Tag.replayGainAlbumGain
 
-___
+---
 
 ### replayGainAlbumPeak
 
@@ -2284,8 +2284,8 @@ Stored in the `ReplayGain/Album Peak` descriptor
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                  |
+| :------ | :------- | :--------------------------------------------------------------------------- |
 | `value` | `number` | Album peak as per the ReplayGain specifications, or `NaN` if no value is set |
 
 #### Returns
@@ -2296,7 +2296,7 @@ Stored in the `ReplayGain/Album Peak` descriptor
 
 Tag.replayGainAlbumPeak
 
-___
+---
 
 ### replayGainTrackGain
 
@@ -2326,8 +2326,8 @@ Stored in the `ReplayGain/Track` descriptor
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                     |
+| :------ | :------- | :------------------------------------------------------------------------------ |
 | `value` | `number` | Track gain as per ReplayGain specifications, in dB, or `NaN` if no value is set |
 
 #### Returns
@@ -2338,7 +2338,7 @@ Stored in the `ReplayGain/Track` descriptor
 
 Tag.replayGainTrackGain
 
-___
+---
 
 ### replayGainTrackPeak
 
@@ -2368,8 +2368,8 @@ Stored in the `ReplayGain/Track Peak` descriptor
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                  |
+| :------ | :------- | :--------------------------------------------------------------------------- |
 | `value` | `number` | Track peak as per the ReplayGain specifications, or `NaN` if no value is set |
 
 #### Returns
@@ -2380,7 +2380,7 @@ Stored in the `ReplayGain/Track Peak` descriptor
 
 Tag.replayGainTrackPeak
 
-___
+---
 
 ### sizeOnDisk
 
@@ -2396,7 +2396,7 @@ Gets the size of the tag in bytes on disk as it was read from disk.
 
 Tag.sizeOnDisk
 
-___
+---
 
 ### subtitle
 
@@ -2411,7 +2411,7 @@ title on the front cover of the media. For example for "Ocean's 13", this would 
 **`Remarks`**
 
 Stored in the `WM/SubTitle` descriptor
-    https://msdn.microsoft.com/en-us/library/windows/desktop/dd757997(v=vs.85).aspx
+https://msdn.microsoft.com/en-us/library/windows/desktop/dd757997(v=vs.85).aspx
 
 #### Returns
 
@@ -2432,12 +2432,12 @@ title on the front cover of the media. For example for "Ocean's 13", this would 
 **`Remarks`**
 
 Stored in the `WM/SubTitle` descriptor
-    https://msdn.microsoft.com/en-us/library/windows/desktop/dd757997(v=vs.85).aspx
+https://msdn.microsoft.com/en-us/library/windows/desktop/dd757997(v=vs.85).aspx
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                     |
+| :------ | :------- | :---------------------------------------------------------------------------------------------- |
 | `value` | `string` | Subtitle of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -2448,7 +2448,7 @@ Stored in the `WM/SubTitle` descriptor
 
 Tag.subtitle
 
-___
+---
 
 ### tagTypes
 
@@ -2465,7 +2465,7 @@ containing the tag types contained in the current instance.
 
 Tag.tagTypes
 
-___
+---
 
 ### title
 
@@ -2499,8 +2499,8 @@ Stored in the content description object
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                 |
+| :------ | :------- | :------------------------------------------------------------------------------------------ |
 | `value` | `string` | Title of the media described by the current instance or `undefined` if no value is present. |
 
 #### Returns
@@ -2511,7 +2511,7 @@ Stored in the content description object
 
 Tag.title
 
-___
+---
 
 ### titleSort
 
@@ -2524,7 +2524,7 @@ Possibly used to sort compilations or episodic content.
 **`Remarks`**
 
 Stored in the `WM/TitleSortOrder`
-    http://msdn.microsoft.com/en-us/library/aa386866(VS.85).aspx
+http://msdn.microsoft.com/en-us/library/aa386866(VS.85).aspx
 
 #### Returns
 
@@ -2543,12 +2543,12 @@ Possibly used to sort compilations or episodic content.
 **`Remarks`**
 
 Stored in the `WM/TitleSortOrder`
-    http://msdn.microsoft.com/en-us/library/aa386866(VS.85).aspx
+http://msdn.microsoft.com/en-us/library/aa386866(VS.85).aspx
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                        |
+| :------ | :------- | :------------------------------------------------------------------------------------------------- |
 | `value` | `string` | Sortable name of the media described by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -2559,7 +2559,7 @@ Stored in the `WM/TitleSortOrder`
 
 Tag.titleSort
 
-___
+---
 
 ### track
 
@@ -2577,7 +2577,7 @@ For a series, this property represents the episodes in a season of the series.
 **`Remarks`**
 
 Stored in the `WM/TrackNumber` descriptor
-    https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-tracknumber
+https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-tracknumber
 
 #### Returns
 
@@ -2601,12 +2601,12 @@ For a series, this property represents the episodes in a season of the series.
 **`Remarks`**
 
 Stored in the `WM/TrackNumber` descriptor
-    https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-tracknumber
+https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-tracknumber
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                |
+| :------ | :------- | :--------------------------------------------------------------------------------------------------------- |
 | `value` | `number` | Position of the media represented by the current instance in its containing album or `0` if not specified. |
 
 #### Returns
@@ -2617,7 +2617,7 @@ Stored in the `WM/TrackNumber` descriptor
 
 Tag.track
 
-___
+---
 
 ### trackCount
 
@@ -2655,8 +2655,8 @@ Stored in the `TrackTotal` descriptor
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                                               |
+| :------ | :------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `number` | Number of tracks on the album or number of episodes in a series of the media represented by the current instance or `0` if not specified. |
 
 #### Returns
@@ -2667,7 +2667,7 @@ Stored in the `TrackTotal` descriptor
 
 Tag.trackCount
 
-___
+---
 
 ### year
 
@@ -2683,7 +2683,7 @@ access the higher precision values.
 **`Remarks`**
 
 Stored in the `WM/Year` descriptor
-    https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-year
+https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-year
 
 #### Returns
 
@@ -2705,12 +2705,12 @@ access the higher precision values.
 **`Remarks`**
 
 Stored in the `WM/Year` descriptor
-    https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-year
+https://docs.microsoft.com/en-us/windows/win32/wmformat/wm-year
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                        |
+| :------ | :------- | :------------------------------------------------------------------------------------------------- |
 | `value` | `number` | Year that the media represented by the current instance was created or `0` if no value is present. |
 
 #### Returns
@@ -2731,15 +2731,15 @@ Adds a descriptor to the current instance's extended content description object.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name         | Type                                              | Description                                                       |
+| :----------- | :------------------------------------------------ | :---------------------------------------------------------------- |
 | `descriptor` | [`AsfContentDescriptor`](AsfContentDescriptor.md) | Content descriptor to add to the current instance. Must be truthy |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### clear
 
@@ -2755,7 +2755,7 @@ Clears all values stored in the current instance.
 
 [Tag](Tag.md).[clear](Tag.md#clear)
 
-___
+---
 
 ### copyTo
 
@@ -2771,10 +2771,10 @@ more advanced copying may be done. For example if both `this` and `target` are
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `target` | [`Tag`](Tag.md) | Target tag to copy values to |
-| `overwrite` | `boolean` | Whether or not to copy values over existing ones |
+| Name        | Type            | Description                                      |
+| :---------- | :-------------- | :----------------------------------------------- |
+| `target`    | [`Tag`](Tag.md) | Target tag to copy values to                     |
+| `overwrite` | `boolean`       | Whether or not to copy values over existing ones |
 
 #### Returns
 
@@ -2784,7 +2784,7 @@ more advanced copying may be done. For example if both `this` and `target` are
 
 [Tag](Tag.md).[copyTo](Tag.md#copyto)
 
-___
+---
 
 ### getDescriptorString
 
@@ -2795,8 +2795,8 @@ object in the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type       | Description                          |
+| :--------- | :--------- | :----------------------------------- |
 | `...names` | `string`[] | Names of the descriptors to look for |
 
 #### Returns
@@ -2804,9 +2804,9 @@ object in the current instance.
 `string`
 
 The contents of the first descriptor found whose name is in the provided
-    collection of descriptor names
+collection of descriptor names
 
-___
+---
 
 ### getDescriptorStrings
 
@@ -2817,8 +2817,8 @@ object in the current instance, as split by `;`.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type       | Description                          |
+| :--------- | :--------- | :----------------------------------- |
 | `...names` | `string`[] | Names of the descriptors to look for |
 
 #### Returns
@@ -2826,9 +2826,9 @@ object in the current instance, as split by `;`.
 `string`[]
 
 The contents of the first descriptor found whose name is in the provided
-    collection of descriptor names, split by `;`
+collection of descriptor names, split by `;`
 
-___
+---
 
 ### getDescriptorUint
 
@@ -2839,8 +2839,8 @@ description object in the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type       | Description                          |
+| :--------- | :--------- | :----------------------------------- |
 | `...names` | `string`[] | Names of the descriptors to look for |
 
 #### Returns
@@ -2848,9 +2848,9 @@ description object in the current instance.
 `number`
 
 The contents of the first descriptor found whose name is in the provided
-    collection of descriptor names
+collection of descriptor names
 
-___
+---
 
 ### getDescriptors
 
@@ -2861,15 +2861,15 @@ in the provided collection of names.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type       | Description                                                       |
+| :--------- | :--------- | :---------------------------------------------------------------- |
 | `...names` | `string`[] | Collection of names to search the extended description object for |
 
 #### Returns
 
 [`AsfContentDescriptor`](AsfContentDescriptor.md)[]
 
-___
+---
 
 ### removeDescriptors
 
@@ -2880,15 +2880,15 @@ in the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description                                               |
+| :----- | :------- | :-------------------------------------------------------- |
 | `name` | `string` | Name of the descriptor to remove rom the current instance |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### setDescriptorString
 
@@ -2899,20 +2899,20 @@ Sets the string for a collection of descriptors in the current instance.
 **`Remarks`**
 
 The value will be stored in the first value in `names` and the rest of the
-    descriptors with the matching names will be cleared.
+descriptors with the matching names will be cleared.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `string` | Value to store or `undefined` to clear the value |
+| Name       | Type       | Description                                                                          |
+| :--------- | :--------- | :----------------------------------------------------------------------------------- |
+| `value`    | `string`   | Value to store or `undefined` to clear the value                                     |
 | `...names` | `string`[] | Names in which the value would be expected. For example, `WM/AlbumTitle` and `Album` |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### setDescriptorStrings
 
@@ -2924,20 +2924,20 @@ be stored as a single string, joined together with `; `.
 **`Remarks`**
 
 The value will be stored in the first value in `names` and the rest of the
-    descriptors with the matching names will be cleared.
+descriptors with the matching names will be cleared.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `string`[] | Value to store or `undefined` to clear the value |
+| Name       | Type       | Description                                                                          |
+| :--------- | :--------- | :----------------------------------------------------------------------------------- |
+| `value`    | `string`[] | Value to store or `undefined` to clear the value                                     |
 | `...names` | `string`[] | Names in which the value would be expected. For example, `WM/AlbumTitle` and `Album` |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### setDescriptors
 
@@ -2949,22 +2949,22 @@ name, removing the existing matching records.
 **`Remarks`**
 
 All added descriptors should have their name set to `name` but this is not
-    verified by the method. The descriptors will be added with their own names and not the
-    one provided as an argument, which is only used for removing existing values and
-    determining where to position the new descriptors.
+verified by the method. The descriptors will be added with their own names and not the
+one provided as an argument, which is only used for removing existing values and
+determining where to position the new descriptors.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `name` | `string` | Name of the descriptors to be added/removed |
-| `...descriptors` | [`AsfContentDescriptor`](AsfContentDescriptor.md)[] | Descriptors to add to the new instance |
+| Name             | Type                                                | Description                                 |
+| :--------------- | :-------------------------------------------------- | :------------------------------------------ |
+| `name`           | `string`                                            | Name of the descriptors to be added/removed |
+| `...descriptors` | [`AsfContentDescriptor`](AsfContentDescriptor.md)[] | Descriptors to add to the new instance      |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### firstInGroup
 
@@ -2974,8 +2974,8 @@ Gets the first string in an array.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                    |
+| :------ | :--------- | :--------------------------------------------- |
 | `group` | `string`[] | Array of strings to get the first string from. |
 
 #### Returns
@@ -2983,13 +2983,13 @@ Gets the first string in an array.
 `string`
 
 First string contained in `group` or `undefined` if the array is
-    `undefined` or empty
+`undefined` or empty
 
 #### Inherited from
 
 [Tag](Tag.md).[firstInGroup](Tag.md#firstingroup)
 
-___
+---
 
 ### fromEmpty
 
@@ -3001,7 +3001,7 @@ Constructs and initializes a new, empty instance.
 
 [`AsfTag`](AsfTag.md)
 
-___
+---
 
 ### fromHeader
 
@@ -3012,15 +3012,15 @@ object.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                                    | Description                                                            |
+| :------- | :-------------------------------------- | :--------------------------------------------------------------------- |
 | `header` | [`AsfHeaderObject`](AsfHeaderObject.md) | Header object whose children will be used to populate the new instance |
 
 #### Returns
 
 [`AsfTag`](AsfTag.md)
 
-___
+---
 
 ### isFalsyOrLikeEmpty
 
@@ -3030,8 +3030,8 @@ Checks if a value is falsy or empty.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                   | Description     |
+| :------ | :--------------------- | :-------------- |
 | `value` | `string` \| `string`[] | Object to check |
 
 #### Returns
@@ -3039,14 +3039,14 @@ Checks if a value is falsy or empty.
 `boolean`
 
 If `value` is a string, `true` is returned if the value is falsy or all
-    whitespace, `false` is returned otherwise. If `value` is an array of strings,
-    the array must be falsy or all elements must be falsy or whitespace to return `true`.
+whitespace, `false` is returned otherwise. If `value` is an array of strings,
+the array must be falsy or all elements must be falsy or whitespace to return `true`.
 
 #### Inherited from
 
 [Tag](Tag.md).[isFalsyOrLikeEmpty](Tag.md#isfalsyorlikeempty)
 
-___
+---
 
 ### joinGroup
 
@@ -3056,8 +3056,8 @@ Joins an array of string into a single, semicolon and space separated string.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description             |
+| :------ | :--------- | :---------------------- |
 | `group` | `string`[] | Array of string to join |
 
 #### Returns
@@ -3065,13 +3065,13 @@ Joins an array of string into a single, semicolon and space separated string.
 `string`
 
 A semicolon and space separated string containing the values from `group`
-    or undefined if the array is `undefined` or empty.
+or undefined if the array is `undefined` or empty.
 
 #### Inherited from
 
 [Tag](Tag.md).[joinGroup](Tag.md#joingroup)
 
-___
+---
 
 ### tagTypeFlagsToArray
 
@@ -3081,8 +3081,8 @@ Generates an array of tag types that are set in the provided flags value.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                               | Description                             |
+| :--------- | :--------------------------------- | :-------------------------------------- |
 | `tagTypes` | [`TagTypes`](../enums/TagTypes.md) | Tag types that have been OR'd together. |
 
 #### Returns

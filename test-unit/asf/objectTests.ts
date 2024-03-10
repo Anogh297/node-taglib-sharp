@@ -1,63 +1,63 @@
-import {test} from "@testdeck/mocha";
-import {assert} from "chai";
+import { test } from "@testdeck/mocha";
+import { assert } from "chai";
 
 import TestFile from "../utilities/testFile";
 import UuidWrapper from "../../src/uuidWrapper";
-import {ByteVector} from "../../src/byteVector";
-import {Testers} from "../utilities/testers";
-import {File} from "../../src/file";
+import { ByteVector } from "../../src/byteVector";
+import { Testers } from "../utilities/testers";
+import { File } from "../../src/file";
 
 export default abstract class ObjectTests<TObject> {
-    protected abstract get fromFileConstructor(): (f: File, p: number) => TObject;
-    protected abstract get minSize(): number;
-    protected abstract get objectGuid(): UuidWrapper;
+	protected abstract get fromFileConstructor(): (f: File, p: number) => TObject;
+	protected abstract get minSize(): number;
+	protected abstract get objectGuid(): UuidWrapper;
 
-    @test
-    public fromFile_invalidParameters() {
-        // Arrange
-        const mockFile = <File> {};
+	@test
+	public fromFile_invalidParameters() {
+		// Arrange
+		const mockFile = <File>{};
 
-        // Act / Assert
-        Testers.testTruthy((v: File) => this.fromFileConstructor(v, 0));
-        Testers.testSafeUint((v) => this.fromFileConstructor(mockFile, v));
-    }
+		// Act / Assert
+		Testers.testTruthy((v: File) => this.fromFileConstructor(v, 0));
+		Testers.testSafeUint((v) => this.fromFileConstructor(mockFile, v));
+	}
 
-    @test
-    public fromFile_tooSmall() {
-        // Only run if there is a min size
-        if (this.minSize === undefined) {
-            return;
-        }
+	@test
+	public fromFile_tooSmall() {
+		// Only run if there is a min size
+		if (this.minSize === undefined) {
+			return;
+		}
 
-        // Arrange
-        const data = ByteVector.concatenate(
-            ByteVector.fromSize(10), // Offset
-            this.objectGuid.toBytes(), // Object ID
-            ByteVector.fromUlong(Math.min(26, this.minSize - 10)) // Object size
-        );
-        const file = TestFile.getFile(data);
+		// Arrange
+		const data = ByteVector.concatenate(
+			ByteVector.fromSize(10), // Offset
+			this.objectGuid.toBytes(), // Object ID
+			ByteVector.fromUlong(Math.min(26, this.minSize - 10)), // Object size
+		);
+		const file = TestFile.getFile(data);
 
-        // Act / Assert
-        assert.throws(() => this.fromFileConstructor(file, 10));
-    }
+		// Act / Assert
+		assert.throws(() => this.fromFileConstructor(file, 10));
+	}
 
-    @test
-    public fromFile_wrongGuid() {
-        // Only run if there is a guid
-        if (this.objectGuid === undefined) {
-            return;
-        }
+	@test
+	public fromFile_wrongGuid() {
+		// Only run if there is a guid
+		if (this.objectGuid === undefined) {
+			return;
+		}
 
-        // Arrange
-        const data = ByteVector.concatenate(
-            ByteVector.fromSize(10), // Offset
-            new UuidWrapper().toBytes(), // Object ID
-            ByteVector.fromUlong(123), // Object size
-            ByteVector.fromSize(20) // Just some bogus bytes
-        );
-        const file = TestFile.getFile(data);
+		// Arrange
+		const data = ByteVector.concatenate(
+			ByteVector.fromSize(10), // Offset
+			new UuidWrapper().toBytes(), // Object ID
+			ByteVector.fromUlong(123), // Object size
+			ByteVector.fromSize(20), // Just some bogus bytes
+		);
+		const file = TestFile.getFile(data);
 
-        // Act / Assert
-        assert.throws(() => this.fromFileConstructor(file, 10));
-    }
+		// Act / Assert
+		assert.throws(() => this.fromFileConstructor(file, 10));
+	}
 }

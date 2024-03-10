@@ -26,8 +26,8 @@ Constructs a instance using either the supplied UUID or generating a new, random
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type                                      | Description                                                                                                          |
+| :-------- | :---------------------------------------- | :------------------------------------------------------------------------------------------------------------------- |
 | `source?` | `string` \| [`ByteVector`](ByteVector.md) | If provided, it is used as the bytes of the instance. If a falsy value is provided, a new v4 UUID will be generated. |
 
 ## Methods
@@ -40,15 +40,15 @@ Determines whether this instance and another instance represent the same UUID.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `b` | [`UuidWrapper`](UuidWrapper.md) | The other UUID to compare this one to. |
+| Name | Type                            | Description                            |
+| :--- | :------------------------------ | :------------------------------------- |
+| `b`  | [`UuidWrapper`](UuidWrapper.md) | The other UUID to compare this one to. |
 
 #### Returns
 
 `boolean`
 
-___
+---
 
 ### toBytes
 
@@ -60,7 +60,7 @@ Gets the bytes that make up the UUID.
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### toString
 

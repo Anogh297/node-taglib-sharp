@@ -30,7 +30,7 @@ various formats.
 
 Gets and sets the picture data stored in the current instance.
 
-___
+---
 
 ### description
 
@@ -38,7 +38,7 @@ ___
 
 Gets and sets a description of the picture stored in the current instance. Optional.
 
-___
+---
 
 ### filename
 
@@ -46,7 +46,7 @@ ___
 
 Gets and sets a filename of the picture stored in the current instance. Optional.
 
-___
+---
 
 ### mimeType
 
@@ -54,7 +54,7 @@ ___
 
 Gets and sets the mime-type of the picture data stored in the current instance.
 
-___
+---
 
 ### type
 

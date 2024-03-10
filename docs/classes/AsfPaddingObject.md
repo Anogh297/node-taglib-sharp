@@ -15,7 +15,7 @@ written to disk.
 
 ### Properties
 
-- [HEADER\_LENGTH](AsfPaddingObject.md#header_length)
+- [HEADER_LENGTH](AsfPaddingObject.md#header_length)
 
 ### Accessors
 
@@ -35,9 +35,9 @@ written to disk.
 
 ## Properties
 
-### HEADER\_LENGTH
+### HEADER_LENGTH
 
-▪ `Static` `Readonly` **HEADER\_LENGTH**: ``24``
+▪ `Static` `Readonly` **HEADER_LENGTH**: `24`
 
 Length of the padding object header in bytes.
 
@@ -57,7 +57,7 @@ Gets the GUID that identifies the current instance.
 
 BaseObject.guid
 
-___
+---
 
 ### objectType
 
@@ -73,7 +73,7 @@ Gets the type of the object for easy comparison.
 
 BaseObject.objectType
 
-___
+---
 
 ### originalSize
 
@@ -89,13 +89,13 @@ Gets the original size of the current instance.
 
 BaseObject.originalSize
 
-___
+---
 
 ### size
 
 • `get` **size**(): `number`
 
-Gets the number of bytes the current instance will take up on disk. Note: this does *not*
+Gets the number of bytes the current instance will take up on disk. Note: this does _not_
 include the header for the object.
 
 #### Returns
@@ -104,13 +104,13 @@ include the header for the object.
 
 • `set` **size**(`value`): `void`
 
-Sets the number of padding bytes the current instance will contain. Note: this does *not*
+Sets the number of padding bytes the current instance will contain. Note: this does _not_
 include the header for the object.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                              |
+| :------ | :------- | :----------------------------------------------------------------------- |
 | `value` | `number` | Size of the current instance in bytes, must be a safe, positive integer. |
 
 #### Returns
@@ -128,10 +128,10 @@ file.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `file` | [`File`](File.md) | File which contains the details of the new instance to create |
-| `position` | `number` | Position in `file` where the object begins |
+| Name       | Type              | Description                                                   |
+| :--------- | :---------------- | :------------------------------------------------------------ |
+| `file`     | [`File`](File.md) | File which contains the details of the new instance to create |
+| `position` | `number`          | Position in `file` where the object begins                    |
 
 #### Returns
 
@@ -141,7 +141,7 @@ file.
 
 [AsfBaseObject](AsfBaseObject.md).[initializeFromFile](AsfBaseObject.md#initializefromfile)
 
-___
+---
 
 ### initializeFromGuid
 
@@ -151,8 +151,8 @@ Initializes a new instance with a specified GUID.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                            | Description                       |
+| :----- | :------------------------------ | :-------------------------------- |
 | `guid` | [`UuidWrapper`](UuidWrapper.md) | GUID to use for the new instance. |
 
 #### Returns
@@ -163,7 +163,7 @@ Initializes a new instance with a specified GUID.
 
 [AsfBaseObject](AsfBaseObject.md).[initializeFromGuid](AsfBaseObject.md#initializefromguid)
 
-___
+---
 
 ### render
 
@@ -179,7 +179,7 @@ Renders the current instance as a raw ASF object.
 
 [AsfBaseObject](AsfBaseObject.md).[render](AsfBaseObject.md#render)
 
-___
+---
 
 ### renderInternal
 
@@ -190,12 +190,12 @@ Renders the current instance as a raw ASF object containing the specified data.
 **`Remarks`**
 
 Child classes implementing [()](AsfPaddingObject.md#render) should render their contents and then
-    send the data through this method to produce the final output.
+send the data through this method to produce the final output.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                          | Description                                                    |
+| :----- | :---------------------------- | :------------------------------------------------------------- |
 | `data` | [`ByteVector`](ByteVector.md) | Data to store in the rendered version of the current instance. |
 
 #### Returns
@@ -206,7 +206,7 @@ Child classes implementing [()](AsfPaddingObject.md#render) should render their 
 
 [AsfBaseObject](AsfBaseObject.md).[renderInternal](AsfBaseObject.md#renderinternal)
 
-___
+---
 
 ### fromFile
 
@@ -216,16 +216,16 @@ Constructs and initializes a new instance by reading it from a file.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `file` | [`File`](File.md) | File to read the padding object from |
-| `position` | `number` | Index into the file where the padding object starts from |
+| Name       | Type              | Description                                              |
+| :--------- | :---------------- | :------------------------------------------------------- |
+| `file`     | [`File`](File.md) | File to read the padding object from                     |
+| `position` | `number`          | Index into the file where the padding object starts from |
 
 #### Returns
 
 [`AsfPaddingObject`](AsfPaddingObject.md)
 
-___
+---
 
 ### fromSize
 
@@ -235,8 +235,8 @@ Constructs and initializes a new instance with a fixed size.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description                                                                         |
+| :----- | :------- | :---------------------------------------------------------------------------------- |
 | `size` | `number` | Number of padding bytes to store in the object not including the size of the header |
 
 #### Returns

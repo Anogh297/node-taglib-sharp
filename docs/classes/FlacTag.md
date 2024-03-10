@@ -7,9 +7,9 @@ Collection of tags that can be stored in a FLAC file.
 **`Remarks`**
 
 The FLAC file specification states that tagging should be done via a XIPH comment block
-    and any pictures should be stored in a FLAC picture block. However, tagging can be done via
-    ID3 and APE tags at the beginning or end of the file, same as MP3 and other files. This
-    class provides a unified interface into all the tags a FLAC file may contain.
+and any pictures should be stored in a FLAC picture block. However, tagging can be done via
+ID3 and APE tags at the beginning or end of the file, same as MP3 and other files. This
+class provides a unified interface into all the tags a FLAC file may contain.
 
 ## Hierarchy
 
@@ -118,12 +118,12 @@ Constructs and initializes a new FLAC tag using the component tags provided.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `startTag` | [`StartTag`](StartTag.md) | Required, collection of tags at the start of the file |
-| `endTag` | [`EndTag`](EndTag.md) | Required, collection of tags at the end of the file |
-| `xiphTag` | [`XiphComment`](XiphComment.md) | Optional, Xiph comment tag from the FLAC file |
-| `flacPictures` | [`XiphPicture`](XiphPicture.md)[] | Optional, array of pictures found in the file |
+| Name           | Type                              | Description                                           |
+| :------------- | :-------------------------------- | :---------------------------------------------------- |
+| `startTag`     | [`StartTag`](StartTag.md)         | Required, collection of tags at the start of the file |
+| `endTag`       | [`EndTag`](EndTag.md)             | Required, collection of tags at the end of the file   |
+| `xiphTag`      | [`XiphComment`](XiphComment.md)   | Optional, Xiph comment tag from the FLAC file         |
+| `flacPictures` | [`XiphPicture`](XiphPicture.md)[] | Optional, array of pictures found in the file         |
 
 #### Overrides
 
@@ -169,8 +169,8 @@ For example, "Kintsugi" (an album by Death Cab for Cutie), "The Complete Red Gre
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                                                            |
+| :---- | :------- | :------------------------------------------------------------------------------------- |
 | `val` | `string` | of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -181,7 +181,7 @@ For example, "Kintsugi" (an album by Death Cab for Cutie), "The Complete Red Gre
 
 CombinedTag.album
 
-___
+---
 
 ### albumArtists
 
@@ -221,8 +221,8 @@ best to stick to a single name. Eg, "Super8 & Tab"
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type       | Description                                                                                                                                                                 |
+| :---- | :--------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `val` | `string`[] | Band or artist credited with the creation of the entire album or collection containing the media described by the current instance or an empty array if no value is present |
 
 #### Returns
@@ -233,7 +233,7 @@ best to stick to a single name. Eg, "Super8 & Tab"
 
 CombinedTag.albumArtists
 
-___
+---
 
 ### albumArtistsSort
 
@@ -273,8 +273,8 @@ best to stick to a single album artist. Eg, "Van Buuren, Armin"
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type       | Description                                                                                                                                                                                             |
+| :---- | :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `val` | `string`[] | Sortable names for the bands/artists are credited with the creation of the entire album or collection containing the media described by the current instance, or an empty array if no value is present. |
 
 #### Returns
@@ -285,7 +285,7 @@ best to stick to a single album artist. Eg, "Van Buuren, Armin"
 
 CombinedTag.albumArtistsSort
 
-___
+---
 
 ### albumSort
 
@@ -315,8 +315,8 @@ similar titles.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                                                               |
+| :---- | :------- | :---------------------------------------------------------------------------------------- |
 | `val` | `string` | Sortable name for the album title of the media or `undefined` if the value is not present |
 
 #### Returns
@@ -327,7 +327,7 @@ similar titles.
 
 CombinedTag.albumSort
 
-___
+---
 
 ### amazonId
 
@@ -355,8 +355,8 @@ identify the particular track or album in the Amazon catalog.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                                                                      |
+| :---- | :------- | :----------------------------------------------------------------------------------------------- |
 | `val` | `string` | Amazon ID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -367,7 +367,7 @@ identify the particular track or album in the Amazon catalog.
 
 CombinedTag.amazonId
 
-___
+---
 
 ### beatsPerMinute
 
@@ -397,8 +397,8 @@ calculated from the audio or pulled from a database.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                                                                             |
+| :---- | :------- | :------------------------------------------------------------------------------------------------------ |
 | `val` | `number` | Beats per minute of the audio in the media represented by the current instance, or `0` if not specified |
 
 #### Returns
@@ -409,7 +409,7 @@ calculated from the audio or pulled from a database.
 
 CombinedTag.beatsPerMinute
 
-___
+---
 
 ### comment
 
@@ -443,8 +443,8 @@ including it in the main interface.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                                                                               |
+| :---- | :------- | :-------------------------------------------------------------------------------------------------------- |
 | `val` | `string` | User comments on the media represented by the current instance or `undefined` if the value is not present |
 
 #### Returns
@@ -455,7 +455,7 @@ including it in the main interface.
 
 CombinedTag.comment
 
-___
+---
 
 ### composers
 
@@ -483,8 +483,8 @@ claim authorship of the media.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type       | Description                                                                                          |
+| :---- | :--------- | :--------------------------------------------------------------------------------------------------- |
 | `val` | `string`[] | Composers of the media represented by the current instance of an empty array if no value is present. |
 
 #### Returns
@@ -495,7 +495,7 @@ claim authorship of the media.
 
 CombinedTag.composers
 
-___
+---
 
 ### composersSort
 
@@ -525,8 +525,8 @@ with multiple composers.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type       | Description                                                                                                                 |
+| :---- | :--------- | :-------------------------------------------------------------------------------------------------------------------------- |
 | `val` | `string`[] | Sortable names for the composers of the media represented by the current instance or an empty array if no value is present. |
 
 #### Returns
@@ -537,7 +537,7 @@ with multiple composers.
 
 CombinedTag.composersSort
 
-___
+---
 
 ### conductor
 
@@ -563,8 +563,8 @@ This field is most useful for organizing classical music and movies.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                                                                                |
+| :---- | :------- | :--------------------------------------------------------------------------------------------------------- |
 | `val` | `string` | Conductor or director of the media represented by the current instance or `undefined` if no value present. |
 
 #### Returns
@@ -575,7 +575,7 @@ This field is most useful for organizing classical music and movies.
 
 CombinedTag.conductor
 
-___
+---
 
 ### copyright
 
@@ -607,8 +607,8 @@ definitely allow modification.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                                                                                    |
+| :---- | :------- | :------------------------------------------------------------------------------------------------------------- |
 | `val` | `string` | Copyright information for the media represented by the current instance or `undefined` if no value is present. |
 
 #### Returns
@@ -619,7 +619,7 @@ definitely allow modification.
 
 CombinedTag.copyright
 
-___
+---
 
 ### dateTagged
 
@@ -641,8 +641,8 @@ Sets the date and time at which the tag has been written.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type   | Description                                                                        |
+| :---- | :----- | :--------------------------------------------------------------------------------- |
 | `val` | `Date` | Date/time at which the tag has been written, or `undefined` if no value is present |
 
 #### Returns
@@ -653,7 +653,7 @@ Sets the date and time at which the tag has been written.
 
 CombinedTag.dateTagged
 
-___
+---
 
 ### description
 
@@ -687,8 +687,8 @@ Vegas for a series of psychedelic escapades."
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                                                                        |
+| :---- | :------- | :------------------------------------------------------------------------------------------------- |
 | `val` | `string` | Description of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -699,7 +699,7 @@ Vegas for a series of psychedelic escapades."
 
 CombinedTag.description
 
-___
+---
 
 ### disc
 
@@ -731,8 +731,8 @@ the disc is the first of three, the value should be `1`. It should be no more th
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                                                                   |
+| :---- | :------- | :-------------------------------------------------------------------------------------------- |
 | `val` | `number` | Number of the disc or season of the media represented by the current instance in a boxed set. |
 
 #### Returns
@@ -743,7 +743,7 @@ the disc is the first of three, the value should be `1`. It should be no more th
 
 CombinedTag.disc
 
-___
+---
 
 ### discCount
 
@@ -773,8 +773,8 @@ this value should also be zero.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                                                                                                   |
+| :---- | :------- | :---------------------------------------------------------------------------------------------------------------------------- |
 | `val` | `number` | Number of discs or seasons in the boxed set containing the media represented by the current instance or `0` if not specified. |
 
 #### Returns
@@ -785,7 +785,7 @@ this value should also be zero.
 
 CombinedTag.discCount
 
-___
+---
 
 ### endTag
 
@@ -797,7 +797,7 @@ Gets the collection of tags appearing at the end of the file.
 
 [`EndTag`](EndTag.md)
 
-___
+---
 
 ### firstAlbumArtist
 
@@ -813,7 +813,7 @@ Gets the first value contained in [albumArtists](FlacTag.md#albumartists).
 
 CombinedTag.firstAlbumArtist
 
-___
+---
 
 ### firstAlbumArtistSort
 
@@ -829,7 +829,7 @@ Gets the first value contained in [albumArtistsSort](FlacTag.md#albumartistssort
 
 CombinedTag.firstAlbumArtistSort
 
-___
+---
 
 ### firstComposer
 
@@ -845,7 +845,7 @@ Gets the first value contained in [composers](FlacTag.md#composers)
 
 CombinedTag.firstComposer
 
-___
+---
 
 ### firstComposerSort
 
@@ -861,7 +861,7 @@ Gets the first value contained in [composersSort](FlacTag.md#composerssort)
 
 CombinedTag.firstComposerSort
 
-___
+---
 
 ### firstGenre
 
@@ -877,7 +877,7 @@ Gets the first value contained in [genres](FlacTag.md#genres)
 
 CombinedTag.firstGenre
 
-___
+---
 
 ### firstPerformer
 
@@ -893,7 +893,7 @@ Gets the first value contained in [performers](FlacTag.md#performers)
 
 CombinedTag.firstPerformer
 
-___
+---
 
 ### firstPerformerSort
 
@@ -909,7 +909,7 @@ Gets the first value contained in [performersSort](FlacTag.md#performerssort)
 
 CombinedTag.firstPerformerSort
 
-___
+---
 
 ### genres
 
@@ -941,8 +941,8 @@ Additionally, `genres.ts` contains video genres as used by DivX.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type       | Description                                                                                       |
+| :---- | :--------- | :------------------------------------------------------------------------------------------------ |
 | `val` | `string`[] | Genres of the media represented by the current instance or an empty array if no value is present. |
 
 #### Returns
@@ -953,7 +953,7 @@ Additionally, `genres.ts` contains video genres as used by DivX.
 
 CombinedTag.genres
 
-___
+---
 
 ### grouping
 
@@ -983,8 +983,8 @@ music this could be a movement. It could also be parts of a series like "Introdu
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                                                                                     |
+| :---- | :------- | :-------------------------------------------------------------------------------------------------------------- |
 | `val` | `string` | Grouping on the album which the media in the current instance belongs to or `undefined` if no value is present. |
 
 #### Returns
@@ -995,7 +995,7 @@ music this could be a movement. It could also be parts of a series like "Introdu
 
 CombinedTag.grouping
 
-___
+---
 
 ### initialKey
 
@@ -1017,8 +1017,8 @@ Sets the initial key of the track.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                                |
+| :---- | :------- | :--------------------------------------------------------- |
 | `val` | `string` | Initial key of the track or `undefined` if no value is set |
 
 #### Returns
@@ -1029,7 +1029,7 @@ Sets the initial key of the track.
 
 CombinedTag.initialKey
 
-___
+---
 
 ### isCompilation
 
@@ -1051,8 +1051,8 @@ Gets whether or not the album described by the current instance is a compilation
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type      | Description                                                                 |
+| :---- | :-------- | :-------------------------------------------------------------------------- |
 | `val` | `boolean` | Whether or not the album described by the current instance is a compilation |
 
 #### Returns
@@ -1063,7 +1063,7 @@ Gets whether or not the album described by the current instance is a compilation
 
 CombinedTag.isCompilation
 
-___
+---
 
 ### isEmpty
 
@@ -1079,7 +1079,7 @@ Gets whether or not the current instance is empty.
 
 CombinedTag.isEmpty
 
-___
+---
 
 ### isrc
 
@@ -1101,8 +1101,8 @@ Sets the ISRC (International Standard Recording Code) of the track.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                         |
+| :---- | :------- | :-------------------------------------------------- |
 | `val` | `string` | ISRC of the track or `undefined` if no value is set |
 
 #### Returns
@@ -1113,7 +1113,7 @@ Sets the ISRC (International Standard Recording Code) of the track.
 
 CombinedTag.isrc
 
-___
+---
 
 ### joinedAlbumArtists
 
@@ -1129,7 +1129,7 @@ Gets a semicolon and space separated string containing the values in [albumArtis
 
 CombinedTag.joinedAlbumArtists
 
-___
+---
 
 ### joinedComposers
 
@@ -1145,7 +1145,7 @@ Gets a semicolon and space separated string containing the values in [composers]
 
 CombinedTag.joinedComposers
 
-___
+---
 
 ### joinedGenres
 
@@ -1161,7 +1161,7 @@ Gets a semicolon and space separated string containing the values in [genres](Fl
 
 CombinedTag.joinedGenres
 
-___
+---
 
 ### joinedPerformers
 
@@ -1177,7 +1177,7 @@ Gets a semicolon and space separated string containing the values in [performers
 
 CombinedTag.joinedPerformers
 
-___
+---
 
 ### joinedPerformersSort
 
@@ -1193,7 +1193,7 @@ Gets a semicolon and space separated string containing the values in [performers
 
 CombinedTag.joinedPerformersSort
 
-___
+---
 
 ### lyrics
 
@@ -1225,8 +1225,8 @@ accessed using format-specific implementations.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                                                                             |
+| :---- | :------- | :------------------------------------------------------------------------------------------------------ |
 | `val` | `string` | Lyrics or script of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1237,7 +1237,7 @@ accessed using format-specific implementations.
 
 CombinedTag.lyrics
 
-___
+---
 
 ### musicBrainzArtistId
 
@@ -1265,8 +1265,8 @@ particular artist of the track.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                                                                                 |
+| :---- | :------- | :---------------------------------------------------------------------------------------------------------- |
 | `val` | `string` | MusicBrainz ArtistID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1277,7 +1277,7 @@ particular artist of the track.
 
 CombinedTag.musicBrainzArtistId
 
-___
+---
 
 ### musicBrainzDiscId
 
@@ -1305,8 +1305,8 @@ particular released media associated with this track.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                                                                               |
+| :---- | :------- | :-------------------------------------------------------------------------------------------------------- |
 | `val` | `string` | MusicBrainz DiscID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1317,7 +1317,7 @@ particular released media associated with this track.
 
 CombinedTag.musicBrainzDiscId
 
-___
+---
 
 ### musicBrainzReleaseArtistId
 
@@ -1345,8 +1345,8 @@ identify a particular album artist credited with the album.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                                                                                        |
+| :---- | :------- | :----------------------------------------------------------------------------------------------------------------- |
 | `val` | `string` | MusicBrainz ReleaseArtistID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1357,7 +1357,7 @@ identify a particular album artist credited with the album.
 
 CombinedTag.musicBrainzReleaseArtistId
 
-___
+---
 
 ### musicBrainzReleaseCountry
 
@@ -1391,8 +1391,8 @@ it will likely be a UK release.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                                                                                       |
+| :---- | :------- | :---------------------------------------------------------------------------------------------------------------- |
 | `val` | `string` | MusicBrainz ReleaseCountry of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1403,7 +1403,7 @@ it will likely be a UK release.
 
 CombinedTag.musicBrainzReleaseCountry
 
-___
+---
 
 ### musicBrainzReleaseGroupId
 
@@ -1431,8 +1431,8 @@ a particular release group to which this track belongs.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                                                                                       |
+| :---- | :------- | :---------------------------------------------------------------------------------------------------------------- |
 | `val` | `string` | MusicBrainz ReleaseGroupID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1443,7 +1443,7 @@ a particular release group to which this track belongs.
 
 CombinedTag.musicBrainzReleaseGroupId
 
-___
+---
 
 ### musicBrainzReleaseId
 
@@ -1471,8 +1471,8 @@ particular release to which this track belongs.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                                                                                  |
+| :---- | :------- | :----------------------------------------------------------------------------------------------------------- |
 | `val` | `string` | MusicBrainz ReleaseID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1483,7 +1483,7 @@ particular release to which this track belongs.
 
 CombinedTag.musicBrainzReleaseId
 
-___
+---
 
 ### musicBrainzReleaseStatus
 
@@ -1511,8 +1511,8 @@ release is. Common statuses are: `Official`, `Promotion`, `Bootleg`, `Pseudo-rel
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                                                                                      |
+| :---- | :------- | :--------------------------------------------------------------------------------------------------------------- |
 | `val` | `string` | MusicBrainz ReleaseStatus of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1523,7 +1523,7 @@ release is. Common statuses are: `Official`, `Promotion`, `Bootleg`, `Pseudo-rel
 
 CombinedTag.musicBrainzReleaseStatus
 
-___
+---
 
 ### musicBrainzReleaseType
 
@@ -1537,8 +1537,8 @@ a release is. Common types are: `Single`, `Album`, `EP`, `Compilation`, `Soundtr
 must be given when using this field to decide if a particular track "is a compilation".
 
 @returns
-    MusicBrainz ReleaseType of the media represented by the current instance or
-    `undefined` if no value is present
+MusicBrainz ReleaseType of the media represented by the current instance or
+`undefined` if no value is present
 
 #### Returns
 
@@ -1558,12 +1558,12 @@ a release is. Common types are: `Single`, `Album`, `EP`, `Compilation`, `Soundtr
 must be given when using this field to decide if a particular track "is a compilation".
 
 @param value MusicBrainz ReleaseType of the media represented by the current instance or
-    `undefined` if no value is present
+`undefined` if no value is present
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type     |
+| :---- | :------- |
 | `val` | `string` |
 
 #### Returns
@@ -1574,7 +1574,7 @@ must be given when using this field to decide if a particular track "is a compil
 
 CombinedTag.musicBrainzReleaseType
 
-___
+---
 
 ### musicBrainzTrackId
 
@@ -1604,8 +1604,8 @@ particular track.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                                                                                |
+| :---- | :------- | :--------------------------------------------------------------------------------------------------------- |
 | `val` | `string` | MusicBrainz TrackID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1616,7 +1616,7 @@ particular track.
 
 CombinedTag.musicBrainzTrackId
 
-___
+---
 
 ### musicIpId
 
@@ -1644,8 +1644,8 @@ identifies wht this track "sounds like".
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                                                                         |
+| :---- | :------- | :-------------------------------------------------------------------------------------------------- |
 | `val` | `string` | MusicIP PUID of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -1656,7 +1656,7 @@ identifies wht this track "sounds like".
 
 CombinedTag.musicIpId
 
-___
+---
 
 ### performers
 
@@ -1694,8 +1694,8 @@ what constitutes the performers field - especially with regards to number of per
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type       | Description                                                                                                       |
+| :---- | :--------- | :---------------------------------------------------------------------------------------------------------------- |
 | `val` | `string`[] | Performers who performed in the media described by the current instance or an empty array if no value is present. |
 
 #### Returns
@@ -1706,7 +1706,7 @@ what constitutes the performers field - especially with regards to number of per
 
 CombinedTag.performers
 
-___
+---
 
 ### performersRole
 
@@ -1742,8 +1742,8 @@ in the [performersRole](FlacTag.md#performersrole) array is `undefined` to maint
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type       | Description                                                                                                                                   |
+| :---- | :--------- | :-------------------------------------------------------------------------------------------------------------------------------------------- |
 | `val` | `string`[] | Array containing the roles played by the performers in the media described by the current instance, or an empty array if no value is present. |
 
 #### Returns
@@ -1754,7 +1754,7 @@ in the [performersRole](FlacTag.md#performersrole) array is `undefined` to maint
 
 CombinedTag.performersRole
 
-___
+---
 
 ### performersSort
 
@@ -1786,8 +1786,8 @@ skip articles or sort by last name. For example, "The Pillows" might be sorted a
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type       | Description                                                                                                                               |
+| :---- | :--------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
 | `val` | `string`[] | Sortable names for the performers who performed in the media described by the current instance, or an empty array if no value is present. |
 
 #### Returns
@@ -1798,7 +1798,7 @@ skip articles or sort by last name. For example, "The Pillows" might be sorted a
 
 CombinedTag.performersSort
 
-___
+---
 
 ### pictures
 
@@ -1813,7 +1813,7 @@ recording studio, the concert, etc.
 **`Remarks`**
 
 For FLAC files, FLAC-style pictures are preferentially returned. If those don't exist the
-    pictures that are stored in the combined tag.
+pictures that are stored in the combined tag.
 
 #### Returns
 
@@ -1837,8 +1837,8 @@ For FLAC files, pictures are preferentially stored in FLAC-style picture blocks.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                                      | Description                                                                                                                                           |
+| :------ | :---------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | [`IPicture`](../interfaces/IPicture.md)[] | Array containing a collection of pictures associated with the media represented by the current instance or an empty array if no pictures are present. |
 
 #### Returns
@@ -1849,7 +1849,7 @@ For FLAC files, pictures are preferentially stored in FLAC-style picture blocks.
 
 CombinedTag.pictures
 
-___
+---
 
 ### publisher
 
@@ -1871,8 +1871,8 @@ Sets the publisher of the track.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                              |
+| :---- | :------- | :------------------------------------------------------- |
 | `val` | `string` | Publisher of the track or `undefined` if no value is set |
 
 #### Returns
@@ -1883,7 +1883,7 @@ Sets the publisher of the track.
 
 CombinedTag.publisher
 
-___
+---
 
 ### remixedBy
 
@@ -1905,8 +1905,8 @@ Sets the remixer of the track.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                            |
+| :---- | :------- | :----------------------------------------------------- |
 | `val` | `string` | Remixer of the track or `undefined` if no value is set |
 
 #### Returns
@@ -1917,7 +1917,7 @@ Sets the remixer of the track.
 
 CombinedTag.remixedBy
 
-___
+---
 
 ### replayGainAlbumGain
 
@@ -1939,8 +1939,8 @@ Sets the ReplayGain album gain in dB.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                                                         |
+| :---- | :------- | :---------------------------------------------------------------------------------- |
 | `val` | `number` | Album gain as per the ReplayGain specifications, in dB, or `NaN` if no value is set |
 
 #### Returns
@@ -1951,7 +1951,7 @@ Sets the ReplayGain album gain in dB.
 
 CombinedTag.replayGainAlbumGain
 
-___
+---
 
 ### replayGainAlbumPeak
 
@@ -1973,8 +1973,8 @@ Sets the ReplayGain album peak sample.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                                                  |
+| :---- | :------- | :--------------------------------------------------------------------------- |
 | `val` | `number` | Album peak as per the ReplayGain specifications, or `NaN` if no value is set |
 
 #### Returns
@@ -1985,7 +1985,7 @@ Sets the ReplayGain album peak sample.
 
 CombinedTag.replayGainAlbumPeak
 
-___
+---
 
 ### replayGainTrackGain
 
@@ -2007,8 +2007,8 @@ Sets the ReplayGain track gain in dB.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                                                     |
+| :---- | :------- | :------------------------------------------------------------------------------ |
 | `val` | `number` | Track gain as per ReplayGain specifications, in dB, or `NaN` if no value is set |
 
 #### Returns
@@ -2019,7 +2019,7 @@ Sets the ReplayGain track gain in dB.
 
 CombinedTag.replayGainTrackGain
 
-___
+---
 
 ### replayGainTrackPeak
 
@@ -2041,8 +2041,8 @@ Sets the ReplayGain track peak sample.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                                                  |
+| :---- | :------- | :--------------------------------------------------------------------------- |
 | `val` | `number` | Track peak as per the ReplayGain specifications, or `NaN` if no value is set |
 
 #### Returns
@@ -2053,7 +2053,7 @@ Sets the ReplayGain track peak sample.
 
 CombinedTag.replayGainTrackPeak
 
-___
+---
 
 ### sizeOnDisk
 
@@ -2064,7 +2064,7 @@ Gets the size of the tag in bytes on disk as it was read from disk.
 **`Remarks`**
 
 Note that tags may not appear contiguously in a file. Access the [tags](FlacTag.md#tags)
-    contained in this object to see the size of each tag on the disk.
+contained in this object to see the size of each tag on the disk.
 
 #### Returns
 
@@ -2074,7 +2074,7 @@ Note that tags may not appear contiguously in a file. Access the [tags](FlacTag.
 
 CombinedTag.sizeOnDisk
 
-___
+---
 
 ### startTag
 
@@ -2086,7 +2086,7 @@ Gets the collection of tags appearing at the start of the file.
 
 [`StartTag`](StartTag.md)
 
-___
+---
 
 ### subtitle
 
@@ -2116,8 +2116,8 @@ title on the front cover of the media. For example for "Ocean's 13", this would 
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                                                                     |
+| :---- | :------- | :---------------------------------------------------------------------------------------------- |
 | `val` | `string` | Subtitle of the media represented by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -2128,7 +2128,7 @@ title on the front cover of the media. For example for "Ocean's 13", this would 
 
 CombinedTag.subtitle
 
-___
+---
 
 ### supportedTagTypes
 
@@ -2145,7 +2145,7 @@ types can be added to the instance.
 
 CombinedTag.supportedTagTypes
 
-___
+---
 
 ### tagTypes
 
@@ -2162,7 +2162,7 @@ containing the tag types contained in the current instance.
 
 CombinedTag.tagTypes
 
-___
+---
 
 ### tags
 
@@ -2183,7 +2183,7 @@ Modifications of the returned array will not be retained.
 
 CombinedTag.tags
 
-___
+---
 
 ### title
 
@@ -2209,8 +2209,8 @@ The title is most commonly the name of the song, episode or a movie title. For e
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                                                                 |
+| :---- | :------- | :------------------------------------------------------------------------------------------ |
 | `val` | `string` | Title of the media described by the current instance or `undefined` if no value is present. |
 
 #### Returns
@@ -2221,7 +2221,7 @@ The title is most commonly the name of the song, episode or a movie title. For e
 
 CombinedTag.title
 
-___
+---
 
 ### titleSort
 
@@ -2247,8 +2247,8 @@ Possibly used to sort compilations or episodic content.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                                                                        |
+| :---- | :------- | :------------------------------------------------------------------------------------------------- |
 | `val` | `string` | Sortable name of the media described by the current instance or `undefined` if no value is present |
 
 #### Returns
@@ -2259,7 +2259,7 @@ Possibly used to sort compilations or episodic content.
 
 CombinedTag.titleSort
 
-___
+---
 
 ### track
 
@@ -2295,8 +2295,8 @@ For a series, this property represents the episodes in a season of the series.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                                                                                |
+| :---- | :------- | :--------------------------------------------------------------------------------------------------------- |
 | `val` | `number` | Position of the media represented by the current instance in its containing album or `0` if not specified. |
 
 #### Returns
@@ -2307,7 +2307,7 @@ For a series, this property represents the episodes in a season of the series.
 
 CombinedTag.track
 
-___
+---
 
 ### trackCount
 
@@ -2337,8 +2337,8 @@ If non-zero, this value should be equal to or greater than [track](FlacTag.md#tr
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                                                                                                               |
+| :---- | :------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
 | `val` | `number` | Number of tracks on the album or number of episodes in a series of the media represented by the current instance or `0` if not specified. |
 
 #### Returns
@@ -2349,7 +2349,7 @@ If non-zero, this value should be equal to or greater than [track](FlacTag.md#tr
 
 CombinedTag.trackCount
 
-___
+---
 
 ### xiphComment
 
@@ -2361,7 +2361,7 @@ Gets the Xiph comment that is stored in the current instance.
 
 [`XiphComment`](XiphComment.md)
 
-___
+---
 
 ### year
 
@@ -2393,8 +2393,8 @@ access the higher precision values.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                                                                        |
+| :---- | :------- | :------------------------------------------------------------------------------------------------- |
 | `val` | `number` | Year that the media represented by the current instance was created or `0` if no value is present. |
 
 #### Returns
@@ -2415,8 +2415,8 @@ Adds the provided tag to the list of tags contained in the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type            | Description                         |
+| :---- | :-------------- | :---------------------------------- |
 | `tag` | [`Tag`](Tag.md) | Tag to add to the current instance. |
 
 #### Returns
@@ -2427,7 +2427,7 @@ Adds the provided tag to the list of tags contained in the current instance.
 
 [CombinedTag](CombinedTag.md).[addTag](CombinedTag.md#addtag)
 
-___
+---
 
 ### clear
 
@@ -2443,7 +2443,7 @@ Clears all values stored in the current instance.
 
 [CombinedTag](CombinedTag.md).[clear](CombinedTag.md#clear)
 
-___
+---
 
 ### copyTo
 
@@ -2459,10 +2459,10 @@ more advanced copying may be done. For example if both `this` and `target` are
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `target` | [`Tag`](Tag.md) | Target tag to copy values to |
-| `overwrite` | `boolean` | Whether or not to copy values over existing ones |
+| Name        | Type            | Description                                      |
+| :---------- | :-------------- | :----------------------------------------------- |
+| `target`    | [`Tag`](Tag.md) | Target tag to copy values to                     |
+| `overwrite` | `boolean`       | Whether or not to copy values over existing ones |
 
 #### Returns
 
@@ -2472,7 +2472,7 @@ more advanced copying may be done. For example if both `this` and `target` are
 
 [CombinedTag](CombinedTag.md).[copyTo](CombinedTag.md#copyto)
 
-___
+---
 
 ### createTag
 
@@ -2484,10 +2484,10 @@ be thrown.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `tagType` | [`TagTypes`](../enums/TagTypes.md) | Type of tag to create |
-| `copy` | `boolean` | Whether or not to copy the contents of the current instance to the newly created tag instance |
+| Name      | Type                               | Description                                                                                   |
+| :-------- | :--------------------------------- | :-------------------------------------------------------------------------------------------- |
+| `tagType` | [`TagTypes`](../enums/TagTypes.md) | Type of tag to create                                                                         |
+| `copy`    | `boolean`                          | Whether or not to copy the contents of the current instance to the newly created tag instance |
 
 #### Returns
 
@@ -2497,7 +2497,7 @@ be thrown.
 
 [CombinedTag](CombinedTag.md).[createTag](CombinedTag.md#createtag)
 
-___
+---
 
 ### getTag
 
@@ -2507,14 +2507,14 @@ Gets a tag of the specified tag type if a matching tag exists in the current ins
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type                             |
+| :----- | :------------------------------- |
 | `TTag` | extends [`Tag`](Tag.md)<`TTag`\> |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type                               | Description             |
+| :-------- | :--------------------------------- | :---------------------- |
 | `tagType` | [`TagTypes`](../enums/TagTypes.md) | Type of tag to retrieve |
 
 #### Returns
@@ -2527,7 +2527,7 @@ Tag with specified type, if it exists. `undefined` otherwise.
 
 [CombinedTag](CombinedTag.md).[getTag](CombinedTag.md#gettag)
 
-___
+---
 
 ### removeTags
 
@@ -2538,8 +2538,8 @@ Remove all tags that match the specified tagTypes. This is performed recursively
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                               | Description             |
+| :--------- | :--------------------------------- | :---------------------- |
 | `tagTypes` | [`TagTypes`](../enums/TagTypes.md) | Types of tags to remove |
 
 #### Returns
@@ -2550,7 +2550,7 @@ Remove all tags that match the specified tagTypes. This is performed recursively
 
 [CombinedTag](CombinedTag.md).[removeTags](CombinedTag.md#removetags)
 
-___
+---
 
 ### replaceTag
 
@@ -2560,8 +2560,8 @@ This is used for special cases where the order of tags is important.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type            |
+| :------- | :-------------- |
 | `oldTag` | [`Tag`](Tag.md) |
 | `newTag` | [`Tag`](Tag.md) |
 
@@ -2573,20 +2573,21 @@ This is used for special cases where the order of tags is important.
 
 [CombinedTag](CombinedTag.md).[replaceTag](CombinedTag.md#replacetag)
 
-___
+---
 
 ### validateTagCreation
 
 ▸ `Protected` **validateTagCreation**(`tagType`): `void`
 
 Verifies if a tag can be added to the current instance. The criteria for validation are:
-* A tag of the given tag type does not already exist
-* The given tag type is supported by the current instance
+
+- A tag of the given tag type does not already exist
+- The given tag type is supported by the current instance
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type                               | Description                              |
+| :-------- | :--------------------------------- | :--------------------------------------- |
 | `tagType` | [`TagTypes`](../enums/TagTypes.md) | Tag type that the caller wants to create |
 
 #### Returns
@@ -2597,7 +2598,7 @@ Verifies if a tag can be added to the current instance. The criteria for validat
 
 [CombinedTag](CombinedTag.md).[validateTagCreation](CombinedTag.md#validatetagcreation)
 
-___
+---
 
 ### firstInGroup
 
@@ -2607,8 +2608,8 @@ Gets the first string in an array.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description                                    |
+| :------ | :--------- | :--------------------------------------------- |
 | `group` | `string`[] | Array of strings to get the first string from. |
 
 #### Returns
@@ -2616,13 +2617,13 @@ Gets the first string in an array.
 `string`
 
 First string contained in `group` or `undefined` if the array is
-    `undefined` or empty
+`undefined` or empty
 
 #### Inherited from
 
 [CombinedTag](CombinedTag.md).[firstInGroup](CombinedTag.md#firstingroup)
 
-___
+---
 
 ### isFalsyOrLikeEmpty
 
@@ -2632,8 +2633,8 @@ Checks if a value is falsy or empty.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                   | Description     |
+| :------ | :--------------------- | :-------------- |
 | `value` | `string` \| `string`[] | Object to check |
 
 #### Returns
@@ -2641,14 +2642,14 @@ Checks if a value is falsy or empty.
 `boolean`
 
 If `value` is a string, `true` is returned if the value is falsy or all
-    whitespace, `false` is returned otherwise. If `value` is an array of strings,
-    the array must be falsy or all elements must be falsy or whitespace to return `true`.
+whitespace, `false` is returned otherwise. If `value` is an array of strings,
+the array must be falsy or all elements must be falsy or whitespace to return `true`.
 
 #### Inherited from
 
 [CombinedTag](CombinedTag.md).[isFalsyOrLikeEmpty](CombinedTag.md#isfalsyorlikeempty)
 
-___
+---
 
 ### joinGroup
 
@@ -2658,8 +2659,8 @@ Joins an array of string into a single, semicolon and space separated string.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description             |
+| :------ | :--------- | :---------------------- |
 | `group` | `string`[] | Array of string to join |
 
 #### Returns
@@ -2667,13 +2668,13 @@ Joins an array of string into a single, semicolon and space separated string.
 `string`
 
 A semicolon and space separated string containing the values from `group`
-    or undefined if the array is `undefined` or empty.
+or undefined if the array is `undefined` or empty.
 
 #### Inherited from
 
 [CombinedTag](CombinedTag.md).[joinGroup](CombinedTag.md#joingroup)
 
-___
+---
 
 ### tagTypeFlagsToArray
 
@@ -2683,8 +2684,8 @@ Generates an array of tag types that are set in the provided flags value.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                               | Description                             |
+| :--------- | :--------------------------------- | :-------------------------------------- |
 | `tagTypes` | [`TagTypes`](../enums/TagTypes.md) | Tag types that have been OR'd together. |
 
 #### Returns

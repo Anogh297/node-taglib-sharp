@@ -1,31 +1,28 @@
 {
-  "compilerOptions": {
-    "declaration": true,
-    "experimentalDecorators": true,
-    "inlineSources": true,
-    "module": "commonjs",
-    "noImplicitAny": true,
-    "outDir": "./dist",
-    "sourceMap": true,
-    "baseUrl": ".",
-    "paths": {
-      "*": ["node_modules/*"]
-    },
-    "target": "es6"
-  },
-  "include": [
-    "./src/**/*",
-    ".eslintrc.js"
-  ],
-  "typedocOptions": {
-    "entryPoints": ["./src/index.ts"],
-    "out": "docs/",
-    "excludeInternal": true,
-    "excludePrivate": true,
-    "disableSources": true,
-    "validation": {
-      "invalidLink": true,
-      "notDocumented": true
-    }
-  }
+	"compilerOptions": {
+		"declaration": true,
+		"experimentalDecorators": true,
+		"inlineSources": true,
+		"module": "commonjs",
+		"noImplicitAny": true,
+		"outDir": "./dist",
+		"sourceMap": true,
+		"baseUrl": ".",
+		"paths": {
+			"*": ["node_modules/*"]
+		},
+		"target": "es6"
+	},
+	"include": ["./src/**/*", ".eslintrc.js"],
+	"typedocOptions": {
+		"entryPoints": ["./src/index.ts"],
+		"out": "docs/",
+		"excludeInternal": true,
+		"excludePrivate": true,
+		"disableSources": true,
+		"validation": {
+			"invalidLink": true,
+			"notDocumented": true
+		}
+	}
 }

@@ -37,7 +37,7 @@ Gets whether or not the current instance is empty.
 
 `boolean`
 
-___
+---
 
 ### isReadOnly
 
@@ -49,7 +49,7 @@ Gets whether or not the current instance is flagged as read-only on disk.
 
 `boolean`
 
-___
+---
 
 ### key
 
@@ -60,14 +60,14 @@ Gets the key that specified the contents of the item.
 **`Remarks`**
 
 This value is used for specifying the contents of the item in a common and
-    consistent fashion. For example, `TITLE` specifies that the item contains the title of
-    the track.
+consistent fashion. For example, `TITLE` specifies that the item contains the title of
+the track.
 
 #### Returns
 
 `string`
 
-___
+---
 
 ### size
 
@@ -79,7 +79,7 @@ Size of the current instance as it last appeared on disk.
 
 `number`
 
-___
+---
 
 ### text
 
@@ -92,7 +92,7 @@ an empty array if the current item is a binary item or no text is stored.
 
 `string`[]
 
-___
+---
 
 ### type
 
@@ -104,7 +104,7 @@ Gets the type of value contained in the current instance.
 
 [`ApeTagItemType`](../enums/ApeTagItemType.md)
 
-___
+---
 
 ### value
 
@@ -129,7 +129,7 @@ Creates a deep copy of the current instance.
 
 [`ApeTagItem`](ApeTagItem.md)
 
-___
+---
 
 ### render
 
@@ -141,7 +141,7 @@ Renders the current instance as an APEv2 item.
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### toString
 
@@ -155,7 +155,7 @@ joined into a single, comma separated list.
 
 `string`
 
-___
+---
 
 ### fromBinaryValue
 
@@ -166,16 +166,16 @@ data to use as the value.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `key` | `string` | Key to use for the item |
+| Name    | Type                          | Description                       |
+| :------ | :---------------------------- | :-------------------------------- |
+| `key`   | `string`                      | Key to use for the item           |
 | `value` | [`ByteVector`](ByteVector.md) | Binary data to store as the value |
 
 #### Returns
 
 [`ApeTagItem`](ApeTagItem.md)
 
-___
+---
 
 ### fromData
 
@@ -185,16 +185,16 @@ Constructs a new instance of [ApeTagItem](ApeTagItem.md) by reading in a raw APE
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `data` | [`ByteVector`](ByteVector.md) | [ByteVector](ByteVector.md) containing the item to read |
-| `offset` | `number` | Index into `data` at which to begin reading the item data. Must be a positive 32-bit integer. |
+| Name     | Type                          | Description                                                                                   |
+| :------- | :---------------------------- | :-------------------------------------------------------------------------------------------- |
+| `data`   | [`ByteVector`](ByteVector.md) | [ByteVector](ByteVector.md) containing the item to read                                       |
+| `offset` | `number`                      | Index into `data` at which to begin reading the item data. Must be a positive 32-bit integer. |
 
 #### Returns
 
 [`ApeTagItem`](ApeTagItem.md)
 
-___
+---
 
 ### fromTextValues
 
@@ -205,9 +205,9 @@ of text values.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `key` | `string` | Key to use for the item |
+| Name        | Type       | Description                 |
+| :---------- | :--------- | :-------------------------- |
+| `key`       | `string`   | Key to use for the item     |
 | `...values` | `string`[] | Values to store in the item |
 
 #### Returns

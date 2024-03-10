@@ -60,7 +60,7 @@ Gets the MPEG-4 box type of the current instance.
 
 FullBox.boxType
 
-___
+---
 
 ### data
 
@@ -76,7 +76,7 @@ Gets and sets the data contained in the current instance.
 
 FullBox.data
 
-___
+---
 
 ### dataPosition
 
@@ -92,7 +92,7 @@ Gets the position of the data contained in the current instance, after any box s
 
 FullBox.dataPosition
 
-___
+---
 
 ### dataSize
 
@@ -108,7 +108,7 @@ Gets the size of the data contained in the current instance, minus the size of a
 
 FullBox.dataSize
 
-___
+---
 
 ### flags
 
@@ -130,8 +130,8 @@ Sets the flags that apply to the current instance.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `value` | `number` |
 
 #### Returns
@@ -142,7 +142,7 @@ Sets the flags that apply to the current instance.
 
 FullBox.flags
 
-___
+---
 
 ### handlerType
 
@@ -158,7 +158,7 @@ Gets the type of the handler box that applies to the current instance.
 
 FullBox.handlerType
 
-___
+---
 
 ### hasChildren
 
@@ -174,7 +174,7 @@ Gets whether or not the current instance has children.
 
 FullBox.hasChildren
 
-___
+---
 
 ### header
 
@@ -190,7 +190,7 @@ Gets the header of the current instance.
 
 FullBox.header
 
-___
+---
 
 ### size
 
@@ -206,7 +206,7 @@ Gets the total size of the current instance as it last appeared on disk.
 
 FullBox.size
 
-___
+---
 
 ### version
 
@@ -236,9 +236,9 @@ Mpeg4Box object to add to the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `box` | [`Mpeg4Box`](Mpeg4Box.md) | A |
+| Name  | Type                      | Description |
+| :---- | :------------------------ | :---------- |
+| `box` | [`Mpeg4Box`](Mpeg4Box.md) | A           |
 
 #### Returns
 
@@ -248,7 +248,7 @@ Mpeg4Box object to add to the current instance.
 
 [Mpeg4FullBox](Mpeg4FullBox.md).[addChild](Mpeg4FullBox.md#addchild)
 
-___
+---
 
 ### clearChildren
 
@@ -264,7 +264,7 @@ Removes all children from the current instance.
 
 [Mpeg4FullBox](Mpeg4FullBox.md).[clearChildren](Mpeg4FullBox.md#clearchildren)
 
-___
+---
 
 ### getChild
 
@@ -278,16 +278,16 @@ ByteVector object containing the box type to match.
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type                                       |
+| :----- | :----------------------------------------- |
 | `TBox` | extends [`Mpeg4Box`](Mpeg4Box.md)<`TBox`\> |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `type` | [`ByteVector`](ByteVector.md) | A |
-| `predicate?` | (`b`: `TBox`) => `boolean` | Optional predicate to filter boxes with the provided type. |
+| Name         | Type                          | Description                                                |
+| :----------- | :---------------------------- | :--------------------------------------------------------- |
+| `type`       | [`ByteVector`](ByteVector.md) | A                                                          |
+| `predicate?` | (`b`: `TBox`) => `boolean`    | Optional predicate to filter boxes with the provided type. |
 
 #### Returns
 
@@ -299,7 +299,7 @@ TBox Box containing the matched box, or `undefined` if no match was found.
 
 [Mpeg4FullBox](Mpeg4FullBox.md).[getChild](Mpeg4FullBox.md#getchild)
 
-___
+---
 
 ### getChildRecursively
 
@@ -313,9 +313,9 @@ ByteVector object containing the box type to match.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `type` | [`ByteVector`](ByteVector.md) | A |
+| Name   | Type                          | Description |
+| :----- | :---------------------------- | :---------- |
+| `type` | [`ByteVector`](ByteVector.md) | A           |
 
 #### Returns
 
@@ -327,7 +327,7 @@ Mpeg4Box Matching box, or `undefined` if no matching box was found
 
 [Mpeg4FullBox](Mpeg4FullBox.md).[getChildRecursively](Mpeg4FullBox.md#getchildrecursively)
 
-___
+---
 
 ### getChildren
 
@@ -341,16 +341,16 @@ ByteVector object containing the box type to match.
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type                                       |
+| :----- | :----------------------------------------- |
 | `TBox` | extends [`Mpeg4Box`](Mpeg4Box.md)<`TBox`\> |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `type` | [`ByteVector`](ByteVector.md) | A |
-| `predicate?` | (`b`: `TBox`) => `boolean` | Optional predicate to filter boxes with the provided type. |
+| Name         | Type                          | Description                                                |
+| :----------- | :---------------------------- | :--------------------------------------------------------- |
+| `type`       | [`ByteVector`](ByteVector.md) | A                                                          |
+| `predicate?` | (`b`: `TBox`) => `boolean`    | Optional predicate to filter boxes with the provided type. |
 
 #### Returns
 
@@ -362,7 +362,7 @@ Mpeg4Box[] Array of matching boxes, or `undefined` if no matching boxes was foun
 
 [Mpeg4FullBox](Mpeg4FullBox.md).[getChildren](Mpeg4FullBox.md#getchildren)
 
-___
+---
 
 ### increaseDataPosition
 
@@ -378,8 +378,8 @@ is located after their box specific headers.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                            |
+| :------ | :------- | :------------------------------------- |
 | `value` | `number` | The value to add to the data position. |
 
 #### Returns
@@ -392,7 +392,7 @@ number Data position before the increase.
 
 [Mpeg4FullBox](Mpeg4FullBox.md).[increaseDataPosition](Mpeg4FullBox.md#increasedataposition)
 
-___
+---
 
 ### initializeFromHeader
 
@@ -402,15 +402,15 @@ Initializes a new instance of
 
 **`See`**
 
- - Mpeg4Box with a specified header and handler.
- - Mpeg4BoxHeader object describing the new instance.
+- Mpeg4Box with a specified header and handler.
+- Mpeg4BoxHeader object describing the new instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `header` | [`Mpeg4BoxHeader`](Mpeg4BoxHeader.md) | A |
-| `handlerType?` | [`ByteVector`](ByteVector.md) | Type of the handler box object containing the handler that applies to the new instance, or undefined if no handler applies. |
+| Name           | Type                                  | Description                                                                                                                 |
+| :------------- | :------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------- |
+| `header`       | [`Mpeg4BoxHeader`](Mpeg4BoxHeader.md) | A                                                                                                                           |
+| `handlerType?` | [`ByteVector`](ByteVector.md)         | Type of the handler box object containing the handler that applies to the new instance, or undefined if no handler applies. |
 
 #### Returns
 
@@ -420,7 +420,7 @@ Initializes a new instance of
 
 [Mpeg4FullBox](Mpeg4FullBox.md).[initializeFromHeader](Mpeg4FullBox.md#initializefromheader)
 
-___
+---
 
 ### initializeFromHeaderFileAndHandler
 
@@ -431,11 +431,11 @@ by reading the contents from a specified file.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `header` | [`Mpeg4BoxHeader`](Mpeg4BoxHeader.md) | A [Mpeg4BoxHeader](Mpeg4BoxHeader.md) object containing the header to use for the new instance. |
-| `file` | [`File`](File.md) | A [File](File.md) object to read the contents of the box from. |
-| `handlerType` | [`ByteVector`](ByteVector.md) | Type of the handler box object containing the handler that applies to the new instance, or undefined if no handler applies. |
+| Name          | Type                                  | Description                                                                                                                 |
+| :------------ | :------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------- |
+| `header`      | [`Mpeg4BoxHeader`](Mpeg4BoxHeader.md) | A [Mpeg4BoxHeader](Mpeg4BoxHeader.md) object containing the header to use for the new instance.                             |
+| `file`        | [`File`](File.md)                     | A [File](File.md) object to read the contents of the box from.                                                              |
+| `handlerType` | [`ByteVector`](ByteVector.md)         | Type of the handler box object containing the handler that applies to the new instance, or undefined if no handler applies. |
 
 #### Returns
 
@@ -445,7 +445,7 @@ by reading the contents from a specified file.
 
 [Mpeg4FullBox](Mpeg4FullBox.md).[initializeFromHeaderFileAndHandler](Mpeg4FullBox.md#initializefromheaderfileandhandler)
 
-___
+---
 
 ### initializeFromType
 
@@ -455,14 +455,14 @@ Initializes a new instance of
 
 **`See`**
 
- - Mpeg4Box with a specified box type.
- - ByteVector object containing the box type to use for the new instance.
+- Mpeg4Box with a specified box type.
+- ByteVector object containing the box type to use for the new instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `type` | [`ByteVector`](ByteVector.md) | A |
+| Name   | Type                          | Description |
+| :----- | :---------------------------- | :---------- |
+| `type` | [`ByteVector`](ByteVector.md) | A           |
 
 #### Returns
 
@@ -472,7 +472,7 @@ Initializes a new instance of
 
 [Mpeg4FullBox](Mpeg4FullBox.md).[initializeFromType](Mpeg4FullBox.md#initializefromtype)
 
-___
+---
 
 ### initializeFromTypeVersionAndFlags
 
@@ -482,11 +482,11 @@ Initializes a new instance of FullBox with a provided header, version, and flags
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `type` | [`ByteVector`](ByteVector.md) | A [ByteVector](ByteVector.md) object containing the four byte box type. |
-| `version` | `number` | A value containing the version of the new instance. |
-| `flags` | `number` | A value containing the flags for the new instance. |
+| Name      | Type                          | Description                                                             |
+| :-------- | :---------------------------- | :---------------------------------------------------------------------- |
+| `type`    | [`ByteVector`](ByteVector.md) | A [ByteVector](ByteVector.md) object containing the four byte box type. |
+| `version` | `number`                      | A value containing the version of the new instance.                     |
+| `flags`   | `number`                      | A value containing the flags for the new instance.                      |
 
 #### Returns
 
@@ -496,7 +496,7 @@ Initializes a new instance of FullBox with a provided header, version, and flags
 
 [Mpeg4FullBox](Mpeg4FullBox.md).[initializeFromTypeVersionAndFlags](Mpeg4FullBox.md#initializefromtypeversionandflags)
 
-___
+---
 
 ### loadData
 
@@ -510,9 +510,9 @@ File from which the current instance was read and from which to read the data.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `file` | [`File`](File.md) | The |
+| Name   | Type              | Description |
+| :----- | :---------------- | :---------- |
+| `file` | [`File`](File.md) | The         |
 
 #### Returns
 
@@ -524,7 +524,7 @@ ByteVector Data read from the file.
 
 [Mpeg4FullBox](Mpeg4FullBox.md).[loadData](Mpeg4FullBox.md#loaddata)
 
-___
+---
 
 ### removeChildByBox
 
@@ -534,8 +534,8 @@ Removes a specified box from the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type                      | Description                              |
+| :---- | :------------------------ | :--------------------------------------- |
 | `box` | [`Mpeg4Box`](Mpeg4Box.md) | Box to remove from the current instance. |
 
 #### Returns
@@ -546,7 +546,7 @@ Removes a specified box from the current instance.
 
 [Mpeg4FullBox](Mpeg4FullBox.md).[removeChildByBox](Mpeg4FullBox.md#removechildbybox)
 
-___
+---
 
 ### removeChildByType
 
@@ -556,8 +556,8 @@ Removes all children with a specified box type from the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                          | Description           |
+| :----- | :---------------------------- | :-------------------- |
 | `type` | [`ByteVector`](ByteVector.md) | Type of box to remove |
 
 #### Returns
@@ -568,7 +568,7 @@ Removes all children with a specified box type from the current instance.
 
 [Mpeg4FullBox](Mpeg4FullBox.md).[removeChildByType](Mpeg4FullBox.md#removechildbytype)
 
-___
+---
 
 ### removeChildrenByBox
 
@@ -578,8 +578,8 @@ Removes all specified boxes from the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                        | Description                                              |
+| :------ | :-------------------------- | :------------------------------------------------------- |
 | `boxes` | [`Mpeg4Box`](Mpeg4Box.md)[] | Collection of boxes to remove from the current instance. |
 
 #### Returns
@@ -590,7 +590,7 @@ Removes all specified boxes from the current instance.
 
 [Mpeg4FullBox](Mpeg4FullBox.md).[removeChildrenByBox](Mpeg4FullBox.md#removechildrenbybox)
 
-___
+---
 
 ### fromFile
 
@@ -601,11 +601,11 @@ and handler by reading the contents from a specified file.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `header` | [`Mpeg4BoxHeader`](Mpeg4BoxHeader.md) | A [Mpeg4BoxHeader](Mpeg4BoxHeader.md) object containing the header to use for the new instance. |
-| `file` | [`File`](File.md) | A [File](File.md) object to read the contents of the box from. |
-| `handlerType` | [`ByteVector`](ByteVector.md) | Type of the handler box object containing the handler that applies to the new instance, or undefined if no handler applies. |
+| Name          | Type                                  | Description                                                                                                                 |
+| :------------ | :------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------- |
+| `header`      | [`Mpeg4BoxHeader`](Mpeg4BoxHeader.md) | A [Mpeg4BoxHeader](Mpeg4BoxHeader.md) object containing the header to use for the new instance.                             |
+| `file`        | [`File`](File.md)                     | A [File](File.md) object to read the contents of the box from.                                                              |
+| `handlerType` | [`ByteVector`](ByteVector.md)         | Type of the handler box object containing the handler that applies to the new instance, or undefined if no handler applies. |
 
 #### Returns
 

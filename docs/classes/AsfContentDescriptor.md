@@ -8,8 +8,8 @@ ExtendedContentDescriptionObject.
 **`Remarks`**
 
 This class can store various types of information. Although [toString](AsfContentDescriptor.md#tostring) provides
-    a representation of all types of values, it is recommended to determine which of the `get*`
-    methods to use by accessing [type](AsfContentDescriptor.md#type)
+a representation of all types of values, it is recommended to determine which of the `get*`
+methods to use by accessing [type](AsfContentDescriptor.md#type)
 
 ## Hierarchy
 
@@ -48,10 +48,10 @@ This class can store various types of information. Although [toString](AsfConten
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
-| `type` | [`AsfObjectDataType`](../enums/AsfObjectDataType.md) |
+| Name    | Type                                                     |
+| :------ | :------------------------------------------------------- |
+| `name`  | `string`                                                 |
+| `type`  | [`AsfObjectDataType`](../enums/AsfObjectDataType.md)     |
 | `value` | [`AsfDescriptorValue`](../modules.md#asfdescriptorvalue) |
 
 #### Overrides
@@ -71,13 +71,13 @@ Gets the boolean value of the current instance.
 `boolean`
 
 Boolean value of the current instance is returned if [type](AsfContentDescriptor.md#type) is
-    DataType.Bool. `undefined` is returned otherwise.
+DataType.Bool. `undefined` is returned otherwise.
 
 #### Inherited from
 
 DescriptorBase.boolValue
 
-___
+---
 
 ### byteValue
 
@@ -90,13 +90,13 @@ Gets the binary contents of the current instance.
 [`ByteVector`](ByteVector.md)
 
 Byte contents of the current instance, if [type](AsfContentDescriptor.md#type) is
-    DataType.Bytes. `undefined` is returned otherwise.
+DataType.Bytes. `undefined` is returned otherwise.
 
 #### Inherited from
 
 DescriptorBase.byteValue
 
-___
+---
 
 ### guidValue
 
@@ -109,13 +109,13 @@ Gets the guid contents of the current instance.
 [`UuidWrapper`](UuidWrapper.md)
 
 GUID contents of the current instance, if [type](AsfContentDescriptor.md#type) is
-    DataType.Guid. `undefined` is returned otherwise.
+DataType.Guid. `undefined` is returned otherwise.
 
 #### Inherited from
 
 DescriptorBase.guidValue
 
-___
+---
 
 ### name
 
@@ -131,7 +131,7 @@ Gets the name of the current instance.
 
 DescriptorBase.name
 
-___
+---
 
 ### stringValue
 
@@ -144,13 +144,13 @@ Gets the string contents of the current instance.
 `string`
 
 String contents of the current instance if [type](AsfContentDescriptor.md#type) is
-    DataType.Unicode. `undefined` is returned otherwise.
+DataType.Unicode. `undefined` is returned otherwise.
 
 #### Inherited from
 
 DescriptorBase.stringValue
 
-___
+---
 
 ### type
 
@@ -166,7 +166,7 @@ Gets the type of data contained in the current instance.
 
 DescriptorBase.type
 
-___
+---
 
 ### uintValue
 
@@ -179,13 +179,13 @@ Gets the 32-bit double word contents of the current instance.
 `number`
 
 Double word contents of the current instance, if [type](AsfContentDescriptor.md#type) is
-    DataType.DWord. `undefined` is returned otherwise.
+DataType.DWord. `undefined` is returned otherwise.
 
 #### Inherited from
 
 DescriptorBase.uintValue
 
-___
+---
 
 ### ulongValue
 
@@ -198,13 +198,13 @@ Gets the 64-bit quad word contents of the current instance.
 `bigint`
 
 Quad word contents of the current instance, if [type](AsfContentDescriptor.md#type) is
-    DataType.QWord. `undefined` is returned otherwise.
+DataType.QWord. `undefined` is returned otherwise.
 
 #### Inherited from
 
 DescriptorBase.ulongValue
 
-___
+---
 
 ### ushortValue
 
@@ -217,7 +217,7 @@ Gets the 16-bit word contents of the current instance.
 `number`
 
 Word contents of the current instance, if [type](AsfContentDescriptor.md#type) is
-    DataType.Word. `undefined` is returned otherwise.
+DataType.Word. `undefined` is returned otherwise.
 
 #### Inherited from
 
@@ -239,7 +239,7 @@ DescriptorBase.ushortValue
 
 DescriptorBase.render
 
-___
+---
 
 ### toString
 

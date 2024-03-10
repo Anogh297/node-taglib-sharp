@@ -13,7 +13,7 @@ to disk.
 
 ### Properties
 
-- [FILE\_IDENTIFIER](Id3v2TagHeader.md#file_identifier)
+- [FILE_IDENTIFIER](Id3v2TagHeader.md#file_identifier)
 
 ### Accessors
 
@@ -36,9 +36,9 @@ to disk.
 
 ## Properties
 
-### FILE\_IDENTIFIER
+### FILE_IDENTIFIER
 
-▪ `Static` `Readonly` **FILE\_IDENTIFIER**: [`ByteVector`](ByteVector.md)
+▪ `Static` `Readonly` **FILE_IDENTIFIER**: [`ByteVector`](ByteVector.md)
 
 The identifier used to recognize an ID3v2 header.
 
@@ -55,7 +55,7 @@ and footer.
 
 `number`
 
-___
+---
 
 ### flags
 
@@ -73,15 +73,15 @@ Sets the flags applied to the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                                                     | Description                                                                                                                          |
+| :------ | :------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | [`Id3v2TagHeaderFlags`](../enums/Id3v2TagHeaderFlags.md) | Bitwise combined [Id3v2TagHeaderFlags](../enums/Id3v2TagHeaderFlags.md) value containing the flags to apply to the current instance. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### majorVersion
 
@@ -101,15 +101,15 @@ tag.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                      |
+| :------ | :------- | :------------------------------------------------------------------------------- |
 | `value` | `number` | ID3v2 version of tag. Must be a positive 8-bit integer betweenInclusive 2 and 4. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### revisionNumber
 
@@ -130,15 +130,15 @@ node-taglib-sharp. Some software may refuse to read tags with a non-zero value.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                |
+| :------ | :------- | :--------------------------------------------------------------------------------------------------------- |
 | `value` | `number` | Version revision number of the tag represented by the current instance. Must be an 8-bit unsigned integer. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### tagSize
 
@@ -158,8 +158,8 @@ footer. NOTE THIS MUST BE A 28-BIT UNSIGNED INTEGER.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                  |
+| :------ | :------- | :----------------------------------------------------------- |
 | `value` | `number` | Size of the tag in bytes. Must be an unsigned 28-bit integer |
 
 #### Returns
@@ -178,7 +178,7 @@ Renders the current instance as a raw ID3v2 header
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### fromData
 
@@ -188,8 +188,8 @@ Constructs and initializes a new instance by reading it from the raw header data
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                          | Description                                                    |
+| :----- | :---------------------------- | :------------------------------------------------------------- |
 | `data` | [`ByteVector`](ByteVector.md) | Object containing the raw data to build the new instance from. |
 
 #### Returns

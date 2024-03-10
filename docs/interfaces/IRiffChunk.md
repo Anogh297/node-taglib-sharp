@@ -30,7 +30,7 @@ Interface for chunks that appear in a RIFF file.
 Offset into the file where the chunk begins. This is `undefined` if the object was
 constructed directly from data.
 
-___
+---
 
 ### fourcc
 
@@ -38,7 +38,7 @@ ___
 
 FOURCC code for the chunk.
 
-___
+---
 
 ### originalDataSize
 
@@ -47,7 +47,7 @@ ___
 Size of just the data contained within the current instance. Does not include the header or
 padding byte. This value does not update if contents of the chunk changes.
 
-___
+---
 
 ### originalTotalSize
 

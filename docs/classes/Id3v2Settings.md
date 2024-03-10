@@ -38,15 +38,15 @@ Sets the encoding to use when creating new frames.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                                   | Description                              |
+| :------ | :------------------------------------- | :--------------------------------------- |
 | `value` | [`StringType`](../enums/StringType.md) | Encoding to use when creating new frames |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### defaultVersion
 
@@ -66,15 +66,15 @@ If [forceDefaultEncoding](Id3v2Settings.md#forcedefaultencoding) is `true` then 
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                 |
+| :------ | :------- | :-------------------------------------------------------------------------- |
 | `value` | `number` | ID3v2 version to use. Must be 2, 3, or 4. The default for this library is 3 |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### footerSize
 
@@ -86,7 +86,7 @@ Size of an ID3v2 footer in bytes
 
 `number`
 
-___
+---
 
 ### forceDefaultEncoding
 
@@ -106,15 +106,15 @@ original encoding.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type      | Description                                                                                                                      |
+| :------ | :-------- | :------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `boolean` | If `true` frames will be rendered using [defaultEncoding](Id3v2Settings.md#defaultencoding) rather than their original encoding. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### forceDefaultVersion
 
@@ -134,15 +134,15 @@ version.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type      | Description                                                                                                                                                                                                                  |
+| :------ | :-------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `boolean` | If `true`, tags will be saved in the version defined in [defaultVersion](Id3v2Settings.md#defaultversion) rather than their original format, with the exception of tags with footers which will always be saved in version 4 |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### headerSize
 
@@ -154,7 +154,7 @@ Size of an ID3v2 header in bytes
 
 `number`
 
-___
+---
 
 ### strictFrameForVersion
 
@@ -180,15 +180,15 @@ will be omitted from rendering and no error will be thrown.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type      |
+| :------ | :-------- |
 | `value` | `boolean` |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### useNonStandardV2V3GenreSeparators
 
@@ -202,10 +202,10 @@ standard, escaped numeric genres).
 **`Remarks`**
 
 The official ID3v2 standard makes no mention of separators for genres, one of the
-    inherent flaws fixed in ID3v2.4. However, various media players, as well as the original
-    implementation of TagLib#, support using `;` and `/` to separate genres. In order to
-    maintain compatibility, this functionality is preserved, but can be disabled by setting
-    [useNonStandardV2V3GenreSeparators](Id3v2Settings.md#usenonstandardv2v3genreseparators) to `false`.
+inherent flaws fixed in ID3v2.4. However, various media players, as well as the original
+implementation of TagLib#, support using `;` and `/` to separate genres. In order to
+maintain compatibility, this functionality is preserved, but can be disabled by setting
+[useNonStandardV2V3GenreSeparators](Id3v2Settings.md#usenonstandardv2v3genreseparators) to `false`.
 
 #### Returns
 
@@ -221,22 +221,22 @@ standard, escaped numeric genres).
 **`Remarks`**
 
 The official ID3v2 standard makes no mention of separators for genres, one of the
-    inherent flaws fixed in ID3v2.4. However, various media players, as well as the original
-    implementation of TagLib#, support using `;` and `/` to separate genres. In order to
-    maintain compatibility, this functionality is preserved, but can be disabled by setting
-    [useNonStandardV2V3GenreSeparators](Id3v2Settings.md#usenonstandardv2v3genreseparators) to `false`.
+inherent flaws fixed in ID3v2.4. However, various media players, as well as the original
+implementation of TagLib#, support using `;` and `/` to separate genres. In order to
+maintain compatibility, this functionality is preserved, but can be disabled by setting
+[useNonStandardV2V3GenreSeparators](Id3v2Settings.md#usenonstandardv2v3genreseparators) to `false`.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type      |
+| :------ | :-------- |
 | `value` | `boolean` |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### useNonStandardV2V3NumericGenres
 
@@ -249,10 +249,10 @@ If `false`, the TCO/TCON frame value will be returned without parsing purely num
 **`Remarks`**
 
 The official ID3v2.2/ID3v2.3 standard only supports numeric genres if they are
-    escaped inside parenthesis (eg, `(12)`). However, the original implementation of TagLib#
-    allowed ID3v2.2 and ID3v2.3 tags to parse unescaped numeric genres. In order to maintain
-    compatibility, this functionality is preserved, but can be disabled by setting
-    [useNonStandardV2V3NumericGenres](Id3v2Settings.md#usenonstandardv2v3numericgenres) to `false`.
+escaped inside parenthesis (eg, `(12)`). However, the original implementation of TagLib#
+allowed ID3v2.2 and ID3v2.3 tags to parse unescaped numeric genres. In order to maintain
+compatibility, this functionality is preserved, but can be disabled by setting
+[useNonStandardV2V3NumericGenres](Id3v2Settings.md#usenonstandardv2v3numericgenres) to `false`.
 
 #### Returns
 
@@ -267,22 +267,22 @@ If `false`, the TCO/TCON frame value will be returned without parsing purely num
 **`Remarks`**
 
 The official ID3v2.2/ID3v2.3 standard only supports numeric genres if they are
-    escaped inside parenthesis (eg, `(12)`). However, the original implementation of TagLib#
-    allowed ID3v2.2 and ID3v2.3 tags to parse unescaped numeric genres. In order to maintain
-    compatibility, this functionality is preserved, but can be disabled by setting
-    [useNonStandardV2V3NumericGenres](Id3v2Settings.md#usenonstandardv2v3numericgenres) to `false`.
+escaped inside parenthesis (eg, `(12)`). However, the original implementation of TagLib#
+allowed ID3v2.2 and ID3v2.3 tags to parse unescaped numeric genres. In order to maintain
+compatibility, this functionality is preserved, but can be disabled by setting
+[useNonStandardV2V3NumericGenres](Id3v2Settings.md#usenonstandardv2v3numericgenres) to `false`.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type      |
+| :------ | :-------- |
 | `value` | `boolean` |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### useNumericGenres
 
@@ -306,8 +306,8 @@ stored as "17".
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type      | Description                                                                |
+| :------ | :-------- | :------------------------------------------------------------------------- |
 | `value` | `boolean` | Whether or not to use genres with numeric values when values when possible |
 
 #### Returns

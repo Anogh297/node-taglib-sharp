@@ -13,7 +13,7 @@ in order for changes to take effect.
 
 ### Properties
 
-- [SUPPORTED\_TAG\_TYPES](AviFileSettings.md#supported_tag_types)
+- [SUPPORTED_TAG_TYPES](AviFileSettings.md#supported_tag_types)
 
 ### Accessors
 
@@ -27,9 +27,9 @@ in order for changes to take effect.
 
 ## Properties
 
-### SUPPORTED\_TAG\_TYPES
+### SUPPORTED_TAG_TYPES
 
-▪ `Static` `Readonly` **SUPPORTED\_TAG\_TYPES**: `number`
+▪ `Static` `Readonly` **SUPPORTED_TAG_TYPES**: `number`
 
 The types of tags that are supported by AVI files.
 
@@ -54,8 +54,8 @@ types that are supported by node-taglib-sharp for AVI files.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type                               |
+| :------ | :--------------------------------- |
 | `value` | [`TagTypes`](../enums/TagTypes.md) |
 
 #### Returns

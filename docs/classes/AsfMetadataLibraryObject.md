@@ -50,7 +50,7 @@ Gets the GUID that identifies the current instance.
 
 BaseObject.guid
 
-___
+---
 
 ### isEmpty
 
@@ -63,9 +63,9 @@ Gets whether or not the current instance contains any records.
 `boolean`
 
 `true` if the current instance does not contain any records, `false`
-    otherwise.
+otherwise.
 
-___
+---
 
 ### objectType
 
@@ -81,7 +81,7 @@ Gets the type of the object for easy comparison.
 
 BaseObject.objectType
 
-___
+---
 
 ### originalSize
 
@@ -97,7 +97,7 @@ Gets the original size of the current instance.
 
 BaseObject.originalSize
 
-___
+---
 
 ### records
 
@@ -119,15 +119,15 @@ Adds a record to the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                                                | Description                           |
+| :------- | :-------------------------------------------------- | :------------------------------------ |
 | `record` | [`AsfMetadataDescriptor`](AsfMetadataDescriptor.md) | Record to add to the current instance |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### getRecords
 
@@ -138,17 +138,17 @@ current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `languageListIndex` | `number` | Index of the desired language in the language list |
-| `streamNumber` | `number` | Index of the stream in the file the desired records applies to |
-| `...names` | `string`[] | List of names of the records to return |
+| Name                | Type       | Description                                                    |
+| :------------------ | :--------- | :------------------------------------------------------------- |
+| `languageListIndex` | `number`   | Index of the desired language in the language list             |
+| `streamNumber`      | `number`   | Index of the stream in the file the desired records applies to |
+| `...names`          | `string`[] | List of names of the records to return                         |
 
 #### Returns
 
 [`AsfMetadataDescriptor`](AsfMetadataDescriptor.md)[]
 
-___
+---
 
 ### initializeFromFile
 
@@ -159,10 +159,10 @@ file.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `file` | [`File`](File.md) | File which contains the details of the new instance to create |
-| `position` | `number` | Position in `file` where the object begins |
+| Name       | Type              | Description                                                   |
+| :--------- | :---------------- | :------------------------------------------------------------ |
+| `file`     | [`File`](File.md) | File which contains the details of the new instance to create |
+| `position` | `number`          | Position in `file` where the object begins                    |
 
 #### Returns
 
@@ -172,7 +172,7 @@ file.
 
 [AsfBaseObject](AsfBaseObject.md).[initializeFromFile](AsfBaseObject.md#initializefromfile)
 
-___
+---
 
 ### initializeFromGuid
 
@@ -182,8 +182,8 @@ Initializes a new instance with a specified GUID.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                            | Description                       |
+| :----- | :------------------------------ | :-------------------------------- |
 | `guid` | [`UuidWrapper`](UuidWrapper.md) | GUID to use for the new instance. |
 
 #### Returns
@@ -194,7 +194,7 @@ Initializes a new instance with a specified GUID.
 
 [AsfBaseObject](AsfBaseObject.md).[initializeFromGuid](AsfBaseObject.md#initializefromguid)
 
-___
+---
 
 ### removeRecords
 
@@ -204,17 +204,17 @@ Removes all records with a given language, stream, and name from the current ins
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `languageListIndex` | `number` | Language list index of the records to be removed |
-| `streamNumber` | `number` | Index of the stream in the file the desired records to remove |
-| `name` | `string` | Name of the records to remove |
+| Name                | Type     | Description                                                   |
+| :------------------ | :------- | :------------------------------------------------------------ |
+| `languageListIndex` | `number` | Language list index of the records to be removed              |
+| `streamNumber`      | `number` | Index of the stream in the file the desired records to remove |
+| `name`              | `string` | Name of the records to remove                                 |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### render
 
@@ -230,7 +230,7 @@ Renders the current instance as a raw ASF object.
 
 [AsfBaseObject](AsfBaseObject.md).[render](AsfBaseObject.md#render)
 
-___
+---
 
 ### renderInternal
 
@@ -241,12 +241,12 @@ Renders the current instance as a raw ASF object containing the specified data.
 **`Remarks`**
 
 Child classes implementing [()](AsfMetadataLibraryObject.md#render) should render their contents and then
-    send the data through this method to produce the final output.
+send the data through this method to produce the final output.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                          | Description                                                    |
+| :----- | :---------------------------- | :------------------------------------------------------------- |
 | `data` | [`ByteVector`](ByteVector.md) | Data to store in the rendered version of the current instance. |
 
 #### Returns
@@ -257,7 +257,7 @@ Child classes implementing [()](AsfMetadataLibraryObject.md#render) should rende
 
 [AsfBaseObject](AsfBaseObject.md).[renderInternal](AsfBaseObject.md#renderinternal)
 
-___
+---
 
 ### setRecords
 
@@ -269,25 +269,25 @@ records that match.
 **`Remarks`**
 
 All added entries in `records` should match the provided `languageListIndex`,
-    `streamNumber`, and `name`, but this will not be verified by the method. The records
-    will be added with their own values and not those provided in the method arguments. The
-    arguments are only used for removing existing values and determining where to position
-    the new records.
+`streamNumber`, and `name`, but this will not be verified by the method. The records
+will be added with their own values and not those provided in the method arguments. The
+arguments are only used for removing existing values and determining where to position
+the new records.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `languageListIndex` | `number` | Index of the desired language in the language list |
-| `streamNumber` | `number` | Index of the stream in the file the desired records applies to |
-| `name` | `string` | Names of the records to remove |
-| `...records` | [`AsfMetadataDescriptor`](AsfMetadataDescriptor.md)[] | Records to insert into the current instance |
+| Name                | Type                                                  | Description                                                    |
+| :------------------ | :---------------------------------------------------- | :------------------------------------------------------------- |
+| `languageListIndex` | `number`                                              | Index of the desired language in the language list             |
+| `streamNumber`      | `number`                                              | Index of the stream in the file the desired records applies to |
+| `name`              | `string`                                              | Names of the records to remove                                 |
+| `...records`        | [`AsfMetadataDescriptor`](AsfMetadataDescriptor.md)[] | Records to insert into the current instance                    |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### fromEmpty
 
@@ -299,7 +299,7 @@ Constructs and initializes a new instance that does not contain any records.
 
 [`AsfMetadataLibraryObject`](AsfMetadataLibraryObject.md)
 
-___
+---
 
 ### fromFile
 
@@ -309,10 +309,10 @@ Constructs and initializes a new instance by reading the object from a file.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `file` | [`File`](File.md) | File to read the instance from |
-| `position` | `number` | Offset into the file where the object begins |
+| Name       | Type              | Description                                  |
+| :--------- | :---------------- | :------------------------------------------- |
+| `file`     | [`File`](File.md) | File to read the instance from               |
+| `position` | `number`          | Offset into the file where the object begins |
 
 #### Returns
 

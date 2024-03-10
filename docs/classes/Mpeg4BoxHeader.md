@@ -33,7 +33,7 @@ Gets the type of box represented by the current instance.
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### dataSize
 
@@ -45,7 +45,7 @@ Gets the size of the data in the box described by the current instance.
 
 `number`
 
-___
+---
 
 ### extendedType
 
@@ -57,7 +57,7 @@ Gets the extended type of the box represented by the current instance.
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### headerSize
 
@@ -69,7 +69,7 @@ Gets the size of the header represented by the current instance.
 
 `number`
 
-___
+---
 
 ### position
 
@@ -81,7 +81,7 @@ Gets the position box represented by the current instance in the file it comes f
 
 `number`
 
-___
+---
 
 ### totalBoxSize
 
@@ -107,7 +107,7 @@ Renders the header represented by the current instance.
 
 ByteVector Rendered version of the current instance.
 
-___
+---
 
 ### fromFileAndPosition
 
@@ -118,16 +118,16 @@ specified seek position in a specified file.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `file` | [`File`](File.md) | A [File](File.md) object to read the new instance from. |
-| `position` | `number` | A value specifying the seek position in File at which to start reading. |
+| Name       | Type              | Description                                                             |
+| :--------- | :---------------- | :---------------------------------------------------------------------- |
+| `file`     | [`File`](File.md) | A [File](File.md) object to read the new instance from.                 |
+| `position` | `number`          | A value specifying the seek position in File at which to start reading. |
 
 #### Returns
 
 [`Mpeg4BoxHeader`](Mpeg4BoxHeader.md)
 
-___
+---
 
 ### fromType
 
@@ -138,9 +138,9 @@ and optionally extended type.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `type` | [`ByteVector`](ByteVector.md) | A [ByteVector](ByteVector.md) object containing the four byte box type. |
+| Name            | Type                          | Description                                                             |
+| :-------------- | :---------------------------- | :---------------------------------------------------------------------- |
+| `type`          | [`ByteVector`](ByteVector.md) | A [ByteVector](ByteVector.md) object containing the four byte box type. |
 | `extendedType?` | [`ByteVector`](ByteVector.md) | A [ByteVector](ByteVector.md) object containing the four byte box type. |
 
 #### Returns

@@ -52,15 +52,15 @@ Sets the color depth of the picture in the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                   |
+| :------ | :------- | :------------------------------------------------------------ |
 | `value` | `number` | Color depth of the picture. Must be a positive 32-bit integer |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### data
 
@@ -82,8 +82,8 @@ Gets and sets the picture data stored in the current instance.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type                          |
+| :------ | :---------------------------- |
 | `value` | [`ByteVector`](ByteVector.md) |
 
 #### Returns
@@ -94,7 +94,7 @@ Gets and sets the picture data stored in the current instance.
 
 [IPicture](../interfaces/IPicture.md).[data](../interfaces/IPicture.md#data)
 
-___
+---
 
 ### description
 
@@ -116,8 +116,8 @@ Gets and sets a description of the picture stored in the current instance. Optio
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `value` | `string` |
 
 #### Returns
@@ -128,7 +128,7 @@ Gets and sets a description of the picture stored in the current instance. Optio
 
 [IPicture](../interfaces/IPicture.md).[description](../interfaces/IPicture.md#description)
 
-___
+---
 
 ### filename
 
@@ -139,7 +139,7 @@ Gets and sets a filename of the picture stored in the current instance. Optional
 **`Remarks`**
 
 This value is not stored in a XIPH picture and is only available if copied from
-    another picture.
+another picture.
 
 #### Returns
 
@@ -159,8 +159,8 @@ This value is not stored in a XIPH picture so setting it has no impact.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `value` | `string` |
 
 #### Returns
@@ -171,7 +171,7 @@ This value is not stored in a XIPH picture so setting it has no impact.
 
 [IPicture](../interfaces/IPicture.md).[filename](../interfaces/IPicture.md#filename)
 
-___
+---
 
 ### height
 
@@ -189,15 +189,15 @@ Sets the height of the picture in the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                         |
+| :------ | :------- | :------------------------------------------------------------------ |
 | `value` | `number` | height of the picture in pixels, must be a positive 32-bit integer. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### indexedColors
 
@@ -215,15 +215,15 @@ Sets the number of indexed colors in the picture represented by the current inst
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                                          |
+| :------ | :------- | :----------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `number` | Number of indexed colors in the pictures or `0` if the picture is not stored in an indexed format. Must be a positive 32-bit integer |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### isLoaded
 
@@ -239,7 +239,7 @@ Gets whether the object has been loaded.
 
 [ILazy](../interfaces/ILazy.md).[isLoaded](../interfaces/ILazy.md#isloaded)
 
-___
+---
 
 ### mimeType
 
@@ -261,8 +261,8 @@ Gets and sets the mime-type of the picture data stored in the current instance.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `value` | `string` |
 
 #### Returns
@@ -273,7 +273,7 @@ Gets and sets the mime-type of the picture data stored in the current instance.
 
 [IPicture](../interfaces/IPicture.md).[mimeType](../interfaces/IPicture.md#mimetype)
 
-___
+---
 
 ### type
 
@@ -295,8 +295,8 @@ Gets and sets the type of the content visible in the picture stored in the curre
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type                                     |
+| :------ | :--------------------------------------- |
 | `value` | [`PictureType`](../enums/PictureType.md) |
 
 #### Returns
@@ -307,7 +307,7 @@ Gets and sets the type of the content visible in the picture stored in the curre
 
 [IPicture](../interfaces/IPicture.md).[type](../interfaces/IPicture.md#type)
 
-___
+---
 
 ### width
 
@@ -325,8 +325,8 @@ Sets the width of the picture in the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                      |
+| :------ | :------- | :--------------------------------------------------------------- |
 | `value` | `number` | Width of the picture in pixels, must be positive 32-bit integer. |
 
 #### Returns
@@ -349,7 +349,7 @@ Loads the object.
 
 [ILazy](../interfaces/ILazy.md).[load](../interfaces/ILazy.md#load)
 
-___
+---
 
 ### renderForFlacBlock
 
@@ -361,7 +361,7 @@ Renders the picture for use in a FLAC block.
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### renderForXiphComment
 
@@ -374,7 +374,7 @@ but base64 encoded).
 
 `string`
 
-___
+---
 
 ### fromFlacBlock
 
@@ -385,16 +385,16 @@ block. Intended to be used by the [FlacTag](FlacTag.md) class.
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `block` | [`FlacBlock`](FlacBlock.md) | `undefined` | FLAC block containing the Xiph image. |
-| `isLazy` | `boolean` | `false` | Whether or not to lazily load the data. For FLAC blocks, this will chain into the lazy loading capabilities of the block |
+| Name     | Type                        | Default value | Description                                                                                                              |
+| :------- | :-------------------------- | :------------ | :----------------------------------------------------------------------------------------------------------------------- |
+| `block`  | [`FlacBlock`](FlacBlock.md) | `undefined`   | FLAC block containing the Xiph image.                                                                                    |
+| `isLazy` | `boolean`                   | `false`       | Whether or not to lazily load the data. For FLAC blocks, this will chain into the lazy loading capabilities of the block |
 
 #### Returns
 
 [`XiphPicture`](XiphPicture.md)
 
-___
+---
 
 ### fromPicture
 
@@ -405,15 +405,15 @@ object.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type                                    | Description                     |
+| :-------- | :-------------------------------------- | :------------------------------ |
 | `picture` | [`IPicture`](../interfaces/IPicture.md) | Object to copy properties from. |
 
 #### Returns
 
 [`XiphPicture`](XiphPicture.md)
 
-___
+---
 
 ### fromXiphComment
 
@@ -424,10 +424,10 @@ image structure. Intended to be used by the [XiphComment](XiphComment.md) class.
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `data` | `string` | `undefined` | Object containing the raw, base64 encoded Xiph image |
-| `isLazy` | `boolean` | `false` | Whether or not to lazily load the data. For xiph comments, this only delays decoding the data from base64 |
+| Name     | Type      | Default value | Description                                                                                               |
+| :------- | :-------- | :------------ | :-------------------------------------------------------------------------------------------------------- |
+| `data`   | `string`  | `undefined`   | Object containing the raw, base64 encoded Xiph image                                                      |
+| `isLazy` | `boolean` | `false`       | Whether or not to lazily load the data. For xiph comments, this only delays decoding the data from base64 |
 
 #### Returns
 

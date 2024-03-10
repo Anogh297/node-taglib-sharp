@@ -60,9 +60,9 @@ Text encoding to use to store the text contents of the current instance.
 
 #### Inherited from
 
-[Id3v2UrlLinkFrame](Id3v2UrlLinkFrame.md).[_encoding](Id3v2UrlLinkFrame.md#_encoding)
+[Id3v2UrlLinkFrame](Id3v2UrlLinkFrame.md).[\_encoding](Id3v2UrlLinkFrame.md#_encoding)
 
-___
+---
 
 ### \_rawData
 
@@ -72,9 +72,9 @@ Raw data contents in the current instance.
 
 #### Inherited from
 
-[Id3v2UrlLinkFrame](Id3v2UrlLinkFrame.md).[_rawData](Id3v2UrlLinkFrame.md#_rawdata)
+[Id3v2UrlLinkFrame](Id3v2UrlLinkFrame.md).[\_rawData](Id3v2UrlLinkFrame.md#_rawdata)
 
-___
+---
 
 ### \_rawVersion
 
@@ -84,9 +84,9 @@ ID3v2 version of the current instance.
 
 #### Inherited from
 
-[Id3v2UrlLinkFrame](Id3v2UrlLinkFrame.md).[_rawVersion](Id3v2UrlLinkFrame.md#_rawversion)
+[Id3v2UrlLinkFrame](Id3v2UrlLinkFrame.md).[\_rawVersion](Id3v2UrlLinkFrame.md#_rawversion)
 
-___
+---
 
 ### \_textFields
 
@@ -96,7 +96,7 @@ Decoded text contained in the current instance.
 
 #### Inherited from
 
-[Id3v2UrlLinkFrame](Id3v2UrlLinkFrame.md).[_textFields](Id3v2UrlLinkFrame.md#_textfields)
+[Id3v2UrlLinkFrame](Id3v2UrlLinkFrame.md).[\_textFields](Id3v2UrlLinkFrame.md#_textfields)
 
 ## Accessors
 
@@ -117,15 +117,15 @@ There should only be one frame with a matching description per tag.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `value` | `string` |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### encryptionId
 
@@ -138,7 +138,7 @@ Gets the encryption ID applied to the current instance.
 `number`
 
 Value containing the encryption identifier for the current instance or
-    `undefined` if not set.
+`undefined` if not set.
 
 #### Inherited from
 
@@ -150,8 +150,8 @@ Sets the encryption ID applied to the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                                                                             |
+| :------ | :------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `number` | Value containing the encryption identifier for the current instance. Must be an 8-bit unsigned integer. Setting to `undefined` will remove the encryption header and ID |
 
 #### Returns
@@ -162,7 +162,7 @@ Sets the encryption ID applied to the current instance.
 
 UrlLinkFrame.encryptionId
 
-___
+---
 
 ### flags
 
@@ -186,8 +186,8 @@ If the value includes either [Encryption](../enums/Id3v2FrameFlags.md#encryption
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type                                             |
+| :------ | :----------------------------------------------- |
 | `value` | [`Id3v2FrameFlags`](../enums/Id3v2FrameFlags.md) |
 
 #### Returns
@@ -198,7 +198,7 @@ If the value includes either [Encryption](../enums/Id3v2FrameFlags.md#encryption
 
 UrlLinkFrame.flags
 
-___
+---
 
 ### frameClassType
 
@@ -214,7 +214,7 @@ Gets a flag indicating which type of frame the current instance is.
 
 UrlLinkFrame.frameClassType
 
-___
+---
 
 ### frameId
 
@@ -232,7 +232,7 @@ Object representing of the identifier of the frame
 
 UrlLinkFrame.frameId
 
-___
+---
 
 ### groupId
 
@@ -245,7 +245,7 @@ Gets the grouping ID applied to the current instance.
 `number`
 
 Value containing the grouping identifier for the current instance, or
-    `undefined` if not set.
+`undefined` if not set.
 
 #### Inherited from
 
@@ -257,8 +257,8 @@ Sets the grouping ID applied to the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                                                            |
+| :------ | :------- | :----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `number` | Grouping identifier for the current instance. Must be a 8-bit unsigned integer. Setting to `undefined` will remove the grouping identity header and ID |
 
 #### Returns
@@ -269,7 +269,7 @@ Sets the grouping ID applied to the current instance.
 
 UrlLinkFrame.groupId
 
-___
+---
 
 ### header
 
@@ -291,8 +291,8 @@ Sets the header for the frame.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                                      | Description          |
+| :------ | :---------------------------------------- | :------------------- |
 | `value` | [`Id3v2FrameHeader`](Id3v2FrameHeader.md) | Header for the frame |
 
 #### Returns
@@ -303,7 +303,7 @@ Sets the header for the frame.
 
 UrlLinkFrame.header
 
-___
+---
 
 ### size
 
@@ -311,7 +311,7 @@ ___
 
 Gets the size of the current instance as it was last stored on disk.
 NOTE: This value is not used outside of reading a frame from disk, so newly created frames
-    should not have this value set.
+should not have this value set.
 
 #### Returns
 
@@ -321,7 +321,7 @@ NOTE: This value is not used outside of reading a frame from disk, so newly crea
 
 UrlLinkFrame.size
 
-___
+---
 
 ### text
 
@@ -345,8 +345,8 @@ Sets the text contained in the current instance.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type       |
+| :------ | :--------- |
 | `value` | `string`[] |
 
 #### Returns
@@ -357,7 +357,7 @@ Sets the text contained in the current instance.
 
 UrlLinkFrame.text
 
-___
+---
 
 ### textEncoding
 
@@ -380,8 +380,8 @@ NOTE: This value will be overwritten if [forceDefaultEncoding](Id3v2Settings.md#
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type                                   |
+| :------ | :------------------------------------- |
 | `value` | [`StringType`](../enums/StringType.md) |
 
 #### Returns
@@ -411,7 +411,7 @@ classes.
 
 [Id3v2UrlLinkFrame](Id3v2UrlLinkFrame.md).[clone](Id3v2UrlLinkFrame.md#clone)
 
-___
+---
 
 ### fieldData
 
@@ -423,12 +423,12 @@ grouping ID.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `frameData` | [`ByteVector`](ByteVector.md) | Raw frame data |
-| `offset` | `number` | Index at which the data is contained |
-| `version` | `number` | Version of the ID3v2 tag the data was originally encoded with |
-| `dataIncludesHeader` | `boolean` | `true` if `frameData` includes the header, `false` otherwise |
+| Name                 | Type                          | Description                                                   |
+| :------------------- | :---------------------------- | :------------------------------------------------------------ |
+| `frameData`          | [`ByteVector`](ByteVector.md) | Raw frame data                                                |
+| `offset`             | `number`                      | Index at which the data is contained                          |
+| `version`            | `number`                      | Version of the ID3v2 tag the data was originally encoded with |
+| `dataIncludesHeader` | `boolean`                     | `true` if `frameData` includes the header, `false` otherwise  |
 
 #### Returns
 
@@ -438,7 +438,7 @@ grouping ID.
 
 [Id3v2UrlLinkFrame](Id3v2UrlLinkFrame.md).[fieldData](Id3v2UrlLinkFrame.md#fielddata)
 
-___
+---
 
 ### parseFields
 
@@ -448,10 +448,10 @@ Populates the values in this frame by parsing its field data in a specified vers
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `data` | [`ByteVector`](ByteVector.md) | Extracted field data |
-| `version` | `number` | ID3v2 version the field data is encoded in |
+| Name      | Type                          | Description                                |
+| :-------- | :---------------------------- | :----------------------------------------- |
+| `data`    | [`ByteVector`](ByteVector.md) | Extracted field data                       |
+| `version` | `number`                      | ID3v2 version the field data is encoded in |
 
 #### Returns
 
@@ -461,7 +461,7 @@ Populates the values in this frame by parsing its field data in a specified vers
 
 [Id3v2UrlLinkFrame](Id3v2UrlLinkFrame.md).[parseFields](Id3v2UrlLinkFrame.md#parsefields)
 
-___
+---
 
 ### parseRawData
 
@@ -472,9 +472,9 @@ Performs the actual parsing of the raw data.
 **`Remarks`**
 
 Because of the high parsing cost and relatively low usage of the class,
-    [parseFields](Id3v2UserUrlLinkFrame.md#parsefields) only stores the field data, so it can be parsed on demand. Whenever
-    a property or method is called which requires the data, this method is called, and only
-    on the first call does it actually parse the data.
+[parseFields](Id3v2UserUrlLinkFrame.md#parsefields) only stores the field data, so it can be parsed on demand. Whenever
+a property or method is called which requires the data, this method is called, and only
+on the first call does it actually parse the data.
 
 #### Returns
 
@@ -484,7 +484,7 @@ Because of the high parsing cost and relatively low usage of the class,
 
 [Id3v2UrlLinkFrame](Id3v2UrlLinkFrame.md).[parseRawData](Id3v2UrlLinkFrame.md#parserawdata)
 
-___
+---
 
 ### render
 
@@ -494,8 +494,8 @@ Renders the current instance, encoded in a specified ID3v2 version.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type     | Description                                                |
+| :-------- | :------- | :--------------------------------------------------------- |
 | `version` | `number` | Version of ID3v2 to use when encoding the current instance |
 
 #### Returns
@@ -506,7 +506,7 @@ Renders the current instance, encoded in a specified ID3v2 version.
 
 [Id3v2UrlLinkFrame](Id3v2UrlLinkFrame.md).[render](Id3v2UrlLinkFrame.md#render)
 
-___
+---
 
 ### renderFields
 
@@ -516,8 +516,8 @@ Renders the values in the current instance into field data for a specified versi
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type     | Description                                       |
+| :-------- | :------- | :------------------------------------------------ |
 | `version` | `number` | ID3v2 version the field data is to be encoded in. |
 
 #### Returns
@@ -528,7 +528,7 @@ Renders the values in the current instance into field data for a specified versi
 
 [Id3v2UrlLinkFrame](Id3v2UrlLinkFrame.md).[renderFields](Id3v2UrlLinkFrame.md#renderfields)
 
-___
+---
 
 ### setData
 
@@ -539,12 +539,12 @@ header.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `data` | [`ByteVector`](ByteVector.md) | Raw ID3v2 frame |
-| `offset` | `number` | Offset in `data` at which the frame begins. |
-| `readHeader` | `boolean` | Whether or not to read the reader into the current instance. |
-| `version` | `number` | Version of the ID3v2 tag the data was encoded with |
+| Name         | Type                          | Description                                                  |
+| :----------- | :---------------------------- | :----------------------------------------------------------- |
+| `data`       | [`ByteVector`](ByteVector.md) | Raw ID3v2 frame                                              |
+| `offset`     | `number`                      | Offset in `data` at which the frame begins.                  |
+| `readHeader` | `boolean`                     | Whether or not to read the reader into the current instance. |
+| `version`    | `number`                      | Version of the ID3v2 tag the data was encoded with           |
 
 #### Returns
 
@@ -554,7 +554,7 @@ header.
 
 [Id3v2UrlLinkFrame](Id3v2UrlLinkFrame.md).[setData](Id3v2UrlLinkFrame.md#setdata)
 
-___
+---
 
 ### toString
 
@@ -570,7 +570,7 @@ Generates a string representation of the URL link frame.
 
 [Id3v2UrlLinkFrame](Id3v2UrlLinkFrame.md).[toString](Id3v2UrlLinkFrame.md#tostring)
 
-___
+---
 
 ### correctEncoding
 
@@ -580,24 +580,24 @@ Converts an encoding to be a supported encoding for a specified tag version.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `type` | [`StringType`](../enums/StringType.md) | Value containing the original encoding |
-| `version` | `number` | Value containing the ID3v2 version to be encoded. |
+| Name      | Type                                   | Description                                       |
+| :-------- | :------------------------------------- | :------------------------------------------------ |
+| `type`    | [`StringType`](../enums/StringType.md) | Value containing the original encoding            |
+| `version` | `number`                               | Value containing the ID3v2 version to be encoded. |
 
 #### Returns
 
 [`StringType`](../enums/StringType.md)
 
 Value containing the correct encoding to use, based on
-    [forceDefaultEncoding](Id3v2Settings.md#forcedefaultencoding) and what is supported by
-    `version`
+[forceDefaultEncoding](Id3v2Settings.md#forcedefaultencoding) and what is supported by
+`version`
 
 #### Inherited from
 
 [Id3v2UrlLinkFrame](Id3v2UrlLinkFrame.md).[correctEncoding](Id3v2UrlLinkFrame.md#correctencoding)
 
-___
+---
 
 ### findUrlLinkFrame
 
@@ -607,10 +607,10 @@ Gets the first frame that matches the provided type
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `frames` | [`Id3v2UrlLinkFrame`](Id3v2UrlLinkFrame.md)[] | Object to search in |
-| `ident` | [`Id3v2FrameIdentifier`](Id3v2FrameIdentifier.md) | Frame identifier to search for |
+| Name     | Type                                              | Description                    |
+| :------- | :------------------------------------------------ | :----------------------------- |
+| `frames` | [`Id3v2UrlLinkFrame`](Id3v2UrlLinkFrame.md)[]     | Object to search in            |
+| `ident`  | [`Id3v2FrameIdentifier`](Id3v2FrameIdentifier.md) | Frame identifier to search for |
 
 #### Returns
 
@@ -622,7 +622,7 @@ Frame containing the matching frameId, `undefined` if a match was not found
 
 [Id3v2UrlLinkFrame](Id3v2UrlLinkFrame.md).[findUrlLinkFrame](Id3v2UrlLinkFrame.md#findurllinkframe)
 
-___
+---
 
 ### findUserUrlLinkFrame
 
@@ -632,10 +632,10 @@ Gets a frame from a list of frames.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `frames` | [`Id3v2UserUrlLinkFrame`](Id3v2UserUrlLinkFrame.md)[] | List of frames to search |
-| `description` | `string` | Description of the frame to match |
+| Name          | Type                                                  | Description                       |
+| :------------ | :---------------------------------------------------- | :-------------------------------- |
+| `frames`      | [`Id3v2UserUrlLinkFrame`](Id3v2UserUrlLinkFrame.md)[] | List of frames to search          |
+| `description` | `string`                                              | Description of the frame to match |
 
 #### Returns
 
@@ -643,7 +643,7 @@ Gets a frame from a list of frames.
 
 Frame containing the matching user, `undefined` if a match was not found
 
-___
+---
 
 ### fromDescription
 
@@ -654,15 +654,15 @@ of the frame.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name          | Type     | Description                              |
+| :------------ | :------- | :--------------------------------------- |
 | `description` | `string` | Description to use as text of the frame. |
 
 #### Returns
 
 [`Id3v2UserUrlLinkFrame`](Id3v2UserUrlLinkFrame.md)
 
-___
+---
 
 ### fromIdentity
 
@@ -672,8 +672,8 @@ Constructs and initializes an empty frame with the provided frame identity
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                                              | Description                        |
+| :------ | :------------------------------------------------ | :--------------------------------- |
 | `ident` | [`Id3v2FrameIdentifier`](Id3v2FrameIdentifier.md) | Identity of the frame to construct |
 
 #### Returns
@@ -684,7 +684,7 @@ Constructs and initializes an empty frame with the provided frame identity
 
 [Id3v2UrlLinkFrame](Id3v2UrlLinkFrame.md).[fromIdentity](Id3v2UrlLinkFrame.md#fromidentity)
 
-___
+---
 
 ### fromOffsetRawData
 
@@ -695,12 +695,12 @@ version. This method allows for offset reading from the data byte vector.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `data` | [`ByteVector`](ByteVector.md) | Raw representation of the new frame |
-| `offset` | `number` | What offset in `data` the frame actually begins. Must be positive, safe integer |
-| `header` | [`Id3v2FrameHeader`](Id3v2FrameHeader.md) | Header of the frame found at `data` in the data |
-| `version` | `number` | ID3v2 version the frame was originally encoded with |
+| Name      | Type                                      | Description                                                                     |
+| :-------- | :---------------------------------------- | :------------------------------------------------------------------------------ |
+| `data`    | [`ByteVector`](ByteVector.md)             | Raw representation of the new frame                                             |
+| `offset`  | `number`                                  | What offset in `data` the frame actually begins. Must be positive, safe integer |
+| `header`  | [`Id3v2FrameHeader`](Id3v2FrameHeader.md) | Header of the frame found at `data` in the data                                 |
+| `version` | `number`                                  | ID3v2 version the frame was originally encoded with                             |
 
 #### Returns
 
@@ -710,7 +710,7 @@ version. This method allows for offset reading from the data byte vector.
 
 [Id3v2UrlLinkFrame](Id3v2UrlLinkFrame.md).[fromOffsetRawData](Id3v2UrlLinkFrame.md#fromoffsetrawdata)
 
-___
+---
 
 ### fromRawData
 
@@ -721,10 +721,10 @@ ID3v2 version.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `data` | [`ByteVector`](ByteVector.md) | Raw representation of the new frame |
-| `version` | `number` | ID3v2 version the raw frame is encoded with, must be a positive 8-bit integer |
+| Name      | Type                          | Description                                                                   |
+| :-------- | :---------------------------- | :---------------------------------------------------------------------------- |
+| `data`    | [`ByteVector`](ByteVector.md) | Raw representation of the new frame                                           |
+| `version` | `number`                      | ID3v2 version the raw frame is encoded with, must be a positive 8-bit integer |
 
 #### Returns
 

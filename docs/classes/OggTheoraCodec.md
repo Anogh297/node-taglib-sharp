@@ -41,8 +41,8 @@ Constructs and initializes a new instance using the provided header packet.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name           | Type                          | Description                                 |
+| :------------- | :---------------------------- | :------------------------------------------ |
 | `headerPacket` | [`ByteVector`](ByteVector.md) | Packet that contains the Theora header data |
 
 ## Accessors
@@ -61,7 +61,7 @@ Gets the raw Xiph comment data contained in the codec.
 
 IOggCodec.commentData
 
-___
+---
 
 ### description
 
@@ -77,7 +77,7 @@ Gets a text description of the media represented by the current instance.
 
 [IVideoCodec](../interfaces/IVideoCodec.md).[description](../interfaces/IVideoCodec.md#description)
 
-___
+---
 
 ### durationMilliseconds
 
@@ -93,7 +93,7 @@ Duration of the media in milliseconds represented by the current instance.
 
 [IVideoCodec](../interfaces/IVideoCodec.md).[durationMilliseconds](../interfaces/IVideoCodec.md#durationmilliseconds)
 
-___
+---
 
 ### mediaTypes
 
@@ -109,7 +109,7 @@ Types of media represented by the current instance, bitwise combined.
 
 [IVideoCodec](../interfaces/IVideoCodec.md).[mediaTypes](../interfaces/IVideoCodec.md#mediatypes)
 
-___
+---
 
 ### videoHeight
 
@@ -125,7 +125,7 @@ Height of the video in pixels represented by the current instance.
 
 [IVideoCodec](../interfaces/IVideoCodec.md).[videoHeight](../interfaces/IVideoCodec.md#videoheight)
 
-___
+---
 
 ### videoWidth
 
@@ -151,8 +151,8 @@ Reads an Ogg packet that has been encountered in the stream, looking for the com
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                          | Description    |
+| :------- | :---------------------------- | :------------- |
 | `packet` | [`ByteVector`](ByteVector.md) | Packet to read |
 
 #### Returns
@@ -163,7 +163,7 @@ Reads an Ogg packet that has been encountered in the stream, looking for the com
 
 [IOggCodec](../interfaces/IOggCodec.md).[readPacket](../interfaces/IOggCodec.md#readpacket)
 
-___
+---
 
 ### setDuration
 
@@ -174,10 +174,10 @@ called, the duration can be accessed by calling [durationMilliseconds](../interf
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name                    | Type                          | Description                           |
+| :---------------------- | :---------------------------- | :------------------------------------ |
 | `firstGranularPosition` | [`ByteVector`](ByteVector.md) | First granular position of the stream |
-| `lastGranularPosition` | [`ByteVector`](ByteVector.md) | Last granular position of the stream |
+| `lastGranularPosition`  | [`ByteVector`](ByteVector.md) | Last granular position of the stream  |
 
 #### Returns
 
@@ -187,7 +187,7 @@ called, the duration can be accessed by calling [durationMilliseconds](../interf
 
 [IOggCodec](../interfaces/IOggCodec.md).[setDuration](../interfaces/IOggCodec.md#setduration)
 
-___
+---
 
 ### writeCommentPacket
 
@@ -197,10 +197,10 @@ Renders and write the provided comment into the provided list of packets.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type                            | Description                                                |
+| :-------- | :------------------------------ | :--------------------------------------------------------- |
 | `packets` | [`ByteVector`](ByteVector.md)[] | List of packets the comment packet should be written into. |
-| `comment` | [`XiphComment`](XiphComment.md) | Xiph comment to write into the list of packets. |
+| `comment` | [`XiphComment`](XiphComment.md) | Xiph comment to write into the list of packets.            |
 
 #### Returns
 
@@ -210,7 +210,7 @@ Renders and write the provided comment into the provided list of packets.
 
 [IOggCodec](../interfaces/IOggCodec.md).[writeCommentPacket](../interfaces/IOggCodec.md#writecommentpacket)
 
-___
+---
 
 ### isHeaderPacket
 
@@ -220,8 +220,8 @@ Checks to see if packet is a Theora header packet.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                          | Description     |
+| :------- | :---------------------------- | :-------------- |
 | `packet` | [`ByteVector`](ByteVector.md) | Packet to check |
 
 #### Returns

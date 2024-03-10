@@ -17,30 +17,30 @@ Indicates the MPEG audio channel mode of a file or stream.
 
 ### DualChannel
 
-• **DualChannel** = ``2``
+• **DualChannel** = `2`
 
 Dual Channel Mono
 
-___
+---
 
 ### JointStereo
 
-• **JointStereo** = ``1``
+• **JointStereo** = `1`
 
 Joint Stereo
 
-___
+---
 
 ### SingleChannel
 
-• **SingleChannel** = ``3``
+• **SingleChannel** = `3`
 
 Single Channel Mono
 
-___
+---
 
 ### Stereo
 
-• **Stereo** = ``0``
+• **Stereo** = `0`
 
 Stereo

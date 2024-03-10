@@ -16,22 +16,22 @@ Indicates there the seek operation should begin.
 
 ### Begin
 
-• **Begin** = ``0``
+• **Begin** = `0`
 
 Seek should begin at the start of the file.
 
-___
+---
 
 ### Current
 
-• **Current** = ``1``
+• **Current** = `1`
 
 Seek should begin at the current position in the file.
 
-___
+---
 
 ### End
 
-• **End** = ``2``
+• **End** = `2`
 
 Seek should begin at the end of the file.

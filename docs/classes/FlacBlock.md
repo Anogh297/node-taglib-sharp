@@ -12,7 +12,7 @@ Represents a FLAC metadata block
 
 ### Properties
 
-- [HEADER\_SIZE](FlacBlock.md#header_size)
+- [HEADER_SIZE](FlacBlock.md#header_size)
 
 ### Accessors
 
@@ -33,9 +33,9 @@ Represents a FLAC metadata block
 
 ## Properties
 
-### HEADER\_SIZE
+### HEADER_SIZE
 
-▪ `Static` `Readonly` **HEADER\_SIZE**: ``4``
+▪ `Static` `Readonly` **HEADER_SIZE**: `4`
 
 Length of a FLAC block header in bytes.
 
@@ -52,7 +52,7 @@ constructed directly from data.
 
 `number`
 
-___
+---
 
 ### data
 
@@ -64,7 +64,7 @@ Gets the data contained in the current instance.
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### dataSize
 
@@ -76,7 +76,7 @@ Gets the size of the data contained in the current instance.
 
 `number`
 
-___
+---
 
 ### isLastBlock
 
@@ -90,10 +90,10 @@ in the FLAC stream.
 `boolean`
 
 `true` if the block represented by the current instance was the last one to appear
-    in the file and is followed immediately by the audio data, or `false` if another block
-    appears after the current one or the block was not read from disk.
+in the file and is followed immediately by the audio data, or `false` if another block
+appears after the current one or the block was not read from disk.
 
-___
+---
 
 ### isLoaded
 
@@ -109,7 +109,7 @@ Gets whether the object has been loaded.
 
 [ILazy](../interfaces/ILazy.md).[isLoaded](../interfaces/ILazy.md#isloaded)
 
-___
+---
 
 ### totalSize
 
@@ -122,7 +122,7 @@ plus the size of the header.
 
 `number`
 
-___
+---
 
 ### type
 
@@ -150,7 +150,7 @@ Loads the object.
 
 [ILazy](../interfaces/ILazy.md).[load](../interfaces/ILazy.md#load)
 
-___
+---
 
 ### render
 
@@ -160,15 +160,15 @@ Renders the current instance as a raw FLAC metadata block.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name          | Type      | Description                                                           |
+| :------------ | :-------- | :-------------------------------------------------------------------- |
 | `isLastBlock` | `boolean` | Whether or not the block should be marked as the last metadata block. |
 
 #### Returns
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### fromData
 
@@ -179,16 +179,16 @@ contained in the block.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                                         | Description                    |
+| :----- | :------------------------------------------- | :----------------------------- |
 | `type` | [`FlacBlockType`](../enums/FlacBlockType.md) | Type of the block to construct |
-| `data` | [`ByteVector`](ByteVector.md) | Data the block will contain |
+| `data` | [`ByteVector`](ByteVector.md)                | Data the block will contain    |
 
 #### Returns
 
 [`FlacBlock`](FlacBlock.md)
 
-___
+---
 
 ### fromFile
 
@@ -198,10 +198,10 @@ Constructs and initializes a new instance, lazily, by reading it from a file.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `file` | [`File`](File.md) | File from which to read the current instance |
-| `position` | `number` | Offset into the file where the block begins |
+| Name       | Type              | Description                                  |
+| :--------- | :---------------- | :------------------------------------------- |
+| `file`     | [`File`](File.md) | File from which to read the current instance |
+| `position` | `number`          | Offset into the file where the block begins  |
 
 #### Returns
 

@@ -18,8 +18,8 @@ https://docs.microsoft.com/en-us/previous-versions/dd757713(v=vs.85)
 
 ### Properties
 
-- [CHUNK\_FOURCC](RiffWaveFormatEx.md#chunk_fourcc)
-- [WAVE\_FORMAT\_TAGS](RiffWaveFormatEx.md#wave_format_tags)
+- [CHUNK_FOURCC](RiffWaveFormatEx.md#chunk_fourcc)
+- [WAVE_FORMAT_TAGS](RiffWaveFormatEx.md#wave_format_tags)
 
 ### Accessors
 
@@ -45,30 +45,30 @@ data.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                          | Description                              |
+| :----- | :---------------------------- | :--------------------------------------- |
 | `data` | [`ByteVector`](ByteVector.md) | Byte vector that contains the raw header |
 
 ## Properties
 
-### CHUNK\_FOURCC
+### CHUNK_FOURCC
 
-▪ `Static` `Readonly` **CHUNK\_FOURCC**: ``"fmt "``
+▪ `Static` `Readonly` **CHUNK_FOURCC**: `"fmt "`
 
 FOURCC code that indicates the chunk is a RiffWaveFormatEx object.
 
-___
+---
 
-### WAVE\_FORMAT\_TAGS
+### WAVE_FORMAT_TAGS
 
-▪ `Static` `Readonly` **WAVE\_FORMAT\_TAGS**: `Map`<`number`, `string`\>
+▪ `Static` `Readonly` **WAVE_FORMAT_TAGS**: `Map`<`number`, `string`\>
 
 List of well-known wave format tags. This is similar to FOURCC codes but for audio codecs.
 
 **`Remarks`**
 
 This list was put together from the Windows 10 SDK mmreg.h header file
-    If any of these descriptions are wrong or out of date, please open a PR.
+If any of these descriptions are wrong or out of date, please open a PR.
 
 ## Accessors
 
@@ -86,7 +86,7 @@ Bitrate of the audio in kilobits per second represented by the current instance.
 
 [ILosslessAudioCodec](../interfaces/ILosslessAudioCodec.md).[audioBitrate](../interfaces/ILosslessAudioCodec.md#audiobitrate)
 
-___
+---
 
 ### audioChannels
 
@@ -102,7 +102,7 @@ Number of channels in the audio represented by the current instance.
 
 [ILosslessAudioCodec](../interfaces/ILosslessAudioCodec.md).[audioChannels](../interfaces/ILosslessAudioCodec.md#audiochannels)
 
-___
+---
 
 ### audioSampleRate
 
@@ -118,7 +118,7 @@ Sample rate of the audio represented by the current instance.
 
 [ILosslessAudioCodec](../interfaces/ILosslessAudioCodec.md).[audioSampleRate](../interfaces/ILosslessAudioCodec.md#audiosamplerate)
 
-___
+---
 
 ### averageBytesPerSecond
 
@@ -131,7 +131,7 @@ instance.
 
 `number`
 
-___
+---
 
 ### bitsPerSample
 
@@ -142,7 +142,7 @@ Number of bits per sample in the audio represented by the current instance.
 **`Remarks`**
 
 Some compression schemes cannot define a value for this field, so it may be `0`.
-    This is especially common for MP3 audio embedded in an AVI.
+This is especially common for MP3 audio embedded in an AVI.
 
 #### Returns
 
@@ -152,7 +152,7 @@ Some compression schemes cannot define a value for this field, so it may be `0`.
 
 [ILosslessAudioCodec](../interfaces/ILosslessAudioCodec.md).[bitsPerSample](../interfaces/ILosslessAudioCodec.md#bitspersample)
 
-___
+---
 
 ### blockAlign
 
@@ -165,7 +165,7 @@ Gets the block alignment, in bytes. Block alignment is the minimum atomic unit o
 
 `number`
 
-___
+---
 
 ### description
 
@@ -181,7 +181,7 @@ Gets a text description of the media represented by the current instance.
 
 [ILosslessAudioCodec](../interfaces/ILosslessAudioCodec.md).[description](../interfaces/ILosslessAudioCodec.md#description)
 
-___
+---
 
 ### durationMilliseconds
 
@@ -201,7 +201,7 @@ Duration cannot be found from this object
 
 [ILosslessAudioCodec](../interfaces/ILosslessAudioCodec.md).[durationMilliseconds](../interfaces/ILosslessAudioCodec.md#durationmilliseconds)
 
-___
+---
 
 ### formatTag
 
@@ -212,14 +212,14 @@ Gets the format tag of the audio described by the current instance.
 **`Remarks`**
 
 Format tags indicate the codec of the audio contained in the file and are
-    contained in a Microsoft registry. For a description of the format, use
-    [description](RiffWaveFormatEx.md#description). The complete list can be found in the Win32 mmreg.h SDK header file
+contained in a Microsoft registry. For a description of the format, use
+[description](RiffWaveFormatEx.md#description). The complete list can be found in the Win32 mmreg.h SDK header file
 
 #### Returns
 
 `number`
 
-___
+---
 
 ### mediaTypes
 
@@ -230,10 +230,10 @@ Types of media represented by the current instance, bitwise combined.
 **`Remarks`**
 
 Technically any audio format can be encapsulated with a RIFF header since RIFF is
-    simply a "Resource Interchange File Format". It is entirely possible to encapsulate a
-    lossy format (and indeed, lossy WMA must be encapsulated) with a RIFF header. Therefore,
-    this designation as lossless is somewhat misleading and checking [description](RiffWaveFormatEx.md#description) is
-    necessary to verify the codec being used is lossless or not.
+simply a "Resource Interchange File Format". It is entirely possible to encapsulate a
+lossy format (and indeed, lossy WMA must be encapsulated) with a RIFF header. Therefore,
+this designation as lossless is somewhat misleading and checking [description](RiffWaveFormatEx.md#description) is
+necessary to verify the codec being used is lossless or not.
 
 #### Returns
 

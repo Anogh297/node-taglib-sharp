@@ -34,11 +34,11 @@ Constructs and initializes a new instance by processing the data for the frame h
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `id` | [`Id3v2FrameIdentifier`](Id3v2FrameIdentifier.md) | `undefined` | Identifier of the frame |
-| `flags` | [`Id3v2FrameFlags`](../enums/Id3v2FrameFlags.md) | `Id3v2FrameFlags.None` | Flags to assign to the frame (if omitted, defaults to [None](../enums/Id3v2FrameFlags.md#none)) |
-| `frameSize` | `number` | `0` | Size of the frame in bytes, excluding the size of the header (if omitted, defaults to 0) |
+| Name        | Type                                              | Default value          | Description                                                                                     |
+| :---------- | :------------------------------------------------ | :--------------------- | :---------------------------------------------------------------------------------------------- |
+| `id`        | [`Id3v2FrameIdentifier`](Id3v2FrameIdentifier.md) | `undefined`            | Identifier of the frame                                                                         |
+| `flags`     | [`Id3v2FrameFlags`](../enums/Id3v2FrameFlags.md)  | `Id3v2FrameFlags.None` | Flags to assign to the frame (if omitted, defaults to [None](../enums/Id3v2FrameFlags.md#none)) |
+| `frameSize` | `number`                                          | `0`                    | Size of the frame in bytes, excluding the size of the header (if omitted, defaults to 0)        |
 
 ## Accessors
 
@@ -58,15 +58,15 @@ Sets the flags applied to the current instance.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type                                             |
+| :------ | :----------------------------------------------- |
 | `value` | [`Id3v2FrameFlags`](../enums/Id3v2FrameFlags.md) |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### frameId
 
@@ -84,15 +84,15 @@ Sets the identifier of the frame described by the current instance.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type                                              |
+| :------ | :------------------------------------------------ |
 | `value` | [`Id3v2FrameIdentifier`](Id3v2FrameIdentifier.md) |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### frameSize
 
@@ -111,8 +111,8 @@ Must be a positive, safe integer.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `value` | `number` |
 
 #### Returns
@@ -129,15 +129,15 @@ Renders the current instance, encoded in a specified ID3v2 version.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type     | Description                                                 |
+| :-------- | :------- | :---------------------------------------------------------- |
 | `version` | `number` | Version of ID3v2 to use when encoding the current instance. |
 
 #### Returns
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### fromData
 
@@ -148,16 +148,16 @@ header data of a specified version.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `data` | [`ByteVector`](ByteVector.md) | Raw data to build the new instance from. If the data size is smaller than the size of a full header, the data is just treated as a frame identifier and the remaining values are zeroed. |
-| `version` | `number` | ID3v2 version with which the data in `data` was encoded. |
+| Name      | Type                          | Description                                                                                                                                                                              |
+| :-------- | :---------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `data`    | [`ByteVector`](ByteVector.md) | Raw data to build the new instance from. If the data size is smaller than the size of a full header, the data is just treated as a frame identifier and the remaining values are zeroed. |
+| `version` | `number`                      | ID3v2 version with which the data in `data` was encoded.                                                                                                                                 |
 
 #### Returns
 
 [`Id3v2FrameHeader`](Id3v2FrameHeader.md)
 
-___
+---
 
 ### fromFrameIdentifier
 
@@ -168,15 +168,15 @@ provided frame identifier.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type                                              | Description              |
+| :--- | :------------------------------------------------ | :----------------------- |
 | `id` | [`Id3v2FrameIdentifier`](Id3v2FrameIdentifier.md) | Identifier for the frame |
 
 #### Returns
 
 [`Id3v2FrameHeader`](Id3v2FrameHeader.md)
 
-___
+---
 
 ### getSize
 
@@ -186,8 +186,8 @@ Gets the size of a header for a specified ID3v2 version.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type     | Description                                                            |
+| :-------- | :------- | :--------------------------------------------------------------------- |
 | `version` | `number` | Version of ID3v2 to get the size for. Must be a positive integer < 256 |
 
 #### Returns

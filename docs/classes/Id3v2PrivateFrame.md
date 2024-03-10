@@ -53,7 +53,7 @@ Gets the encryption ID applied to the current instance.
 `number`
 
 Value containing the encryption identifier for the current instance or
-    `undefined` if not set.
+`undefined` if not set.
 
 #### Inherited from
 
@@ -65,8 +65,8 @@ Sets the encryption ID applied to the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                                                                             |
+| :------ | :------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `number` | Value containing the encryption identifier for the current instance. Must be an 8-bit unsigned integer. Setting to `undefined` will remove the encryption header and ID |
 
 #### Returns
@@ -77,7 +77,7 @@ Sets the encryption ID applied to the current instance.
 
 Frame.encryptionId
 
-___
+---
 
 ### flags
 
@@ -101,8 +101,8 @@ If the value includes either [Encryption](../enums/Id3v2FrameFlags.md#encryption
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type                                             |
+| :------ | :----------------------------------------------- |
 | `value` | [`Id3v2FrameFlags`](../enums/Id3v2FrameFlags.md) |
 
 #### Returns
@@ -113,7 +113,7 @@ If the value includes either [Encryption](../enums/Id3v2FrameFlags.md#encryption
 
 Frame.flags
 
-___
+---
 
 ### frameClassType
 
@@ -129,7 +129,7 @@ Gets a flag indicating which type of frame the current instance is.
 
 Frame.frameClassType
 
-___
+---
 
 ### frameId
 
@@ -147,7 +147,7 @@ Object representing of the identifier of the frame
 
 Frame.frameId
 
-___
+---
 
 ### groupId
 
@@ -160,7 +160,7 @@ Gets the grouping ID applied to the current instance.
 `number`
 
 Value containing the grouping identifier for the current instance, or
-    `undefined` if not set.
+`undefined` if not set.
 
 #### Inherited from
 
@@ -172,8 +172,8 @@ Sets the grouping ID applied to the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                                                            |
+| :------ | :------- | :----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | `number` | Grouping identifier for the current instance. Must be a 8-bit unsigned integer. Setting to `undefined` will remove the grouping identity header and ID |
 
 #### Returns
@@ -184,7 +184,7 @@ Sets the grouping ID applied to the current instance.
 
 Frame.groupId
 
-___
+---
 
 ### header
 
@@ -206,8 +206,8 @@ Sets the header for the frame.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                                      | Description          |
+| :------ | :---------------------------------------- | :------------------- |
 | `value` | [`Id3v2FrameHeader`](Id3v2FrameHeader.md) | Header for the frame |
 
 #### Returns
@@ -218,7 +218,7 @@ Sets the header for the frame.
 
 Frame.header
 
-___
+---
 
 ### owner
 
@@ -231,7 +231,7 @@ There should only be one frame with a given owner per tag.
 
 `string`
 
-___
+---
 
 ### privateData
 
@@ -249,15 +249,15 @@ Sets the private data stored in the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                          | Description                                   |
+| :------ | :---------------------------- | :-------------------------------------------- |
 | `value` | [`ByteVector`](ByteVector.md) | Private data to store in the current instance |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### size
 
@@ -265,7 +265,7 @@ ___
 
 Gets the size of the current instance as it was last stored on disk.
 NOTE: This value is not used outside of reading a frame from disk, so newly created frames
-    should not have this value set.
+should not have this value set.
 
 #### Returns
 
@@ -294,7 +294,7 @@ classes.
 
 [Id3v2Frame](Id3v2Frame.md).[clone](Id3v2Frame.md#clone)
 
-___
+---
 
 ### fieldData
 
@@ -306,12 +306,12 @@ grouping ID.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `frameData` | [`ByteVector`](ByteVector.md) | Raw frame data |
-| `offset` | `number` | Index at which the data is contained |
-| `version` | `number` | Version of the ID3v2 tag the data was originally encoded with |
-| `dataIncludesHeader` | `boolean` | `true` if `frameData` includes the header, `false` otherwise |
+| Name                 | Type                          | Description                                                   |
+| :------------------- | :---------------------------- | :------------------------------------------------------------ |
+| `frameData`          | [`ByteVector`](ByteVector.md) | Raw frame data                                                |
+| `offset`             | `number`                      | Index at which the data is contained                          |
+| `version`            | `number`                      | Version of the ID3v2 tag the data was originally encoded with |
+| `dataIncludesHeader` | `boolean`                     | `true` if `frameData` includes the header, `false` otherwise  |
 
 #### Returns
 
@@ -321,7 +321,7 @@ grouping ID.
 
 [Id3v2Frame](Id3v2Frame.md).[fieldData](Id3v2Frame.md#fielddata)
 
-___
+---
 
 ### parseFields
 
@@ -331,8 +331,8 @@ Populates the values in this frame by parsing its field data in a specified vers
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                          | Description          |
+| :----- | :---------------------------- | :------------------- |
 | `data` | [`ByteVector`](ByteVector.md) | Extracted field data |
 
 #### Returns
@@ -343,7 +343,7 @@ Populates the values in this frame by parsing its field data in a specified vers
 
 [Id3v2Frame](Id3v2Frame.md).[parseFields](Id3v2Frame.md#parsefields)
 
-___
+---
 
 ### render
 
@@ -353,8 +353,8 @@ Renders the current instance, encoded in a specified ID3v2 version.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type     | Description                                                |
+| :-------- | :------- | :--------------------------------------------------------- |
 | `version` | `number` | Version of ID3v2 to use when encoding the current instance |
 
 #### Returns
@@ -365,7 +365,7 @@ Renders the current instance, encoded in a specified ID3v2 version.
 
 [Id3v2Frame](Id3v2Frame.md).[render](Id3v2Frame.md#render)
 
-___
+---
 
 ### renderFields
 
@@ -375,8 +375,8 @@ Renders the values in the current instance into field data for a specified versi
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type     | Description                                       |
+| :-------- | :------- | :------------------------------------------------ |
 | `version` | `number` | ID3v2 version the field data is to be encoded in. |
 
 #### Returns
@@ -387,7 +387,7 @@ Renders the values in the current instance into field data for a specified versi
 
 [Id3v2Frame](Id3v2Frame.md).[renderFields](Id3v2Frame.md#renderfields)
 
-___
+---
 
 ### setData
 
@@ -398,12 +398,12 @@ header.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `data` | [`ByteVector`](ByteVector.md) | Raw ID3v2 frame |
-| `offset` | `number` | Offset in `data` at which the frame begins. |
-| `readHeader` | `boolean` | Whether or not to read the reader into the current instance. |
-| `version` | `number` | Version of the ID3v2 tag the data was encoded with |
+| Name         | Type                          | Description                                                  |
+| :----------- | :---------------------------- | :----------------------------------------------------------- |
+| `data`       | [`ByteVector`](ByteVector.md) | Raw ID3v2 frame                                              |
+| `offset`     | `number`                      | Offset in `data` at which the frame begins.                  |
+| `readHeader` | `boolean`                     | Whether or not to read the reader into the current instance. |
+| `version`    | `number`                      | Version of the ID3v2 tag the data was encoded with           |
 
 #### Returns
 
@@ -413,7 +413,7 @@ header.
 
 [Id3v2Frame](Id3v2Frame.md).[setData](Id3v2Frame.md#setdata)
 
-___
+---
 
 ### correctEncoding
 
@@ -423,24 +423,24 @@ Converts an encoding to be a supported encoding for a specified tag version.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `type` | [`StringType`](../enums/StringType.md) | Value containing the original encoding |
-| `version` | `number` | Value containing the ID3v2 version to be encoded. |
+| Name      | Type                                   | Description                                       |
+| :-------- | :------------------------------------- | :------------------------------------------------ |
+| `type`    | [`StringType`](../enums/StringType.md) | Value containing the original encoding            |
+| `version` | `number`                               | Value containing the ID3v2 version to be encoded. |
 
 #### Returns
 
 [`StringType`](../enums/StringType.md)
 
 Value containing the correct encoding to use, based on
-    [forceDefaultEncoding](Id3v2Settings.md#forcedefaultencoding) and what is supported by
-    `version`
+[forceDefaultEncoding](Id3v2Settings.md#forcedefaultencoding) and what is supported by
+`version`
 
 #### Inherited from
 
 [Id3v2Frame](Id3v2Frame.md).[correctEncoding](Id3v2Frame.md#correctencoding)
 
-___
+---
 
 ### find
 
@@ -451,10 +451,10 @@ parameters.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `frames` | [`Id3v2PrivateFrame`](Id3v2PrivateFrame.md)[] | List of frames to search |
-| `owner` | `string` | Owner to match when searching |
+| Name     | Type                                          | Description                   |
+| :------- | :-------------------------------------------- | :---------------------------- |
+| `frames` | [`Id3v2PrivateFrame`](Id3v2PrivateFrame.md)[] | List of frames to search      |
+| `owner`  | `string`                                      | Owner to match when searching |
 
 #### Returns
 
@@ -462,7 +462,7 @@ parameters.
 
 Matching frame or `undefined` if a match was not found
 
-___
+---
 
 ### fromOffsetRawData
 
@@ -473,18 +473,18 @@ version. This method allows for offset reading from the data byte vector.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `data` | [`ByteVector`](ByteVector.md) | Raw representation of the new frame |
-| `offset` | `number` | What offset in `data` the frame actually begins. Must be positive, safe integer |
-| `header` | [`Id3v2FrameHeader`](Id3v2FrameHeader.md) | Header of the frame found at `data` in the data |
-| `version` | `number` | ID3v2 version the frame was originally encoded with |
+| Name      | Type                                      | Description                                                                     |
+| :-------- | :---------------------------------------- | :------------------------------------------------------------------------------ |
+| `data`    | [`ByteVector`](ByteVector.md)             | Raw representation of the new frame                                             |
+| `offset`  | `number`                                  | What offset in `data` the frame actually begins. Must be positive, safe integer |
+| `header`  | [`Id3v2FrameHeader`](Id3v2FrameHeader.md) | Header of the frame found at `data` in the data                                 |
+| `version` | `number`                                  | ID3v2 version the frame was originally encoded with                             |
 
 #### Returns
 
 [`Id3v2PrivateFrame`](Id3v2PrivateFrame.md)
 
-___
+---
 
 ### fromOwner
 
@@ -494,15 +494,15 @@ Constructs and initializes a new instance with the provided owner
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                |
+| :------ | :------- | :------------------------- |
 | `owner` | `string` | Owner of the private frame |
 
 #### Returns
 
 [`Id3v2PrivateFrame`](Id3v2PrivateFrame.md)
 
-___
+---
 
 ### fromRawData
 
@@ -513,10 +513,10 @@ ID3v2 version.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `data` | [`ByteVector`](ByteVector.md) | Raw representation of the new frame |
-| `version` | `number` | ID3v2 version the raw frame is encoded with, must be a positive 8-bit integer |
+| Name      | Type                          | Description                                                                   |
+| :-------- | :---------------------------- | :---------------------------------------------------------------------------- |
+| `data`    | [`ByteVector`](ByteVector.md) | Raw representation of the new frame                                           |
+| `version` | `number`                      | ID3v2 version the raw frame is encoded with, must be a positive 8-bit integer |
 
 #### Returns
 

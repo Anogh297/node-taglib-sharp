@@ -32,9 +32,9 @@ Name or identifier used by the implementation
 **`Remarks`**
 
 This value would typically represent a path or URL to be used when identifying
-    the file system, but it could be any valid as appropriate for the implementation.
+the file system, but it could be any valid as appropriate for the implementation.
 
-___
+---
 
 ### readStream
 
@@ -45,11 +45,11 @@ Readable, seekable stream for the file referenced by the current instance.
 **`Remarks`**
 
 This property is typically used when constructing an instance of [File](../classes/File.md).
-    Upon completion of the constructor [closeStream](IFileAbstraction.md#closestream) will be called to close the stream.
-    If the stream is to be reused after this point, [closeStream](IFileAbstraction.md#closestream) should be implemented
-    in a way to keep it open.
+Upon completion of the constructor [closeStream](IFileAbstraction.md#closestream) will be called to close the stream.
+If the stream is to be reused after this point, [closeStream](IFileAbstraction.md#closestream) should be implemented
+in a way to keep it open.
 
-___
+---
 
 ### writeStream
 
@@ -60,9 +60,9 @@ Writable, seekable stream for the file referenced by the current instance.
 **`Remarks`**
 
 This property is typically used when saving a file with [save](../classes/File.md#save). Upon
-    completion of the method, [closeStream](IFileAbstraction.md#closestream) will be called to close the stream. If the
-    stream is to be reused after this point, [closeStream](IFileAbstraction.md#closestream) should be implemented in a way
-    to keep it open
+completion of the method, [closeStream](IFileAbstraction.md#closestream) will be called to close the stream. If the
+stream is to be reused after this point, [closeStream](IFileAbstraction.md#closestream) should be implemented in a way
+to keep it open
 
 ## Methods
 
@@ -74,8 +74,8 @@ Closes a stream created by the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                    | Description                             |
+| :------- | :---------------------- | :-------------------------------------- |
 | `stream` | [`IStream`](IStream.md) | Stream created by the current instance. |
 
 #### Returns

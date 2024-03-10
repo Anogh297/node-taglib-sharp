@@ -40,7 +40,7 @@ Gets and sets the picture data stored in the current instance.
 
 [IPicture](../interfaces/IPicture.md).[data](../interfaces/IPicture.md#data)
 
-___
+---
 
 ### description
 
@@ -52,7 +52,7 @@ Gets and sets a description of the picture stored in the current instance. Optio
 
 [IPicture](../interfaces/IPicture.md).[description](../interfaces/IPicture.md#description)
 
-___
+---
 
 ### filename
 
@@ -64,7 +64,7 @@ Gets and sets a filename of the picture stored in the current instance. Optional
 
 [IPicture](../interfaces/IPicture.md).[filename](../interfaces/IPicture.md#filename)
 
-___
+---
 
 ### mimeType
 
@@ -76,7 +76,7 @@ Gets and sets the mime-type of the picture data stored in the current instance.
 
 [IPicture](../interfaces/IPicture.md).[mimeType](../interfaces/IPicture.md#mimetype)
 
-___
+---
 
 ### type
 
@@ -99,15 +99,15 @@ discover the type of the picture.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                          | Description                                                         |
+| :----- | :---------------------------- | :------------------------------------------------------------------ |
 | `data` | [`ByteVector`](ByteVector.md) | Raw bytes of the picture to store in the instance. Cannot be falsey |
 
 #### Returns
 
 [`Picture`](Picture.md)
 
-___
+---
 
 ### fromFileAbstraction
 
@@ -118,15 +118,15 @@ of the file are determined by the name of the abstraction.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name          | Type                                                    | Description                                |
+| :------------ | :------------------------------------------------------ | :----------------------------------------- |
 | `abstraction` | [`IFileAbstraction`](../interfaces/IFileAbstraction.md) | File abstraction to load the picture from. |
 
 #### Returns
 
 [`Picture`](Picture.md)
 
-___
+---
 
 ### fromFullData
 
@@ -136,18 +136,18 @@ Constructs a new instance with the data provided. No processing of the data is d
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `data` | [`ByteVector`](ByteVector.md) | Raw bytes of the picture to store in the instance. Cannot be falsey |
-| `type` | [`PictureType`](../enums/PictureType.md) | Type of the picture. Cannot be null or undefined |
-| `mimeType` | `string` | MimeType of the picture. Cannot be falsey |
-| `description` | `string` | Description of the picture. Cannot be null or undefined |
+| Name          | Type                                     | Description                                                         |
+| :------------ | :--------------------------------------- | :------------------------------------------------------------------ |
+| `data`        | [`ByteVector`](ByteVector.md)            | Raw bytes of the picture to store in the instance. Cannot be falsey |
+| `type`        | [`PictureType`](../enums/PictureType.md) | Type of the picture. Cannot be null or undefined                    |
+| `mimeType`    | `string`                                 | MimeType of the picture. Cannot be falsey                           |
+| `description` | `string`                                 | Description of the picture. Cannot be null or undefined             |
 
 #### Returns
 
 [`Picture`](Picture.md)
 
-___
+---
 
 ### fromPath
 
@@ -159,15 +159,15 @@ loaded completely.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type     | Description                          |
+| :--------- | :------- | :----------------------------------- |
 | `filePath` | `string` | Path to the file to use for the file |
 
 #### Returns
 
 [`Picture`](Picture.md)
 
-___
+---
 
 ### getExtensionFromData
 
@@ -178,8 +178,8 @@ accurate than [getExtensionFromMimeType](Picture.md#getextensionfrommimetype) si
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                          | Description                                         |
+| :----- | :---------------------------- | :-------------------------------------------------- |
 | `data` | [`ByteVector`](ByteVector.md) | Bytes of the file to read to identify the extension |
 
 #### Returns
@@ -187,9 +187,9 @@ accurate than [getExtensionFromMimeType](Picture.md#getextensionfrommimetype) si
 `string`
 
 Extension of the file with dot at the beginning based on the first few bytes
-    of the data. If the extension cannot be determined, `undefined` is returned
+of the data. If the extension cannot be determined, `undefined` is returned
 
-___
+---
 
 ### getExtensionFromMimeType
 
@@ -199,8 +199,8 @@ Gets the file extension for a specific mimetype.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description                           |
+| :----- | :------- | :------------------------------------ |
 | `mime` | `string` | Mimetype to look up the extension for |
 
 #### Returns
@@ -208,9 +208,9 @@ Gets the file extension for a specific mimetype.
 `string`
 
 Extension of the file based on the mimetype with a dot at the beginning. If
-    the extension cannot be determined, `undefined` is returned
+the extension cannot be determined, `undefined` is returned
 
-___
+---
 
 ### getMimeTypeFromFilename
 
@@ -221,8 +221,8 @@ is assumed to be a basic binary file.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description                                               |
+| :----- | :------- | :-------------------------------------------------------- |
 | `name` | `string` | Filename with extension or just the extension of the file |
 
 #### Returns
@@ -230,4 +230,4 @@ is assumed to be a basic binary file.
 `string`
 
 Mimetype of the file based on the extension. If mimetype cannot be
-    determined, application/octet-stream is returned.
+determined, application/octet-stream is returned.

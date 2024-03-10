@@ -5,12 +5,12 @@
 **`Summary`**
 
 Specifies the text encoding used when converting betweenInclusive a string and a
-    [ByteVector](../classes/ByteVector.md).
+[ByteVector](../classes/ByteVector.md).
 
 **`Remarks`**
 
 This enumeration is used by [fromString](../classes/ByteVector.md#fromstring) and
-    [toString](../classes/ByteVector.md#tostring)
+[toString](../classes/ByteVector.md#tostring)
 
 ## Table of contents
 
@@ -27,58 +27,58 @@ This enumeration is used by [fromString](../classes/ByteVector.md#fromstring) an
 
 ### Hex
 
-• **Hex** = ``5``
+• **Hex** = `5`
 
 **`Summary`**
 
 The string is to be encoded as a hex string for each byte (eg, 0x00, 0x12, 0xAF).
-    Intended to be used for debugging purposes, only.
+Intended to be used for debugging purposes, only.
 
-___
+---
 
 ### Latin1
 
-• **Latin1** = ``0``
+• **Latin1** = `0`
 
 **`Summary`**
 
 The string is to be Latin-1 encoded.
 
-___
+---
 
 ### UTF16
 
-• **UTF16** = ``1``
+• **UTF16** = `1`
 
 **`Summary`**
 
 The string is to be UTF-16 encoded.
 
-___
+---
 
 ### UTF16BE
 
-• **UTF16BE** = ``2``
+• **UTF16BE** = `2`
 
 **`Summary`**
 
 The string is to be UTF-16BE encoded.
 
-___
+---
 
 ### UTF16LE
 
-• **UTF16LE** = ``4``
+• **UTF16LE** = `4`
 
 **`Summary`**
 
 The string is to be UTF-16LE encoded.
 
-___
+---
 
 ### UTF8
 
-• **UTF8** = ``3``
+• **UTF8** = `3`
 
 **`Summary`**
 

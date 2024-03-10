@@ -64,7 +64,7 @@ Gets the GUID that identifies the current instance.
 
 [`UuidWrapper`](UuidWrapper.md)
 
-___
+---
 
 ### objectType
 
@@ -76,7 +76,7 @@ Gets the type of the object for easy comparison.
 
 [`AsfObjectType`](../enums/AsfObjectType.md)
 
-___
+---
 
 ### originalSize
 
@@ -99,16 +99,16 @@ file.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `file` | [`File`](File.md) | File which contains the details of the new instance to create |
-| `position` | `number` | Position in `file` where the object begins |
+| Name       | Type              | Description                                                   |
+| :--------- | :---------------- | :------------------------------------------------------------ |
+| `file`     | [`File`](File.md) | File which contains the details of the new instance to create |
+| `position` | `number`          | Position in `file` where the object begins                    |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### initializeFromGuid
 
@@ -118,15 +118,15 @@ Initializes a new instance with a specified GUID.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                            | Description                       |
+| :----- | :------------------------------ | :-------------------------------- |
 | `guid` | [`UuidWrapper`](UuidWrapper.md) | GUID to use for the new instance. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### render
 
@@ -138,7 +138,7 @@ Renders the current instance as a raw ASF object.
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### renderInternal
 
@@ -149,12 +149,12 @@ Renders the current instance as a raw ASF object containing the specified data.
 **`Remarks`**
 
 Child classes implementing [()](AsfBaseObject.md#render) should render their contents and then
-    send the data through this method to produce the final output.
+send the data through this method to produce the final output.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                          | Description                                                    |
+| :----- | :---------------------------- | :------------------------------------------------------------- |
 | `data` | [`ByteVector`](ByteVector.md) | Data to store in the rendered version of the current instance. |
 
 #### Returns

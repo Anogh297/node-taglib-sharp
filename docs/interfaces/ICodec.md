@@ -32,7 +32,7 @@ Interface that provides basic information common to all media codecs
 
 Gets a text description of the media represented by the current instance.
 
-___
+---
 
 ### durationMilliseconds
 
@@ -44,7 +44,7 @@ Duration of the media in milliseconds represented by the current instance.
 
 Ensure milliseconds is the right way to interpret this field
 
-___
+---
 
 ### mediaTypes
 

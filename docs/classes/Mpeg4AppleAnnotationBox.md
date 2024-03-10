@@ -56,7 +56,7 @@ Gets the MPEG-4 box type of the current instance.
 
 Mpeg4Box.boxType
 
-___
+---
 
 ### data
 
@@ -78,9 +78,9 @@ Sets the data contained in the current instance.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `v` | [`ByteVector`](ByteVector.md) |
+| Name | Type                          |
+| :--- | :---------------------------- |
+| `v`  | [`ByteVector`](ByteVector.md) |
 
 #### Returns
 
@@ -90,7 +90,7 @@ Sets the data contained in the current instance.
 
 Mpeg4Box.data
 
-___
+---
 
 ### dataPosition
 
@@ -106,7 +106,7 @@ Gets the position of the data contained in the current instance, after any box s
 
 Mpeg4Box.dataPosition
 
-___
+---
 
 ### dataSize
 
@@ -122,7 +122,7 @@ Gets the size of the data contained in the current instance, minus the size of a
 
 Mpeg4Box.dataSize
 
-___
+---
 
 ### handlerType
 
@@ -138,7 +138,7 @@ Gets the type of the handler box that applies to the current instance.
 
 Mpeg4Box.handlerType
 
-___
+---
 
 ### hasChildren
 
@@ -154,7 +154,7 @@ Gets whether or not the current instance has children.
 
 Mpeg4Box.hasChildren
 
-___
+---
 
 ### header
 
@@ -170,7 +170,7 @@ Gets the header of the current instance.
 
 Mpeg4Box.header
 
-___
+---
 
 ### size
 
@@ -200,9 +200,9 @@ Mpeg4Box object to add to the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `box` | [`Mpeg4Box`](Mpeg4Box.md) | A |
+| Name  | Type                      | Description |
+| :---- | :------------------------ | :---------- |
+| `box` | [`Mpeg4Box`](Mpeg4Box.md) | A           |
 
 #### Returns
 
@@ -212,7 +212,7 @@ Mpeg4Box object to add to the current instance.
 
 [Mpeg4Box](Mpeg4Box.md).[addChild](Mpeg4Box.md#addchild)
 
-___
+---
 
 ### clearChildren
 
@@ -228,7 +228,7 @@ Removes all children from the current instance.
 
 [Mpeg4Box](Mpeg4Box.md).[clearChildren](Mpeg4Box.md#clearchildren)
 
-___
+---
 
 ### getChild
 
@@ -242,16 +242,16 @@ ByteVector object containing the box type to match.
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type                                       |
+| :----- | :----------------------------------------- |
 | `TBox` | extends [`Mpeg4Box`](Mpeg4Box.md)<`TBox`\> |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `type` | [`ByteVector`](ByteVector.md) | A |
-| `predicate?` | (`b`: `TBox`) => `boolean` | Optional predicate to filter boxes with the provided type. |
+| Name         | Type                          | Description                                                |
+| :----------- | :---------------------------- | :--------------------------------------------------------- |
+| `type`       | [`ByteVector`](ByteVector.md) | A                                                          |
+| `predicate?` | (`b`: `TBox`) => `boolean`    | Optional predicate to filter boxes with the provided type. |
 
 #### Returns
 
@@ -263,7 +263,7 @@ TBox Box containing the matched box, or `undefined` if no match was found.
 
 [Mpeg4Box](Mpeg4Box.md).[getChild](Mpeg4Box.md#getchild)
 
-___
+---
 
 ### getChildRecursively
 
@@ -277,9 +277,9 @@ ByteVector object containing the box type to match.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `type` | [`ByteVector`](ByteVector.md) | A |
+| Name   | Type                          | Description |
+| :----- | :---------------------------- | :---------- |
+| `type` | [`ByteVector`](ByteVector.md) | A           |
 
 #### Returns
 
@@ -291,7 +291,7 @@ Mpeg4Box Matching box, or `undefined` if no matching box was found
 
 [Mpeg4Box](Mpeg4Box.md).[getChildRecursively](Mpeg4Box.md#getchildrecursively)
 
-___
+---
 
 ### getChildren
 
@@ -305,16 +305,16 @@ ByteVector object containing the box type to match.
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type                                       |
+| :----- | :----------------------------------------- |
 | `TBox` | extends [`Mpeg4Box`](Mpeg4Box.md)<`TBox`\> |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `type` | [`ByteVector`](ByteVector.md) | A |
-| `predicate?` | (`b`: `TBox`) => `boolean` | Optional predicate to filter boxes with the provided type. |
+| Name         | Type                          | Description                                                |
+| :----------- | :---------------------------- | :--------------------------------------------------------- |
+| `type`       | [`ByteVector`](ByteVector.md) | A                                                          |
+| `predicate?` | (`b`: `TBox`) => `boolean`    | Optional predicate to filter boxes with the provided type. |
 
 #### Returns
 
@@ -326,7 +326,7 @@ Mpeg4Box[] Array of matching boxes, or `undefined` if no matching boxes was foun
 
 [Mpeg4Box](Mpeg4Box.md).[getChildren](Mpeg4Box.md#getchildren)
 
-___
+---
 
 ### increaseDataPosition
 
@@ -342,8 +342,8 @@ is located after their box specific headers.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                            |
+| :------ | :------- | :------------------------------------- |
 | `value` | `number` | The value to add to the data position. |
 
 #### Returns
@@ -356,7 +356,7 @@ number Data position before the increase.
 
 [Mpeg4Box](Mpeg4Box.md).[increaseDataPosition](Mpeg4Box.md#increasedataposition)
 
-___
+---
 
 ### initializeFromHeader
 
@@ -366,15 +366,15 @@ Initializes a new instance of
 
 **`See`**
 
- - Mpeg4Box with a specified header and handler.
- - Mpeg4BoxHeader object describing the new instance.
+- Mpeg4Box with a specified header and handler.
+- Mpeg4BoxHeader object describing the new instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `header` | [`Mpeg4BoxHeader`](Mpeg4BoxHeader.md) | A |
-| `handlerType?` | [`ByteVector`](ByteVector.md) | Type of the handler box object containing the handler that applies to the new instance, or undefined if no handler applies. |
+| Name           | Type                                  | Description                                                                                                                 |
+| :------------- | :------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------- |
+| `header`       | [`Mpeg4BoxHeader`](Mpeg4BoxHeader.md) | A                                                                                                                           |
+| `handlerType?` | [`ByteVector`](ByteVector.md)         | Type of the handler box object containing the handler that applies to the new instance, or undefined if no handler applies. |
 
 #### Returns
 
@@ -384,7 +384,7 @@ Initializes a new instance of
 
 [Mpeg4Box](Mpeg4Box.md).[initializeFromHeader](Mpeg4Box.md#initializefromheader)
 
-___
+---
 
 ### initializeFromType
 
@@ -394,14 +394,14 @@ Initializes a new instance of
 
 **`See`**
 
- - Mpeg4Box with a specified box type.
- - ByteVector object containing the box type to use for the new instance.
+- Mpeg4Box with a specified box type.
+- ByteVector object containing the box type to use for the new instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `type` | [`ByteVector`](ByteVector.md) | A |
+| Name   | Type                          | Description |
+| :----- | :---------------------------- | :---------- |
+| `type` | [`ByteVector`](ByteVector.md) | A           |
 
 #### Returns
 
@@ -411,7 +411,7 @@ Initializes a new instance of
 
 [Mpeg4Box](Mpeg4Box.md).[initializeFromType](Mpeg4Box.md#initializefromtype)
 
-___
+---
 
 ### loadData
 
@@ -425,9 +425,9 @@ File from which the current instance was read and from which to read the data.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `file` | [`File`](File.md) | The |
+| Name   | Type              | Description |
+| :----- | :---------------- | :---------- |
+| `file` | [`File`](File.md) | The         |
 
 #### Returns
 
@@ -439,7 +439,7 @@ ByteVector Data read from the file.
 
 [Mpeg4Box](Mpeg4Box.md).[loadData](Mpeg4Box.md#loaddata)
 
-___
+---
 
 ### removeChildByBox
 
@@ -449,8 +449,8 @@ Removes a specified box from the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type                      | Description                              |
+| :---- | :------------------------ | :--------------------------------------- |
 | `box` | [`Mpeg4Box`](Mpeg4Box.md) | Box to remove from the current instance. |
 
 #### Returns
@@ -461,7 +461,7 @@ Removes a specified box from the current instance.
 
 [Mpeg4Box](Mpeg4Box.md).[removeChildByBox](Mpeg4Box.md#removechildbybox)
 
-___
+---
 
 ### removeChildByType
 
@@ -471,8 +471,8 @@ Removes all children with a specified box type from the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                          | Description           |
+| :----- | :---------------------------- | :-------------------- |
 | `type` | [`ByteVector`](ByteVector.md) | Type of box to remove |
 
 #### Returns
@@ -483,7 +483,7 @@ Removes all children with a specified box type from the current instance.
 
 [Mpeg4Box](Mpeg4Box.md).[removeChildByType](Mpeg4Box.md#removechildbytype)
 
-___
+---
 
 ### removeChildrenByBox
 
@@ -493,8 +493,8 @@ Removes all specified boxes from the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                        | Description                                              |
+| :------ | :-------------------------- | :------------------------------------------------------- |
 | `boxes` | [`Mpeg4Box`](Mpeg4Box.md)[] | Collection of boxes to remove from the current instance. |
 
 #### Returns
@@ -505,7 +505,7 @@ Removes all specified boxes from the current instance.
 
 [Mpeg4Box](Mpeg4Box.md).[removeChildrenByBox](Mpeg4Box.md#removechildrenbybox)
 
-___
+---
 
 ### fromHeader
 
@@ -516,16 +516,16 @@ handler by reading the contents from a specified file.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `header` | [`Mpeg4BoxHeader`](Mpeg4BoxHeader.md) | A [Mpeg4BoxHeader](Mpeg4BoxHeader.md) object containing the header to use for the new instance. |
-| `handlerType` | [`ByteVector`](ByteVector.md) | Type of the handler box object containing the handler that applies to the new instance, or undefined if no handler applies. |
+| Name          | Type                                  | Description                                                                                                                 |
+| :------------ | :------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------- |
+| `header`      | [`Mpeg4BoxHeader`](Mpeg4BoxHeader.md) | A [Mpeg4BoxHeader](Mpeg4BoxHeader.md) object containing the header to use for the new instance.                             |
+| `handlerType` | [`ByteVector`](ByteVector.md)         | Type of the handler box object containing the handler that applies to the new instance, or undefined if no handler applies. |
 
 #### Returns
 
 [`Mpeg4AppleAnnotationBox`](Mpeg4AppleAnnotationBox.md)
 
-___
+---
 
 ### fromType
 
@@ -535,8 +535,8 @@ Constructs and initializes a new instance of AppleAnnotationBox of specified typ
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                          | Description                                                        |
+| :----- | :---------------------------- | :----------------------------------------------------------------- |
 | `type` | [`ByteVector`](ByteVector.md) | A [ByteVector](ByteVector.md) object containing a 4-byte box type. |
 
 #### Returns

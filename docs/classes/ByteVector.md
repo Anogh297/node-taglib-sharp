@@ -7,10 +7,10 @@ Wrapper around a `Uint8Array` that provides functionality for reading and writin
 **`Remarks`**
 
 Implementation of this class uses a single `Uint8Array` to store bytes. Due to
-    `Uint8Array`s being fixed length, any operation that inserts or removes values into the
-    instance will result in a copy of the internal array being made. If multiple additions will
-    be made, rather than using multiple inserts/adds, the [concatenate](ByteVector.md#concatenate) method
-    is provided to group additions/inserts and therefore improve performance.
+`Uint8Array`s being fixed length, any operation that inserts or removes values into the
+instance will result in a copy of the internal array being made. If multiple additions will
+be made, rather than using multiple inserts/adds, the [concatenate](ByteVector.md#concatenate) method
+is provided to group additions/inserts and therefore improve performance.
 
     The original .NET implementation had an ubiquitous `mid` method that would return a subset
     of the bytes in the current instance. In versions <5 of the node port, `mid` would make a
@@ -106,7 +106,7 @@ Calculates the CRC32 of the current instance.
 
 `number`
 
-___
+---
 
 ### isEmpty
 
@@ -118,7 +118,7 @@ Whether the current instance has 0 bytes stored.
 
 `boolean`
 
-___
+---
 
 ### isReadOnly
 
@@ -131,7 +131,7 @@ will throw.
 
 `boolean`
 
-___
+---
 
 ### isView
 
@@ -143,7 +143,7 @@ Whether the current instance is a 'view' of another byte vector.
 
 `boolean`
 
-___
+---
 
 ### length
 
@@ -167,7 +167,7 @@ Gets iterator for iterating over bytes in the current instance.
 
 `Iterator`<`number`, `any`, `undefined`\>
 
-___
+---
 
 ### addByte
 
@@ -177,15 +177,15 @@ Adds a single byte to the end of the current instance
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description                                                                |
+| :----- | :------- | :------------------------------------------------------------------------- |
 | `byte` | `number` | Value to add to the end of the ByteVector. Must be positive 8-bit integer. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### addByteArray
 
@@ -195,16 +195,16 @@ Adds an array of bytes to the end of the current instance
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `data` | `Uint8Array` | Array of bytes to add to the end of the ByteVector |
-| `length?` | `number` | Number of elements from `data` to copy into the current instance |
+| Name      | Type         | Description                                                      |
+| :-------- | :----------- | :--------------------------------------------------------------- |
+| `data`    | `Uint8Array` | Array of bytes to add to the end of the ByteVector               |
+| `length?` | `number`     | Number of elements from `data` to copy into the current instance |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### addByteVector
 
@@ -214,15 +214,15 @@ Adds a [ByteVector](ByteVector.md) to the end of this ByteVector
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                          | Description                                     |
+| :----- | :---------------------------- | :---------------------------------------------- |
 | `data` | [`ByteVector`](ByteVector.md) | ByteVector to add to the end of this ByteVector |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### clear
 
@@ -238,7 +238,7 @@ This method replaces the internal byte array with a new one.
 
 `void`
 
-___
+---
 
 ### compareTo
 
@@ -248,15 +248,15 @@ Compares the current instance to another byte vector. Returns a numeric result.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                          | Description                                                |
+| :------ | :---------------------------- | :--------------------------------------------------------- |
 | `other` | [`ByteVector`](ByteVector.md) | Other byte vector to compare against the current instance. |
 
 #### Returns
 
 `number`
 
-___
+---
 
 ### containsAt
 
@@ -266,16 +266,16 @@ Determines if `pattern` exists at a certain `offset` in this byte vector.
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `pattern` | [`ByteVector`](ByteVector.md) | `undefined` | ByteVector to search for at in this byte vector |
-| `offset` | `number` | `0` | Position in this byte vector to search for the pattern. If omitted, defaults to `0` |
+| Name      | Type                          | Default value | Description                                                                         |
+| :-------- | :---------------------------- | :------------ | :---------------------------------------------------------------------------------- |
+| `pattern` | [`ByteVector`](ByteVector.md) | `undefined`   | ByteVector to search for at in this byte vector                                     |
+| `offset`  | `number`                      | `0`           | Position in this byte vector to search for the pattern. If omitted, defaults to `0` |
 
 #### Returns
 
 `boolean`
 
-___
+---
 
 ### endsWith
 
@@ -285,15 +285,15 @@ Determines whether this byte vector ends with the provided `pattern`.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type                          | Description                                           |
+| :-------- | :---------------------------- | :---------------------------------------------------- |
 | `pattern` | [`ByteVector`](ByteVector.md) | ByteVector to look for at the end of this byte vector |
 
 #### Returns
 
 `boolean`
 
-___
+---
 
 ### endsWithPartialMatch
 
@@ -305,15 +305,15 @@ fewer bytes.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type                          | Description                                           |
+| :-------- | :---------------------------- | :---------------------------------------------------- |
 | `pattern` | [`ByteVector`](ByteVector.md) | ByteVector to look for at the end of this byte vector |
 
 #### Returns
 
 `number`
 
-___
+---
 
 ### equals
 
@@ -323,15 +323,15 @@ Determines if this instance has identical contents to the `other` instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                          | Description                                             |
+| :------ | :---------------------------- | :------------------------------------------------------ |
 | `other` | [`ByteVector`](ByteVector.md) | Other instance to compare against the current instance. |
 
 #### Returns
 
 `boolean`
 
-___
+---
 
 ### find
 
@@ -341,21 +341,20 @@ Searches this instance for the `pattern`. Returns the index of the first instanc
 of the pattern, or `-1` if it was not found. Providing a `byteAlign` requires the
 pattern to appear at an index that is a multiple of the byteAlign parameter.
 Example: searching "abcd" for "ab" with byteAlign 1 will return 0. Searching "abcd" for
-"ab" with byteAlign 2 will return 1. Searching "00ab" for "ab" with byteAlign 2 will return
-2. Searching "0abc" with byteAlign 2 will return -1.
+"ab" with byteAlign 2 will return 1. Searching "00ab" for "ab" with byteAlign 2 will return 2. Searching "0abc" with byteAlign 2 will return -1.
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `pattern` | [`ByteVector`](ByteVector.md) | `undefined` | Pattern of bytes to search this instance for |
-| `byteAlign` | `number` | `1` | Optional, byte alignment the pattern much align to |
+| Name        | Type                          | Default value | Description                                        |
+| :---------- | :---------------------------- | :------------ | :------------------------------------------------- |
+| `pattern`   | [`ByteVector`](ByteVector.md) | `undefined`   | Pattern of bytes to search this instance for       |
+| `byteAlign` | `number`                      | `1`           | Optional, byte alignment the pattern much align to |
 
 #### Returns
 
 `number`
 
-___
+---
 
 ### get
 
@@ -365,15 +364,15 @@ Gets the byte at the given `index`.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description             |
+| :------ | :------- | :---------------------- |
 | `index` | `number` | Element index to return |
 
 #### Returns
 
 `number`
 
-___
+---
 
 ### indexOf
 
@@ -383,8 +382,8 @@ Gets the index of the first occurrence of the specified value.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description                                 |
+| :----- | :------- | :------------------------------------------ |
 | `item` | `number` | A byte to find within the current instance. |
 
 #### Returns
@@ -392,9 +391,9 @@ Gets the index of the first occurrence of the specified value.
 `number`
 
 An integer containing the first index at which the value was found, or -1 if it was not
-    found
+found
 
-___
+---
 
 ### makeReadOnly
 
@@ -407,7 +406,7 @@ be modified to throw.
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### offsetFind
 
@@ -422,17 +421,17 @@ for "ab" with byteAlign 2 will return 2. Searching "0abc" with byteAlign 2 will 
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `pattern` | [`ByteVector`](ByteVector.md) | Pattern of bytes to search this instance for |
-| `offset` | `number` | Index into the instance to begin searching for `pattern` |
-| `byteAlign?` | `number` | Optional, byte alignment the pattern much align to |
+| Name         | Type                          | Description                                              |
+| :----------- | :---------------------------- | :------------------------------------------------------- |
+| `pattern`    | [`ByteVector`](ByteVector.md) | Pattern of bytes to search this instance for             |
+| `offset`     | `number`                      | Index into the instance to begin searching for `pattern` |
+| `byteAlign?` | `number`                      | Optional, byte alignment the pattern much align to       |
 
 #### Returns
 
 `number`
 
-___
+---
 
 ### rFind
 
@@ -443,21 +442,20 @@ beginning of this instance. Returns the index of the first instance of the patte
 if it was not found. Providing a `byteAlign` requires the pattern to appear at an
 index that is a multiple of the byteAlign parameter.
 Example: searching "abcd" for "ab" with byteAlign 1 will return 0. Searching "abcd" for
-"ab" with byteAlign 2 will return 1. Searching "00ab" for "ab" with byteAlign 2 will return
-2. Searching "0abc" with byteAlign 2 will return -1.
+"ab" with byteAlign 2 will return 1. Searching "00ab" for "ab" with byteAlign 2 will return 2. Searching "0abc" with byteAlign 2 will return -1.
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `pattern` | [`ByteVector`](ByteVector.md) | `undefined` | Pattern of bytes to search this instance for |
-| `byteAlign` | `number` | `1` | Optional, byte alignment the pattern must align to |
+| Name        | Type                          | Default value | Description                                        |
+| :---------- | :---------------------------- | :------------ | :------------------------------------------------- |
+| `pattern`   | [`ByteVector`](ByteVector.md) | `undefined`   | Pattern of bytes to search this instance for       |
+| `byteAlign` | `number`                      | `1`           | Optional, byte alignment the pattern must align to |
 
 #### Returns
 
 `number`
 
-___
+---
 
 ### resize
 
@@ -470,16 +468,16 @@ removed.
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `size` | `number` | `undefined` | Length of the byte vector after resizing. Must be unsigned 32-bit integer |
-| `padding` | `number` | `0x0` | Byte to fill any excess space created after resizing |
+| Name      | Type     | Default value | Description                                                               |
+| :-------- | :------- | :------------ | :------------------------------------------------------------------------ |
+| `size`    | `number` | `undefined`   | Length of the byte vector after resizing. Must be unsigned 32-bit integer |
+| `padding` | `number` | `0x0`         | Byte to fill any excess space created after resizing                      |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### set
 
@@ -489,16 +487,16 @@ Sets the value at a specified index
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | Index to set the value of |
+| Name    | Type     | Description                                                                      |
+| :------ | :------- | :------------------------------------------------------------------------------- |
+| `index` | `number` | Index to set the value of                                                        |
 | `value` | `number` | Value to set at the index. Must be a valid integer betweenInclusive 0x0 and 0xff |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### splice
 
@@ -509,17 +507,17 @@ and/or adding new elements.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `start` | `number` | Index at which to start changing the array. Must be less than the length of the instance |
-| `deleteCount` | `number` | Number of elements in the array to remove from start. If greater than the remaining length of the element, it will be capped at the remaining length |
-| `items?` | [`ByteVector`](ByteVector.md) \| `Uint8Array` \| `number`[] | Elements to add to the array beginning from start. If omitted, the method will only remove elements from the current instance. |
+| Name          | Type                                                        | Description                                                                                                                                          |
+| :------------ | :---------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `start`       | `number`                                                    | Index at which to start changing the array. Must be less than the length of the instance                                                             |
+| `deleteCount` | `number`                                                    | Number of elements in the array to remove from start. If greater than the remaining length of the element, it will be capped at the remaining length |
+| `items?`      | [`ByteVector`](ByteVector.md) \| `Uint8Array` \| `number`[] | Elements to add to the array beginning from start. If omitted, the method will only remove elements from the current instance.                       |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### split
 
@@ -529,11 +527,11 @@ Splits this byte vector into a list of byte vectors using a separator
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `separator` | [`ByteVector`](ByteVector.md) | `undefined` | Object to use to split this byte vector |
-| `byteAlign` | `number` | `1` | Byte align to use when splitting. in order to split when a pattern is encountered, the index at which it is found must be divisible by this value. |
-| `max` | `number` | `0` | Maximum number of objects to return or 0 to not limit the number. If that number is reached, the last value will contain the remainder of the file even if it contains more instances of `separator`. |
+| Name        | Type                          | Default value | Description                                                                                                                                                                                           |
+| :---------- | :---------------------------- | :------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `separator` | [`ByteVector`](ByteVector.md) | `undefined`   | Object to use to split this byte vector                                                                                                                                                               |
+| `byteAlign` | `number`                      | `1`           | Byte align to use when splitting. in order to split when a pattern is encountered, the index at which it is found must be divisible by this value.                                                    |
+| `max`       | `number`                      | `0`           | Maximum number of objects to return or 0 to not limit the number. If that number is reached, the last value will contain the remainder of the file even if it contains more instances of `separator`. |
 
 #### Returns
 
@@ -541,7 +539,7 @@ Splits this byte vector into a list of byte vectors using a separator
 
 ByteVector[] The split contents of the current instance
 
-___
+---
 
 ### startsWith
 
@@ -551,8 +549,8 @@ Checks whether or not a pattern appears at the beginning of the current instance
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type                          | Description                                                             |
+| :-------- | :---------------------------- | :---------------------------------------------------------------------- |
 | `pattern` | [`ByteVector`](ByteVector.md) | ByteVector containing the pattern to check for in the current instance. |
 
 #### Returns
@@ -560,9 +558,9 @@ Checks whether or not a pattern appears at the beginning of the current instance
 `boolean`
 
 `true` if the pattern was found at the beginning of the current instance, `false`
-    otherwise.
+otherwise.
 
-___
+---
 
 ### subarray
 
@@ -572,16 +570,16 @@ Returns a window over the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `startIndex` | `number` | Offset into this instance where the comprehension begins |
-| `length` | `number` | Number of elements from the instance to include. If omitted, defaults to the remainder of the instance |
+| Name         | Type     | Description                                                                                            |
+| :----------- | :------- | :----------------------------------------------------------------------------------------------------- |
+| `startIndex` | `number` | Offset into this instance where the comprehension begins                                               |
+| `length`     | `number` | Number of elements from the instance to include. If omitted, defaults to the remainder of the instance |
 
 #### Returns
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### toBase64String
 
@@ -593,7 +591,7 @@ Returns the current instance as a base64 encoded string.
 
 `string`
 
-___
+---
 
 ### toByteVector
 
@@ -609,7 +607,7 @@ This is a **copy** of the data. Use sparingly.
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### toDouble
 
@@ -624,9 +622,9 @@ Error If there are less than eight bytes in the current instance.
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `mostSignificantByteFirst` | `boolean` | `true` | If `true` the most significant byte appears first (big endian format). |
+| Name                       | Type      | Default value | Description                                                            |
+| :------------------------- | :-------- | :------------ | :--------------------------------------------------------------------- |
+| `mostSignificantByteFirst` | `boolean` | `true`        | If `true` the most significant byte appears first (big endian format). |
 
 #### Returns
 
@@ -634,7 +632,7 @@ Error If there are less than eight bytes in the current instance.
 
 A double value containing the value read from the current instance.
 
-___
+---
 
 ### toFloat
 
@@ -649,9 +647,9 @@ Error If there are less than four bytes in the current instance
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `mostSignificantByteFirst` | `boolean` | `true` | If `true` the most significant byte appears first (big endian format). |
+| Name                       | Type      | Default value | Description                                                            |
+| :------------------------- | :-------- | :------------ | :--------------------------------------------------------------------- |
+| `mostSignificantByteFirst` | `boolean` | `true`        | If `true` the most significant byte appears first (big endian format). |
 
 #### Returns
 
@@ -659,7 +657,7 @@ Error If there are less than four bytes in the current instance
 
 A float value containing the value read from the current instance.
 
-___
+---
 
 ### toInt
 
@@ -670,9 +668,9 @@ instance is less than four bytes, the most significant bytes will be filled with
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `mostSignificantByteFirst` | `boolean` | `true` | If `true` the most significant byte appears first (big endian format) |
+| Name                       | Type      | Default value | Description                                                           |
+| :------------------------- | :-------- | :------------ | :-------------------------------------------------------------------- |
+| `mostSignificantByteFirst` | `boolean` | `true`        | If `true` the most significant byte appears first (big endian format) |
 
 #### Returns
 
@@ -680,7 +678,7 @@ instance is less than four bytes, the most significant bytes will be filled with
 
 A signed integer value containing the value read from the current instance
 
-___
+---
 
 ### toLong
 
@@ -691,18 +689,18 @@ instance is less than eight bytes, the most significant bytes will be filled wit
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `mostSignificantByteFirst` | `boolean` | `true` | If `true` the most significant byte appears first (big endian format) |
+| Name                       | Type      | Default value | Description                                                           |
+| :------------------------- | :-------- | :------------ | :-------------------------------------------------------------------- |
+| `mostSignificantByteFirst` | `boolean` | `true`        | If `true` the most significant byte appears first (big endian format) |
 
 #### Returns
 
 `bigint`
 
 A signed long value containing the value read from the current instance,
-    represented as a BigInt due to JavaScript's 52-bit integer limitation.
+represented as a BigInt due to JavaScript's 52-bit integer limitation.
 
-___
+---
 
 ### toShort
 
@@ -713,9 +711,9 @@ instance is less than two bytes, the most significant bytes will be filled with 
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `mostSignificantByteFirst` | `boolean` | `true` | If `true` the most significant byte appears first (big endian format) |
+| Name                       | Type      | Default value | Description                                                           |
+| :------------------------- | :-------- | :------------ | :-------------------------------------------------------------------- |
+| `mostSignificantByteFirst` | `boolean` | `true`        | If `true` the most significant byte appears first (big endian format) |
 
 #### Returns
 
@@ -723,7 +721,7 @@ instance is less than two bytes, the most significant bytes will be filled with 
 
 A signed short value containing the value read from the current instance
 
-___
+---
 
 ### toString
 
@@ -733,8 +731,8 @@ Converts a portion of the current instance to a string using a specified encodin
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                                   | Description                                                       |
+| :----- | :------------------------------------- | :---------------------------------------------------------------- |
 | `type` | [`StringType`](../enums/StringType.md) | Value indicating the encoding to use when converting to a string. |
 
 #### Returns
@@ -743,7 +741,7 @@ Converts a portion of the current instance to a string using a specified encodin
 
 String containing the converted bytes
 
-___
+---
 
 ### toStrings
 
@@ -755,10 +753,10 @@ specified number of items.
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `type` | [`StringType`](../enums/StringType.md) | `undefined` | A [StringType](../enums/StringType.md) value indicating the encoding to use when converting |
-| `count` | `number` | `Number.MAX_SAFE_INTEGER` | Value specifying a limit to the number of strings to create. Once the limit has been reached, the last string will be filled by the remainder of the data |
+| Name    | Type                                   | Default value             | Description                                                                                                                                               |
+| :------ | :------------------------------------- | :------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `type`  | [`StringType`](../enums/StringType.md) | `undefined`               | A [StringType](../enums/StringType.md) value indicating the encoding to use when converting                                                               |
+| `count` | `number`                               | `Number.MAX_SAFE_INTEGER` | Value specifying a limit to the number of strings to create. Once the limit has been reached, the last string will be filled by the remainder of the data |
 
 #### Returns
 
@@ -766,7 +764,7 @@ specified number of items.
 
 Array of strings containing the converted text.
 
-___
+---
 
 ### toUint
 
@@ -777,9 +775,9 @@ instance is less than four bytes, the most significant bytes will be filled with
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `mostSignificantByteFirst` | `boolean` | `true` | If `true` the most significant byte appears first (big endian format) |
+| Name                       | Type      | Default value | Description                                                           |
+| :------------------------- | :-------- | :------------ | :-------------------------------------------------------------------- |
+| `mostSignificantByteFirst` | `boolean` | `true`        | If `true` the most significant byte appears first (big endian format) |
 
 #### Returns
 
@@ -787,7 +785,7 @@ instance is less than four bytes, the most significant bytes will be filled with
 
 An unsigned integer value containing the value read from the current instance
 
-___
+---
 
 ### toUlong
 
@@ -798,18 +796,18 @@ instance is less than eight bytes, the most significant bytes will be filled wit
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `mostSignificantByteFirst` | `boolean` | `true` | If `true` the most significant byte appears first (big endian format) |
+| Name                       | Type      | Default value | Description                                                           |
+| :------------------------- | :-------- | :------------ | :-------------------------------------------------------------------- |
+| `mostSignificantByteFirst` | `boolean` | `true`        | If `true` the most significant byte appears first (big endian format) |
 
 #### Returns
 
 `bigint`
 
 An unsigned short value containing the value read from the current instance,
-    represented as a BigInt due to JavaScript's 32-bit integer limitation
+represented as a BigInt due to JavaScript's 32-bit integer limitation
 
-___
+---
 
 ### toUshort
 
@@ -820,9 +818,9 @@ instance is less than two bytes, the most significant bytes will be filled with 
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `mostSignificantByteFirst` | `boolean` | `true` | If `true` the most significant byte appears first (big endian format) |
+| Name                       | Type      | Default value | Description                                                           |
+| :------------------------- | :-------- | :------------ | :-------------------------------------------------------------------- |
+| `mostSignificantByteFirst` | `boolean` | `true`        | If `true` the most significant byte appears first (big endian format) |
 
 #### Returns
 
@@ -830,7 +828,7 @@ instance is less than two bytes, the most significant bytes will be filled with 
 
 An unsigned short value containing the value read from the current instance
 
-___
+---
 
 ### compare
 
@@ -840,21 +838,21 @@ Compares two byte vectors. Returns a numeric value
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`ByteVector`](ByteVector.md) | Byte vector to compare against `b` |
-| `b` | [`ByteVector`](ByteVector.md) | Byte vector to compare against `a` |
+| Name | Type                          | Description                        |
+| :--- | :---------------------------- | :--------------------------------- |
+| `a`  | [`ByteVector`](ByteVector.md) | Byte vector to compare against `b` |
+| `b`  | [`ByteVector`](ByteVector.md) | Byte vector to compare against `a` |
 
 #### Returns
 
 `number`
 
 `0` if the two vectors are the same. Any other value indicates the two are
-    different. If the two vectors differ by length, this will be the length of `a` minus the
-    length of `b`. If the lengths are the same it will be the difference between the first
-    element that differs.
+different. If the two vectors differ by length, this will be the length of `a` minus the
+length of `b`. If the lengths are the same it will be the difference between the first
+element that differs.
 
-___
+---
 
 ### concatenate
 
@@ -867,8 +865,8 @@ vector being copied for each call.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name         | Type                                                          | Description                                                                                                |
+| :----------- | :------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------- |
 | `...vectors` | (`number` \| [`ByteVector`](ByteVector.md) \| `Uint8Array`)[] | ByteVectors, byte arrays, or straight bytes to concatenate together into a new [ByteVector](ByteVector.md) |
 
 #### Returns
@@ -876,9 +874,9 @@ vector being copied for each call.
 [`ByteVector`](ByteVector.md)
 
 Single byte vector with the contents of the byte vectors in `vectors` concatenated
-    together
+together
 
-___
+---
 
 ### empty
 
@@ -890,7 +888,7 @@ Creates an empty [ByteVector](ByteVector.md)
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### equals
 
@@ -901,16 +899,16 @@ otherwise
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `first` | [`ByteVector`](ByteVector.md) | ByteVector to compare with `second` |
-| `second` | [`ByteVector`](ByteVector.md) | ByteVector to compare with `first` |
+| Name     | Type                          | Description                         |
+| :------- | :---------------------------- | :---------------------------------- |
+| `first`  | [`ByteVector`](ByteVector.md) | ByteVector to compare with `second` |
+| `second` | [`ByteVector`](ByteVector.md) | ByteVector to compare with `first`  |
 
 #### Returns
 
 `boolean`
 
-___
+---
 
 ### fromBase64String
 
@@ -920,15 +918,15 @@ Creates a [ByteVector](ByteVector.md) from a base64 string.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                                 |
+| :---- | :------- | :------------------------------------------ |
 | `str` | `string` | Base64 string to convert into a byte vector |
 
 #### Returns
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### fromByte
 
@@ -938,15 +936,15 @@ Creates a 1 byte [ByteVector](ByteVector.md) with an unsigned 8-bit integer as t
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                |
+| :------ | :------- | :----------------------------------------- |
 | `value` | `number` | Unsigned 8-bit integer to use as the data. |
 
 #### Returns
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### fromByteArray
 
@@ -956,16 +954,16 @@ Creates a [ByteVector](ByteVector.md) from a `Uint8Array` or `Buffer`
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `bytes` | `Uint8Array` \| `Buffer` \| `number`[] | `undefined` | Uint8Array of the bytes to put in the ByteVector |
-| `length` | `number` | `bytes.length` | Optionally, number of bytes to read. If this is not provided, it will default to the full length of `bytes`. If it is less than the length of `bytes`, `bytes` will be copied into the [ByteVector](ByteVector.md). |
+| Name     | Type                                   | Default value  | Description                                                                                                                                                                                                         |
+| :------- | :------------------------------------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `bytes`  | `Uint8Array` \| `Buffer` \| `number`[] | `undefined`    | Uint8Array of the bytes to put in the ByteVector                                                                                                                                                                    |
+| `length` | `number`                               | `bytes.length` | Optionally, number of bytes to read. If this is not provided, it will default to the full length of `bytes`. If it is less than the length of `bytes`, `bytes` will be copied into the [ByteVector](ByteVector.md). |
 
 #### Returns
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### fromFileAbstraction
 
@@ -975,15 +973,15 @@ Creates a new instance by reading in the contents of a specified file abstractio
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name          | Type                                                    | Description              |
+| :------------ | :------------------------------------------------------ | :----------------------- |
 | `abstraction` | [`IFileAbstraction`](../interfaces/IFileAbstraction.md) | File abstraction to read |
 
 #### Returns
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### fromInt
 
@@ -993,16 +991,16 @@ Creates a 4 byte [ByteVector](ByteVector.md) with a signed 32-bit integer as the
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `value` | `number` | `undefined` | Signed 32-bit integer to use as the data. |
-| `isBigEndian` | `boolean` | `true` | If `true`, `value` will be stored in big endian format. If `false`, `value` will be stored in little endian format |
+| Name          | Type      | Default value | Description                                                                                                        |
+| :------------ | :-------- | :------------ | :----------------------------------------------------------------------------------------------------------------- |
+| `value`       | `number`  | `undefined`   | Signed 32-bit integer to use as the data.                                                                          |
+| `isBigEndian` | `boolean` | `true`        | If `true`, `value` will be stored in big endian format. If `false`, `value` will be stored in little endian format |
 
 #### Returns
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### fromInternalStream
 
@@ -1013,15 +1011,15 @@ method reads from the current offset of the stream, not the beginning of the str
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                                  | Description                             |
+| :------- | :------------------------------------ | :-------------------------------------- |
 | `stream` | [`IStream`](../interfaces/IStream.md) | TagLibSharp-node internal stream object |
 
 #### Returns
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### fromLong
 
@@ -1031,16 +1029,16 @@ Creates an 8 byte [ByteVector](ByteVector.md) with a signed 64-bit integer as th
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `value` | `number` \| `bigint` | `undefined` | Signed 64-bit integer to use as the data. If using a `bigint`, it must fit within 8 bytes. If using a `number`, it must be a safe integer. |
-| `isBigEndian` | `boolean` | `true` | If `true`, `value` will be stored in big endian format. If `false`, `value` will be stored in little endian format |
+| Name          | Type                 | Default value | Description                                                                                                                                |
+| :------------ | :------------------- | :------------ | :----------------------------------------------------------------------------------------------------------------------------------------- |
+| `value`       | `number` \| `bigint` | `undefined`   | Signed 64-bit integer to use as the data. If using a `bigint`, it must fit within 8 bytes. If using a `number`, it must be a safe integer. |
+| `isBigEndian` | `boolean`            | `true`        | If `true`, `value` will be stored in big endian format. If `false`, `value` will be stored in little endian format                         |
 
 #### Returns
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### fromPath
 
@@ -1050,15 +1048,15 @@ Creates a [ByteVector](ByteVector.md) using the contents of a file as the data
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description                                 |
+| :----- | :------- | :------------------------------------------ |
 | `path` | `string` | Path to the file to store in the ByteVector |
 
 #### Returns
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### fromShort
 
@@ -1068,16 +1066,16 @@ Creates a 2 byte [ByteVector](ByteVector.md) with a signed 16-bit integer as the
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `value` | `number` | `undefined` | Signed 16-bit integer to use as the data. |
-| `isBigEndian` | `boolean` | `true` | If `true`, `value` will be stored in big endian format. If `false`, `value` will be stored in little endian format |
+| Name          | Type      | Default value | Description                                                                                                        |
+| :------------ | :-------- | :------------ | :----------------------------------------------------------------------------------------------------------------- |
+| `value`       | `number`  | `undefined`   | Signed 16-bit integer to use as the data.                                                                          |
+| `isBigEndian` | `boolean` | `true`        | If `true`, `value` will be stored in big endian format. If `false`, `value` will be stored in little endian format |
 
 #### Returns
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### fromSize
 
@@ -1087,16 +1085,16 @@ Creates a [ByteVector](ByteVector.md) of a given length with a given value for a
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `size` | `number` | `undefined` | Length of the ByteVector. Must be a positive safe integer |
-| `fill` | `number` | `0x0` | Byte value to initialize all elements to. Must be a positive 8-bit integer |
+| Name   | Type     | Default value | Description                                                                |
+| :----- | :------- | :------------ | :------------------------------------------------------------------------- |
+| `size` | `number` | `undefined`   | Length of the ByteVector. Must be a positive safe integer                  |
+| `fill` | `number` | `0x0`         | Byte value to initialize all elements to. Must be a positive 8-bit integer |
 
 #### Returns
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### fromStream
 
@@ -1107,15 +1105,15 @@ to the end before the ByteVector is returned.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name         | Type             | Description                                    |
+| :----------- | :--------------- | :--------------------------------------------- |
 | `readStream` | `ReadableStream` | Readable stream that will be read in entirety. |
 
 #### Returns
 
 `Promise`<[`ByteVector`](ByteVector.md)\>
 
-___
+---
 
 ### fromString
 
@@ -1125,17 +1123,17 @@ Creates [ByteVector](ByteVector.md) with the byte representation of a string as 
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `text` | `string` | `undefined` | String to store in the ByteVector |
-| `type` | [`StringType`](../enums/StringType.md) | `undefined` | StringType to use to encode the string. If [UTF16](../enums/StringType.md#utf16) is used, the string will be encoded as UTF16-LE. |
-| `length` | `number` | `Number.MAX_SAFE_INTEGER` | Number of characters from the string to store in the ByteVector. Must be a positive 32-bit integer. |
+| Name     | Type                                   | Default value             | Description                                                                                                                       |
+| :------- | :------------------------------------- | :------------------------ | :-------------------------------------------------------------------------------------------------------------------------------- |
+| `text`   | `string`                               | `undefined`               | String to store in the ByteVector                                                                                                 |
+| `type`   | [`StringType`](../enums/StringType.md) | `undefined`               | StringType to use to encode the string. If [UTF16](../enums/StringType.md#utf16) is used, the string will be encoded as UTF16-LE. |
+| `length` | `number`                               | `Number.MAX_SAFE_INTEGER` | Number of characters from the string to store in the ByteVector. Must be a positive 32-bit integer.                               |
 
 #### Returns
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### fromUint
 
@@ -1145,16 +1143,16 @@ Creates a 4 byte [ByteVector](ByteVector.md) with a positive 32-bit integer as t
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `value` | `number` | `undefined` | Positive 32-bit integer to use as the data |
-| `isBigEndian` | `boolean` | `true` | If `true`, `value` will be stored in big endian format. If `false`, `value` will be stored in little endian format |
+| Name          | Type      | Default value | Description                                                                                                        |
+| :------------ | :-------- | :------------ | :----------------------------------------------------------------------------------------------------------------- |
+| `value`       | `number`  | `undefined`   | Positive 32-bit integer to use as the data                                                                         |
+| `isBigEndian` | `boolean` | `true`        | If `true`, `value` will be stored in big endian format. If `false`, `value` will be stored in little endian format |
 
 #### Returns
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### fromUlong
 
@@ -1164,16 +1162,16 @@ Creates an 8 byte [ByteVector](ByteVector.md) with a positive 64-bit integer as 
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `value` | `number` \| `bigint` | `undefined` | Positive 64-bit integer to use as the data. If using a `bigint` it must fit within 8 bytes. |
-| `isBigEndian` | `boolean` | `true` | If `true`, `value` will be stored in big endian format. If `false`, `value` will be stored in little endian format |
+| Name          | Type                 | Default value | Description                                                                                                        |
+| :------------ | :------------------- | :------------ | :----------------------------------------------------------------------------------------------------------------- |
+| `value`       | `number` \| `bigint` | `undefined`   | Positive 64-bit integer to use as the data. If using a `bigint` it must fit within 8 bytes.                        |
+| `isBigEndian` | `boolean`            | `true`        | If `true`, `value` will be stored in big endian format. If `false`, `value` will be stored in little endian format |
 
 #### Returns
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### fromUshort
 
@@ -1183,16 +1181,16 @@ Creates a 2 byte [ByteVector](ByteVector.md) with a positive 16-bit integer as t
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `value` | `number` | `undefined` | Positive 16-bit integer to use as the data. |
-| `isBigEndian` | `boolean` | `true` | If `true`, `value` will be stored in big endian format. If `false`, `value` will be stored in little endian format |
+| Name          | Type      | Default value | Description                                                                                                        |
+| :------------ | :-------- | :------------ | :----------------------------------------------------------------------------------------------------------------- |
+| `value`       | `number`  | `undefined`   | Positive 16-bit integer to use as the data.                                                                        |
+| `isBigEndian` | `boolean` | `true`        | If `true`, `value` will be stored in big endian format. If `false`, `value` will be stored in little endian format |
 
 #### Returns
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### getTextDelimiter
 
@@ -1202,8 +1200,8 @@ Gets the appropriate length null-byte text delimiter for the specified `type`.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                                   | Description                      |
+| :----- | :------------------------------------- | :------------------------------- |
 | `type` | [`StringType`](../enums/StringType.md) | String type to get delimiter for |
 
 #### Returns

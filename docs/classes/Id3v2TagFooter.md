@@ -13,7 +13,7 @@ to disk.
 
 ### Properties
 
-- [FILE\_IDENTIFIER](Id3v2TagFooter.md#file_identifier)
+- [FILE_IDENTIFIER](Id3v2TagFooter.md#file_identifier)
 
 ### Accessors
 
@@ -37,9 +37,9 @@ to disk.
 
 ## Properties
 
-### FILE\_IDENTIFIER
+### FILE_IDENTIFIER
 
-▪ `Static` `Readonly` **FILE\_IDENTIFIER**: [`ByteVector`](ByteVector.md)
+▪ `Static` `Readonly` **FILE_IDENTIFIER**: [`ByteVector`](ByteVector.md)
 
 Identifier used to recognize an ID3v2 footer.
 
@@ -56,7 +56,7 @@ and footer.
 
 `number`
 
-___
+---
 
 ### flags
 
@@ -74,15 +74,15 @@ Sets the flags applied to the current instance.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                                                     | Description                                                                                                                          |
+| :------ | :------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------- |
 | `value` | [`Id3v2TagHeaderFlags`](../enums/Id3v2TagHeaderFlags.md) | Bitwise combined [Id3v2TagHeaderFlags](../enums/Id3v2TagHeaderFlags.md) value containing the flags to apply to the current instance. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### majorVersion
 
@@ -102,15 +102,15 @@ tag.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                                     |
+| :------ | :------- | :------------------------------------------------------------------------------------------------------------------------------ |
 | `value` | `number` | ID3v2 version if tag described by the current instance. Footers are only supported with version 4, so this value can only be 4. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### revisionNumber
 
@@ -131,15 +131,15 @@ node-taglib-sharp. Some software may refuse to read tags with a non-zero value.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                |
+| :------ | :------- | :--------------------------------------------------------------------------------------------------------- |
 | `value` | `number` | Version revision number of the tag represented by the current instance. Must be an 8-bit unsigned integer. |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### tagSize
 
@@ -159,8 +159,8 @@ footer. NOTE THIS MUST BE AN 28-BIT UNSIGNED INTEGER.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                  |
+| :------ | :------- | :----------------------------------------------------------- |
 | `value` | `number` | Size of the tag in bytes. Must be an unsigned 28-bit integer |
 
 #### Returns
@@ -179,7 +179,7 @@ Renders the current instance as a raw byte vector.
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### fromData
 
@@ -189,15 +189,15 @@ Constructs and initializes a new instance by reading it from raw footer data.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                          | Description                         |
+| :----- | :---------------------------- | :---------------------------------- |
 | `data` | [`ByteVector`](ByteVector.md) | Raw data to build the instance from |
 
 #### Returns
 
 [`Id3v2TagFooter`](Id3v2TagFooter.md)
 
-___
+---
 
 ### fromHeader
 
@@ -208,8 +208,8 @@ same tag.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                                  | Description                              |
+| :------- | :------------------------------------ | :--------------------------------------- |
 | `header` | [`Id3v2TagHeader`](Id3v2TagHeader.md) | Header from which to base the new footer |
 
 #### Returns

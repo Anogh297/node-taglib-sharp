@@ -21,7 +21,7 @@ https://docs.microsoft.com/en-us/windows/win32/api/wingdi/ns-wingdi-bitmapinfohe
 
 ### Properties
 
-- [FOURCC\_CODES](RiffBitmapInfoHeader.md#fourcc_codes)
+- [FOURCC_CODES](RiffBitmapInfoHeader.md#fourcc_codes)
 
 ### Accessors
 
@@ -50,28 +50,28 @@ position in the provided [ByteVector](ByteVector.md).
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `data` | [`ByteVector`](ByteVector.md) | ByteVector containing the raw data structure |
-| `offset` | `number` | Index into `data` where the raw bitmap info header begins. Must be a positive, 32-bit integer. |
+| Name     | Type                          | Description                                                                                    |
+| :------- | :---------------------------- | :--------------------------------------------------------------------------------------------- |
+| `data`   | [`ByteVector`](ByteVector.md) | ByteVector containing the raw data structure                                                   |
+| `offset` | `number`                      | Index into `data` where the raw bitmap info header begins. Must be a positive, 32-bit integer. |
 
 ## Properties
 
-### FOURCC\_CODES
+### FOURCC_CODES
 
-▪ `Static` `Readonly` **FOURCC\_CODES**: `Map`<`number`, `string`\>
+▪ `Static` `Readonly` **FOURCC_CODES**: `Map`<`number`, `string`\>
 
 List of well known FOURCC codes and what they correspond to.
 
 **`Remarks`**
 
 This list was cobbled together using
-    * The original .NET source
-    * https://omiod.com/codec/list.php
-    * https://www.fourcc.org/
-    * http://abcavi.kibi.ru/fourcc.php
-    If any FOURCCs are missing or wrong, submit a PR and include a link to some source saying
-    this FOURCC exists.
+_ The original .NET source
+_ https://omiod.com/codec/list.php
+_ https://www.fourcc.org/
+_ http://abcavi.kibi.ru/fourcc.php
+If any FOURCCs are missing or wrong, submit a PR and include a link to some source saying
+this FOURCC exists.
 
 ## Accessors
 
@@ -87,7 +87,7 @@ uncompressed image, after the image has been decoded.
 
 `number`
 
-___
+---
 
 ### colorsUsed
 
@@ -99,7 +99,7 @@ Gets the number of color indices in the color table that are actually used by th
 
 `number`
 
-___
+---
 
 ### compressionId
 
@@ -110,13 +110,13 @@ Gets the compression ID for the image.
 **`Remarks`**
 
 For compressed video and YUV formats, this is a FOURCC code, specified as a DWORD in
-    little-endian order. For more information, see
-    [https://docs.microsoft.com/en-us/windows/win32/directshow/fourcc-codes](https://docs.microsoft.com/en-us/windows/win32/directshow/fourcc-codes) and
-    [https://www.fourcc.org/fourcc.php](https://www.fourcc.org/fourcc.php). For uncompressed RGB formats, the following
-    values are possible:
-    * `BI_RGB` = `0x00000000` => Uncompressed RGB
-    * `BI_BITFIELDS` = `0x00000003` => Uncompressed RGB with color masks, valid for 16 and
-      32 bpp bitmaps.
+little-endian order. For more information, see
+[https://docs.microsoft.com/en-us/windows/win32/directshow/fourcc-codes](https://docs.microsoft.com/en-us/windows/win32/directshow/fourcc-codes) and
+[https://www.fourcc.org/fourcc.php](https://www.fourcc.org/fourcc.php). For uncompressed RGB formats, the following
+values are possible:
+_ `BI_RGB` = `0x00000000` => Uncompressed RGB
+_ `BI_BITFIELDS` = `0x00000003` => Uncompressed RGB with color masks, valid for 16 and
+32 bpp bitmaps.
 
     [description](RiffBitmapInfoHeader.md#description) makes a best-guess attempt to determine the name of the compression
     codec used.
@@ -125,7 +125,7 @@ For compressed video and YUV formats, this is a FOURCC code, specified as a DWOR
 
 `number`
 
-___
+---
 
 ### description
 
@@ -141,7 +141,7 @@ Gets a text description of the media represented by the current instance.
 
 [IVideoCodec](../interfaces/IVideoCodec.md).[description](../interfaces/IVideoCodec.md#description)
 
-___
+---
 
 ### durationMilliseconds
 
@@ -161,7 +161,7 @@ The duration is not known from the video codec in a RIFF format file.
 
 [IVideoCodec](../interfaces/IVideoCodec.md).[durationMilliseconds](../interfaces/IVideoCodec.md#durationmilliseconds)
 
-___
+---
 
 ### imageSize
 
@@ -173,7 +173,7 @@ Gets the size, in bytes, of the image. This can be set to 0 for uncompressed RGB
 
 `number`
 
-___
+---
 
 ### importantColors
 
@@ -186,7 +186,7 @@ this value is `0`, all colors are important.
 
 `number`
 
-___
+---
 
 ### mediaTypes
 
@@ -202,7 +202,7 @@ Types of media represented by the current instance, bitwise combined.
 
 [IVideoCodec](../interfaces/IVideoCodec.md).[mediaTypes](../interfaces/IVideoCodec.md#mediatypes)
 
-___
+---
 
 ### planes
 
@@ -214,7 +214,7 @@ Gets the number of planes in the image. This value is pretty much universally se
 
 `number`
 
-___
+---
 
 ### videoHeight
 
@@ -230,7 +230,7 @@ Height of the video in pixels represented by the current instance.
 
 [IVideoCodec](../interfaces/IVideoCodec.md).[videoHeight](../interfaces/IVideoCodec.md#videoheight)
 
-___
+---
 
 ### videoWidth
 
@@ -246,7 +246,7 @@ Width of the video in pixels represented by the current instance.
 
 [IVideoCodec](../interfaces/IVideoCodec.md).[videoWidth](../interfaces/IVideoCodec.md#videowidth)
 
-___
+---
 
 ### xPixelsPerMeter
 
@@ -258,7 +258,7 @@ Gets the horizontal resolution, in pixels per meter, of the target device for th
 
 `number`
 
-___
+---
 
 ### yPixelsPerMeter
 

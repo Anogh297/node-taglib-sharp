@@ -1,55 +1,55 @@
 {
-  "name": "node-taglib-sharp",
-  "description": "Read and write audio/video/picture tags using a similar interface to TagLib#",
-  "version": "5.2.3",
-  "license": "LGPL-2.1-or-later",
-  "author": "Ben Russell <benrr101@outlook.com> (https://github.com/benrr101)",
-  "repository": "github:benrr101/node-taglib-sharp",
-  "bugs": "https://github.com/benrr101/node-taglib-sharp/issues",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "tsc -p ./",
-    "generate-docs": "typedoc --tsconfig tsconfig.json",
-    "lint": "eslint -c .eslintrc.js --ext .ts ./src",
-    "madge": "node node_modules/madge/bin/cli.js --warning --circular --extensions ts ./",
-    "publish-coverage": "nyc report --reporter=text-lcov | coveralls",
-    "test-unit": "mocha test-unit --ui bdd",
-    "test-integration": "mocha test-integration --ui bdd",
-    "test-unit-with-coverage": "nyc mocha test-unit --ui bdd"
-  },
-  "engines": {
-    "node": ">=12.16.1"
-  },
-  "dependencies": {
-    "iconv-lite": "^0.6.3",
-    "os-locale": "^4.0.0",
-    "uuid": "^8.3.2"
-  },
-  "devDependencies": {
-    "@istanbuljs/nyc-config-typescript": "^1.0.2",
-    "@testdeck/mocha": "^0.3.3",
-    "@types/chai": "^4.3.0",
-    "@types/chai-as-promised": "^7.1.0",
-    "@types/stream-buffers": "^3.0.2",
-    "@types/uuid": "^8.3.4",
-    "@typescript-eslint/eslint-plugin": "^5.15.0",
-    "@typescript-eslint/parser": "^5.15.0",
-    "chai": "^4.3.6",
-    "chai-as-promised": "^7.1.1",
-    "coveralls": "^3.1.1",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-jsdoc": "^38.0.4",
-    "eslint-plugin-prefer-arrow": "^1.2.3",
-    "madge": "^4.0.1",
-    "mocha": "^10.2.0",
-    "nyc": "^15.1.0",
-    "source-map-support": "^0.5.16",
-    "stream-buffers": "^3.0.2",
-    "ts-node": "^10.7.0",
-    "typedoc": "github:benrr101/typedoc#dont-copy-remarks",
-    "typedoc-plugin-markdown": "^3.14.0",
-    "typemoq": "^2.1.0",
-    "typescript": "^4.5.5"
-  }
+	"name": "node-taglib-sharp",
+	"description": "Read and write audio/video/picture tags using a similar interface to TagLib#",
+	"version": "5.2.3",
+	"license": "LGPL-2.1-or-later",
+	"author": "Ben Russell <benrr101@outlook.com> (https://github.com/benrr101)",
+	"repository": "github:benrr101/node-taglib-sharp",
+	"bugs": "https://github.com/benrr101/node-taglib-sharp/issues",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "tsc -p ./",
+		"generate-docs": "typedoc --tsconfig tsconfig.json",
+		"lint": "eslint -c .eslintrc.js --ext .ts ./src",
+		"madge": "node node_modules/madge/bin/cli.js --warning --circular --extensions ts ./",
+		"publish-coverage": "nyc report --reporter=text-lcov | coveralls",
+		"test-unit": "mocha test-unit --ui bdd",
+		"test-integration": "mocha test-integration --ui bdd",
+		"test-unit-with-coverage": "nyc mocha test-unit --ui bdd"
+	},
+	"engines": {
+		"node": ">=12.16.1"
+	},
+	"dependencies": {
+		"iconv-lite": "^0.6.3",
+		"os-locale": "^4.0.0",
+		"uuid": "^8.3.2"
+	},
+	"devDependencies": {
+		"@istanbuljs/nyc-config-typescript": "^1.0.2",
+		"@testdeck/mocha": "^0.3.3",
+		"@types/chai": "^4.3.0",
+		"@types/chai-as-promised": "^7.1.0",
+		"@types/stream-buffers": "^3.0.2",
+		"@types/uuid": "^8.3.4",
+		"@typescript-eslint/eslint-plugin": "^5.15.0",
+		"@typescript-eslint/parser": "^5.15.0",
+		"chai": "^4.3.6",
+		"chai-as-promised": "^7.1.1",
+		"coveralls": "^3.1.1",
+		"eslint-plugin-import": "^2.25.4",
+		"eslint-plugin-jsdoc": "^38.0.4",
+		"eslint-plugin-prefer-arrow": "^1.2.3",
+		"madge": "^4.0.1",
+		"mocha": "^10.2.0",
+		"nyc": "^15.1.0",
+		"source-map-support": "^0.5.16",
+		"stream-buffers": "^3.0.2",
+		"ts-node": "^10.7.0",
+		"typedoc": "github:benrr101/typedoc#dont-copy-remarks",
+		"typedoc-plugin-markdown": "^3.14.0",
+		"typemoq": "^2.1.0",
+		"typescript": "^4.5.5"
+	}
 }

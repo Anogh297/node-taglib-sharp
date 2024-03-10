@@ -34,8 +34,8 @@ audio channel.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type                                                                                     | Description                                             |
+| :-------- | :--------------------------------------------------------------------------------------- | :------------------------------------------------------ |
 | `channel` | [`Id3v2RelativeVolumeFrameChannelType`](../enums/Id3v2RelativeVolumeFrameChannelType.md) | Channel that the relative volume information applies to |
 
 ## Accessors
@@ -50,7 +50,7 @@ Gets the channel that the current instance applies to.
 
 [`Id3v2RelativeVolumeFrameChannelType`](../enums/Id3v2RelativeVolumeFrameChannelType.md)
 
-___
+---
 
 ### isSet
 
@@ -62,7 +62,7 @@ Gets whether the current instance actually contains a relative volume adjustment
 
 `boolean`
 
-___
+---
 
 ### peakBits
 
@@ -80,15 +80,15 @@ Number of bits used to express the peak volume.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                        |
+| :------ | :------- | :--------------------------------------------------------------------------------- |
 | `value` | `number` | Bits used to express the peak volume. Must be an integer betweenInclusive 1 and 64 |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### peakVolume
 
@@ -110,15 +110,15 @@ number of bits ([peakBits](Id3v2RelativeVolumeFrameChannelData.md#peakbits)).
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                                                                                          |
+| :------ | :------- | :------------------------------------------------------------------------------------------------------------------- |
 | `value` | `bigint` | Peak volume value. Must fit in the number of bits set in [peakBits](Id3v2RelativeVolumeFrameChannelData.md#peakbits) |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### volumeAdjustment
 
@@ -137,8 +137,8 @@ betweenInclusive -64 and 64. Don't worry about the math, we'll do it for you.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                                               |
+| :------ | :------- | :-------------------------------------------------------- |
 | `value` | `number` | Volume adjustment. Must be between -64 and 64, inclusive. |
 
 #### Returns
@@ -157,7 +157,7 @@ Generates a raw byte representation of the current instance.
 
 [`ByteVector`](ByteVector.md)
 
-___
+---
 
 ### fromData
 
@@ -167,8 +167,8 @@ Constructs a new instance from the raw bytes of channel data.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                          | Description                                     |
+| :------ | :---------------------------- | :---------------------------------------------- |
 | `bytes` | [`ByteVector`](ByteVector.md) | Raw bytes that contain the channel data object. |
 
 #### Returns

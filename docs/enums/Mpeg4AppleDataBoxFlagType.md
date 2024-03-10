@@ -19,46 +19,46 @@ Specifies the type of data contained in a box.
 
 ### ContainsBmpData
 
-• **ContainsBmpData** = ``27``
+• **ContainsBmpData** = `27`
 
 The box contains a raw BMP image.
 
-___
+---
 
 ### ContainsData
 
-• **ContainsData** = ``0``
+• **ContainsData** = `0`
 
 The box contains binary data.
 
-___
+---
 
 ### ContainsJpegData
 
-• **ContainsJpegData** = ``13``
+• **ContainsJpegData** = `13`
 
 The box contains a raw JPEG image.
 
-___
+---
 
 ### ContainsPngData
 
-• **ContainsPngData** = ``14``
+• **ContainsPngData** = `14`
 
 The box contains a raw PNG image.
 
-___
+---
 
 ### ContainsText
 
-• **ContainsText** = ``1``
+• **ContainsText** = `1`
 
 The box contains UTF-8 text.
 
-___
+---
 
 ### ForTempo
 
-• **ForTempo** = ``21``
+• **ForTempo** = `21`
 
 The box contains data for a tempo box.

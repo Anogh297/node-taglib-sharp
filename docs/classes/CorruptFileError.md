@@ -36,8 +36,8 @@ Error class that indicates the file is likely corrupt.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type     |
+| :----- | :------- |
 | `msg?` | `string` |
 
 #### Overrides
@@ -54,7 +54,7 @@ Error.constructor
 
 Error.message
 
-___
+---
 
 ### name
 
@@ -64,7 +64,7 @@ ___
 
 Error.name
 
-___
+---
 
 ### stack
 
@@ -74,7 +74,7 @@ ___
 
 Error.stack
 
-___
+---
 
 ### prepareStackTrace
 
@@ -92,9 +92,9 @@ https://v8.dev/docs/stack-trace-api#customizing-stack-traces
 
 ##### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `err` | `Error` |
+| Name          | Type         |
+| :------------ | :----------- |
+| `err`         | `Error`      |
 | `stackTraces` | `CallSite`[] |
 
 ##### Returns
@@ -105,7 +105,7 @@ https://v8.dev/docs/stack-trace-api#customizing-stack-traces
 
 Error.prepareStackTrace
 
-___
+---
 
 ### stackTraceLimit
 
@@ -125,9 +125,9 @@ Create .stack property on a target object
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `targetObject` | `object` |
+| Name              | Type       |
+| :---------------- | :--------- |
+| `targetObject`    | `object`   |
 | `constructorOpt?` | `Function` |
 
 #### Returns

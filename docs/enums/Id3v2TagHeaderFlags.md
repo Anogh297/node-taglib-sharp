@@ -18,39 +18,39 @@ Indicates the flags applied to a [Id3v2TagHeader](../classes/Id3v2TagHeader.md) 
 
 ### ExperimentalIndicator
 
-• **ExperimentalIndicator** = ``32``
+• **ExperimentalIndicator** = `32`
 
 The tag described by the header is experimental.
 
-___
+---
 
 ### ExtendedHeader
 
-• **ExtendedHeader** = ``64``
+• **ExtendedHeader** = `64`
 
 The tag described by the header contains an extended header.
 
-___
+---
 
 ### FooterPresent
 
-• **FooterPresent** = ``16``
+• **FooterPresent** = `16`
 
 The tag described by the header contains a footer.
 
-___
+---
 
 ### None
 
-• **None** = ``0``
+• **None** = `0`
 
 The header contains no flags.
 
-___
+---
 
 ### Unsynchronization
 
-• **Unsynchronization** = ``128``
+• **Unsynchronization** = `128`
 
 The tag described by the header has been unsynchronized using the ID3v2 unsynchronization
 scheme.

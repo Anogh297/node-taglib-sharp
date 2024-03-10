@@ -13,9 +13,9 @@ stream list.
 
 ### Properties
 
-- [FORMAT\_CHUNK\_ID](AviStream.md#format_chunk_id)
-- [HEADER\_CHUNK\_ID](AviStream.md#header_chunk_id)
-- [LIST\_TYPE](AviStream.md#list_type)
+- [FORMAT_CHUNK_ID](AviStream.md#format_chunk_id)
+- [HEADER_CHUNK_ID](AviStream.md#header_chunk_id)
+- [LIST_TYPE](AviStream.md#list_type)
 
 ### Accessors
 
@@ -48,31 +48,31 @@ Constructs and initializes a new instance with a specified stream header.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                      | Description                            |
+| :----- | :------------------------ | :------------------------------------- |
 | `list` | [`RiffList`](RiffList.md) | RiffList containing the stream headers |
 
 ## Properties
 
-### FORMAT\_CHUNK\_ID
+### FORMAT_CHUNK_ID
 
-▪ `Static` `Readonly` **FORMAT\_CHUNK\_ID**: ``"strf"``
+▪ `Static` `Readonly` **FORMAT_CHUNK_ID**: `"strf"`
 
 ID of a format chunk.
 
-___
+---
 
-### HEADER\_CHUNK\_ID
+### HEADER_CHUNK_ID
 
-▪ `Static` `Readonly` **HEADER\_CHUNK\_ID**: ``"strh"``
+▪ `Static` `Readonly` **HEADER_CHUNK_ID**: `"strh"`
 
 ID of a header chunk.
 
-___
+---
 
-### LIST\_TYPE
+### LIST_TYPE
 
-▪ `Static` `Readonly` **LIST\_TYPE**: ``"strl"``
+▪ `Static` `Readonly` **LIST_TYPE**: `"strl"`
 
 ID of a list chunk.
 
@@ -89,7 +89,7 @@ positioned.
 
 `number`
 
-___
+---
 
 ### codec
 
@@ -101,7 +101,7 @@ Gets the codec information for this stream.
 
 [`ICodec`](../interfaces/ICodec.md)
 
-___
+---
 
 ### flags
 
@@ -113,7 +113,7 @@ Gets any flags for the data stream.
 
 `number`
 
-___
+---
 
 ### handler
 
@@ -127,7 +127,7 @@ decoding the stream.
 
 `number`
 
-___
+---
 
 ### initialFrames
 
@@ -140,7 +140,7 @@ value generally 0 for non-interleaved files.
 
 `number`
 
-___
+---
 
 ### language
 
@@ -152,7 +152,7 @@ Gets the language tag for the stream.
 
 `number`
 
-___
+---
 
 ### left
 
@@ -165,7 +165,7 @@ positioned.
 
 `number`
 
-___
+---
 
 ### length
 
@@ -178,7 +178,7 @@ header.
 
 `number`
 
-___
+---
 
 ### priority
 
@@ -191,7 +191,7 @@ the one with the highest priority might be the default stream.
 
 `number`
 
-___
+---
 
 ### quality
 
@@ -203,13 +203,13 @@ number between `0` and `10000`. -1 indicates the default quality values should b
 **`Remarks`**
 
 For compressed data, this typically represents the value of the quality parameter
-    passed to the compression software.
+passed to the compression software.
 
 #### Returns
 
 `number`
 
-___
+---
 
 ### rate
 
@@ -220,15 +220,15 @@ Used with [scale](AviStream.md#scale) to specify the timescale that this stream 
 **`Remarks`**
 
 Dividing [rate](AviStream.md#rate) by this gives the number of samples per second. For video
-    streams, this is the frame rate. For audio streams, this rate corresponds to the time
-    needed to play [blockAlign](RiffWaveFormatEx.md#blockalign) bytes of audio. For PCM audio this is
-    just the sample rate.
+streams, this is the frame rate. For audio streams, this rate corresponds to the time
+needed to play [blockAlign](RiffWaveFormatEx.md#blockalign) bytes of audio. For PCM audio this is
+just the sample rate.
 
 #### Returns
 
 `number`
 
-___
+---
 
 ### right
 
@@ -241,7 +241,7 @@ positioned.
 
 `number`
 
-___
+---
 
 ### sampleSize
 
@@ -253,7 +253,7 @@ Gets the size of a single sample of data. If the sample size varies, this will b
 
 `number`
 
-___
+---
 
 ### scale
 
@@ -264,14 +264,14 @@ Used with [rate](AviStream.md#rate) to specify the timescale that this stream wi
 **`Remarks`**
 
 Dividing [rate](AviStream.md#rate) by this gives the number of samples per second. For video
-    streams, this is the frame rate. For audio streams, this rate corresponds to the time
-    needed to play `nBlockAlign` bytes of audio. For PCM audio is just the sample rate.
+streams, this is the frame rate. For audio streams, this rate corresponds to the time
+needed to play `nBlockAlign` bytes of audio. For PCM audio is just the sample rate.
 
 #### Returns
 
 `number`
 
-___
+---
 
 ### start
 
@@ -283,13 +283,13 @@ main file header.
 **`Remarks`**
 
 Usually this is zero, but it can specify a delay time for a stream that does not
-    start concurrently with the file.
+start concurrently with the file.
 
 #### Returns
 
 `number`
 
-___
+---
 
 ### suggestedSampleSize
 
@@ -300,13 +300,13 @@ Gets how large of a buffer should be used to read this stream.
 **`Remarks`**
 
 Typically, this contains a value corresponding to the largest chunk present in the
-    stream.
+stream.
 
 #### Returns
 
 `number`
 
-___
+---
 
 ### top
 
@@ -319,7 +319,7 @@ positioned.
 
 `number`
 
-___
+---
 
 ### type
 

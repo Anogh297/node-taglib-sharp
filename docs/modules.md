@@ -204,7 +204,7 @@ Renames and re-exports [MpegAudioFileSettings](classes/MpegAudioFileSettings.md)
 
 Type shortcut for all the types a descriptor can contain
 
-___
+---
 
 ### FileTypeConstructor
 
@@ -216,12 +216,12 @@ ___
 
 ##### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name          | Type                                                 |
+| :------------ | :--------------------------------------------------- |
 | `abstraction` | [`IFileAbstraction`](interfaces/IFileAbstraction.md) |
-| `style` | [`ReadStyle`](enums/ReadStyle.md) |
+| `style`       | [`ReadStyle`](enums/ReadStyle.md)                    |
 
-___
+---
 
 ### FileTypeResolver
 
@@ -237,21 +237,21 @@ any standard resolution operations.
 **`Remarks`**
 
 A FileTypeResolver is one way of altering the behavior of
-    [createFromPath](classes/File.md#createfrompath) When [createFromPath](classes/File.md#createfrompath) is called, the registered
-    resolvers are invoked in reverse order in which they were registered. The resolver may then
-    perform any operations necessary, including other type-finding methods. If the resolver
-    returns a new [File](classes/File.md) it will instantly be returned, by [createFromPath](classes/File.md#createfrompath). If
-    it returns `undefined`, [createFromPath](classes/File.md#createfrompath) will continue to process. If the resolver
-    throws an exception, it will be uncaught. To register a resolver, use
-    [addFileTypeResolver](classes/File.md#addfiletyperesolver).
+[createFromPath](classes/File.md#createfrompath) When [createFromPath](classes/File.md#createfrompath) is called, the registered
+resolvers are invoked in reverse order in which they were registered. The resolver may then
+perform any operations necessary, including other type-finding methods. If the resolver
+returns a new [File](classes/File.md) it will instantly be returned, by [createFromPath](classes/File.md#createfrompath). If
+it returns `undefined`, [createFromPath](classes/File.md#createfrompath) will continue to process. If the resolver
+throws an exception, it will be uncaught. To register a resolver, use
+[addFileTypeResolver](classes/File.md#addfiletyperesolver).
 
 ##### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `abstraction` | [`IFileAbstraction`](interfaces/IFileAbstraction.md) | File to be read. |
-| `mimetype` | `string` | - |
-| `style` | [`ReadStyle`](enums/ReadStyle.md) | How to read media properties from the file |
+| Name          | Type                                                 | Description                                |
+| :------------ | :--------------------------------------------------- | :----------------------------------------- |
+| `abstraction` | [`IFileAbstraction`](interfaces/IFileAbstraction.md) | File to be read.                           |
+| `mimetype`    | `string`                                             | -                                          |
+| `style`       | [`ReadStyle`](enums/ReadStyle.md)                    | How to read media properties from the file |
 
 ##### Returns
 
@@ -259,7 +259,7 @@ A FileTypeResolver is one way of altering the behavior of
 
 New instance of [File](classes/File.md) or `undefined` if the resolver could not be matched
 
-___
+---
 
 ### Id3v2FrameCreator
 
@@ -273,18 +273,18 @@ Type shortcut for a method that returns a Frame.
 
 ##### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `data` | [`ByteVector`](classes/ByteVector.md) | Byte vector that contains the frame |
-| `offset` | `number` | Position into the byte vector where the frame begins |
-| `header` | [`Id3v2FrameHeader`](classes/Id3v2FrameHeader.md) | The header that describes the frame |
-| `version` | `number` | ID3v2 version the frame is encoded with. Must be unsigned 8-bit int |
+| Name      | Type                                              | Description                                                         |
+| :-------- | :------------------------------------------------ | :------------------------------------------------------------------ |
+| `data`    | [`ByteVector`](classes/ByteVector.md)             | Byte vector that contains the frame                                 |
+| `offset`  | `number`                                          | Position into the byte vector where the frame begins                |
+| `header`  | [`Id3v2FrameHeader`](classes/Id3v2FrameHeader.md) | The header that describes the frame                                 |
+| `version` | `number`                                          | ID3v2 version the frame is encoded with. Must be unsigned 8-bit int |
 
 ##### Returns
 
 [`Id3v2Frame`](classes/Id3v2Frame.md)
 
-___
+---
 
 ### OggCodecProvider
 
@@ -299,8 +299,8 @@ bit stream.
 
 ##### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name          | Type                                  | Description                    |
+| :------------ | :------------------------------------ | :----------------------------- |
 | `firstPacket` | [`ByteVector`](classes/ByteVector.md) | First packet in the bit stream |
 
 ##### Returns
@@ -308,7 +308,7 @@ bit stream.
 [`IOggCodec`](interfaces/IOggCodec.md) \| `undefined`
 
 Generated [IOggCodec](interfaces/IOggCodec.md) is returned if a codec could be
-    constructed from the first packet, otherwise `undefined` is returned.
+constructed from the first packet, otherwise `undefined` is returned.
 
 ## Variables
 
@@ -323,13 +323,13 @@ process, register a frame creator with addFrameCreator.
 
 #### Type declaration
 
-| Name | Type |
-| :------ | :------ |
-| `addFrameCreator` | (`creator`: [`Id3v2FrameCreator`](modules.md#id3v2framecreator)) => `void` |
-| `clearFrameCreators` | () => `void` |
-| `createFrame` | (`data`: [`ByteVector`](classes/ByteVector.md), `file`: [`File`](classes/File.md), `offset`: `number`, `version`: `number`, `alreadyUnsynced`: `boolean`) => { `frame`: [`Id3v2Frame`](classes/Id3v2Frame.md) ; `offset`: `number`  } |
+| Name                 | Type                                                                                                                                                                                                                                 |
+| :------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `addFrameCreator`    | (`creator`: [`Id3v2FrameCreator`](modules.md#id3v2framecreator)) => `void`                                                                                                                                                           |
+| `clearFrameCreators` | () => `void`                                                                                                                                                                                                                         |
+| `createFrame`        | (`data`: [`ByteVector`](classes/ByteVector.md), `file`: [`File`](classes/File.md), `offset`: `number`, `version`: `number`, `alreadyUnsynced`: `boolean`) => { `frame`: [`Id3v2Frame`](classes/Id3v2Frame.md) ; `offset`: `number` } |
 
-___
+---
 
 ### Id3v2FrameIdentifiers
 

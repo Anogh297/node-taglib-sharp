@@ -13,7 +13,7 @@ in order for changes to take effect.
 
 ### Properties
 
-- [SUPPORTED\_TAG\_TYPES](ApeFileSettings.md#supported_tag_types)
+- [SUPPORTED_TAG_TYPES](ApeFileSettings.md#supported_tag_types)
 
 ### Accessors
 
@@ -29,9 +29,9 @@ in order for changes to take effect.
 
 ## Properties
 
-### SUPPORTED\_TAG\_TYPES
+### SUPPORTED_TAG_TYPES
 
-▪ `Static` `Readonly` **SUPPORTED\_TAG\_TYPES**: [`TagTypes`](../enums/TagTypes.md)
+▪ `Static` `Readonly` **SUPPORTED_TAG_TYPES**: [`TagTypes`](../enums/TagTypes.md)
 
 List of tag types that are supported by the APE file.
 
@@ -56,23 +56,23 @@ types that are supported by node-taglib-sharp for APE files.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type                               |
+| :------ | :--------------------------------- |
 | `value` | [`TagTypes`](../enums/TagTypes.md) |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### preferApeTagAtFileEnd
 
 • `Static` `get` **preferApeTagAtFileEnd**(): `boolean`
 
-Gets whether or not *new* APE tags should be stored at the end of the file. If `true` new
+Gets whether or not _new_ APE tags should be stored at the end of the file. If `true` new
 APE tags will be stored at the end of the file. If `false` new APE tags will be stored at
-the beginning of the file (not recommended). Note, this only affects *new* APE tags.
+the beginning of the file (not recommended). Note, this only affects _new_ APE tags.
 Existing APE tags will not be moved unless removed and re-added.
 
 **`Default`**
@@ -85,9 +85,9 @@ Existing APE tags will not be moved unless removed and re-added.
 
 • `Static` `set` **preferApeTagAtFileEnd**(`value`): `void`
 
-Gets whether or not *new* APE tags should be stored at the end of the file. If `true` new
+Gets whether or not _new_ APE tags should be stored at the end of the file. If `true` new
 APE tags will be stored at the end of the file. If `false` new APE tags will be stored at
-the beginning of the file (not recommended). Note, this only affects *new* APE tags.
+the beginning of the file (not recommended). Note, this only affects _new_ APE tags.
 Existing APE tags will not be moved unless removed and re-added.
 
 **`Default`**
@@ -96,30 +96,30 @@ Existing APE tags will not be moved unless removed and re-added.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type      |
+| :------ | :-------- |
 | `value` | `boolean` |
 
 #### Returns
 
 `void`
 
-___
+---
 
 ### preferId3v2TagAtFileEnd
 
 • `Static` `get` **preferId3v2TagAtFileEnd**(): `boolean`
 
-Gets whether or not *new* ID3v2 tags should be stored at the end of the file. If `true` new
+Gets whether or not _new_ ID3v2 tags should be stored at the end of the file. If `true` new
 ID3v2 tags will be stored at the end of the file. If `false` new ID3v2 tags will be stored
-at the beginning of the file. Note, this only affects *new* ID3v2 tags. Existing ID3v2 tags
+at the beginning of the file. Note, this only affects _new_ ID3v2 tags. Existing ID3v2 tags
 will not be moved unless removed and re-added.
 
 **`Remarks`**
 
 In order to store an ID3v2 tag at the end of a file, it must have a tag footer. Tag
-  footers are only supported in ID3v2.4. If the ID3v2 version is changed, it will cause an
-  error to be thrown when the tag is rendered.
+footers are only supported in ID3v2.4. If the ID3v2 version is changed, it will cause an
+error to be thrown when the tag is rendered.
 
 **`Default`**
 
@@ -131,16 +131,16 @@ In order to store an ID3v2 tag at the end of a file, it must have a tag footer. 
 
 • `Static` `set` **preferId3v2TagAtFileEnd**(`value`): `void`
 
-Sets whether or not *new* ID3v2 tags should be stored at the end of the file. If `true` new
+Sets whether or not _new_ ID3v2 tags should be stored at the end of the file. If `true` new
 ID3v2 tags will be stored at the end of the file. If `false` new ID3v2 tags will be stored
-at the beginning of the file. Note, this only affects *new* ID3v2 tags. Existing ID3v2 tags
+at the beginning of the file. Note, this only affects _new_ ID3v2 tags. Existing ID3v2 tags
 will not be moved unless removed and re-added.
 
 **`Remarks`**
 
 In order to store an ID3v2 tag at the end of a file, it must have a tag footer. Tag
-  footers are only supported in ID3v2.4. If the ID3v2 version is changed, it will cause an
-  error to be thrown when the tag is rendered.
+footers are only supported in ID3v2.4. If the ID3v2 version is changed, it will cause an
+error to be thrown when the tag is rendered.
 
 **`Default`**
 
@@ -148,8 +148,8 @@ In order to store an ID3v2 tag at the end of a file, it must have a tag footer. 
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type      |
+| :------ | :-------- |
 | `value` | `boolean` |
 
 #### Returns
